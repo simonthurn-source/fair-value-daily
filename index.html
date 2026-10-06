@@ -592,11 +592,570 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Medical technology",
   "teaser": "Can a hospital-equipment maker that has spent years fixing quality problems earn back a premium medtech multiple?",
   "ticker": "GETI B"
+ },
+ {
+  "company": "Netflix",
+  "date": "2026-11-03",
+  "market": "United States",
+  "method": "Forward P/E",
+  "sector": "Streaming & entertainment",
+  "teaser": "Now that Netflix makes big profits and sells ads, what is next year's profit worth?",
+  "ticker": "NFLX"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Nvidia",
+  "consensus": {
+   "analysts": 61,
+   "asOf": "5 Oct 2026",
+   "explain": "The average target of $327.7 is a price in 12 months; discounted one year at our 17.4% cost of equity it is worth about $279 today, so our $322 is 15% higher. The target works out at 20.7 × fiscal-2028 consensus earnings, below our 23.9: analysts expect the multiple to keep shrinking as Nvidia gets bigger, while we use its own three-year average. Note that many analysts' own earnings forecasts sit above or below the $15.80 consensus.",
+   "high": 515,
+   "low": 180,
+   "method": "Analysts value Nvidia with a P/E on calendar-2027 earnings. Bank of America's Vivek Arya set his target at 28 × calendar-2027 earnings in May 2026 and about 26 × when he moved to $350 in August; Morgan Stanley's Joseph Moore used roughly 22 × his 2027 estimate ($288, now $300). A price target is where analysts expect the share to be in 12 months.",
+   "rating": "Strong Buy",
+   "source": "stockanalysis.com",
+   "target": 327.7,
+   "targetToday": 279
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = $238.90",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model gives only $107 a share: sales follow the consensus to $687 billion in fiscal 2028, then growth slows to 20%, 12%, 8% and fades to 2.5%; the operating margin slips from 65% to 50%; 74% of profit becomes free cash, as in FY2025–26; cash is discounted at 17.3% (almost all equity, beta 2.2). Today's price would need a discount rate of about 9.0% in that model, which would fit a share as steady as the market, not one twice as volatile. The multiple says cheap, the cash says expensive: the price needs AI spending to stay high for many years beyond 2028.",
+   "result": "$107 a share; ≈ 9.0% needed"
+  },
+  "crossChecks": [
+   {
+    "calc": "(20.6 × 452,668 + 23,610) ÷ 24,150 ÷ 1.174",
+    "name": "Check: EV/EBIT on the same basis",
+    "note": "Close to the P/E answer, so the two multiples agree.",
+    "plain": "EV/EBIT values the whole company (market value minus net cash) against operating profit. Nvidia's forward EV/EBIT averaged 20.6 at fiscal year-ends 2024–2026 (18.3, 26.7, 16.9). Applied to fiscal-2028 EBIT of $452.7 billion, plus $23.6 billion net cash, divided by 24,150 million shares and discounted one year:",
+    "result": "≈ $330"
+   },
+   {
+    "calc": "32.8 × 12.10 (without AMD: 20.8 × 12.10 = $251)",
+    "name": "Check: peers' forward P/E",
+    "note": "Nvidia, at 19.8 ×, is the cheapest of the four on this basis. AMD's high multiple pulls the average up; against Broadcom and TSMC alone Nvidia is only about 5% cheaper ($251), so the peer check supports 'not expensive' rather than a big discount.",
+    "plain": "Broadcom (20.9), TSMC (20.7) and AMD (56.9) trade at an average of 32.8 × the next 12 months' earnings (stockanalysis.com). Nvidia's own next-12-months EPS on that basis is about $12.10 (238.90 ÷ 19.75).",
+    "result": "≈ $397"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-06",
+  "dateLabel": "Tuesday 6 October 2026",
+  "exchange": "Nasdaq",
+  "fairValue": 322,
+  "history": {
+   "caption": "US$ million unless stated. Nvidia's fiscal year ends in late January (FY2026 = February 2025–January 2026). From Nvidia's year-end earnings releases (US GAAP cash-flow statement) and its recast 'non-GAAP including stock-based compensation' table. Share prices are split-adjusted (10-for-1 in 2024, 4-for-1 in 2021). Net cash at year-ends: $10.3bn, $2.3bn, $16.3bn, $43.2bn, $54.1bn. Last column: averages or totals for FY2024–26.",
+   "columns": [
+    "FY2022",
+    "FY2023",
+    "FY2024",
+    "FY2025",
+    "FY2026",
+    "FY2024–26"
+   ],
+   "rows": [
+    {
+     "label": "Sales",
+     "note": "Growth FY2022–26: 68% a year",
+     "values": [
+      "26,914",
+      "26,974",
+      "60,922",
+      "130,497",
+      "215,938",
+      "+68%/yr"
+     ]
+    },
+    {
+     "label": "Sales growth",
+     "note": "FY2023: crypto and gaming slump; FY2024 onwards: AI data-centre boom",
+     "values": [
+      "n/a",
+      "0.2%",
+      "125.9%",
+      "114.2%",
+      "65.5%",
+      "101.8%"
+     ]
+    },
+    {
+     "label": "EBIT (operating profit, after share-based pay)",
+     "note": "Nvidia's non-GAAP operating profit minus stock-based pay. FY2025–26 match Nvidia's own recast figures (it now counts share-based pay as a cost)",
+     "values": [
+      "10,686",
+      "6,331",
+      "33,585",
+      "82,052",
+      "130,914",
+      "246,551"
+     ]
+    },
+    {
+     "label": "EBIT margin",
+     "values": [
+      "39.7%",
+      "23.5%",
+      "55.1%",
+      "62.9%",
+      "60.6%",
+      "60.5%"
+     ]
+    },
+    {
+     "label": "Share-based pay",
+     "note": "Paid in Nvidia shares, a real cost to owners",
+     "values": [
+      "2,004",
+      "2,709",
+      "3,549",
+      "4,737",
+      "6,386",
+      "14,672"
+     ]
+    },
+    {
+     "label": "Earnings per share (excl. one-offs, incl. share-based pay)",
+     "note": "FY2025–26: Nvidia's recast non-GAAP EPS ($2.92, $4.64). FY2022 and FY2024: GAAP EPS. FY2023: GAAP EPS + $1.35bn Arm deal termination charge. Split-adjusted",
+     "values": [
+      "0.39",
+      "0.23",
+      "1.19",
+      "2.92",
+      "4.64",
+      "+86%/yr"
+     ]
+    },
+    {
+     "label": "Year-end share price (US$)",
+     "note": "Last trading day of each fiscal year (late January), split-adjusted, StatMuse",
+     "values": [
+      "22.77",
+      "20.32",
+      "60.92",
+      "142.41",
+      "187.23",
+      "–"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing)",
+     "note": "Year-end price ÷ that year's EPS. Last column: FY2024–26 average",
+     "values": [
+      "59.1",
+      "89.1",
+      "51.1",
+      "48.8",
+      "40.4",
+      "46.7"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ the NEXT fiscal year's EPS (FY2026: ÷ today's $9.31 consensus for FY2027). This is the multiple analysts use. FY2022 (99.9, a zero-rate year before the 2023 profit jump) is left out. Last column: FY2024–26 average",
+     "strong": true,
+     "values": [
+      "99.9",
+      "17.0",
+      "20.9",
+      "30.7",
+      "20.1",
+      "23.9"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "(Market value − net cash) ÷ next year's EBIT (FY2026: ÷ $268.9bn FY2027 consensus). Last column: FY2024–26 average",
+     "values": [
+      "89.6",
+      "15.1",
+      "18.3",
+      "26.7",
+      "16.9",
+      "20.6"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "US GAAP cash-flow statement, after tax and interest paid",
+     "values": [
+      "9,108",
+      "5,641",
+      "28,090",
+      "64,089",
+      "102,718",
+      "194,897"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "note": "FY2026 not yet in the data we could read (n/a); about $0.2bn a year",
+     "values": [
+      "207",
+      "213",
+      "212",
+      "207",
+      "n/a",
+      "n/a"
+     ]
+    },
+    {
+     "label": "− Capex (equipment and intangibles)",
+     "values": [
+      "976",
+      "1,833",
+      "1,069",
+      "3,236",
+      "6,042",
+      "10,347"
+     ]
+    },
+    {
+     "label": "− Lease and equipment principal payments",
+     "values": [
+      "83",
+      "58",
+      "74",
+      "129",
+      "101",
+      "304"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "8,256",
+      "3,963",
+      "27,159",
+      "60,931",
+      "96,575",
+      "184,664"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBIT)",
+     "note": "Nvidia needs few factories of its own (TSMC makes the chips)",
+     "strong": true,
+     "values": [
+      "77%",
+      "63%",
+      "81%",
+      "74%",
+      "74%",
+      "75%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "values": [
+      "263",
+      "49",
+      "83",
+      "1,007",
+      "1,535",
+      "2,625"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq close, 5 Oct 2026 (stockanalysis.com). Market value about $5.77 trillion",
+    "value": "$238.90"
+   },
+   {
+    "label": "Analyst EPS forecasts",
+    "note": "Yahoo Finance consensus, 51 and 53 analysts; includes share-based pay. Forward P/E today on FY2028: 238.90 ÷ 15.80 = 15.1",
+    "value": "$9.31 (FY2027) / $15.80 (FY2028)"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of fiscal year-ends 2024 (20.9), 2025 (30.7) and 2026 (20.1): price ÷ next year's EPS",
+    "value": "23.9"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.3% US 10-year yield + beta 2.2 × 5.5% equity risk premium; used to bring the 12-month price back to today",
+    "value": "17.4%"
+   },
+   {
+    "label": "Earnings per share, last 12 months",
+    "note": "stockanalysis.com; includes $7.8bn of investment gains in Q2 alone. Trailing P/E 30.2",
+    "value": "$7.91 (GAAP)"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "stockanalysis.com",
+    "value": "24,150 million"
+   },
+   {
+    "label": "Net cash",
+    "note": "Cash and investments $62.5bn − debt $38.9bn (including $25bn of bonds issued in Q2 fiscal 2027), stockanalysis.com. Stakes in AI start-ups not added",
+    "value": "$23.6bn"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "US 10-year Treasury 5.31% on 6 Oct 2026, highest since 2002 (Trading Economics)",
+    "value": "5.3%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 2.22 (stockanalysis.com)",
+    "value": "2.2"
+   },
+   {
+    "label": "Sales forecasts",
+    "note": "Yahoo Finance consensus",
+    "value": "$411.7bn (FY2027) / $687.5bn (FY2028)"
+   },
+   {
+    "label": "EBIT forecasts",
+    "note": "MarketScreener consensus; used for the EV/EBIT check and the DCF",
+    "value": "$268.9bn (FY2027) / $452.7bn (FY2028)"
+   },
+   {
+    "label": "Cash conversion (DCF)",
+    "note": "FCF ÷ EBIT, FY2025–26 average",
+    "value": "74%"
+   },
+   {
+    "label": "Equity risk premium / cost of debt",
+    "note": "Our assumptions; debt at 5.5% before tax, tax rate 16% (fiscal 2027 guidance 16–18%)",
+    "value": "5.5% / 4.6% after tax"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large chip companies)",
+   "why": "For large semiconductor companies, analysts set targets as a P/E times next calendar year's earnings, because profits swing a lot and investors look one year ahead. Bank of America, for example, anchored its Nvidia target on 28 × calendar-2027 earnings. We do the same: we take the forward P/E Nvidia normally traded at (price ÷ the next year's earnings, average of fiscal year-ends 2024–2026), apply it to the consensus for fiscal 2028 (February 2027–January 2028, almost the same as calendar 2027), and discount that price one year at the 17.4% return shareholders demand.",
+   "whyNot": "We do not blend in other methods, because analysts in this sector don't: P/E is the standard. EV/EBIT, a peer comparison and a cash-flow model (DCF) are shown below only as checks. The DCF gives far less because it needs guesses about AI spending ten years out and a 17% discount rate (Nvidia's share swings more than twice as much as the market). Price-to-book makes no sense here: Nvidia's value is its designs, software (CUDA) and customers, which are not on the balance sheet. We count share-based pay as a cost, as Nvidia itself has done since February 2026."
+  },
+  "price": 238.9,
+  "priceDate": "close 5 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 335,
+  "rangeLow": 308,
+  "reasoning": [
+   "Nvidia's track record is extraordinary: sales grew from $27 billion to $216 billion in four years, the operating margin rose from 40% to over 60%, and about three-quarters of profit turns into free cash.",
+   "Valued the way analysts value chip companies, at its normal forward P/E (23.9) on fiscal-2028 consensus earnings ($15.80), the share is worth about $378 in a year and $322 today. Today it trades at only 15.1 × those earnings.",
+   "EV/EBIT on the same basis gives about $330, so the multiples agree, and peers do not look cheaper. The warning sign is the cash-flow check: unless AI spending stays high well beyond 2028, the cash supports only about $107.",
+   "Fair value $322 (range $308–335). At $238.90 the stock looks undervalued on the sector method, 15% above the analysts' average target in today's money ($279)."
+  ],
+  "risks": [
+   "Forecast risk: everything rests on EPS rising from $4.64 to $15.80 in two years. If fiscal-2028 earnings come in 10% lower, the fair value falls to about $289; the lowest analyst forecast ($9.80) would give about $199.",
+   "Multiple risk: at the 20.7 × that the consensus target implies, the value is about $279; at today's 15.1 × it is $203, below today's price. Our 23.9 average includes the high 30.7 from January 2025.",
+   "Customers and competition: a handful of cloud giants buy most of Nvidia's chips and are designing their own (and AMD is gaining ground); a pause in their AI spending would hit both earnings and the multiple at once.",
+   "Interest rates and China: the US 10-year yield is 5.3%, the highest since 2002, which makes the 17.4% discount rate high. Upside: guidance assumes zero data-centre sales to China, and Nvidia's stakes in AI companies (gains of $7.8 billion in Q2 alone) are not in our value."
+  ],
+  "sector": "Semiconductors",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in US$ per share for different forward P/Es (rows) and for fiscal-2028 earnings coming in higher or lower than forecast (columns). Base case: P/E 23.9 on EPS of $15.80, discounted at 17.4%.",
+   "colLabel": "Fiscal-2028 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "21.9",
+    "22.9",
+    "23.9",
+    "24.9",
+    "25.9"
+   ],
+   "values": [
+    [
+     265,
+     280,
+     295,
+     309,
+     324
+    ],
+    [
+     277,
+     293,
+     308,
+     324,
+     339
+    ],
+    [
+     289,
+     306,
+     322,
+     338,
+     354
+    ],
+    [
+     302,
+     318,
+     335,
+     352,
+     369
+    ],
+    [
+     314,
+     331,
+     349,
+     366,
+     383
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Nvidia Q4 and fiscal 2026 results",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026"
+   },
+   {
+    "title": "Nvidia Q4 and fiscal 2025 results",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025"
+   },
+   {
+    "title": "Nvidia Q4 and fiscal 2024 results",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024"
+   },
+   {
+    "title": "Nvidia Q4 and fiscal 2023 results",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2023"
+   },
+   {
+    "title": "Nvidia historical non-GAAP measures including stock-based compensation",
+    "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Historical-Non-GAAP-Financial-Measures-Including-SBC-full.pdf"
+   },
+   {
+    "title": "Nvidia CFO commentary, Q2 fiscal 2027 (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27cfocommentary.htm"
+   },
+   {
+    "title": "Nvidia interest paid, SEC XBRL data",
+    "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001045810/us-gaap/InterestPaidNet.json"
+   },
+   {
+    "title": "Nvidia statistics, beta and net cash (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nvda/statistics/"
+   },
+   {
+    "title": "Nvidia analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nvda/forecast/"
+   },
+   {
+    "title": "Nvidia financials and cash flow (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Nvidia EPS and revenue estimates (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/quote/NVDA/analysis/"
+   },
+   {
+    "title": "Nvidia financial estimates FY2027–29 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/finances/"
+   },
+   {
+    "title": "Bank of America resets Nvidia price target: 28 × CY2027 P/E (TheStreet)",
+    "url": "https://www.thestreet.com/investing/stocks/bank-of-america-resets-nvidia-stock-price-target-for-2026"
+   },
+   {
+    "title": "Nvidia price targets and analyst methods, August 2026 (FXOpen)",
+    "url": "https://fxopen.com/blog/en/analytical-nvidia-stock-price-targets/"
+   },
+   {
+    "title": "Prediction: Nvidia stock by January 2028 (The Motley Fool)",
+    "url": "https://www.fool.com/investing/2026/09/12/predict-nvidia-stock-worth-this-much-2028/"
+   },
+   {
+    "title": "Nvidia earnings takeaways: Huang forecasts 70% fiscal 2028 revenue growth (CNBC)",
+    "url": "https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html"
+   },
+   {
+    "title": "Nvidia year-end share prices (StatMuse)",
+    "url": "https://www.statmuse.com/money/ask/nvidia-stock-price-january-2026"
+   },
+   {
+    "title": "Broadcom statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/avgo/statistics/"
+   },
+   {
+    "title": "AMD statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/amd/statistics/"
+   },
+   {
+    "title": "TSMC statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/tsm/statistics/"
+   },
+   {
+    "title": "US 10-year Treasury yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+   },
+   {
+    "title": "Preview: guidance implies Q2 revenue near $91 billion (investinglive)",
+    "url": "https://investinglive.com/stocks/preview-nvidia-reports-q2-results-today-guidance-implies-revenue-near-91-billion/"
+   },
+   {
+    "title": "Nvidia guides to $108 billion with zero China revenue assumed (SentiSense)",
+    "url": "https://app.sentisense.ai/stories/nvidia-beats-across-the-board-guides-108-billion-with-zero-china-revenue-assume-08262026"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "Yahoo Finance consensus of 53 analysts",
+    "formula": "Next-year EPS = fiscal-2028 consensus",
+    "plain": "Analysts quote Nvidia's targets on calendar-2027 earnings. Nvidia's fiscal 2028 runs from February 2027 to January 2028, so it covers almost exactly the same months. The consensus counts share-based pay as a cost, as Nvidia now does.",
+    "result": "$15.80 a share",
+    "title": "What will Nvidia earn next year?"
+   },
+   {
+    "calc": "(20.9 + 30.7 + 20.1) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the coming year's earnings. At the end of fiscal 2024, 2025 and 2026 it was 20.9, 30.7 and 20.1. The average is 23.9. We skip the January 2022 year-end (zero interest rates, and a P/E near 100 before the AI profit jump).",
+    "result": "23.9",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "23.9 × 15.80",
+    "formula": "Price in 12 months = normal forward P/E × fiscal-2028 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is how an analyst's price target is built.",
+    "result": "$378",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "377.6 ÷ 1.174",
+    "formula": "Fair value = price in 12 months ÷ (1 + 17.4%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting. Nvidia's share moves about 2.2 times as much as the market, so they want a lot: 5.3% bond yield + 2.2 × 5.5% = 17.4% a year.",
+    "result": "$322",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "322 ÷ 238.90 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is well above today's price, so on analysts' own method Nvidia looks undervalued. Put differently, today's price is only 15.1 × next year's expected earnings, a low multiple for a company growing this fast; the market doubts those earnings will last.",
+    "result": "+34.8%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Nvidia the way analysts value chip companies: a price-to-earnings multiple (P/E) on next year's expected profit. Analysts expect $15.80 a share in fiscal 2028 (roughly calendar 2027); at the forward P/E Nvidia has normally traded at (23.9) the share would be worth about $378 in a year, or $322 today, 35% above today's $238.90. The catch: that only holds if the AI boom keeps running for years.",
+  "targets": {
+   "items": [
+    "Nvidia has no long-term financial targets. It gives guidance one quarter ahead.",
+    "For August–October 2026 (Q3 fiscal 2027) it guided for revenue of $108 billion (±2%), about +90% on a year ago by analysts' estimates, with a 74% gross margin, assuming no data-centre revenue from China.",
+    "In August Jensen Huang said fiscal 2028 revenue could grow about 70%, limited by supply rather than demand; analysts expect $687 billion (+67%).",
+    "Track record: Q2 fiscal 2027 revenue was $96.2 billion (+106%), well above the roughly $91 billion its guidance implied, and EPS was $2.22 against $1.01 a year earlier (+120%). That makes the +101% EPS growth expected for fiscal 2027 ($4.64 → $9.31) look realistic."
+   ],
+   "title": "Does Nvidia have a growth goal we can use?",
+   "verdict": "We use the analysts' consensus, which matches the company's own outlook: EPS $9.31 for fiscal 2027 and $15.80 for fiscal 2028. In the cash-flow check we let growth slow sharply after that (20%, 12%, 8%… down to 2.5%) and the operating margin slip from 65% to 50% as competition from AMD and customers' own chips grows."
+  },
+  "ticker": "NVDA",
+  "verdict": "Looks undervalued",
+  "whatTheyDo": "Nvidia designs the graphics chips (GPUs) and complete server racks that train and run almost all of today's AI models; data centres were 93% of sales last quarter. It does not make the chips itself: TSMC in Taiwan manufactures them, so Nvidia needs little capital of its own."
+ },
  {
   "company": "SEB (Skandinaviska Enskilda Banken)",
   "consensus": {
