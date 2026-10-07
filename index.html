@@ -601,11 +601,533 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Streaming & entertainment",
   "teaser": "Now that Netflix makes big profits and sells ads, what is next year's profit worth?",
   "ticker": "NFLX"
+ },
+ {
+  "company": "Deutsche Börse",
+  "date": "2026-11-04",
+  "market": "Germany",
+  "method": "Forward P/E",
+  "sector": "Stock exchanges & market infrastructure",
+  "teaser": "A company that earns money every time markets get busy: how much should investors pay for that steady toll booth?",
+  "ticker": "DB1"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Hexagon",
+  "consensus": {
+   "analysts": 13,
+   "asOf": "Oct 2026 (4-month average)",
+   "explain": "The average target of SEK 101.31 is a price in 12 months; discounted one year at 8.1% it is worth about SEK 94 today. Our SEK 85 is 9% lower. We use the same kind of method; the gap is the multiple. SEK 101.31 works out at about 21.2 × 2027 operating profit, while Hexagon's own forward average at year-ends 2022–2024 was 19.4 (and Placera uses 18). At 21.2 × our value would be SEK 94.",
+   "high": 130,
+   "low": 80,
+   "method": "Analysts mostly put a multiple on Hexagon's expected operating profit. Placera's analysts (Daniel Svensson and Filip Jonsson, 3 June 2026) value it at 18 × EBIT, which they say equals about 23 × earnings, and kept a neutral view until the 'new Hexagon' proves itself. Berenberg (Hold, SEK 100) cut its forecasts after Hexagon's April 2026 targets and expects an operating margin of about 30% by 2028. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Neutral (mix of Buy and Hold)",
+   "source": "Börskollen",
+   "target": 101.31,
+   "targetToday": 94
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = SEK 103.45",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "In 2021–2025 Hexagon turned only about 45% of its operating profit into free cash, mainly because it spends around EUR 0.5bn a year on development that is put on the balance sheet. Applying that 45% to 2027 profit, with growth of 6% a year fading to 2.5%, gives about SEK 45 per share at a 7.8% discount rate (cost of equity 8.1%, after-tax cost of debt 3.0%). Even at a 60% conversion it is about SEK 61. Today's SEK 103.45 needs a discount rate of about 5.0% in this model. The cash does not support the multiple: investors are betting that the new, slimmer Hexagon converts much more profit into cash (it reported 121% of EBITAC in H1 2026, on its own definition).",
+   "result": "≈ 5.0%"
+  },
+  "crossChecks": [
+   {
+    "calc": "23.4 × EUR 0.311 × 11.256 ÷ 1.0814",
+    "name": "Check: forward P/E",
+    "note": "With Placera's higher EPS forecast (EUR 0.33) it is about SEK 80. The P/E check agrees with the main method: both point below today's price.",
+    "plain": "At year-ends 2022–2024 Hexagon traded at 23.4 × the next year's adjusted earnings per share (close to Placera's 23). On the 2027 forecast of EUR 0.311: 23.4 × 0.311 × 11.256 = SEK 81.9 in 12 months, ÷ 1.0814 =",
+    "result": "≈ SEK 76"
+   },
+   {
+    "calc": "25.3 ÷ 23.1 × Hexagon EV − net debt, ÷ shares",
+    "name": "Check: at the peers' multiple",
+    "note": "This is the only check above today's price. AMETEK is a high-quality serial acquirer that has long had a premium; Trimble alone (22.0) would give slightly below today's price. Hexagon's trailing figures still contain part of Octave.",
+    "plain": "US measurement and instrument makers Trimble (22.0) and AMETEK (28.6) trade at an average of 25.3 × last-year operating profit (EV/EBIT, stockanalysis.com, 5 Oct 2026), versus 23.1 × for Hexagon on the same basis. At the peer level Hexagon would be worth:",
+    "result": "≈ SEK 111"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-07",
+  "dateLabel": "Wednesday 7 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 85,
+  "history": {
+   "caption": "EUR million unless stated, for the OLD Hexagon (including Octave, which left in May 2026). From Hexagon's year-end reports. EBIT1 = operating profit before one-off items. Year-end prices in SEK from the reports; EUR prices = SEK price at the year-end exchange rate (MarketScreener). Net debt as Hexagon reports it (includes leases and pensions, about EUR 0.2bn). Cash from operations = Hexagon's 'cash flow from operations' minus taxes and interest paid, before one-off cash items; lease repayments were not available to us, so leases are counted in net debt instead. Last column: 2022–24 averages (used for the 'normal' multiple) or totals for 2021–25. Without Octave, 2025 sales were EUR 3,999m and EBIT1 EUR 1,072m (Q2 2026 report).",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Avg/total"
+   ],
+   "rows": [
+    {
+     "label": "Sales",
+     "note": "Growth per year 2021–25, partly from acquisitions. Organic growth 2025: 2.6%",
+     "values": [
+      "4,347",
+      "5,176",
+      "5,440",
+      "5,401",
+      "5,427",
+      "+5.7%/yr"
+     ]
+    },
+    {
+     "label": "EBIT1 (operating profit)",
+     "values": [
+      "1,270",
+      "1,518",
+      "1,597",
+      "1,603",
+      "1,475",
+      "7,462"
+     ]
+    },
+    {
+     "label": "EBIT1 margin",
+     "values": [
+      "29.2%",
+      "29.3%",
+      "29.4%",
+      "29.7%",
+      "27.2%",
+      "29.5% (22–24)"
+     ]
+    },
+    {
+     "label": "Adjusted EPS (euro cent)",
+     "values": [
+      "38.8",
+      "44.6",
+      "43.5",
+      "43.3",
+      "40.7",
+      "—"
+     ]
+    },
+    {
+     "label": "Share price at year-end (SEK)",
+     "values": [
+      "143.65",
+      "109.00",
+      "121.00",
+      "105.60",
+      "109.50",
+      "—"
+     ]
+    },
+    {
+     "label": "Net debt (EUR m)",
+     "values": [
+      "2,541",
+      "3,442",
+      "3,593",
+      "3,231",
+      "3,396",
+      "—"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Year-end price ÷ that year's adjusted EPS",
+     "values": [
+      "36.2",
+      "21.9",
+      "25.0",
+      "21.3",
+      "24.9",
+      "22.7"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ NEXT year's adjusted EPS. 2025: n/a, because 2026 earnings of the old group do not exist",
+     "values": [
+      "31.5",
+      "22.5",
+      "25.1",
+      "22.6",
+      "n/a",
+      "23.4"
+     ]
+    },
+    {
+     "label": "EV/EBIT at year-end",
+     "note": "(Market value + net debt) ÷ that year's EBIT1",
+     "values": [
+      "31.8",
+      "19.6",
+      "20.5",
+      "17.4",
+      "20.7",
+      "19.2"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "Year-end EV ÷ NEXT year's EBIT1. This is the multiple analysts use. 2025: n/a (spin-off). Last column: 2022–24 average",
+     "strong": true,
+     "values": [
+      "26.6",
+      "18.6",
+      "20.5",
+      "19.0",
+      "n/a",
+      "19.4"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid",
+     "values": [
+      "1,133",
+      "1,099",
+      "1,029",
+      "1,276",
+      "1,246",
+      "5,783"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "values": [
+      "23",
+      "30",
+      "116",
+      "126",
+      "103",
+      "398"
+     ]
+    },
+    {
+     "label": "− Investments (incl. capitalised development)",
+     "note": "About 80% is development spending put on the balance sheet",
+     "values": [
+      "419",
+      "553",
+      "598",
+      "622",
+      "598",
+      "2,791"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "737",
+      "576",
+      "547",
+      "779",
+      "751",
+      "3,390"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBIT1)",
+     "note": "Only about 45% of operating profit turned into free cash",
+     "strong": true,
+     "values": [
+      "58%",
+      "38%",
+      "34%",
+      "49%",
+      "51%",
+      "45%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "values": [
+      "748",
+      "1,195",
+      "376",
+      "112",
+      "505",
+      "2,936"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close, 6 Oct 2026 (MarketScreener). Market value about SEK 278bn",
+    "value": "SEK 103.45"
+   },
+   {
+    "label": "Euro rate",
+    "note": "5 Oct 2026 (ValutaFX). Hexagon reports in euros; share price ≈ EUR 9.19",
+    "value": "EUR 1 = SEK 11.256"
+   },
+   {
+    "label": "EBIT1 forecasts",
+    "note": "Analyst consensus (MarketScreener). 2027 includes Waygate, bought for USD 1.45bn and expected to close in H2 2026. H1 2026 EBIT1: EUR 523m (+3%)",
+    "value": "EUR 1,096m (2026) / 1,212m (2027)"
+   },
+   {
+    "label": "Normal forward EV/EBIT",
+    "note": "Average of year-ends 2022 (18.6), 2023 (20.5) and 2024 (19.0), old Hexagon",
+    "value": "19.4"
+   },
+   {
+    "label": "Net debt",
+    "note": "Consensus (MarketScreener), after paying for Waygate. Actual 30 June 2026: EUR 532m incl. leases and pensions",
+    "value": "EUR 1,549m (end-2026 forecast)"
+   },
+   {
+    "label": "Enterprise value (EV) today",
+    "note": "9.19 × 2,684.4m shares + EUR 1,549m. EV/EBIT today: 23.9 on 2026, 21.6 on 2027",
+    "value": "EUR 26,220m"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "Q2 2026 report",
+    "value": "2,684.4 million"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.19% Swedish 10-year bond (6 Oct 2026) + beta 0.9 × 5.5%; brings the 12-month price back to today",
+    "value": "8.1%"
+   },
+   {
+    "label": "Analyst EPS forecast",
+    "note": "MarketScreener consensus. P/E on 2027: 29.6. Placera: EUR 0.33",
+    "value": "EUR 0.311 (2027)"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: forward EV/EBIT on next year's operating profit (how analysts value Nordic industrial technology companies)",
+   "why": "Hexagon sells machines and software to industry, has debt, and makes acquisitions, so analysts compare the value of the whole company (EV = share value + net debt) with operating profit (EBIT). Placera, for example, values Hexagon at 18 × EBIT. We use Hexagon's own measure EBIT1, which is operating profit before one-off items. We take the forward EV/EBIT Hexagon normally traded at, apply it to the 2027 forecast, subtract net debt, divide by the number of shares and bring the 12-month price back to today.",
+   "whyNot": "We show P/E only as a check, because Hexagon's earnings per share jump around in 2026 with one-off gains from the Octave spin-off. The cash-flow model (DCF) is also only a check: Hexagon puts a lot of development spending on the balance sheet, and the business changed shape this year, so ten-year cash forecasts are very uncertain. We skip the 2025 year-end multiple (the share price still included Octave, but there is no 2026 profit for that old group) and the near-zero-rate year 2021."
+  },
+  "price": 103.45,
+  "priceDate": "close 6 Oct 2026 (MarketScreener)",
+  "rangeHigh": 90,
+  "rangeLow": 80,
+  "reasoning": [
+   "Hexagon has a long record of high margins (EBIT1 margin around 29% in 2021–2024) but only modest growth and weak cash conversion of about 45% in 2021–2025, because much development spending is capitalised.",
+   "Valued the way analysts value Nordic industrial technology companies, at its normal forward EV/EBIT (19.4) on 2027 forecast operating profit, the share is worth about SEK 92 in a year and SEK 85 today. The market already pays 21.6 × 2027 profit, a premium to that history, after strong organic growth of 10% in H1 2026.",
+   "The checks mostly agree: forward P/E gives about SEK 76 and the cash-flow model much less (SEK 45); only the peer check (SEK 111, pulled up by AMETEK) is above today's price. The analysts' average target, SEK 94 in today's money, sits between our value and the share price.",
+   "Fair value SEK 85 (range 80–90). At SEK 103.45 the stock looks overvalued on its usual multiple; to justify today's price the market must keep paying about 22 × next year's profit."
+  ],
+  "risks": [
+   "Forecast risk: 2027 EBIT1 must grow about 11%, about half from Waygate. If 2027 profit comes in 10% lower, the fair value falls to about SEK 76.",
+   "Multiple risk: our normal multiple (19.4) comes from the old Hexagon, which still held software, and from years with weak growth. At the analysts' implied 21.2 × the value is about SEK 94; at today's 21.6 × it is about SEK 96. At Placera's 18 × it is about SEK 79.",
+   "Upside: organic growth was 12% in Q2 2026 with a record EBITAC margin of 24.3%. If that pace continues, 2027 profit could beat forecasts: +10% would lift the value to about SEK 94.",
+   "Pending: the Q3 report on 23 October 2026, closing of the USD 1.45bn Waygate deal (bought at about 22 × its 2025 EBIT), and losses in the new Robotics unit, which Hexagon plans to double its investment in (EUR 50m in 2026) and excludes from its targets. Hexagon reports in euros, so a stronger krona lowers the value in SEK."
+  ],
+  "sector": "Measurement technology",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different forward EV/EBIT multiples (rows) and for 2027 operating profit coming in higher or lower than forecast (columns). Base case: 19.4 × EUR 1,212m.",
+   "colLabel": "2027 EBIT1 vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBIT",
+   "rows": [
+    "17.4",
+    "18.4",
+    "19.4",
+    "20.4",
+    "21.4"
+   ],
+   "values": [
+    [
+     68,
+     72,
+     76,
+     80,
+     84
+    ],
+    [
+     72,
+     76,
+     80,
+     85,
+     89
+    ],
+    [
+     76,
+     81,
+     85,
+     90,
+     94
+    ],
+    [
+     80,
+     85,
+     90,
+     95,
+     99
+    ],
+    [
+     85,
+     90,
+     95,
+     100,
+     105
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Hexagon interim report Q2 2026 (PDF)",
+    "url": "https://api.alertir.com/files/press/hexagon/202607282482-1.pdf"
+   },
+   {
+    "title": "Hexagon interim report Q2 2026 (press release)",
+    "url": "https://hexagon.com/company/newsroom/press-releases/2026/hexagon-interim-report-1-january---30-june-2026"
+   },
+   {
+    "title": "Hexagon year-end report 2025 (PDF)",
+    "url": "https://api.alertir.com/files/press/hexagon/202601293553-1.pdf"
+   },
+   {
+    "title": "Hexagon year-end report 2025 (PDF, Cision)",
+    "url": "https://mb.cision.com/Main/387/4300053/3907199.pdf"
+   },
+   {
+    "title": "Hexagon year-end report 2024 (PDF)",
+    "url": "https://api.alertir.com/files/press/hexagon/202501300087-1.pdf"
+   },
+   {
+    "title": "Hexagon year-end report 2023 (PDF)",
+    "url": "https://api.alertir.com/files/press/hexagon/202401310003-1.pdf"
+   },
+   {
+    "title": "Hexagon year-end report 2022 (PDF)",
+    "url": "https://api.alertir.com/files/press/hexagon/202301239412-1.pdf"
+   },
+   {
+    "title": "Hexagon new targets, Capital Markets Day 2026",
+    "url": "https://hexagon.com/company/newsroom/press-releases/2026/hexagon-releases-new-targets-at-its-capital-markets-day-2026"
+   },
+   {
+    "title": "Hexagon to acquire Waygate Technologies",
+    "url": "https://hexagon.com/company/newsroom/press-releases/2026/hexagon-to-acquire-waygate-technologies-expanding-into-nondestructive-testing"
+   },
+   {
+    "title": "Baker Hughes: sale of Waygate to Hexagon",
+    "url": "https://investors.bakerhughes.com/news/press-releases/news-details/2026/Baker-Hughes-Announces-Sale-of-Waygate-Technologies-to-Hexagon/"
+   },
+   {
+    "title": "Octave spin-off update (Hexagon)",
+    "url": "https://hexagon.com/company/newsroom/press-releases/2026/hexagon-announces-update-on-planned-spin-off-of-octave"
+   },
+   {
+    "title": "Analyst price targets (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/hexagon/riktkurs"
+   },
+   {
+    "title": "Target changes after Q2 (Aktiespararna)",
+    "url": "https://www.aktiespararna.se/nyheter/flera-riktkurshojningar-for-hexagon-efter-stark-q2-rapport"
+   },
+   {
+    "title": "Placera analysis: 18 × EBIT, about 23 × P/E (3 Jun 2026)",
+    "url": "https://www.placera.se/analys/hexagon-dramatiska-forandringar-skapar-osakerhet-2026-06-03"
+   },
+   {
+    "title": "Berenberg cuts target after new targets (Placera, 11 May 2026)",
+    "url": "https://www.placera.se/telegram/berenberg-notes-hexagon-ab-s-prudent-fy30-targets-exciting-robotics-unit-opportunity-price-target-cut-20260511"
+   },
+   {
+    "title": "Consensus forecasts (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/HEXAGON-AB-6491358/finances/"
+   },
+   {
+    "title": "Valuation and year-end EUR prices (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/HEXAGON-AB-6491358/valuation/"
+   },
+   {
+    "title": "Share price, 6 Oct 2026 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/HEXAGON-AB-6491358/"
+   },
+   {
+    "title": "Hexagon statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/HEXA.B/statistics/"
+   },
+   {
+    "title": "Trimble statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/trmb/statistics/"
+   },
+   {
+    "title": "AMETEK statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/ame/statistics/"
+   },
+   {
+    "title": "Sweden 10-year bond yield (Trading Economics)",
+    "url": "https://de.tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "EUR/SEK history 2026 (ValutaFX)",
+    "url": "https://www.valutafx.com/history/eur-sek-2026"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus",
+    "formula": "2027 EBIT1 = consensus forecast",
+    "plain": "We use the analysts' average forecast for 2027 operating profit (EBIT1). It includes Waygate, a maker of X-ray and inspection equipment Hexagon is buying from Baker Hughes.",
+    "result": "EUR 1,212m",
+    "title": "What will Hexagon earn next year?"
+   },
+   {
+    "calc": "(18.6 + 20.5 + 19.0) ÷ 3",
+    "formula": "Normal forward EV/EBIT = average of three year-ends",
+    "plain": "The forward EV/EBIT is the company's value at year-end divided by the next year's operating profit. It was 18.6 at the end of 2022, 20.5 at the end of 2023 and 19.0 at the end of 2024. The average is 19.4.",
+    "result": "19.4",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "(19.4 × 1,212 − 1,549) ÷ 2,684.4 × 11.256",
+    "formula": "Price in 12 months = (EV/EBIT × 2027 EBIT1 − net debt) ÷ shares × EUR/SEK",
+    "plain": "Value the whole company at the normal multiple, subtract what is owed to lenders, divide by the number of shares, and convert euros to kronor.",
+    "result": "SEK 92.1",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "92.1 ÷ 1.0814",
+    "formula": "Fair value = price in 12 months ÷ (1 + 8.1%)",
+    "plain": "Shareholders want a return for waiting a year: 3.19% bond yield + 0.9 × 5.5% = 8.1%.",
+    "result": "SEK 85",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "85 ÷ 103.45 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is more than 10% above our value, so on its usual multiple Hexagon looks overvalued. The market pays 21.6 × 2027 profit, above the old normal of 19.4.",
+    "result": "−18%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Hexagon the way Nordic analysts value industrial technology companies: forward EV/EBIT, the value of the whole company against next year's operating profit. At the multiple Hexagon normally traded at (19.4) on the EUR 1,212m of operating profit expected for 2027, the share would be worth about SEK 92 in a year, or SEK 85 today, 18% below today's SEK 103.45.",
+  "targets": {
+   "items": [
+    "New targets from the Capital Markets Day on 30 April 2026, for 2026–2030: organic sales growth of 4–6% a year, an EBITAC margin of 24–26% (EBITAC is a strict profit measure that counts all development spending as a cost; the new Robotics unit is excluded) and cash conversion of 90–100% of EBITAC.",
+    "Track record: in 2025 organic growth was 2.6%, the EBITAC margin 22% and cash conversion 109%, so growth and margin were below the new ranges. Hexagon says 26% was last reached in 2021. In H1 2026 organic growth was 10% (Q2: 12%) and the EBITAC margin 23.9%, so the business is now moving toward the targets."
+   ],
+   "title": "Does Hexagon have a growth goal we can use?",
+   "verdict": "We do not build our own forecast from the targets; we use the analysts' consensus for 2027 (EBIT1 EUR 1,212m), which includes the Waygate acquisition. That is about 11% above the 2026 forecast (EUR 1,096m): roughly half from Waygate, half from growth in line with the 4–6% target. The strong first half makes this look achievable."
+  },
+  "ticker": "HEXA B",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Hexagon makes precision measuring machines, laser scanners, surveying instruments and positioning systems, plus the software that goes with them, for factories, builders, mines and carmakers. In May 2026 it spun off most of its pure software business as a separate company, Octave, so today's Hexagon is mainly a measurement-technology company."
+ },
  {
   "company": "Nvidia",
   "consensus": {
