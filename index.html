@@ -610,11 +610,601 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Stock exchanges & market infrastructure",
   "teaser": "A company that earns money every time markets get busy: how much should investors pay for that steady toll booth?",
   "ticker": "DB1"
+ },
+ {
+  "company": "Alfa Laval",
+  "date": "2026-11-05",
+  "market": "Sweden",
+  "method": "Forward EV/EBITA",
+  "sector": "Industrial equipment (heat exchangers, separators, pumps)",
+  "teaser": "Can a maker of heat exchangers and ship equipment keep earning a premium multiple as its marine order boom matures?",
+  "ticker": "ALFA"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Exxon Mobil",
+  "consensus": {
+   "analysts": 25,
+   "asOf": "7 Oct 2026",
+   "explain": "The average target of USD 173.64 is a price in 12 months; discounted one year at 6.37% it is worth about USD 163 today, so our USD 126 is 23% lower. We use the same 2027 EBITDA forecast; the gap is the multiple. The target works out at 7.9 × 2027 EBITDA, while Exxon's own normal forward multiple at the 2023–25 year-ends is 6.1. Analysts are paying for Exxon's growth plan (Guyana, Permian, USD 20bn of cost savings) and its lower risk than peers, which its own history only partly shows.",
+   "high": 200,
+   "low": 142,
+   "method": "Brokers rarely publish their exact multiple for Exxon. Morgan Stanley (target USD 177, Overweight, Aug 2026) builds its target on free-cash-flow forecasts at the oil futures price, which it raised about 7% for 2027; HSBC (USD 172, Hold, Sep 2026) raised its estimates after lifting its Brent oil price assumption to USD 85 for 2027 (from USD 65); Wells Fargo (USD 182, cut to Equal Weight on 29 Sep 2026) said Exxon's valuation premium to peers could shrink. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Outperform",
+   "source": "MarketScreener",
+   "target": 173.64,
+   "targetToday": 163.2
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = USD 164.05",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model uses the consensus free cash flow for 2027 (USD 50.5bn) and 2028 (USD 41.9bn), plus after-tax interest, then 50% of 2028 EBITDA (the 2021–25 cash conversion) growing 3% a year, fading to 2% by year 10. With the measured beta of 0.2 the weighted cost of capital is only 6.25% (94% equity at 6.37%; debt at an assumed 5.77% before tax, the Treasury yield plus 0.5%), which gives about USD 248 per share. Today's USD 164.05 needs a discount rate of about 8.4%. The cash supports the price at a normal 8–9% return, but only if oil stays high enough for Exxon to keep making about USD 42–53bn of free cash flow a year; a 6.25% rate is too low to be a fair test.",
+   "result": "≈ 8.4% (value at 6.25%: ≈ USD 248)"
+  },
+  "crossChecks": [
+   {
+    "calc": "12.6 × 11.80 ÷ 1.0637",
+    "name": "Check: forward P/E on its own history",
+    "note": "Higher than EV/EBITDA because Exxon's net debt is expected to fall from USD 32.9bn to about USD 5bn by end-2027, which P/E ignores. Today the share trades at 13.9 × 2027 earnings, above this normal 12.6.",
+    "plain": "Exxon's share price divided by next year's earnings per share averaged 12.6 at the 2023–25 year-ends (12.8, 15.4, 9.6). Applied to the USD 11.80 expected for 2027, that is USD 149 in 12 months, worth today:",
+    "result": "≈ USD 140"
+   },
+   {
+    "calc": "(4.5 × 92,907 − 5,452) ÷ 4,112 ÷ 1.0637",
+    "name": "Check: at the peers' multiple",
+    "note": "On the same basis Exxon trades at 7.3 ×, the highest in the group and above Chevron, its closest US peer. The European majors have long traded lower, so this check exaggerates the gap; Wells Fargo argues Exxon's premium could shrink.",
+    "plain": "Chevron (6.3), TotalEnergies (4.4) and BP (2.9) trade at an average 4.5 × 2027 EBITDA (MarketScreener; Chevron's figure recalculated at its 7 Oct close). On that basis, with Exxon's expected end-2027 net debt of USD 5,452m, Exxon would be worth today:",
+    "result": "≈ USD 94"
+   },
+   {
+    "calc": "(6.1 × 89,772 − 16,942) ÷ 4,112 ÷ 1.0637",
+    "name": "Check: a mid-cycle year instead of 2027",
+    "note": "About 4% below the main value: 2027 is not forecast as a peak margin year. But its sales still assume oil around USD 80, well above the USD 65 Exxon uses for planning.",
+    "plain": "If 2027 earns only the 2021–25 average EBITDA margin (21.6%) instead of the forecast 22.4%, EBITDA would be about USD 89,772m instead of USD 92,907m. At the normal 6.1 × that is worth today:",
+    "result": "≈ USD 121"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-08",
+  "dateLabel": "Thursday 8 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 126,
+  "history": {
+   "caption": "USD million unless stated. From Exxon's full-year results releases (filed with the SEC as 8-K exhibits) for 2022, 2023 and 2025, each with the prior year. EBITDA = income before income taxes + interest expense + depreciation and depletion (incl. impairments). Revenue includes other income, as on MarketScreener. Net debt = notes and loans payable + long-term debt − cash (Exxon's own measure; operating-lease debts not included). Year-end prices: MarketScreener/Digrin. Interest PAID is not in the releases, so interest expense is used. Last column: 2023–25 averages unless noted.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2023–25"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "Last column: growth per year 2021–25. Consensus 2026: 415,501; 2027: 415,459",
+     "values": [
+      "285,640",
+      "413,680",
+      "344,582",
+      "349,585",
+      "332,238",
+      "+3.9%/yr"
+     ]
+    },
+    {
+     "label": "EBITDA",
+     "note": "Our calculation from the reports. MarketScreener's figures are 0–4% higher (2025: 69,418), the basis of the consensus forecasts. Consensus 2026: 98,382; 2027: 92,907",
+     "values": [
+      "52,788",
+      "102,591",
+      "74,273",
+      "73,311",
+      "67,864",
+      "71,816"
+     ]
+    },
+    {
+     "label": "EBITDA margin",
+     "note": "MarketScreener basis. Last column: 2021–25 average, our mid-cycle margin. 2027 forecast: 22.4%",
+     "values": [
+      "18.5%",
+      "25.2%",
+      "22.4%",
+      "21.0%",
+      "20.9%",
+      "21.6%"
+     ]
+    },
+    {
+     "label": "Earnings per share, reported",
+     "note": "USD, diluted",
+     "values": [
+      "5.39",
+      "13.26",
+      "8.89",
+      "7.84",
+      "6.70",
+      "7.81"
+     ]
+    },
+    {
+     "label": "Earnings per share excl. one-offs",
+     "note": "Exxon's 'excluding identified items'. H1 2026: 5.60 (H1 2025: 3.35)",
+     "values": [
+      "5.38",
+      "14.06",
+      "9.52",
+      "7.79",
+      "6.99",
+      "8.10"
+     ]
+    },
+    {
+     "label": "Year-end share price",
+     "note": "USD",
+     "values": [
+      "61.19",
+      "110.30",
+      "99.98",
+      "107.57",
+      "120.34",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Shares outstanding (million)",
+     "note": "Issued minus treasury shares. 2024 jump: Pioneer was bought with shares. Latest: about 4,112",
+     "values": [
+      "4,239",
+      "4,082",
+      "3,971",
+      "4,353",
+      "4,179",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Net debt",
+     "note": "Consensus end-2026: 16,942; end-2027: 5,452",
+     "values": [
+      "40,902",
+      "11,553",
+      "10,034",
+      "18,681",
+      "32,856",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Enterprise value (EV)",
+     "note": "Year-end price × shares + net debt",
+     "values": [
+      "300,286",
+      "461,798",
+      "407,055",
+      "486,933",
+      "535,757",
+      "n/a"
+     ]
+    },
+    {
+     "label": "EV/EBITDA at year-end (trailing)",
+     "note": "EV ÷ that year's EBITDA",
+     "values": [
+      "5.69",
+      "4.50",
+      "5.48",
+      "6.64",
+      "7.89",
+      "6.67"
+     ]
+    },
+    {
+     "label": "Forward EV/EBITDA at year-end",
+     "note": "EV ÷ NEXT year's EBITDA (2025: ÷ today's 2026 consensus of 98,382, which includes the oil-price jump nobody expected at end-2025). This is the multiple we use. Last column: 2023–25 average 6.06, rounded to 6.1",
+     "strong": true,
+     "values": [
+      "2.93",
+      "6.22",
+      "5.55",
+      "7.18",
+      "5.45",
+      "6.06"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ next year's EPS excl. one-offs (2025: ÷ 2026 consensus USD 12.50). Used as a check",
+     "values": [
+      "4.4",
+      "11.6",
+      "12.8",
+      "15.4",
+      "9.6",
+      "12.6"
+     ]
+    },
+    {
+     "label": "Cash from operations (GAAP)",
+     "note": "'Cash flow from operating activities', after tax and interest. H1 2026: 32,260 (H1 2025: 24,503)",
+     "values": [
+      "48,129",
+      "76,797",
+      "55,369",
+      "55,022",
+      "51,970",
+      "54,120"
+     ]
+    },
+    {
+     "label": "+ Interest, after tax",
+     "note": "Interest expense × (1 − 25%), as interest paid is not shown",
+     "values": [
+      "710",
+      "599",
+      "637",
+      "747",
+      "452",
+      "612"
+     ]
+    },
+    {
+     "label": "− Investments (capex)",
+     "note": "Additions to property, plant and equipment. 2026 guidance: USD 27–29bn cash capex",
+     "values": [
+      "12,076",
+      "18,407",
+      "21,919",
+      "24,306",
+      "28,358",
+      "24,861"
+     ]
+    },
+    {
+     "label": "− Lease payments",
+     "note": "Under US accounting, operating-lease payments are already inside operating cash flow",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a"
+     ]
+    },
+    {
+     "label": "= Free cash flow to the firm",
+     "strong": true,
+     "values": [
+      "36,763",
+      "58,988",
+      "34,087",
+      "31,463",
+      "24,064",
+      "29,871"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBITDA)",
+     "note": "2021–25 total: 50% (used in the DCF from 2029)",
+     "strong": true,
+     "values": [
+      "70%",
+      "57%",
+      "46%",
+      "43%",
+      "35%",
+      "42%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "Denbury (2023) and Pioneer (2024) were paid mostly or wholly in shares; 2025: about 2,600 inside cash capex",
+     "values": [
+      "0",
+      "0",
+      "small",
+      "−754 (cash acquired)",
+      "≈2,600",
+      "n/a"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close, 7 Oct 2026. Market value about USD 675bn",
+    "value": "USD 164.05"
+   },
+   {
+    "label": "Analyst EBITDA forecasts",
+    "note": "MarketScreener consensus. 2027 margin 22.4% on sales of USD 415,459m",
+    "value": "USD 98,382m (2026) / 92,907m (2027)"
+   },
+   {
+    "label": "Analyst EPS forecasts",
+    "note": "MarketScreener consensus. H1 2026 EPS excl. one-offs was USD 5.60 (H1 2025: 3.35)",
+    "value": "USD 12.50 (2026) / 11.80 (2027)"
+   },
+   {
+    "label": "Oil price behind the forecasts",
+    "note": "Mizuho: 2027 futures about USD 79; HSBC assumes USD 85 (2026: USD 90). Brent is about USD 100 today",
+    "value": "≈ USD 79–85 Brent in 2027"
+   },
+   {
+    "label": "Normal forward EV/EBITDA",
+    "note": "Average of year-ends 2023 (5.55), 2024 (7.18) and 2025 (5.45): 6.06",
+    "value": "6.1"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "Latest count (stockanalysis.com); Exxon is buying back about USD 20bn of shares a year",
+    "value": "4,112 million"
+   },
+   {
+    "label": "Net debt used",
+    "note": "Consensus for end-2026, the nearest point to our 12-month horizon (end-2025: 32,856)",
+    "value": "USD 16,942m"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.27% US 10-year Treasury (6 Oct 2026, FRED) + beta 0.2 × 5.5%",
+    "value": "6.37%"
+   },
+   {
+    "label": "Beta",
+    "note": "5-year beta 0.21 (stockanalysis.com): Exxon's share has moved very little with the wider market",
+    "value": "0.2"
+   },
+   {
+    "label": "Mid-cycle EBITDA margin",
+    "note": "Average of 2021–25 (lowest 18.5% in 2021, highest 25.2% in 2022)",
+    "value": "21.6%"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward EV/EBITDA on next year's EBITDA, checked against a mid-cycle year (how analysts value oil majors)",
+   "why": "Oil and gas is a capital-heavy, cyclical business. Depreciation, debt and tax rules differ a lot between oil companies, so analysts compare them on EV/EBITDA. EV (enterprise value) is the share value plus net debt. EBITDA is operating profit before depreciation. TIKR, for example, compares Exxon at about 7.5 × next-12-months EV/EBITDA with TotalEnergies at 4.8 ×, and Wells Fargo's downgrade rests on Exxon's premium to peers. We take the forward EV/EBITDA Exxon has normally traded at, apply it to 2027 forecast EBITDA, subtract net debt, divide by the number of shares and bring the 12-month price back to today. The 2027 forecast assumes Brent oil of roughly USD 79–85 a barrel (Mizuho's 2027 futures price and HSBC's assumption), below today's level of about USD 100.",
+   "whyNot": "Because oil profits swing, we check whether 2027 looks like a peak. Its forecast EBITDA margin of 22.4% is only a little above the 21.6% average of 2021–25 (the 2026 peak year is 23.7%), so we keep the consensus and show a mid-cycle version as a check. P/E is only a check because it ignores debt. A cash-flow model (DCF) is only a check: Exxon's measured beta is very low (0.2), which makes the discount rate unusually low and the DCF value very high. A NAV (value of the oil reserves) check is not possible: Exxon does not publish a NAV and we found no broker NAV in public sources. We skip 2021–2022 in the normal multiple: 2021 had near-zero interest rates and 2022 was a record-profit year."
+  },
+  "price": 164.05,
+  "priceDate": "close 7 Oct 2026 (NYSE; MarketScreener, stockanalysis.com)",
+  "rangeHigh": 147,
+  "rangeLow": 104,
+  "reasoning": [
+   "Exxon's profit swings with oil: EBITDA went from USD 53bn in 2021 to USD 103bn in 2022 and back to USD 68bn in 2025. In 2026 the conflict around the Strait of Hormuz pushed oil to about USD 100, and first-half earnings excl. one-offs rose 61%.",
+   "Valued the way analysts value oil majors, at its normal forward EV/EBITDA (6.1) on 2027 forecast EBITDA (USD 92,907m), the share is worth about USD 134 in a year and USD 126 today. That forecast already assumes oil stays around USD 80–85 next year.",
+   "The checks are mixed: P/E gives USD 140, a mid-cycle year USD 121 and the peers' multiple USD 94, while the cash-flow model only needs an 8.4% return to justify today's price. The analysts' average target, worth USD 163 today, implies 7.9 × 2027 EBITDA, above Exxon's own history.",
+   "Fair value USD 126 (range 104–147). At USD 164.05 the stock looks overvalued on its own history, with our value 23% below the price, while the price is close to the analysts' targets in today's money."
+  ],
+  "risks": [
+   "Forecast risk: 2027 EBITDA depends on oil staying around USD 80–85. If 2027 EBITDA comes in 10% lower, the fair value falls to about USD 113; the EIA and the futures market point to lower oil in 2027 if the Strait of Hormuz reopens.",
+   "Multiple risk (and upside): at the analysts' implied 7.9 × the value is about USD 163; at today's 7.4 × it is about USD 154. If we leave out the 2025 year-end (when nobody expected the 2026 oil jump), the normal multiple is 6.4 and the value about USD 132.",
+   "Upside from growth: the fifth Guyana production ship (250,000 barrels a day) is due to start in Q4 2026, the Permian is planned to grow 9% a year to 2030, and buybacks of about USD 20bn a year shrink the share count by roughly 3% a year, which our model does not count.",
+   "Pending: Q3 2026 results are due in late October. TD Cowen expects refining (Energy Products) earnings to rise by about USD 4.6bn in Q3, while a possible US diesel export ban is a risk to that."
+  ],
+  "sector": "Oil & gas (cyclical)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in USD per share for different forward EV/EBITDA multiples (rows) and for 2027 EBITDA coming in higher or lower than forecast (columns). Base case: 6.1 × USD 92,907m, minus USD 16,942m net debt.",
+   "colLabel": "2027 EBITDA vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBITDA",
+   "rows": [
+    "4.1",
+    "5.1",
+    "6.1",
+    "7.1",
+    "8.1"
+   ],
+   "values": [
+    [
+     75,
+     79,
+     83,
+     88,
+     92
+    ],
+    [
+     94,
+     99,
+     104,
+     110,
+     115
+    ],
+    [
+     113,
+     119,
+     126,
+     132,
+     139
+    ],
+    [
+     132,
+     139,
+     147,
+     154,
+     162
+    ],
+    [
+     151,
+     160,
+     168,
+     177,
+     185
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "ExxonMobil Announces 2025 Results (Business Wire, Jan 2026)",
+    "url": "https://www.businesswire.com/news/home/20260130695261/en/ExxonMobil-Announces-2025-Results"
+   },
+   {
+    "title": "ExxonMobil Announces 2025 Results (Exxon investor site)",
+    "url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1200/exxonmobil-announces-2025-results"
+   },
+   {
+    "title": "ExxonMobil Announces 2023 Results (Business Wire, Feb 2024)",
+    "url": "https://www.businesswire.com/news/home/20240201689947/en/ExxonMobil-Announces-2023-Results"
+   },
+   {
+    "title": "ExxonMobil full-year 2022 results, 8-K exhibit 99.1 (SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/34088/000003408823000011/f8k4q22991.htm"
+   },
+   {
+    "title": "ExxonMobil Announces Second-Quarter 2026 Results",
+    "url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1208/exxonmobil-announces-second-quarter-2026-results"
+   },
+   {
+    "title": "ExxonMobil Raises Its 2030 Plan (Dec 2025)",
+    "url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1198/exxonmobil-raises-its-2030-plan-transformation"
+   },
+   {
+    "title": "ExxonMobil raises 2030 plan (World Oil)",
+    "url": "https://worldoil.com/news/2025/12/9/exxonmobil-raises-2030-plan-lifts-upstream-outlook-without-boosting-capital/"
+   },
+   {
+    "title": "Exxon financial statements (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/xom/financials/income-statement/"
+   },
+   {
+    "title": "Exxon balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/xom/financials/balance-sheet/"
+   },
+   {
+    "title": "Exxon statistics, price and 5-year beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/xom/statistics/"
+   },
+   {
+    "title": "Consensus forecasts (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/EXXON-MOBIL-CORPORATION-4822/finances/"
+   },
+   {
+    "title": "Consensus price target and broker changes (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/EXXON-MOBIL-CORPORATION-4822/consensus/"
+   },
+   {
+    "title": "Valuation history and year-end prices (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/EXXON-MOBIL-CORPORATION-4822/valuation/"
+   },
+   {
+    "title": "Exxon price history (Digrin)",
+    "url": "https://www.digrin.com/stocks/detail/XOM/price"
+   },
+   {
+    "title": "Analyst ratings (MarketBeat)",
+    "url": "https://www.marketbeat.com/stocks/NYSE/XOM/forecast/"
+   },
+   {
+    "title": "Wells Fargo downgrades ExxonMobil; Mizuho 2027 strip ~USD 79 (Investing.com, Oct 2026)",
+    "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-downgrades-exxonmobil-stock-rating-on-peer-comparison-93CH-4927133"
+   },
+   {
+    "title": "HSBC raises target to USD 172, Brent USD 85 for 2027 (TipRanks/TheFly)",
+    "url": "https://www.tipranks.com/news/the-fly/exxon-mobil-price-target-raised-to-172-from-158-at-hsbc-thefly-news"
+   },
+   {
+    "title": "Morgan Stanley target USD 177, cash-flow estimates (Journal Arta)",
+    "url": "https://journalarta.com/en/2026/08/30/exxon-mobil-stock-morgan-stanley-price-target-177/"
+   },
+   {
+    "title": "Piper Sandler USD 185; Exxon vs peers on NTM EV/EBITDA (TIKR, Sep 2026)",
+    "url": "https://www.tikr.com/blog/exxonmobil-stock-just-got-a-fresh-185-target-the-analyst-still-wont-say-buy"
+   },
+   {
+    "title": "TD Cowen USD 180, Q3 refining outlook (TIKR, Sep 2026)",
+    "url": "https://www.tikr.com/blog/exxonmobil-got-a-180-target-as-trump-weighed-a-diesel-export-ban-heres-what-it-means-for-the-stock"
+   },
+   {
+    "title": "Oil above USD 96, EIA 2027 outlook (ad-hoc-news, Sep 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/exxon-mobil-stock-gains-as-oil-tops-100-dollars-and-analysts-lift-targets/70081664"
+   },
+   {
+    "title": "Chevron forecasts and price (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/CHEVRON-CORPORATION-12064/finances/"
+   },
+   {
+    "title": "Chevron valuation (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/CHEVRON-CORPORATION-12064/valuation/"
+   },
+   {
+    "title": "TotalEnergies valuation (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/TOTALENERGIES-SE-4717/valuation/"
+   },
+   {
+    "title": "BP valuation (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/BP-PLC-9590188/valuation/"
+   },
+   {
+    "title": "US 10-year Treasury yield (FRED, DGS10)",
+    "url": "https://fred.stlouisfed.org/series/DGS10"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus",
+    "formula": "2027 EBITDA = consensus forecast",
+    "plain": "We use the analysts' average forecast for 2027 EBITDA. It is 6% below the 2026 forecast of USD 98,382m, because analysts expect oil to fall back from today's war-driven level, while new production from Guyana and the Permian partly makes up for it.",
+    "result": "USD 92,907m",
+    "title": "What will Exxon Mobil earn next year?"
+   },
+   {
+    "calc": "(5.55 + 7.18 + 5.45) ÷ 3",
+    "formula": "Normal forward EV/EBITDA = average of the last three year-ends",
+    "plain": "The forward EV/EBITDA is the company's value (share value plus net debt) at year-end divided by the next year's EBITDA. It was 5.55 at the end of 2023, 7.18 at the end of 2024 and 5.45 at the end of 2025 (on today's 2026 forecast). The average is 6.06, rounded to 6.1.",
+    "result": "6.1",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "(6.1 × 92,907 − 16,942) ÷ 4,112",
+    "formula": "Price in 12 months = (6.1 × 2027 EBITDA − net debt) ÷ shares",
+    "plain": "Multiply the normal multiple by 2027 EBITDA to get the value of the whole company, subtract the net debt expected at end-2026, and divide by the number of shares.",
+    "result": "USD 134",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "133.70 ÷ 1.0637",
+    "formula": "Fair value = price in 12 months ÷ (1 + 6.37%)",
+    "plain": "Shareholders want a return for waiting a year: 5.27% bond yield + 0.2 × 5.5% = 6.37%. Because Exxon's beta is so low, this is a small step.",
+    "result": "USD 126",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "126 ÷ 164.05 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 23% below today's price, so on its own usual multiple Exxon looks overvalued. Put differently: the share trades at about 7.4 × 2027 EBITDA on the same basis, above its normal 6.1.",
+    "result": "−23.2%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Exxon the way analysts value oil majors: forward EV/EBITDA, the value of the whole company against next year's operating profit before depreciation. At the multiple Exxon has normally traded at (6.1) on the USD 92.9bn of EBITDA expected for 2027, the share would be worth about USD 134 in a year, or USD 126 today, 23% below today's USD 164.05. The market is paying a higher multiple than Exxon's own history while oil is still lifted by the Middle East conflict.",
+  "targets": {
+   "items": [
+    "2030 plan (Dec 2025): USD 25bn more earnings and USD 35bn more cash flow by 2030 than in 2024, at constant prices (USD 65 real Brent). That would take 2024's USD 33.5bn of earnings excl. one-offs to roughly USD 58bn at 2024-style oil prices.",
+    "Production of 5.5 million barrels of oil equivalent a day by 2030 (2025: 4.7 million), with the Permian at about 2.5 million; return on capital above 17%.",
+    "Cost savings: USD 20bn a year versus 2019 by 2030. Exxon is on track: USD 14.3bn at the Dec 2025 plan update, USD 15.1bn by end-2025 and USD 16.3bn by mid-2026. Its 2030 emission-intensity goals were already reached in 2025."
+   ],
+   "title": "Does Exxon Mobil have a growth goal we can use?",
+   "verdict": "The plan is a 'constant price' goal, so it cannot be plugged straight into today's numbers, but it supports the analysts' view that 2027 earnings stay high even if oil falls. Our mid-cycle check (average 21.6% margin on 2027 sales) gives USD 121 instead of USD 126."
+  },
+  "ticker": "XOM",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Exxon Mobil is the largest US oil and gas company: it pumps oil and gas (Permian Basin, Guyana, LNG), refines it into fuels and makes chemicals and lubricants. Its profit moves up and down with oil prices and refining margins."
+ },
  {
   "company": "Hexagon",
   "consensus": {
