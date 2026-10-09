@@ -619,11 +619,460 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Industrial equipment (heat exchangers, separators, pumps)",
   "teaser": "Can a maker of heat exchangers and ship equipment keep earning a premium multiple as its marine order boom matures?",
   "ticker": "ALFA"
+ },
+ {
+  "company": "NextEra Energy",
+  "date": "2026-11-06",
+  "market": "United States",
+  "method": "Forward EV/EBITDA",
+  "sector": "Utilities (electricity and renewables)",
+  "teaser": "America's biggest power company is also its biggest wind and solar builder: how much is that growth worth on next year's EBITDA?",
+  "ticker": "NEE"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Industrivärden",
+  "consensus": {
+   "analysts": 5,
+   "asOf": "8 Oct 2026 (4-month average; targets set 9 Jul–8 Oct 2026)",
+   "explain": "The average target of SEK 510.40 is a price in 12 months; discounted one year at 8.2% it is worth about SEK 472 today, 3% below our SEK 487. If NAV grows about 6.4% over the year (8.2% required return minus the 1.8% dividend yield), it reaches about SEK 550, and the target equals a 7.2% discount to that NAV. Our normal discount is 5.9%. So the small gap is about the discount, not the NAV.",
+   "high": 570,
+   "low": 464,
+   "method": "Analysts value Industrivärden on its net asset value and then ask whether the share deserves a discount or a premium. SEB (Sell, SEK 482, 8 Oct 2026) says a premium is hard to justify because the holdings can be bought directly on the stock exchange, and compares today's level with a 10-year average discount of about 8% (Börskollen). Pareto (Hold, SEK 506) says the discount has 'in principle closed' and sees a risk it widens again (Placera). None of the sources states the exact discount behind each target. A price target is where analysts expect the share to be in 12 months.",
+   "rating": "Hold (neutral)",
+   "source": "Börskollen",
+   "target": 510.4,
+   "targetToday": 472
+  },
+  "crossCheck": {
+   "calc": "8.75 ÷ 2.28%",
+   "name": "Dividend check (not in the fair value)",
+   "plain": "At the end of 2023–2025 the share's dividend yield averaged 2.28%. At that yield, the SEK 8.75 dividend would justify a price of about SEK 384. Today's yield is only 1.77%. The dividend grows every year, but the share price has grown faster, so the dividend alone does not support today's price.",
+   "result": "≈ SEK 384"
+  },
+  "crossChecks": [
+   {
+    "calc": "517 × (1 − 9.1%); 517 × (1 − 8%)",
+    "name": "Check: longer discount history",
+    "note": "The longer the history, the lower the value, because Industrivärden traded at discounts above 20% ten years ago.",
+    "plain": "Using the average of all five year-ends 2021–2025 (a 9.1% discount) gives SEK 470. Using the 10-year average discount of about 8% cited by SEB gives SEK 476.",
+    "result": "≈ SEK 470 / 476"
+   },
+   {
+    "calc": "517 × (1 − 1.6%)",
+    "name": "Check: at the peers' discount",
+    "note": "On the same list Industrivärden C traded at a 1.4% premium (on its 31 August NAV). Kinnevik (44% discount) is left out because it mainly owns unlisted growth companies.",
+    "plain": "On 24 Sep 2026 Investor traded at a 3.0% premium, Latour at a 2.8% premium and Lundbergs at a 10.6% discount to their last reported NAV (ibindex via Börskollen). The average is a 1.6% discount. At that level Industrivärden would be worth:",
+    "result": "≈ SEK 509"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-09",
+  "dateLabel": "Friday 9 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 487,
+  "history": {
+   "caption": "From Industrivärden's year-end reports. NAV = market value of the holdings minus net debt. NAV per share = NAV ÷ 431.9 million shares. Discount = C-share price on the last trading day of the year ÷ NAV per share − 1 (negative = the share is cheaper than its holdings). Last column: NAV 30 Sep 2026, price 8 Oct 2026.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "Net asset value (NAV), SEK bn",
+     "values": [
+      "143.5",
+      "126.5",
+      "150.3",
+      "159.6",
+      "191.6",
+      "223.3"
+     ]
+    },
+    {
+     "label": "NAV per share, SEK",
+     "values": [
+      "332",
+      "293",
+      "348",
+      "370",
+      "444",
+      "517"
+     ]
+    },
+    {
+     "label": "NAV growth incl. dividend",
+     "note": "Our approximation: dividend added back. Latest: Jan–Sep 2026",
+     "values": [
+      "n/a",
+      "−9.8%",
+      "21.3%",
+      "8.4%",
+      "22.3%",
+      "18.6%"
+     ]
+    },
+    {
+     "label": "C-share price at year-end, SEK",
+     "values": [
+      "284.10",
+      "253.00",
+      "328.30",
+      "349.10",
+      "415.00",
+      "495.40"
+     ]
+    },
+    {
+     "label": "Share return incl. dividend",
+     "note": "Our approximation. Latest: year to 8 Oct 2026",
+     "values": [
+      "n/a",
+      "−8.6%",
+      "32.6%",
+      "8.7%",
+      "21.2%",
+      "21.5%"
+     ]
+    },
+    {
+     "label": "Discount (−) / premium (+) to NAV",
+     "note": "Price ÷ NAV per share − 1. This is the 'multiple' for investment companies. Average 2023–25: −5.9%; 2021–25: −9.1%. Latest: −4.2% on the 30 September NAV (holdings have fallen since; SEB puts it at about +1% on 8 Oct)",
+     "strong": true,
+     "values": [
+      "−14.5%",
+      "−13.6%",
+      "−5.6%",
+      "−5.5%",
+      "−6.4%",
+      "−4.2%"
+     ]
+    },
+    {
+     "label": "Price ÷ NAV",
+     "values": [
+      "0.86",
+      "0.86",
+      "0.94",
+      "0.94",
+      "0.94",
+      "0.96"
+     ]
+    },
+    {
+     "label": "Dividend per share, SEK",
+     "note": "Dividend for that year, paid the next spring",
+     "values": [
+      "6.75",
+      "7.25",
+      "7.75",
+      "8.25",
+      "8.75",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Dividend yield at year-end",
+     "note": "Average 2023–25: 2.28%. Latest: 8.75 ÷ 495.40",
+     "values": [
+      "2.38%",
+      "2.87%",
+      "2.36%",
+      "2.36%",
+      "2.11%",
+      "1.77%"
+     ]
+    },
+    {
+     "label": "Net debt, SEK m",
+     "values": [
+      "6,500",
+      "7,355",
+      "7,295",
+      "6,914",
+      "5,920",
+      "3,742"
+     ]
+    },
+    {
+     "label": "Debt-equity ratio",
+     "values": [
+      "4%",
+      "5%",
+      "5%",
+      "4%",
+      "3%",
+      "2%"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "C share, Nasdaq Stockholm close 8 Oct 2026 (Swedbank Aktiellt, −1.4% on the day). Market value about SEK 214bn",
+    "value": "SEK 495.40"
+   },
+   {
+    "label": "NAV per share",
+    "note": "NAV SEK 223.3bn on 30 Sep 2026 (Q3 report, 7 Oct): holdings SEK 227.1bn minus net debt SEK 3.7bn, ÷ 431.9m shares",
+    "value": "SEK 517"
+   },
+   {
+    "label": "Normal discount to NAV",
+    "note": "Average of year-ends 2023 (5.6%), 2024 (5.5%) and 2025 (6.4%)",
+    "value": "5.9%"
+   },
+   {
+    "label": "Discount today",
+    "note": "495.40 ÷ 517 − 1, on the 30 September NAV. Privata Affärer estimated NAV at SEK 505.90 on 5 Oct, and SEB says the share traded at about a 1% premium on 8 Oct",
+    "value": "4.2% discount"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.24% Swedish 10-year bond (8 Oct 2026, Trading Economics) + beta 0.9 × 5.5%. Used to bring analysts' 12-month targets back to today",
+    "value": "8.2%"
+   },
+   {
+    "label": "Beta",
+    "note": "Beta 0.94 (stockanalysis.com; Investing.com shows the same)",
+    "value": "0.9"
+   },
+   {
+    "label": "Latest dividend",
+    "note": "For 2025, paid in April 2026 (SEK 3.8bn in total)",
+    "value": "SEK 8.75"
+   },
+   {
+    "label": "Biggest holdings",
+    "note": "Handelsbanken 16%, Essity 10%, SCA 5%, Skanska 4%, Ericsson 4%, Alleima 3% (30 Sep 2026)",
+    "value": "Sandvik 31%, Volvo 28%"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: net asset value (NAV) × Industrivärden's own normal discount (how analysts value Swedish investment companies)",
+   "why": "An investment company is a basket of other companies, so analysts start from what the basket is worth: NAV, the market value of all holdings minus net debt, per share. Then they judge what discount or premium the share deserves. SEB, for example, argues against paying a premium and points to a 10-year average discount of about 8%. Industrivärden makes this easy: all its holdings are listed, so the NAV is simply market prices. We use the reported NAV of 30 September 2026 and the average discount at the last three year-ends.",
+   "whyNot": "P/E makes no sense here: Industrivärden's 'profit' is mostly the change in value of its shares, so it swings wildly (SEK 82 per share in the first nine months of 2026). A cash-flow model (DCF) does not fit either, because its cash comes from dividends of companies we would then have to value one by one. So the dividend yield, the longer discount history and peers' discounts are only checks. Note: the NAV is from 30 September; the holdings have fallen a little since then."
+  },
+  "price": 495.4,
+  "priceDate": "close 8 Oct 2026 (Swedbank Aktiellt)",
+  "rangeHigh": 502,
+  "rangeLow": 471,
+  "reasoning": [
+   "Industrivärden has a strong record: NAV grew 8–22% a year in 2023–2025 (with dividends), the C share returned 15% a year over ten years against 11% for the market, and debt is almost nil (2%).",
+   "That success has shrunk the discount: from about 14% at the end of 2021 and 2022 to about 6% at the end of 2023–2025. On the 30 September NAV the share now trades at a 4.2% discount, but the holdings have fallen since, so the real-time level is close to NAV.",
+   "At its normal 5.9% discount, the SEK 517 NAV is worth SEK 487. Analysts' average target is SEK 472 in today's money, 3% lower; the peer check (SEK 509) is higher, the longer discount history (SEK 470–476) and the dividend check (SEK 384) are lower.",
+   "Fair value SEK 487 (range 471–502). At SEK 495.40 the stock looks roughly fairly priced: the price is about 2% above our value."
+  ],
+  "risks": [
+   "NAV risk: Sandvik and Volvo are 59% of the portfolio, so the NAV moves with the economic cycle in industry. If NAV is 10% lower, the fair value falls to about SEK 438; at a 2–3% lower NAV (roughly the early-October fall estimated by Privata Affärer) it is about SEK 475.",
+   "Discount risk: at the discount the analysts' target implies (7.2%) the value is about SEK 480; at today's 4.2% discount it is SEK 495 (today's price); at the 2021–2022 level of about 14% it is only about SEK 445. Di found that when Industrivärden traded at a premium, the share lagged the market over the next year in 99% of cases (Realtid, Aug 2026).",
+   "Tax change: the Swedish Tax Agency says Industrivärden will be taxed as an ordinary company instead of as an investment company from the 2027 tax year (Q3 report). SEB judges this does not change the value enough to justify the premium; the effect is not yet clear.",
+   "Upside: if NAV is 5% higher, for example after strong Q3 reports from Sandvik and Volvo, the fair value is about SEK 511, 3% above today's price. Spiltan's investment-company fund, now the second-largest owner, has been a steady buyer of the share."
+  ],
+  "sector": "Investment company",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different discounts to NAV (rows) and for NAV coming in higher or lower than the SEK 517 reported for 30 September (columns). Base case: 5.9% discount on SEK 517.",
+   "colLabel": "NAV vs SEK 517",
+   "cols": [
+    "−10%",
+    "−5%",
+    "SEK 517",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Discount to NAV",
+   "rows": [
+    "11.9%",
+    "8.9%",
+    "5.9%",
+    "2.9%",
+    "0.1% premium"
+   ],
+   "values": [
+    [
+     410,
+     433,
+     456,
+     478,
+     501
+    ],
+    [
+     424,
+     448,
+     471,
+     495,
+     518
+    ],
+    [
+     438,
+     462,
+     487,
+     511,
+     535
+    ],
+    [
+     452,
+     477,
+     502,
+     527,
+     552
+    ],
+    [
+     466,
+     492,
+     518,
+     543,
+     569
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Industrivärden interim report January–September 2026 (PDF)",
+    "url": "https://storage.mfn.se/f7053ab2-9124-4c95-ad2a-933740ccf602/delarsrapport-9m-2026-eng.pdf"
+   },
+   {
+    "title": "Industrivärden interim report Q3 2026 (Inderes release)",
+    "url": "https://www.inderes.se/releases/interim-report-january-1-september-30-2026"
+   },
+   {
+    "title": "Industrivärden interim report January–June 2026 (PDF)",
+    "url": "https://storage.mfn.se/50056ea1-ff68-49a1-8543-515f405f6e65/delarsrapport-6m-2026-eng.pdf"
+   },
+   {
+    "title": "Net asset value on 31 August 2026 (Inderes release)",
+    "url": "https://www.inderes.fi/sv/releases/substansvardet-den-31-augusti-2026"
+   },
+   {
+    "title": "Industrivärden year-end report 2025 (PDF)",
+    "url": "https://www.industrivarden.se/globalassets/delarsrapporter/engelska/2025/2025-12m.pdf"
+   },
+   {
+    "title": "Industrivärden year-end report 2023 (PDF)",
+    "url": "https://www.industrivarden.se/globalassets/delarsrapporter/engelska/2023/2023-12m.pdf"
+   },
+   {
+    "title": "Industrivärden year-end report 2022 (PDF)",
+    "url": "https://www.industrivarden.se/globalassets/delarsrapporter/engelska/2022/2022-12m.pdf"
+   },
+   {
+    "title": "Analyst price targets (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/industrivarden/riktkurs"
+   },
+   {
+    "title": "SEB: Sell the investment company, unjustified premium (Börskollen, 8 Oct 2026)",
+    "url": "https://www.borskollen.se/nyheter/27/seb-salj-investmentbolaget-omotiverad-premie"
+   },
+   {
+    "title": "Pareto: better risk/reward in owning the underlying companies (Placera, 8 Jul 2026)",
+    "url": "https://www.placera.se/telegram/industrivarden-pareto-battre-risk-reward-i-att-aga-underliggande-bolagen-i-industrivarden-20260708"
+   },
+   {
+    "title": "Pareto raises target to SEK 500, Hold (Placera, 9 Jul 2026)",
+    "url": "https://www.placera.se/telegram/industrivarden-pareto-securities-hojer-riktkursen-for-industrivarden-till-500-kronor-475-upprepar-behall-20260709"
+   },
+   {
+    "title": "Nordea cuts to Sell, DNB Carnegie raises target (Placera, 9 Jul 2026)",
+    "url": "https://placera.se/nyheter/industrivarden-saljstamplas--har-ar-dagens-rekar-2026-07-09"
+   },
+   {
+    "title": "Handelsbanken drops Buy on Industrivärden (Placera, 10 Jul 2026)",
+    "url": "https://placera.se/nyheter/shb-slopar-industrivardens-kopstampel--har-ar-dagens-rekar-2026-07-10"
+   },
+   {
+    "title": "Broker research history (MarketScreener)",
+    "url": "https://uk.marketscreener.com/quote/stock/INDUSTRIVARDEN-AB-6491872/news-broker-research/"
+   },
+   {
+    "title": "Sell signal: the share is more expensive than the portfolio (Dagens PS, 6 Oct 2026)",
+    "url": "https://www.dagensps.se/bors-finans/saljsignal-for-industrivarden-aktien-dyrare-an-portfoljen/"
+   },
+   {
+    "title": "Why Industrivärden can be an expensive buy right now (Realtid, 13 Aug 2026)",
+    "url": "https://www.realtid.se/bors-finans/makro/darfor-kan-industrivarden-bli-en-dyr-affar-just-nu/"
+   },
+   {
+    "title": "Investment company discounts and premiums, 24 Sep 2026 (Börskollen/ibindex)",
+    "url": "https://www.borskollen.se/nyheter/27/sa-ser-substansrabatterna-och-premierna-ut-bland-svenska-investmentbolag-just-nu"
+   },
+   {
+    "title": "Industrivärden C share price (Swedbank Aktiellt)",
+    "url": "https://www.swedbank-aktiellt.se/om/industrivarden"
+   },
+   {
+    "title": "Industrivärden price and analyst targets, 8 Oct 2026 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/industrivarden-stock-at-eur-44-16-analyst-target-2-2-percent-higher/70266963"
+   },
+   {
+    "title": "Industrivärden C beta and dividend (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/INDU.C/"
+   },
+   {
+    "title": "Sweden 10-year bond yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/sweden/government-bond-yield"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "(227,066 − 3,742) ÷ 431.9 million",
+    "formula": "NAV per share = (holdings − net debt) ÷ shares",
+    "plain": "Add up the stock-market value of all eight holdings, subtract net debt and divide by the number of shares. Industrivärden reported this for 30 September 2026. All holdings are listed, so there are no estimates involved.",
+    "result": "SEK 517",
+    "title": "What are Industrivärden's holdings worth?"
+   },
+   {
+    "calc": "(5.6% + 5.5% + 6.4%) ÷ 3",
+    "formula": "Normal discount = average of the last three year-ends",
+    "plain": "Investment company shares often trade below the value of their holdings (a discount), for example because owners cannot pick the holdings themselves. At the last three year-ends the C share traded 5.6%, 5.5% and 6.4% below NAV. We skip 2021–2022 (discounts of about 14%) to keep it recent; they are shown as a check.",
+    "result": "5.9%",
+    "title": "What discount do investors normally apply?"
+   },
+   {
+    "calc": "517 × (1 − 0.059)",
+    "formula": "Fair value = NAV × (1 − normal discount)",
+    "plain": "NAV already uses today's market prices of the holdings, so there is no 12-month price to bring back. We simply apply the normal discount.",
+    "result": "SEK 487",
+    "title": "Fair value today"
+   },
+   {
+    "calc": "510.40 ÷ 1.082",
+    "formula": "Target today = target ÷ (1 + 8.2%)",
+    "plain": "Analysts' targets are prices in 12 months. The average of SEK 510.40 is worth about SEK 472 in today's money when we discount it at the 8.2% return shareholders ask for.",
+    "result": "SEK 472",
+    "title": "How does that compare with analysts' targets?"
+   },
+   {
+    "calc": "487 ÷ 495.40 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is only about 2% above our value, well inside the ±10% band we call 'roughly fairly priced'.",
+    "result": "−1.7%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Industrivärden the way analysts value Swedish investment companies: take what its holdings are worth (net asset value, NAV) and apply the discount the share normally trades at. The NAV was SEK 517 per share on 30 September 2026. At the last three year-ends the C share traded on average 5.9% below NAV, which gives SEK 487. The share costs SEK 495.40, only about 2% more, so it looks roughly fairly priced.",
+  "targets": {
+   "items": [
+    "Industrivärden publishes no numeric financial target in its reports. It describes itself as a long-term owner that works 'to develop and create value in its portfolio companies', and it measures itself against the Swedish stock market including dividends (SIXRX).",
+    "Track record (to 30 Sep 2026): the C share returned 17% a year over five years and 15% a year over ten years, against 7% and 11% for SIXRX. NAV grew 12% a year over five years and 11% over ten. Net debt is tiny (2% of assets, S&P rating A+), and the dividend has risen every year, from SEK 6.75 for 2021 to SEK 8.75 for 2025."
+   ],
+   "title": "Does Industrivärden have a growth goal we can use?",
+   "verdict": "There is no growth target to forecast NAV with, and for an investment company we do not need one: the method is today's NAV and a normal discount. The strong record helps explain why the discount shrank from about 14% in 2021–2022 to about 6% in 2023–2025."
+  },
+  "ticker": "INDU C",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Industrivärden is one of Sweden's oldest investment companies, linked to Handelsbanken. It owns large, long-term stakes in eight listed Swedish companies, led by Sandvik (31% of the portfolio), Volvo (28%) and Handelsbanken (16%), plus Essity, SCA, Skanska, Ericsson and Alleima, and it sits on their boards."
+ },
  {
   "company": "Exxon Mobil",
   "consensus": {
