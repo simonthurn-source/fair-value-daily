@@ -628,11 +628,586 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Utilities (electricity and renewables)",
   "teaser": "America's biggest power company is also its biggest wind and solar builder: how much is that growth worth on next year's EBITDA?",
   "ticker": "NEE"
+ },
+ {
+  "company": "adidas",
+  "date": "2026-11-07",
+  "market": "Germany",
+  "method": "Forward P/E",
+  "sector": "Sporting goods",
+  "teaser": "Profits have bounced back strongly after a rough patch: how much is next year's profit worth if tariffs and fashion cycles turn?",
+  "ticker": "ADS"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Costco",
+  "consensus": {
+   "analysts": 39,
+   "asOf": "9 Oct 2026",
+   "explain": "The average target of $1,058 is a price in 12 months; discounted one year at 10.2% it is worth about $960 today, within 0.5% of our $964. It works out at 45.0 × calendar-2027 earnings, almost exactly our 45.2, so with the same method and the same forecast we land in the same place. JPMorgan's 44 × is a little more cautious and gives about $939 today on our forecast.",
+   "high": 1315,
+   "low": 770,
+   "method": "Analysts value Costco with a P/E on next year's earnings. JPMorgan's $1,015 target (cut from $1,100 on 25 Sep 2026) is 44 × its 2027 earnings forecast; JPMorgan notes the share already trades at 39 × fiscal-2027 earnings, at the top of the range for fast-growing consumer staples. Evercore ISI ($1,100, Outperform) also quotes its target against calendar-2027 EPS, which it puts at $23.50. A price target is where analysts expect the share to be in 12 months.",
+   "rating": "Buy",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 1058,
+   "targetToday": 960
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = $946.92",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model gives only about $379 a share: sales growth follows the consensus (8.4% and 7.4%), then slows to 2.5% by year 10; the operating margin rises to 4.1%; 72% of operating profit becomes free cash (between the five-year average of 70% and 76% in FY2024–26); and the cash is discounted at a WACC of 10.1% (Costco has almost no debt). Today's price would need a discount rate of about 5.5% in that model, barely above the 10-year bond yield. The cash does not support the multiple on its own: the price assumes investors keep paying a premium for Costco's reliability.",
+   "result": "≈ 5.5%"
+  },
+  "crossChecks": [
+   {
+    "calc": "(34.4 × 13,414 + 15,139) ÷ 443.27 ÷ 1.102",
+    "name": "Check: EV/EBIT on the same basis",
+    "note": "Close to the P/E answer, so the two multiples agree.",
+    "plain": "EV/EBIT values the whole business (market value minus net cash) against operating profit. Costco's forward EV/EBIT averaged 34.4 at fiscal year-ends 2024–2026. Applied to calendar-2027 operating profit (⅔ × 12,967 + ⅓ × 14,307 = $13,414m), plus $15,139m net cash, divided by shares and discounted one year:",
+    "result": "≈ $976"
+   },
+   {
+    "calc": "24.6 × 23.51 ÷ 1.102",
+    "name": "Check: peers' forward P/E",
+    "note": "Costco trades at 41.6 × next-year earnings on the same source, about 70% above the peer average and 13% above Walmart. Investors pay extra for its steady 8–10% growth, membership income and near-zero debt; that premium is the main thing the price depends on.",
+    "plain": "Walmart (36.9), BJ's Wholesale (20.2) and Target (16.7) trade on an average forward P/E of 24.6 (stockanalysis.com, 8–9 Oct 2026). Applied to Costco's calendar-2027 EPS and discounted one year:",
+    "result": "≈ $525"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-10",
+  "dateLabel": "Saturday 10 October 2026",
+  "exchange": "Nasdaq",
+  "fairValue": 964,
+  "history": {
+   "caption": "US$ million unless stated. Costco's fiscal year ends on the Sunday nearest 31 August (FY2026 = Sep 2025–Aug 2026; FY2023 had 53 weeks). From Costco's 10-K annual reports and year-end earnings releases (US GAAP cash-flow statement). Year-end share prices are the last trading day of each fiscal year from StatMuse (dividend-adjusted, which lowers the FY2022–23 prices by a few percent because of the $15 special dividend in January 2024). Shares are those outstanding at year-end. Rent on ordinary leases is already inside cash from operations under US rules; we subtract finance lease payments. Last column: averages or totals for FY2024–26.",
+   "columns": [
+    "FY2022",
+    "FY2023",
+    "FY2024",
+    "FY2025",
+    "FY2026",
+    "FY2024–26"
+   ],
+   "rows": [
+    {
+     "label": "Sales (total revenue)",
+     "note": "Net sales plus membership fees. Growth 2022–26: 8% a year",
+     "values": [
+      "226,954",
+      "242,290",
+      "254,453",
+      "275,235",
+      "303,154",
+      "+8%/yr"
+     ]
+    },
+    {
+     "label": "Sales growth",
+     "note": "FY2023 had 53 weeks, which flatters 2023 and depresses 2024. 2022 was boosted by high petrol prices",
+     "values": [
+      "15.8%",
+      "6.8%",
+      "5.0%",
+      "8.2%",
+      "10.1%",
+      "7.8%"
+     ]
+    },
+    {
+     "label": "EBIT (operating profit)",
+     "note": "As reported",
+     "values": [
+      "7,793",
+      "8,114",
+      "9,285",
+      "10,383",
+      "11,685",
+      "31,353"
+     ]
+    },
+    {
+     "label": "EBIT margin",
+     "note": "Costco keeps prices low on purpose: it earns about 4 cents of operating profit per dollar of sales",
+     "values": [
+      "3.4%",
+      "3.3%",
+      "3.6%",
+      "3.8%",
+      "3.9%",
+      "3.8%"
+     ]
+    },
+    {
+     "label": "Earnings per share (excl. one-offs)",
+     "note": "Diluted EPS. FY2024 excludes $0.35 of one-off tax benefits; FY2026 excludes $0.15 of tariff refunds",
+     "values": [
+      "13.14",
+      "14.16",
+      "16.21",
+      "18.21",
+      "20.61",
+      "+12%/yr"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Last trading day of the fiscal year ÷ EPS. Last column: FY2024–26 average",
+     "values": [
+      "38.6",
+      "36.9",
+      "54.5",
+      "51.5",
+      "45.9",
+      "50.6"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end share price ÷ the NEXT fiscal year's EPS (FY2026: ÷ the $22.78 consensus for FY2027). This is the multiple analysts use. Last column: FY2024–26 average",
+     "strong": true,
+     "values": [
+      "35.8",
+      "32.3",
+      "48.5",
+      "45.5",
+      "41.5",
+      "45.2"
+     ]
+    },
+    {
+     "label": "EV/EBIT at year-end",
+     "note": "(Market value − net cash) ÷ EBIT",
+     "values": [
+      "28.2",
+      "27.5",
+      "41.6",
+      "39.1",
+      "34.6",
+      "38.4"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "EV ÷ next fiscal year's EBIT (FY2026: ÷ the $12,967m consensus)",
+     "values": [
+      "27.1",
+      "24.0",
+      "37.2",
+      "34.8",
+      "31.2",
+      "34.4"
+     ]
+    },
+    {
+     "label": "Net cash excl. leases",
+     "note": "Cash + short-term investments − all borrowings",
+     "values": [
+      "4,492",
+      "8,776",
+      "5,247",
+      "9,496",
+      "15,139",
+      "–"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid",
+     "values": [
+      "7,392",
+      "11,068",
+      "11,339",
+      "13,335",
+      "15,817",
+      "40,491"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "values": [
+      "109",
+      "93",
+      "98",
+      "79",
+      "78",
+      "254"
+     ]
+    },
+    {
+     "label": "− Stores & equipment (capex)",
+     "values": [
+      "3,891",
+      "4,323",
+      "4,710",
+      "5,498",
+      "6,435",
+      "16,643"
+     ]
+    },
+    {
+     "label": "− Finance lease payments",
+     "note": "From FY2024 Costco reports this line together with small 'other financing' items",
+     "values": [
+      "176",
+      "291",
+      "137",
+      "147",
+      "91",
+      "375"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "3,434",
+      "6,547",
+      "6,590",
+      "7,769",
+      "9,369",
+      "23,727"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBIT)",
+     "note": "FY2022 was low because Costco built up stock in the supply-chain crunch. Five-year average 70%",
+     "strong": true,
+     "values": [
+      "44%",
+      "81%",
+      "71%",
+      "75%",
+      "80%",
+      "76%"
+     ]
+    },
+    {
+     "label": "Income tax paid",
+     "values": [
+      "1,940",
+      "2,234",
+      "2,319",
+      "2,917",
+      "2,839",
+      "8,075"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "Costco grows by opening its own warehouses, not by buying companies",
+     "values": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq close, 9 Oct 2026 (stockanalysis.com). Market value about $420 billion",
+    "value": "$946.92"
+   },
+   {
+    "label": "Analyst EPS forecasts",
+    "note": "MarketScreener consensus. Calendar 2027 = ⅔ × FY2027 + ⅓ × FY2028 = $23.51; forward P/E today 946.92 ÷ 23.51 = 40.3",
+    "value": "$22.78 (FY2027) / $24.96 (FY2028)"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of fiscal year-ends 2024 (48.5), 2025 (45.5) and 2026 (41.5): price ÷ next year's EPS",
+    "value": "45.2"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.24% US 10-year yield + beta 0.9 × 5.5% equity risk premium; used to bring the 12-month price back to today",
+    "value": "10.2%"
+   },
+   {
+    "label": "Earnings per share, last 12 months",
+    "note": "Fiscal 2026 (to 30 Aug) excluding $0.15 of tariff refunds; reported $20.76. Current P/E: 946.92 ÷ 20.61 = 45.9",
+    "value": "$20.61"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "10-K fiscal 2026, at 30 Aug 2026",
+    "value": "443.3 million"
+   },
+   {
+    "label": "Sales / EBIT, last 12 months",
+    "note": "Fiscal 2026 (margin 3.9%)",
+    "value": "$303,154m / $11,685m"
+   },
+   {
+    "label": "Analyst sales / EBIT forecasts",
+    "note": "MarketScreener consensus",
+    "value": "$328,495m / $12,967m (FY2027); $352,937m / $14,307m (FY2028)"
+   },
+   {
+    "label": "Net cash excl. leases",
+    "note": "30 Aug 2026: cash and short-term investments $21,301m − debt $6,162m",
+    "value": "$15,139m"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "US 10-year Treasury, 9 Oct 2026 (Trading Economics)",
+    "value": "5.24%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.87 (stockanalysis.com)",
+    "value": "0.9"
+   },
+   {
+    "label": "Equity risk premium / cost of debt",
+    "note": "Our assumptions; debt at 5.0% before tax, tax rate 24.7% (fiscal 2026 effective rate)",
+    "value": "5.5% / 3.8% after tax"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large retailers)",
+   "why": "For large retailers and consumer brands, analysts almost always set targets as a P/E times next year's earnings. JPMorgan's $1,015 target, for example, is 44 × its 2027 earnings. We do the same: we take the forward P/E Costco has normally traded at (price ÷ the next year's earnings, average of fiscal year-ends 2024–2026), apply it to the consensus forecast for calendar 2027, which gives a price in 12 months, and discount that one year at the 10.2% return shareholders demand.",
+   "whyNot": "We do not blend in other methods, because analysts in this sector don't: P/E is the standard. EV/EBIT, a peer comparison and a cash-flow model (DCF) are shown below only as checks. The DCF gives just $379, because Costco's profit margin is thin and US bond yields are high, so it only shows how much optimism the price contains. Price-to-book makes no sense here: Costco's value is its members' loyalty, which is not on the balance sheet. We use earnings excluding one-offs (tax benefits in FY2024, tariff refunds in FY2026), as analysts do."
+  },
+  "price": 946.92,
+  "priceDate": "close 9 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 986,
+  "rangeLow": 943,
+  "reasoning": [
+   "Costco is a model of steady growth: sales rose 8% a year in FY2022–26, the thin operating margin crept up from 3.4% to 3.9%, and EPS grew about 12% a year, with renewals above 92%.",
+   "Valued the way analysts value big retailers, at its normal forward P/E (45.2) on calendar-2027 earnings, the share is worth about $1,063 in a year and $964 today. It trades at 40.3 × 2027 earnings now, below its three-year average after this year's fall in quality-stock multiples.",
+   "EV/EBIT on the same basis gives about $976, so the multiples agree, and the analysts' average target is worth $960 today. The warnings are the peer check ($525 at the peer average P/E) and the cash-flow check ($379): the price needs investors to keep paying roughly double the multiple of other retailers.",
+   "Fair value $964 (range $943–986). At $946.92 the stock looks roughly fairly priced, in line with the analysts' average target in today's money ($960)."
+  ],
+  "risks": [
+   "Forecast risk: the value rests on analysts expecting EPS growth of about 10% a year. If 2027 earnings come in 10% lower, the fair value falls to about $868.",
+   "Multiple risk: at the 45.0 × the consensus target implies the value is about $960 (almost unchanged); at today's 40.3 × it would be about $859; at the 32–36 × of 2022–2023 it would be roughly $680–770.",
+   "Interest rates: the US 10-year yield is 5.24%. Very high multiples like Costco's are sensitive to rates, and JPMorgan describes 2026 as a year of de-rating for quality retailers.",
+   "Upside: Costco holds $15 billion of net cash and Evercore thinks a special dividend could come within a year; membership-fee income grew 11% in fiscal 2026 and September sales rose 13%."
+  ],
+  "sector": "Retail (membership warehouse clubs)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in US$ per share for different forward P/Es (rows) and for calendar-2027 earnings coming in higher or lower than forecast (columns). Base case: P/E 45.2 on EPS of $23.51.",
+   "colLabel": "Calendar-2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "43.2",
+    "44.2",
+    "45.2",
+    "46.2",
+    "47.2"
+   ],
+   "values": [
+    [
+     830,
+     876,
+     922,
+     968,
+     1014
+    ],
+    [
+     849,
+     896,
+     943,
+     990,
+     1037
+    ],
+    [
+     868,
+     916,
+     964,
+     1013,
+     1061
+    ],
+    [
+     887,
+     936,
+     986,
+     1035,
+     1084
+    ],
+    [
+     906,
+     957,
+     1007,
+     1057,
+     1108
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Costco Q4 and fiscal 2026 results (8-K, 24 Sep 2026)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000909832/000090983226000084/costex9918-k92426.htm"
+   },
+   {
+    "title": "Costco 10-K fiscal 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000909832/000090983226000093/cost-20260830.htm"
+   },
+   {
+    "title": "Costco 10-K 2026: cash flow statement",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000909832/000090983226000093/R8.htm"
+   },
+   {
+    "title": "Costco 10-K 2026: shares outstanding (statement of equity)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000909832/000090983226000093/R7.htm"
+   },
+   {
+    "title": "Costco 10-K fiscal 2025 (incl. one-off tax items FY2024–25)",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+   },
+   {
+    "title": "Costco 10-K 2025: cash flow statements FY2023–25",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/R8.htm"
+   },
+   {
+    "title": "Costco 10-K 2025: balance sheets",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/R5.htm"
+   },
+   {
+    "title": "Costco 10-K 2025: statement of equity (shares outstanding)",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/R7.htm"
+   },
+   {
+    "title": "Costco 10-K 2023: cash flow statements FY2021–23",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983223000042/R8.htm"
+   },
+   {
+    "title": "Costco 10-K 2023: balance sheets",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983223000042/R5.htm"
+   },
+   {
+    "title": "Costco Q4 and fiscal 2024 results",
+    "url": "https://investor.costco.com/news/news-details/2024/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2024-Operating-Results/default.aspx"
+   },
+   {
+    "title": "Costco Q4 and fiscal 2023 results",
+    "url": "https://investor.costco.com/news/news-details/2023/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2023-Operating-Results/default.aspx"
+   },
+   {
+    "title": "Costco September 2026 sales results (GlobeNewswire)",
+    "url": "https://www.globenewswire.com/news-release/2026/10/07/3376846/0/en/index.html"
+   },
+   {
+    "title": "Costco fiscal 2026 wrap-up: membership, renewals, warehouse plans (MarketBeat)",
+    "url": "https://www.marketbeat.com/articles/costco-ends-its-fiscal-year-on-a-high-note-eyes-big-expansion/"
+   },
+   {
+    "title": "Costco annual figures and FY2027–28 estimates (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/COSTCO-WHOLESALE-CORPORAT-4866/finances/"
+   },
+   {
+    "title": "Costco analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cost/forecast/"
+   },
+   {
+    "title": "Costco statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cost/statistics/"
+   },
+   {
+    "title": "JPMorgan cuts Costco target to $1,015, 44 × 2027 earnings (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-cuts-costco-stock-price-target-on-valuation-reset-93CH-4917395"
+   },
+   {
+    "title": "Evercore ISI reiterates Costco, calendar-2027 EPS $23.50 (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/evercore-isi-reiterates-costco-stock-rating-ahead-of-earnings-93CH-4910291"
+   },
+   {
+    "title": "Costco target changes after Q4 FY2026 (ScanX)",
+    "url": "https://scanx.trade/stock-market-news/companies/bernstein-maintains-outperform-costco-cuts-price-target-1143/51884795"
+   },
+   {
+    "title": "Costco year-end share prices (StatMuse)",
+    "url": "https://www.statmuse.com/money/ask/costco-stock-price-august-28-2026"
+   },
+   {
+    "title": "US 10-year Treasury yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+   },
+   {
+    "title": "Walmart valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wmt/statistics/"
+   },
+   {
+    "title": "BJ's Wholesale valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/bj/statistics/"
+   },
+   {
+    "title": "Target valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/tgt/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "⅔ × 22.78 + ⅓ × 24.96",
+    "formula": "Calendar-2027 EPS = ⅔ × FY2027 + ⅓ × FY2028",
+    "plain": "Analysts quote Costco's targets on 2027 earnings. Costco's fiscal year ends in late August, so calendar 2027 is eight months of fiscal 2027 (Sep 2026–Aug 2027) and four months of fiscal 2028.",
+    "result": "$23.51 a share",
+    "title": "What will Costco earn next year?"
+   },
+   {
+    "calc": "(48.5 + 45.5 + 41.5) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the coming year's earnings. At the end of fiscal 2024, 2025 and 2026 it was 48.5, 45.5 and 41.5. The average is 45.2. We skip 2020–2021, when interest rates were near zero; in 2022–2023 the multiple was lower (32–36).",
+    "result": "45.2",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "45.2 × 23.51",
+    "formula": "Price in 12 months = normal forward P/E × calendar-2027 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is exactly how an analyst's price target is built.",
+    "result": "$1,063",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "1,063 ÷ 1.102",
+    "formula": "Fair value = price in 12 months ÷ (1 + 10.2%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.24% bond yield + 0.9 × 5.5% = 10.2% a year.",
+    "result": "$964",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "964 ÷ 946.92 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is within a few percent of our value, so Costco looks roughly fairly priced on its own history.",
+    "result": "+1.8%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Costco the way analysts value big retailers: a price-to-earnings multiple (P/E) on next calendar year's expected profit. Analysts expect earnings of about $23.51 a share in calendar 2027; at the forward P/E Costco has normally traded at in the last three years (45.2) the share would be worth about $1,063 in a year, or $964 today, 2% above today's $946.92. The catch: that 45 × multiple is about twice what other big retailers get.",
+  "targets": {
+   "items": [
+    "Costco does not publish financial targets or earnings guidance. Its stated operating goal is to open about 30 net new warehouses a year.",
+    "It added 25 net new warehouses in fiscal 2026 and plans 33 openings (28 net new, 4 in Europe) in fiscal 2027, slightly below the 30 goal.",
+    "Track record: sales grew 8% a year in FY2022–26, the operating margin crept up from 3.4% to 3.9%, and EPS excluding one-offs grew 12% a year. US/Canada membership renewals improved to 92.3%.",
+    "Recent trading supports the forecasts: Q4 FY2026 sales rose 11.2% and EPS rose 15% (12% without the tariff refund); September 2026 sales rose 13.0% (comparable sales +7.6% excluding petrol and currency)."
+   ],
+   "title": "Does Costco have a growth goal we can use?",
+   "verdict": "With no company target we use the analysts' consensus: EPS of $22.78 in fiscal 2027 (+10.5% on the underlying $20.61) and $24.96 in fiscal 2028 (+9.6%). That is a little below the 12% a year Costco has delivered, so the forecasts look realistic rather than stretched."
+  },
+  "ticker": "COST",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Costco runs 939 membership warehouses (647 in the US) that sell a limited range of goods in bulk at very low prices, plus petrol, pharmacy and online sales. Most of its profit comes from the yearly fees paid by 84 million paid members, more than 92% of whom renew in the US and Canada."
+ },
  {
   "company": "Industrivärden",
   "consensus": {
