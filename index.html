@@ -637,11 +637,571 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Sporting goods",
   "teaser": "Profits have bounced back strongly after a rough patch: how much is next year's profit worth if tariffs and fashion cycles turn?",
   "ticker": "ADS"
+ },
+ {
+  "company": "Handelsbanken",
+  "date": "2026-11-08",
+  "market": "Sweden",
+  "method": "Forward P/E and justified P/B, 50/50",
+  "sector": "Banking",
+  "teaser": "Handelsbanken is famous for low costs and careful lending: is that quality already fully in the price compared with other Nordic banks?",
+  "ticker": "SHB A"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Ericsson",
+  "consensus": {
+   "analysts": 20,
+   "asOf": "early Oct 2026",
+   "explain": "The average target of SEK 96.79 is a price in 12 months; discounted one year at 6.0% it is worth about SEK 91 today, 2% below our SEK 93. We use the same method, and the multiples are almost the same: SEK 96.79 equals about 14.9 × 2027 EPS, versus Ericsson's own normal 15.1 ×. The small gap is the multiple, not the forecast.",
+   "high": 133,
+   "low": 68,
+   "method": "Analysts mostly look at Ericsson's price against expected earnings. Morgan Stanley, which cut the share to Underweight with a SEK 90 target on 22 Sep 2026, points out that it trades at 16 × earnings against a five-year average of 14 × and lowered its 2027 EPS forecast by 6%. Handelsbanken (Buy, SEK 129 on 5 Oct) builds on its adjusted operating-profit forecasts and calls the share attractively valued. A price target is where an analyst expects the share to be in 12 months. Opinions are split: targets range from SEK 68 (UBS) to SEK 133 (DNB Carnegie).",
+   "rating": "Hold",
+   "source": "MarketScreener",
+   "target": 96.79,
+   "targetToday": 91.3
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(WACC) = SEK 95.98",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "We assume Ericsson keeps turning about 10% of sales into free cash flow (its 2021–25 average, including interest added back), on consensus sales of SEK 231bn in 2027 growing about 2% a year, plus SEK 59.8bn of net cash. At a 5.7% discount rate (cost of equity 6.0% and a little cheap debt) this gives about SEK 215 per share; at 8% it would still be SEK 138. Today's SEK 95.98 needs a discount rate of about 11.2%. The cash clearly supports the multiple: the market is pricing in falling cash flows or high risk, not paying for growth.",
+   "result": "≈ 11.2% (value at 5.7%: ≈ SEK 215)"
+  },
+  "crossChecks": [
+   {
+    "calc": "(9.4 × 29,662 + 59,800) ÷ 3,253.5 ÷ 1.060",
+    "name": "Check: forward EV/EBIT",
+    "note": "Today the business trades at 8.5 × 2027 EBIT, below its 9.4 average; the check is slightly higher than the P/E value because the large cash pile earns little.",
+    "plain": "Leaving out the cash, Ericsson's enterprise value has normally been 9.4 × next year's operating profit (EBIT) at the 2023–25 year-ends. On 2027 EBIT of SEK 29.7bn, plus SEK 59.8bn net cash, over 3,253.5m shares, and brought back one year:",
+    "result": "≈ SEK 98"
+   },
+   {
+    "calc": "23.7 × 5.83",
+    "name": "Check: at the peers' multiple",
+    "note": "Peers are priced much higher because investors expect growth from AI data-centre and optical networking; Ericsson sells mostly mobile radio equipment, a flat market. We do not think the peer multiple is a fair benchmark, but it shows how cheap Ericsson is within its industry.",
+    "plain": "Nokia (24.4) and Cisco (23.0) trade at an average forward P/E of 23.7, versus about 16.5 for Ericsson on the same stockanalysis.com basis (forward EPS about SEK 5.83). At the peer level Ericsson would be worth:",
+    "result": "≈ SEK 138"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-11",
+  "dateLabel": "Sunday 11 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 93,
+  "history": {
+   "caption": "SEK billion unless stated. From Ericsson's year-end reports (IFRS cash-flow statement). 'Excl. one-offs' removes write-downs (Vonage goodwill SEK 31.9bn in 2023, SEK 15.3bn in 2024), the 2022 US DOJ fine provision (SEK 2.3bn), a 2024 dispute gain (SEK 1.9bn) and the 2025 iconectiv sale gain (SEK 1.70 per share); restructuring costs stay in. 2024 tax effects approximate. Year-end prices are Nasdaq Stockholm closes (MarketScreener). Interest paid was not shown separately for 2022–23. Last column: averages or totals for 2023–25.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2023–25"
+   ],
+   "rows": [
+    {
+     "label": "Net sales",
+     "note": "Growth 2021–25: +0.5% a year. H1 2026: SEK 102.0bn (−8%, +2% organic)",
+     "values": [
+      "232.3",
+      "271.5",
+      "263.4",
+      "247.9",
+      "236.7",
+      "+0.5%/yr"
+     ]
+    },
+    {
+     "label": "Operating profit (EBIT) excl. one-offs",
+     "note": "After restructuring costs",
+     "values": [
+      "31.6",
+      "29.3",
+      "11.6",
+      "17.7",
+      "30.6",
+      "20.0 avg"
+     ]
+    },
+    {
+     "label": "EBIT margin excl. one-offs",
+     "values": [
+      "13.6%",
+      "10.8%",
+      "4.4%",
+      "7.1%",
+      "12.9%",
+      "8.1%"
+     ]
+    },
+    {
+     "label": "Restructuring costs (kept in)",
+     "values": [
+      "0.5",
+      "0.4",
+      "6.5",
+      "5.0",
+      "2.3",
+      "4.6 avg"
+     ]
+    },
+    {
+     "label": "EPS as reported (SEK)",
+     "values": [
+      "6.81",
+      "5.62",
+      "−7.94",
+      "0.01",
+      "8.51",
+      "n/a"
+     ]
+    },
+    {
+     "label": "EPS excl. one-offs (SEK)",
+     "note": "Earnings per share without write-downs, fines and sale gains",
+     "values": [
+      "6.76",
+      "6.31",
+      "1.64",
+      "4.16",
+      "6.72",
+      "4.17 avg"
+     ]
+    },
+    {
+     "label": "Share price at year-end (SEK)",
+     "values": [
+      "99.79",
+      "60.90",
+      "63.11",
+      "89.88",
+      "90.60",
+      ""
+     ]
+    },
+    {
+     "label": "Net cash at year-end",
+     "note": "Cash and interest-bearing securities minus borrowings (Ericsson's definition, excl. leases)",
+     "values": [
+      "65.8",
+      "23.3",
+      "7.8",
+      "37.8",
+      "61.2",
+      ""
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing)",
+     "note": "Year-end price ÷ that year's EPS excl. one-offs. Last column: 2023–25 average",
+     "values": [
+      "14.8",
+      "9.7",
+      "38.6",
+      "21.6",
+      "13.5",
+      "24.6"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ the NEXT year's EPS (2025: ÷ the 2026 consensus forecast of SEK 5.39). This is the multiple we use. Last column: 2023–25 average",
+     "strong": true,
+     "values": [
+      "15.8",
+      "37.2",
+      "15.2",
+      "13.4",
+      "16.8",
+      "15.1"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "(Market value − net cash) ÷ next year's EBIT (2025: ÷ the 2026 forecast of SEK 28.8bn). Last column: 2023–25 average",
+     "values": [
+      "9.1",
+      "15.5",
+      "11.4",
+      "8.6",
+      "8.3",
+      "9.4"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid. 2023: big inventory and customer-credit build-up",
+     "values": [
+      "39.1",
+      "30.9",
+      "7.2",
+      "46.3",
+      "33.0",
+      "86.5"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "values": [
+      "0.8",
+      "n/a",
+      "n/a",
+      "2.3",
+      "1.7",
+      "4.1"
+     ]
+    },
+    {
+     "label": "− Equipment & capitalised development",
+     "note": "2022–23: 'net capex and other investing' line",
+     "values": [
+      "4.7",
+      "6.1",
+      "5.4",
+      "3.6",
+      "3.7",
+      "12.7"
+     ]
+    },
+    {
+     "label": "− Lease payments",
+     "values": [
+      "2.4",
+      "2.6",
+      "2.9",
+      "2.5",
+      "2.1",
+      "7.5"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "32.8",
+      "22.2",
+      "−1.1",
+      "42.5",
+      "28.9",
+      "70.3"
+     ]
+    },
+    {
+     "label": "Cash conversion (free cash flow ÷ EBIT)",
+     "note": "Very uneven: working capital swings a lot. 2021–25 total: 104%",
+     "strong": true,
+     "values": [
+      "104%",
+      "76%",
+      "−9%",
+      "240%",
+      "94%",
+      "117%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions (net)",
+     "note": "2022: Vonage (USD 6.2bn). 2025: net inflow from selling iconectiv",
+     "values": [
+      "−0.1",
+      "51.7",
+      "2.1",
+      "0.3",
+      "−10.5",
+      "−8.1"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close, 9 Oct 2026 (stockanalysis.com). Market value SEK 312bn",
+    "value": "SEK 95.98"
+   },
+   {
+    "label": "EPS forecasts",
+    "note": "Analyst consensus (MarketScreener), IFRS basis incl. restructuring; net income SEK 17.8bn / 20.7bn (Simply Wall St, 18 analysts)",
+    "value": "SEK 5.39 (2026) / 6.51 (2027)"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of year-ends 2023 (15.2), 2024 (13.4) and 2025 (16.8)",
+    "value": "15.1"
+   },
+   {
+    "label": "Today's P/E",
+    "note": "95.98 ÷ 5.39 and ÷ 6.51",
+    "value": "17.8 on 2026 / 14.7 on 2027"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "3,371.4m shares minus 117.9m held in treasury after buybacks (Ericsson, 5 Oct 2026)",
+    "value": "3,253.5 million"
+   },
+   {
+    "label": "Net cash",
+    "note": "Q2 2026 report, excl. leases and pensions (about SEK 18 per share)",
+    "value": "SEK 59.8bn"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.21% Swedish 10-year bond + measured beta 0.5 × 5.5%; brings the 12-month price back to today",
+    "value": "6.0%"
+   },
+   {
+    "label": "Beta",
+    "note": "5-year beta 0.51 (stockanalysis.com): the share has moved much less than the market",
+    "value": "0.5"
+   },
+   {
+    "label": "EBIT forecasts",
+    "note": "Consensus, MarketScreener; used for the EV/EBIT check",
+    "value": "SEK 28.8bn (2026) / 29.7bn (2027)"
+   },
+   {
+    "label": "Latest quarter (Q2 2026)",
+    "note": "Organic −1%, adjusted EBITA margin 13.1% (13.2%), EPS SEK 1.22 (1.37). Q3 report due 15 Oct 2026",
+    "value": "Sales SEK 52.7bn (−6%)"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large telecom-equipment and tech hardware companies)",
+   "why": "For big, profitable technology companies, analysts usually compare the share price with next year's expected earnings per share (EPS). Morgan Stanley, for example, frames its Ericsson call as 16 × earnings versus a five-year average of 14 ×. We take the forward P/E Ericsson has normally traded at, apply it to the 2027 EPS forecast and bring that 12-month price back to today. EPS here means profit per share without one-off items such as write-downs and the gain from selling iconectiv; restructuring costs are kept in, because Ericsson has had them every year.",
+   "whyNot": "Ericsson carries a lot of net cash (SEK 59.8bn), so EV/EBIT, which looks at the business without the cash, is shown below as a second check. The cash-flow model (DCF) is only a check: with Ericsson's very low measured beta (0.5) it uses an unusually low discount rate and gives a much higher value. We skip the 2021–2022 year-ends, when interest rates were near zero and 2023 profit collapsed, which makes the end-2022 forward P/E (37) meaningless."
+  },
+  "price": 95.98,
+  "priceDate": "close 9 Oct 2026",
+  "rangeHigh": 99,
+  "rangeLow": 87,
+  "reasoning": [
+   "Ericsson's track record is bumpy: sales have been flat at SEK 230–270bn, and earnings excluding one-offs swung from SEK 6.76 per share in 2021 down to 1.64 in 2023 and back to 6.72 in 2025 after cost cuts. Cash flow has been strong in most years, and the company now holds SEK 59.8bn of net cash.",
+   "Valued the way analysts value large tech hardware companies, at its normal forward P/E (15.1) on 2027 consensus EPS of SEK 6.51, the share is worth about SEK 98 in a year and SEK 93 today. The analysts' average target implies almost the same multiple (14.9).",
+   "The checks point higher: the EV/EBIT check gives about SEK 98, peers trade at far higher multiples, and the cash-flow model is well above the price. The risk is in the forecast: 2027 EPS must rise 21% while Morgan Stanley warns of margin pressure from component costs.",
+   "Fair value SEK 93 (range 87–99). At SEK 95.98 the stock looks roughly fairly priced on its usual multiple, in line with the analysts' average target (SEK 91 in today's money)."
+  ],
+  "risks": [
+   "Forecast risk: 2027 EPS must rise 21% to SEK 6.51 with sales almost flat. If 2027 EPS comes in 10% lower, the fair value falls to about SEK 83.",
+   "Multiple risk: at the analysts' implied 14.9 × the value is about SEK 91; at today's 14.7 × 2027 EPS it is about SEK 91; at Morgan Stanley's five-year average of 14 × it would be about SEK 86, and at 16 × about SEK 98.",
+   "Downside: rising chip and component costs. Morgan Stanley expects gross margins to fall about 1 percentage point a year to 2028, and Danske says US operators have pushed some spending into 2027. A 10% weaker dollar cuts sales by about 5%.",
+   "Pending: the Q3 report on 15 Oct 2026 (Handelsbanken expects adjusted EBITA of SEK 8.1bn). Upside: the SEK 15bn buyback (SEK 93 average price in late September) and the large cash pile could lift EPS beyond forecasts."
+  ],
+  "sector": "Telecom equipment",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different forward P/E multiples (rows) and for 2027 EPS coming in higher or lower than forecast (columns). Base case: 15.1 × SEK 6.51, discounted at 6.0%.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "13.1",
+    "14.1",
+    "15.1",
+    "16.1",
+    "17.1"
+   ],
+   "values": [
+    [
+     72,
+     76,
+     80,
+     85,
+     89
+    ],
+    [
+     78,
+     82,
+     87,
+     91,
+     95
+    ],
+    [
+     83,
+     88,
+     93,
+     97,
+     102
+    ],
+    [
+     89,
+     94,
+     99,
+     104,
+     109
+    ],
+    [
+     95,
+     100,
+     105,
+     110,
+     116
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Ericsson Q2 2026 report (press release)",
+    "url": "https://www.ericsson.com/en/press-releases/2026/7/ericsson-reports-second-quarter-results-2026"
+   },
+   {
+    "title": "Ericsson Q4 and full-year 2025 report (PDF)",
+    "url": "https://mb.cision.com/Main/15448/4296598/3893323.pdf"
+   },
+   {
+    "title": "Ericsson Q4 and full-year 2023 report (SEC 6-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/717826/000119312524012778/d163867d6k.htm"
+   },
+   {
+    "title": "Ericsson Q4 and full-year 2023 report (press release)",
+    "url": "https://www.ericsson.com/en/press-releases/2024/1/ericsson-reports-fourth-quarter-and-full-year-results-2023"
+   },
+   {
+    "title": "Ericsson Q4 and full-year 2021 report (PDF)",
+    "url": "https://www.ericsson.com/48fa68/assets/local/investors/documents/financial-reports-and-filings/interim-reports-archive/2021/12month21-en.pdf"
+   },
+   {
+    "title": "DOJ fine provision booked in Q4 2022 (telecoms.com)",
+    "url": "https://telecoms.com/519375/ericsson-sets-aside-220m-for-potential-us-fine/"
+   },
+   {
+    "title": "Ericsson Capital Markets Day 2022: financial targets",
+    "url": "https://www.ericsson.com/en/press-releases/2022/12/ericsson-capital-markets-day-2022"
+   },
+   {
+    "title": "Share buybacks 28 Sep–2 Oct 2026 and share count (Ericsson)",
+    "url": "https://www.ericsson.com/sv/press-releases/2026/10/share-buybacks-in-ericsson-during-the-period-september-28---october-2-2026"
+   },
+   {
+    "title": "Infront consensus after Q2 2026 (Ericsson)",
+    "url": "https://www.ericsson.com/4a1f6a/assets/local/investors/documents/shareholder-information/analyst-consensus/eric-post-26q2-web-consensus---infront.pdf"
+   },
+   {
+    "title": "Consensus target and broker actions (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/ERICSSON-6494918/consensus/"
+   },
+   {
+    "title": "Forecasts: sales, EBIT, EPS, net cash (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/ERICSSON-6494918/finances/"
+   },
+   {
+    "title": "Valuation history and year-end prices (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/ERICSSON-6494918/valuation/"
+   },
+   {
+    "title": "Analyst forecasts: net income 2026–28 (Simply Wall St)",
+    "url": "https://simplywall.st/stocks/se/tech/sto-eric-b/telefonaktiebolaget-lm-ericsson-shares/future"
+   },
+   {
+    "title": "Analyst price targets by broker (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/ericsson/riktkurs"
+   },
+   {
+    "title": "Morgan Stanley downgrade: 16 × P/E vs 14 × five-year average (Investing.com)",
+    "url": "https://ca.investing.com/news/stock-market-news/morgan-stanley-downgrades-ericsson-stock-rating-on-margin-pressure-93CH-4847197"
+   },
+   {
+    "title": "Morgan Stanley: SEK 90 target (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/morgan-stanley-cuts-ericsson-stock-rating-on-margin-pressure-concerns-93CH-4909965"
+   },
+   {
+    "title": "Handelsbanken and Danske Bank ahead of Q3 (Placera)",
+    "url": "https://www.placera.se/telegram/ericsson-shb-ser-latta-jamforelsetal-3-kv-upprepar-koprad-20261005"
+   },
+   {
+    "title": "SEB lowers target to SEK 120 (MarketScreener)",
+    "url": "https://www.marketscreener.com/news/seb-lowers-target-price-for-ericsson-to-sek-120-122-reiterates-buy-ce785addd88cfe23"
+   },
+   {
+    "title": "Share price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/ERIC.B/history/"
+   },
+   {
+    "title": "Ericsson statistics and 5-year beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/ERIC.B/statistics/"
+   },
+   {
+    "title": "Ericsson analyst forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/ERIC.B/forecast/"
+   },
+   {
+    "title": "Nokia valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nok/statistics/"
+   },
+   {
+    "title": "Cisco valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/csco/statistics/"
+   },
+   {
+    "title": "Sweden 10-year bond yield (Trading Economics)",
+    "url": "https://de.tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "Q3 report date and JPMorgan target cut (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ericsson-stock-at-eur-8-57-up-1-3-percent-from-eur-8-46/70280399"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "Consensus 2027 EPS (MarketScreener)",
+    "formula": "2027 EPS = analyst consensus",
+    "plain": "We use the analysts' average forecast for 2027 earnings per share. It is 21% higher than 2026 (SEK 5.39), mainly because restructuring costs are expected to fall back; sales are expected to grow only about 2%.",
+    "result": "SEK 6.51",
+    "title": "What will Ericsson earn next year?"
+   },
+   {
+    "calc": "(15.2 + 13.4 + 16.8) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price at year-end divided by the next year's earnings per share. It was 15.2 at the end of 2023, 13.4 at the end of 2024 and 16.8 at the end of 2025. The average is 15.1.",
+    "result": "15.1",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "15.1 × 6.51",
+    "formula": "Price in 12 months = normal forward P/E × 2027 EPS",
+    "plain": "Multiply next year's earnings per share by the normal multiple.",
+    "result": "SEK 98.3",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "98.3 ÷ 1.060",
+    "formula": "Fair value = price in 12 months ÷ (1 + 6.0%)",
+    "plain": "Shareholders want a return for waiting a year: 3.21% bond yield + 0.5 × 5.5% = 6.0%. Ericsson's low beta keeps this rate low.",
+    "result": "SEK 93",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "93 ÷ 95.98 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is within 10% of our value, so on its usual multiple Ericsson looks roughly fairly priced.",
+    "result": "−3.1%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Ericsson the way analysts value large technology hardware companies: forward P/E, the share price against next year's expected earnings per share. At the forward P/E Ericsson has normally traded at (15.1) on the SEK 6.51 of earnings per share expected for 2027, the share would be worth about SEK 98 in a year, or SEK 93 today, 3% below today's SEK 95.98.",
+  "targets": {
+   "items": [
+    "At its 2022 Capital Markets Day Ericsson set a long-term EBITA margin target of 15–18% (reaching the low end by 2024) and free cash flow before acquisitions of 9–12% of sales. It set no sales-growth target; it expects its radio-network market to be flat in 2026.",
+    "Track record: the margin target was missed in 2024 (adjusted EBITA 11.0%) and only nearly met in 2025 (about 14.7% without the iconectiv gain). The cash target was beaten: 16.1% of sales in 2024 and 11.3% in 2025. The 2025 year-end report gives no new numeric targets, only the aim of a solid net cash position, a SEK 3.00 dividend and up to SEK 15bn of buybacks."
+   ],
+   "title": "Does Ericsson have a growth goal we can use?",
+   "verdict": "We do not build on the targets. Sales are expected to stay flat (SEK 226bn in 2026, 231bn in 2027), so earnings growth must come from margins and lower restructuring costs. We therefore use the analysts' consensus EPS for 2027 (SEK 6.51, +21% on 2026) and check it against the first half of 2026, when EPS was SEK 1.48 (2.61), weighed down by restructuring."
+  },
+  "ticker": "ERIC B",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Ericsson makes the equipment and software that mobile operators use to run their networks, above all the radio base stations for 4G and 5G, and earns licence fees on its patents. Sales have been flat for five years at around SEK 235–270 billion, because operators finished their big 5G build-outs and are now spending carefully."
+ },
  {
   "company": "Costco",
   "consensus": {
