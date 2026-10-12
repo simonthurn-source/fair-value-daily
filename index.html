@@ -646,11 +646,594 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Banking",
   "teaser": "Handelsbanken is famous for low costs and careful lending: is that quality already fully in the price compared with other Nordic banks?",
   "ticker": "SHB A"
+ },
+ {
+  "company": "Waste Management",
+  "date": "2026-11-09",
+  "market": "United States",
+  "method": "Forward EV/EBITDA",
+  "sector": "Waste collection & recycling",
+  "teaser": "America's biggest rubbish collector earns steady, utility-like cash: how much is that reliability worth?",
+  "ticker": "WM"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Progressive",
+  "consensus": {
+   "analysts": 25,
+   "asOf": "9 Oct 2026",
+   "explain": "The average target of $232.81 is a price in 12 months; discounted one year at 6.3% it is worth about $219 today, so our $189 is 14% lower. The target implies 14.2 × the 2027 consensus EPS of $16.37, against our 12.3: analysts are paying more for Progressive's record of beating forecasts and its growth, while our multiple is Progressive's own average. Morgan Stanley's 13.4 × and KBW's 12.0 × bracket our 12.3.",
+   "high": 314,
+   "low": 198,
+   "method": "Analysts value Progressive with a P/E on next year's (2027) earnings, often checked against price-to-book. Keefe, Bruyette & Woods set a $208 target in April 2026 at 12.0 × its 2027 EPS estimate; Morgan Stanley raised its target to $210 in July 2026 using about 13.4 × 2027 earnings of $15.60 (about 3.1 × 2027 book value). A price target is where the analyst expects the share to be in 12 months.",
+   "rating": "Hold",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 232.81,
+   "targetToday": 219
+  },
+  "crossCheck": {
+   "calc": "(25.3% − 4%) ÷ (6.3% − 4%) = 9.1 × $59.05; solve (25.3% − 4%) ÷ (k − 4%) = 3.68 → k",
+   "name": "Check: justified price-to-book (the method on our calendar), not in the fair value",
+   "plain": "Justified price-to-book asks what each dollar of equity is worth given the return it earns: (ROE − growth) ÷ (cost of equity − growth). The usual growth estimate, ROE × the share of profit kept, gives 14% a year (25.3% × 56%), above our 6.3% cost of equity, so the formula breaks. With a long-run growth of 4% instead, it gives 9.1 × book, about $537 a share: far above the price, which shows how sensitive this method is when the required return is low. Turned around, today's 3.68 × book needs a required return of about 9.8%. So the book-value check does not say Progressive is expensive; it says the market demands a higher return than our low-beta 6.3%.",
+   "result": "≈ $537; price needs ≈ 9.8%"
+  },
+  "crossChecks": [
+   {
+    "calc": "3.99 × 70.99 ÷ 1.0634",
+    "name": "Check: forward price-to-book on the same basis",
+    "note": "Well above the P/E answer, because those multiples were paid when ROE was 37–40%; analysts expect only about 25% in 2027. At Morgan Stanley's 3.1 × 2027 book the value is about $207, close to our P/E answer.",
+    "plain": "At year-ends 2023–2025 Progressive traded at 3.64, 4.63 and 3.70 × the next year's book value, an average of 3.99. Applied to the 2027 book value analysts expect ($70.99, MarketScreener) and discounted one year:",
+    "result": "≈ $266"
+   },
+   {
+    "calc": "10.67 × 16.37 ÷ 1.0634",
+    "name": "Check: peers' forward P/E",
+    "note": "Progressive trades at 12.8 × on the same source, about 20% above the peer average. Investors pay extra for its faster growth (about 16% a year) and higher returns on equity (35% vs 15–27% for Chubb and Travelers).",
+    "plain": "Allstate (8.0), Travelers (12.1) and Chubb (12.0) trade on an average forward P/E of 10.7 (stockanalysis.com, close 9 Oct 2026). Applied to Progressive's 2027 EPS and discounted one year:",
+    "result": "≈ $164"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-12",
+  "dateLabel": "Monday 12 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 189,
+  "history": {
+   "caption": "US$ million unless stated. Fiscal year = calendar year. From Progressive's 10-K annual reports (US GAAP). 'Excl. investment gains' removes realised and unrealised gains or losses on securities after 21% US tax, the basis analysts use. Combined ratio = (claims + acquisition + other underwriting costs + policyholder credits − fees) ÷ premiums earned, our calculation from the income statement (it matches Progressive's reported 94.9 for 2023 and 88.8 for 2024). Year-end prices = year-end market value ÷ shares outstanding (stockanalysis.com), not adjusted for the large special dividends. Last column: average or growth for 2023–2025 unless stated.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2023–25"
+   ],
+   "rows": [
+    {
+     "label": "Premiums earned",
+     "note": "Growth 2021–25: about 16% a year",
+     "values": [
+      "44,369",
+      "49,241",
+      "58,664",
+      "70,799",
+      "81,661",
+      "+16%/yr"
+     ]
+    },
+    {
+     "label": "Combined ratio (%)",
+     "note": "Below 100 = underwriting profit. Goal: 96 or better. 2025 includes a $1,224m refund to Florida policyholders",
+     "values": [
+      "95.3",
+      "95.8",
+      "94.9",
+      "88.8",
+      "87.4",
+      "90.4"
+     ]
+    },
+    {
+     "label": "Net income to shareholders",
+     "note": "Last column: total 2023–25",
+     "values": [
+      "3,324",
+      "695",
+      "3,865",
+      "8,463",
+      "11,308",
+      "23,636"
+     ]
+    },
+    {
+     "label": "Investment gains (losses), before tax",
+     "note": "2022: bond and share prices fell",
+     "values": [
+      "1,509",
+      "-1,912",
+      "353",
+      "264",
+      "727",
+      "1,344"
+     ]
+    },
+    {
+     "label": "Earnings per share, reported",
+     "values": [
+      "5.66",
+      "1.18",
+      "6.58",
+      "14.40",
+      "19.23",
+      "—"
+     ]
+    },
+    {
+     "label": "Earnings per share (excl. investment gains)",
+     "note": "2025: $18.25, the figure analysts quote",
+     "strong": true,
+     "values": [
+      "3.63",
+      "3.76",
+      "6.10",
+      "14.05",
+      "18.25",
+      "+50%/yr (2021–25)"
+     ]
+    },
+    {
+     "label": "Share price at year-end ($)",
+     "values": [
+      "102.77",
+      "129.75",
+      "159.19",
+      "239.61",
+      "227.83",
+      "—"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Year-end price ÷ that year's EPS excl. investment gains",
+     "values": [
+      "28.3",
+      "34.5",
+      "26.1",
+      "17.1",
+      "12.5",
+      "18.5"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ the next year's EPS (2025: ÷ the $18.27 consensus for 2026). This is the multiple analysts use. 2021–22 skipped: near-zero rates and depressed profits",
+     "strong": true,
+     "values": [
+      "27.4",
+      "21.3",
+      "11.3",
+      "13.1",
+      "12.5",
+      "12.3"
+     ]
+    },
+    {
+     "label": "Book value per share ($)",
+     "values": [
+      "30.35",
+      "26.32",
+      "33.80",
+      "43.69",
+      "51.74",
+      "—"
+     ]
+    },
+    {
+     "label": "Price-to-book at year-end",
+     "values": [
+      "3.39",
+      "4.93",
+      "4.71",
+      "5.48",
+      "4.40",
+      "4.87"
+     ]
+    },
+    {
+     "label": "Return on equity",
+     "note": "Net income ÷ average equity (stockanalysis.com)",
+     "values": [
+      "19.0%",
+      "4.2%",
+      "21.6%",
+      "37.0%",
+      "40.5%",
+      "33.0%"
+     ]
+    },
+    {
+     "label": "Dividends declared per share ($)",
+     "note": "$0.10 a quarter plus a variable year-end dividend ($13.50 for 2025)",
+     "values": [
+      "n/a",
+      "n/a",
+      "1.15",
+      "4.90",
+      "13.90",
+      "—"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid; includes premiums collected ahead of future claims",
+     "values": [
+      "7,762",
+      "6,849",
+      "10,643",
+      "15,119",
+      "17,548",
+      "43,310"
+     ]
+    },
+    {
+     "label": "− Capex (property and equipment)",
+     "values": [
+      "244",
+      "292",
+      "252",
+      "285",
+      "348",
+      "885"
+     ]
+    },
+    {
+     "label": "Interest paid",
+     "values": [
+      "n/a",
+      "n/a",
+      "265",
+      "276",
+      "276",
+      "817"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "2021: Protective Insurance",
+     "values": [
+      "313",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close, 9 Oct 2026 (stockanalysis.com). Market value about $126 billion",
+    "value": "$217.43"
+   },
+   {
+    "label": "Analyst EPS forecasts (excl. investment gains)",
+    "note": "stockanalysis.com consensus. Cross-checks: MarketScreener $16.31 for 2027, Barchart $16.17. Forward P/E today: 217.43 ÷ 16.37 = 13.3",
+    "value": "$18.27 (2026) / $16.37 (2027)"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of year-ends 2023 (11.3), 2024 (13.1) and 2025 (12.5)",
+    "value": "12.3"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.24% US 10-year yield + beta 0.2 × 5.5% equity risk premium; used to bring the 12-month price back to today",
+    "value": "6.3%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.24 (stockanalysis.com): car insurance demand barely moves with the stock market",
+    "value": "0.2"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "US 10-year Treasury, 9 Oct 2026 (YCharts)",
+    "value": "5.24%"
+   },
+   {
+    "label": "Book value per share",
+    "note": "30 June 2026 (Q2 release). Price-to-book today 3.68",
+    "value": "$59.05"
+   },
+   {
+    "label": "Return on equity",
+    "note": "Progressive Q2 release; MarketScreener consensus for 2027",
+    "value": "34.7% (last 12 months); 25.3% expected for 2027"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "30 June 2026",
+    "value": "581.4 million"
+   },
+   {
+    "label": "Expected dividends",
+    "note": "MarketScreener consensus; BMO expects $11 special + $0.40 regular = 5.2%",
+    "value": "$9.21 (2026E), about 4.2% yield"
+   },
+   {
+    "label": "Capital strength",
+    "note": "Q2 2026 release and 2025 10-K (regulators allow up to 3.5 ×). US insurers have no Solvency II ratio",
+    "value": "Debt 19.6% of capital; premiums 2.9 × surplus"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value insurers)",
+   "why": "An insurer's profit is the clearest measure of what it earns for shareholders, so analysts set targets as a P/E times next year's earnings, excluding gains and losses on its investment portfolio, which swing with markets. KBW, for example, values Progressive at 12.0 × its 2027 earnings estimate. We do the same: we take the forward P/E Progressive has normally traded at (price ÷ next year's earnings, average of year-ends 2023–2025), apply it to the consensus for 2027, which gives a price in 12 months, and discount that one year at the 6.3% return shareholders demand.",
+   "whyNot": "Our calendar listed justified price-to-book; we follow the analysts instead, who use P/E for Progressive, and show price-to-book only as a check. With a return on equity of 25–40%, a book-value formula becomes extremely sensitive to small changes in assumptions (see the check below). A cash-flow model (DCF) does not suit insurers either: their operating cash includes premiums collected in advance that will later be paid out in claims, so it is not free cash for shareholders."
+  },
+  "price": 217.43,
+  "priceDate": "close 9 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 205,
+  "rangeLow": 174,
+  "reasoning": [
+   "Progressive has been one of the best-run insurers in the US: premiums grew about 16% a year in 2021–25, the combined ratio improved from about 95 to 87, and earnings per share (excl. investment gains) rose from $3.63 to $18.25.",
+   "But analysts expect that peak to pass: flat earnings in 2026 and a 10% fall to $16.37 in 2027, and the July–August 2026 numbers point the same way. At its normal forward P/E of 12.3, the share is worth about $201 in a year and $189 today; today it trades at 13.3 × 2027 earnings.",
+   "The checks pull in different directions: peers' lower P/E gives about $164, while price-to-book gives $207–266 depending on whether you assume a lower future or today's return on equity. Analysts' average target is worth $219 today, at 14.2 × 2027 earnings.",
+   "Fair value $189 (range $174–205). At $217.43 the stock looks overvalued by about 13% on its own usual multiple, and our value is about 14% below the analysts' target in today's money."
+  ],
+  "risks": [
+   "Forecast risk: the value rests on 2027 EPS of $16.37. If 2027 earnings come in 10% lower (combined ratio in the mid-90s), the fair value falls to about $170; if they come in 10% higher it rises to about $208. Q3 results on 14 October 2026 are the next test.",
+   "Multiple risk: at the 14.2 × the consensus target implies the value is about $219; at today's 13.3 × it is about $204. Progressive has historically beaten forecasts, which is why analysts pay more.",
+   "Competition and claims: GEICO is advertising heavily again, premium growth has slowed to 5–6%, and the August combined ratio jumped 6.2 points to 89.3. Rising bodily-injury claim costs (more lawyers involved) are the main thing management is watching.",
+   "Upside: Progressive could pay a large special dividend again (BMO expects about $11, or 5% of the share price, for 2026) and regulators now allow it to write more premiums per dollar of capital (3.5 ×), which lifts returns. A higher beta of 1.0 would only lower the value to about $182, because we discount just one year."
+  ],
+  "sector": "Car insurance (property & casualty insurer)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in US$ per share for different forward P/Es (rows) and for 2027 earnings coming in higher or lower than forecast (columns). Base case: P/E 12.3 on EPS of $16.37.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "10.3",
+    "11.3",
+    "12.3",
+    "13.3",
+    "14.3"
+   ],
+   "values": [
+    [
+     143,
+     151,
+     159,
+     166,
+     174
+    ],
+    [
+     157,
+     165,
+     174,
+     183,
+     191
+    ],
+    [
+     170,
+     180,
+     189,
+     199,
+     208
+    ],
+    [
+     184,
+     195,
+     205,
+     215,
+     225
+    ],
+    [
+     198,
+     209,
+     220,
+     231,
+     242
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Progressive 10-K 2025: income statements 2023–25",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/R3.htm"
+   },
+   {
+    "title": "Progressive 10-K 2025: balance sheets",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/R4.htm"
+   },
+   {
+    "title": "Progressive 10-K 2025: cash flow statements 2023–25",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/R7.htm"
+   },
+   {
+    "title": "Progressive 10-K 2025: shareholders' equity and dividends declared",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/R6.htm"
+   },
+   {
+    "title": "Progressive 10-K 2025: dividends per share",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/R8.htm"
+   },
+   {
+    "title": "Progressive 10-K 2025: notes (interest and taxes paid)",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/pgr-20251231_d2.htm"
+   },
+   {
+    "title": "Progressive 10-K 2025: business (premiums-to-surplus)",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/pgr-20251231.htm"
+   },
+   {
+    "title": "Progressive 10-K 2023: income statements 2021–23",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066124000007/R3.htm"
+   },
+   {
+    "title": "Progressive 10-K 2023: cash flow statements 2021–23",
+    "url": "https://www.sec.gov/Archives/edgar/data/80661/000008066124000007/R7.htm"
+   },
+   {
+    "title": "Progressive June 2026 / Q2 results release",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000080661/000008066126000262/pgr202606ex99earningsrelea.htm"
+   },
+   {
+    "title": "Progressive Reports August 2026 Results",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-18-progressive-reports-august-2026-results"
+   },
+   {
+    "title": "Progressive's combined ratio jumps 6.2 points (Insurance Business)",
+    "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/progressives-combined-ratio-jumps-6-2-points-as-net-income-falls-22-590384.aspx"
+   },
+   {
+    "title": "Progressive Reports December 2025 Results (GlobeNewswire)",
+    "url": "https://www.globenewswire.com/news-release/2026/01/28/3227584/0/en/Progressive-Reports-December-2025-Results.html"
+   },
+   {
+    "title": "Progressive Q4 2025 earnings call summary (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/news/progressive-corporation-q4-2025-earnings-133000971.html"
+   },
+   {
+    "title": "Progressive financial objectives (2020 annual report)",
+    "url": "https://26-www.prod.progressive.com/rootfiles/annual-report/2020/objectives"
+   },
+   {
+    "title": "Progressive analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pgr/forecast/"
+   },
+   {
+    "title": "Progressive statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pgr/statistics/"
+   },
+   {
+    "title": "Progressive ratios: year-end market value, ROE (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pgr/financials/ratios/"
+   },
+   {
+    "title": "Progressive balance sheet history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pgr/financials/balance-sheet/"
+   },
+   {
+    "title": "Progressive price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pgr/history/"
+   },
+   {
+    "title": "Progressive forecasts: EPS, book value, ROE, dividends (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/PROGRESSIVE-CORPORATION-13995/finances/"
+   },
+   {
+    "title": "Progressive event calendar (MarketScreener)",
+    "url": "https://hk.marketscreener.com/quote/stock/PROGRESSIVE-CORPORATION-13995/calendar/"
+   },
+   {
+    "title": "What to expect from Progressive's Q3 2026 earnings (Yahoo Finance / Barchart)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/expect-progressive-corporation-q3-2026-145602041.html"
+   },
+   {
+    "title": "KBW cuts Progressive target: 12.0 × 2027 EPS (Investing.com)",
+    "url": "https://in.investing.com/news/stock-market-news/keefe-bruyette-cuts-progressive-stock-price-target-on-2027-outlook-93CH-5339752"
+   },
+   {
+    "title": "Morgan Stanley upgrades Progressive: 13.4 × 2027 EPS (Investing.com)",
+    "url": "https://uk.investing.com/news/stock-market-news/morgan-stanley-upgrades-progressive-stock-rating-on-underwriting-strength-93CH-4786758"
+   },
+   {
+    "title": "BMO on Progressive's variable dividend (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/bmo-reiterates-market-perform-on-progressive-stock-221-target-93CH-4909363"
+   },
+   {
+    "title": "JPMorgan raises Progressive target to $250 (MarketBeat)",
+    "url": "https://www.marketbeat.com/instant-alerts/analyst-progressive-nyse-pgr-given-new-25000-price-target-at-jpmorgan-chase-co-2026-10-05/"
+   },
+   {
+    "title": "Barclays raises Progressive target to $247 (GuruFocus)",
+    "url": "https://www.gurufocus.com/news/9113662/pgr-maintained-by-barclays-price-target-raised-to-247"
+   },
+   {
+    "title": "US 10-year Treasury rate (YCharts)",
+    "url": "https://ycharts.com/indicators/10_year_treasury_rate"
+   },
+   {
+    "title": "Allstate statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/all/statistics/"
+   },
+   {
+    "title": "Travelers statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/trv/statistics/"
+   },
+   {
+    "title": "Chubb statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cb/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "$18.27 (2026) × (1 − 10.4%)",
+    "formula": "2027 EPS = analysts' consensus",
+    "plain": "Analysts quote Progressive's targets on 2027 earnings, excluding gains and losses on its investments. They expect profit to fall about 10% from 2026, because claims costs are catching up with prices.",
+    "result": "$16.37 a share",
+    "title": "What will Progressive earn next year?"
+   },
+   {
+    "calc": "(11.3 + 13.1 + 12.5) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the earnings of the coming year. At the end of 2023, 2024 and 2025 it was 11.3, 13.1 and 12.5. We skip 2021–2022, years with near-zero interest rates and unusually low insurance profits.",
+    "result": "12.3",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "12.3 × 16.37",
+    "formula": "Price in 12 months = normal forward P/E × 2027 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is exactly how an analyst's price target is built.",
+    "result": "$201",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "201.4 ÷ 1.0634",
+    "formula": "Fair value = price in 12 months ÷ (1 + 6.3%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.24% bond yield + 0.2 × 5.5% = 6.3% a year. The low beta makes Progressive's required return unusually low.",
+    "result": "$189",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "189 ÷ 217.43 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is more than 10% above our value, so Progressive looks overvalued on its own normal multiple. The market is paying 13.3 × falling 2027 earnings, a bit above its usual 12.3.",
+    "result": "-13.1%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Progressive the way analysts value insurers: a price-to-earnings multiple (P/E) on next year's expected profit. Analysts expect profit to fall about 10% to $16.37 a share in 2027 as claims costs catch up with prices; at the forward P/E Progressive has normally traded at (12.3) the share would be worth about $201 in a year, or $189 today, about 13% below today's $217.43.",
+  "targets": {
+   "items": [
+    "Progressive's goal is to 'grow as fast as possible' while keeping a calendar-year combined ratio of 96 or better, meaning at least $4 of underwriting profit on every $100 of premiums. It keeps debt below 30% of total capital (19.6% in June 2026).",
+    "Track record: it met the 96 goal every year from 2021 to 2025, and with lots of room in 2024 (88.8) and 2025 (87.4). Premiums earned grew about 16% a year and policies in force rose 10% in 2025.",
+    "2026 so far: first-half combined ratio 86.9 and EPS excl. investment gains up about 3% ($9.81 vs $9.54). But the margin is slipping: 86.8 in July (+1.5 points) and 89.3 in August (+6.2 points), with August profit down 22%. Premium growth slowed to 5–6%. Q3 results are due on 14 October 2026.",
+    "Capital: Progressive returns spare capital through a variable year-end dividend ($13.50 a share for 2025). BMO expects about $11 for 2026 and estimates roughly $10 billion of excess capital."
+   ],
+   "title": "Does Progressive have a growth goal we can use?",
+   "verdict": "Progressive gives no profit forecast, so we use the analysts' consensus: EPS of $18.27 for 2026 (flat on 2025) and $16.37 for 2027 (−10%). The fall assumes the combined ratio drifts back toward the low 90s as price increases slow and competitors such as GEICO advertise harder. The July–August trend makes that look realistic, not too gloomy."
+  },
+  "ticker": "PGR",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Progressive is the second-largest car insurer in the United States, selling policies directly online and by phone and through independent agents; it also insures motorcycles, boats, homes and small-business vehicles. It earns money in two ways: by collecting more in premiums than it pays out in claims and costs, and by investing the roughly $97 billion it holds until claims are paid."
+ },
  {
   "company": "Ericsson",
   "consensus": {
