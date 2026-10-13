@@ -655,11 +655,509 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Waste collection & recycling",
   "teaser": "America's biggest rubbish collector earns steady, utility-like cash: how much is that reliability worth?",
   "ticker": "WM"
+ },
+ {
+  "company": "Rheinmetall",
+  "date": "2026-11-10",
+  "market": "Germany",
+  "method": "Forward EV/EBITA",
+  "sector": "Defence",
+  "teaser": "Europe is rearming and the order book keeps growing: how much of that boom is already in Rheinmetall's share price?",
+  "ticker": "RHM"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Assa Abloy",
+  "consensus": {
+   "analysts": 22,
+   "asOf": "Oct 2026",
+   "explain": "The average target of SEK 409 is a price in 12 months; discounted one year at 7.6% it is worth about SEK 380 today, 6% above our SEK 357. We use the same kind of method; the gap is the multiple. SEK 409 works out at about 17.7 × 2027 operating profit (EV/EBIT), while Assa Abloy's own forward average is 16.7. At 17.7 × our value would be about SEK 380.",
+   "high": 500,
+   "low": 340,
+   "method": "Analysts mostly put a multiple on operating profit 12 months ahead. Affärsvärlden (Placera, 26 Jun 2026) assumes 16 × forward EV/EBITA and lands on a neutral view; RBC (16 Jun 2026, target SEK 400) values the existing business at 12 × EV/EBITA and adds about SEK 170bn for the value of future bolt-on acquisitions. A price target is where analysts expect the share to be in 12 months.",
+   "rating": "Outperform",
+   "source": "MarketScreener",
+   "target": 408.76,
+   "targetToday": 380
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(WACC) = SEK 348.45",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model that includes Assa Abloy's acquisitions (4% organic growth, 60% of free cash spent on companies at the 2025 price of 1.7 × sales, both fading by year 10, margin 16.7%, 82% cash conversion) gives about SEK 487 at a 7.1% discount rate. Today's SEK 348 needs about 8.4% in that model. The cash supports the multiple: if Assa Abloy keeps compounding as it has, the share is not expensive, but the result is very sensitive to the discount rate (SEK 433 at 7.5%).",
+   "result": "≈ 8.4%"
+  },
+  "crossChecks": [
+   {
+    "calc": "22.1 × 17.72 ÷ 1.0759",
+    "name": "Check: forward P/E",
+    "note": "Close to our main value: the earnings view gives the same picture as the operating-profit view.",
+    "plain": "Assa Abloy's own forward P/E at year-ends 2023–25 averaged 22.1 (20.6, 22.8, 22.9). On 2027 consensus EPS of SEK 17.72, discounted one year:",
+    "result": "≈ SEK 364"
+   },
+   {
+    "calc": "(13.0 × 25,200 − 67,520) ÷ 1,110.8",
+    "name": "Check: at the peers' multiple",
+    "note": "Assa Abloy has long traded at a premium to peers thanks to its size, margins and steady acquisitions. The dormakaba figure is based on a price from 28 Aug 2026. If the premium disappeared, the value would be much lower.",
+    "plain": "Allegion (16.2), Fortune Brands (12.9) and dormakaba (9.9) trade at about 13.0 × last-year operating profit (EV/EBIT, stockanalysis.com, net debt including leases), versus about 18.0 × for Assa Abloy on the same basis. At the peer level Assa Abloy would be worth:",
+    "result": "≈ SEK 234"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-13",
+  "dateLabel": "Tuesday 13 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 357,
+  "history": {
+   "caption": "SEK million unless stated. EBIT excludes one-off items. From Assa Abloy's year-end reports 2021, 2023 and 2025 (IFRS cash-flow statement). Year-end share price = year-end market value (stockanalysis.com) ÷ 1,110.8m shares. Net debt excludes leases and pensions. Interest is added back (after 25.3% tax) because lenders are paid from this cash too. Last column: sales growth per year 2021–25; averages and totals for 2023–25.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2023–25"
+   ],
+   "rows": [
+    {
+     "label": "Sales",
+     "note": "Big step in 2023: purchase of Spectrum Brands' hardware and home business (HHI)",
+     "values": [
+      "95,007",
+      "120,793",
+      "140,716",
+      "150,162",
+      "152,409",
+      "+12.5%/yr"
+     ]
+    },
+    {
+     "label": "Organic growth",
+     "note": "Growth without acquisitions or currency. H1 2026: +3%, Q2 2026: +4%",
+     "values": [
+      "11%",
+      "12%",
+      "3%",
+      "−1%",
+      "3%",
+      "1.7%"
+     ]
+    },
+    {
+     "label": "EBIT (operating profit)",
+     "values": [
+      "14,181",
+      "18,532",
+      "22,185",
+      "24,296",
+      "24,664",
+      "71,145"
+     ]
+    },
+    {
+     "label": "EBIT margin",
+     "note": "Target range 16–17%",
+     "values": [
+      "14.9%",
+      "15.3%",
+      "15.8%",
+      "16.2%",
+      "16.2%",
+      "16.1%"
+     ]
+    },
+    {
+     "label": "Share price at year-end (SEK)",
+     "values": [
+      "276.2",
+      "223.7",
+      "290.3",
+      "326.8",
+      "358.9",
+      "—"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Year-end price ÷ EPS excl. one-offs (9.81, 11.97, 13.54, 14.09, 14.34). Last column: 2023–25 average",
+     "values": [
+      "28.2",
+      "18.7",
+      "21.4",
+      "23.2",
+      "25.0",
+      "23.2"
+     ]
+    },
+    {
+     "label": "EV/EBIT at year-end",
+     "note": "(Market value + net debt excl. leases & pensions) ÷ that year's EBIT. Last column: 2023–25 average",
+     "values": [
+      "23.1",
+      "14.8",
+      "17.1",
+      "17.5",
+      "18.5",
+      "17.7"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "Year-end EV ÷ the NEXT year's EBIT (2025: ÷ the current 2026 consensus of SEK 26,402m). This is the multiple we use. Last column: 2023–25 average",
+     "strong": true,
+     "values": [
+      "17.7",
+      "12.4",
+      "15.6",
+      "17.2",
+      "17.2",
+      "16.7"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid",
+     "values": [
+      "12,456",
+      "14,357",
+      "21,294",
+      "21,391",
+      "21,412",
+      "64,097"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "values": [
+      "425",
+      "597",
+      "1,585",
+      "2,428",
+      "2,416",
+      "6,429"
+     ]
+    },
+    {
+     "label": "− Equipment & systems (capex)",
+     "values": [
+      "1,629",
+      "1,990",
+      "2,419",
+      "2,063",
+      "2,598",
+      "7,080"
+     ]
+    },
+    {
+     "label": "− Lease payments",
+     "values": [
+      "1,242",
+      "1,330",
+      "1,543",
+      "1,797",
+      "1,968",
+      "5,308"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "10,010",
+      "11,634",
+      "18,917",
+      "19,959",
+      "19,262",
+      "58,138"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBIT)",
+     "strong": true,
+     "values": [
+      "71%",
+      "63%",
+      "85%",
+      "82%",
+      "78%",
+      "82%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "2024–25: 60% of free cash flow",
+     "values": [
+      "2,121",
+      "8,583",
+      "53,566",
+      "12,136",
+      "11,409",
+      "77,111"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close, 12 Oct 2026 (Nordnet). Market value SEK 387bn",
+    "value": "SEK 348.45"
+   },
+   {
+    "label": "Enterprise value (EV) today",
+    "note": "348.45 × 1,110.8m shares + 60,218m net debt. EV/EBIT today: 16.9 on 2026, 15.4 on 2027",
+    "value": "SEK 447,268m"
+   },
+   {
+    "label": "EBIT forecasts (consensus)",
+    "note": "MarketScreener. Last 12 months: SEK 25,005m (H1 2026 +3% despite −6% from currency)",
+    "value": "SEK 26,402m (2026) / 29,134m (2027)"
+   },
+   {
+    "label": "Normal forward EV/EBIT",
+    "note": "Average of year-ends 2023 (15.6), 2024 (17.2) and 2025 (17.2)",
+    "value": "16.7"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "Q2 2026 report",
+    "value": "1,110.8 million"
+   },
+   {
+    "label": "Net debt excl. leases & pensions",
+    "note": "Q2 2026 report: total net debt 68,246 − leases 7,053 − pensions 975",
+    "value": "SEK 60,218m"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.19% Swedish 10-year bond + beta 0.8 × 5.5%; brings the 12-month price back to today",
+    "value": "7.6%"
+   },
+   {
+    "label": "Analyst EPS forecasts",
+    "note": "MarketScreener. P/E on 2027: 19.7",
+    "value": "SEK 15.69 (2026) / 17.72 (2027)"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: EV/EBIT on next year's operating profit (how analysts value Nordic industrial companies and serial acquirers)",
+   "why": "Swedish analysts value industrial companies like Assa Abloy mainly on the enterprise value against next year's operating profit. Affärsvärlden, for example, assumes 16 × operating profit 12 months ahead, and RBC uses EV/EBITA too. EV (enterprise value) is the share value plus net debt; EBIT is operating profit, here excluding one-off items. That makes it fair for a company that buys many businesses with borrowed money. We take the forward EV/EBIT Assa Abloy has normally traded at, apply it to the 2027 forecast, subtract net debt, and bring the 12-month price back to today.",
+   "whyNot": "We use EBIT rather than EBITA because Assa Abloy has reported EBIT (excluding one-offs) for many years and consensus forecasts use it; the difference is amortisation of acquired brands and customer lists (SEK 1.6bn in 2025), so the multiples are slightly lower than the EBITA multiples analysts quote. P/E is shown as a check, because interest on acquisition debt affects it. The cash-flow model (DCF) is also only a check. We skip 2021–2022, when interest rates were near zero or rising fast."
+  },
+  "price": 348.45,
+  "priceDate": "close 12 Oct 2026 (Nordnet)",
+  "rangeHigh": 381,
+  "rangeLow": 332,
+  "reasoning": [
+   "Assa Abloy is a steady compounder: sales grew 12.5% a year in 2021–2025, the margin rose from 14.9% to 16.2%, and it turned 82% of operating profit into free cash in 2023–2025, most of which it spent buying more companies.",
+   "Valued the way analysts value Nordic industrial companies, at its normal forward EV/EBIT (16.7) on 2027 forecast EBIT, the share is worth about SEK 384 in a year and SEK 357 today. Today it trades at 15.4 × 2027 EBIT, a little below its average.",
+   "The checks point both ways: the forward P/E gives SEK 364 and the cash-flow model is generous (it needs only an 8.4% return), but peers trade far lower (SEK 234 at their multiple). The value depends on the 10% profit growth expected for 2027.",
+   "Fair value SEK 357 (range 332–381). At SEK 348.45 the stock looks roughly fairly priced, a little below the analysts' average target in today's money (SEK 380)."
+  ],
+  "risks": [
+   "Forecast risk: 2027 EBIT must grow about 10% after only 3% in H1 2026 (currency took off 6% of sales). If 2027 EBIT comes in 10% lower, the fair value falls to about SEK 316.",
+   "Multiple risk: at the analysts' implied 17.7 × the value is about SEK 380; at today's 15.4 × it is about SEK 324.",
+   "Near-term event: the Q3 report is due on 27 Oct 2026. Deutsche Bank (Hold, SEK 360) warned on 17 Sep that consensus may be too high for Q3. The company itself warns that tariffs between countries could hurt the business.",
+   "Upside: RBC's bolt-on model puts SEK 170bn of value on future acquisitions, and its upside case is SEK 470. The second dividend instalment of SEK 3.20 goes ex-dividend on 10 Nov 2026."
+  ],
+  "sector": "Locks & access solutions",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different forward EV/EBIT multiples (rows) and for 2027 EBIT coming in higher or lower than forecast (columns). Base case: 16.7 × SEK 29,134m.",
+   "colLabel": "2027 EBIT vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBIT",
+   "rows": [
+    "14.7",
+    "15.7",
+    "16.7",
+    "17.7",
+    "18.7"
+   ],
+   "values": [
+    [
+     272,
+     290,
+     308,
+     326,
+     344
+    ],
+    [
+     294,
+     313,
+     332,
+     351,
+     371
+    ],
+    [
+     316,
+     336,
+     357,
+     377,
+     397
+    ],
+    [
+     338,
+     360,
+     381,
+     403,
+     424
+    ],
+    [
+     360,
+     383,
+     405,
+     428,
+     451
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Assa Abloy Q2 2026 report, Swedish (PDF)",
+    "url": "https://www.assaabloy.com/group/sv/documents/investors/interim-reports/2026/Q2%20Kvartalsrapport%202026%20.pdf"
+   },
+   {
+    "title": "Assa Abloy Q2 2026 presentation (PDF)",
+    "url": "https://www.assaabloy.com/group/en/documents/investors/interim-presentations/2026/Q2%20Presentation%202026.pdf"
+   },
+   {
+    "title": "Assa Abloy year-end report 2025 (PDF)",
+    "url": "https://mb.cision.com/Main/7333/4302869/3918217.pdf"
+   },
+   {
+    "title": "Assa Abloy year-end report 2023 (PDF)",
+    "url": "https://mb.cision.com/Main/7333/3923652/2586870.pdf"
+   },
+   {
+    "title": "Assa Abloy year-end report 2021 (PDF)",
+    "url": "https://www.assaabloy.com/group/en/documents/investors/interim-reports/2021/Q4%20report%202021.pdf"
+   },
+   {
+    "title": "Assa Abloy annual report 2025: targets and key figures (PDF)",
+    "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual Report 2025.pdf"
+   },
+   {
+    "title": "Analyst consensus and target changes (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/ASSA-ABLOY-AB-22363198/consensus/"
+   },
+   {
+    "title": "Consensus forecasts 2026–2028 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/ASSA-ABLOY-AB-22363198/finances/"
+   },
+   {
+    "title": "Affärsvärlden: 16 × forward EV/EBITA (Placera, 26 Jun 2026)",
+    "url": "https://www.placera.se/analys/assa-abloy-nyckeln-finns--men-laset-ar-trogt-2026-06-26"
+   },
+   {
+    "title": "RBC initiates at Outperform, SOTP valuation (Investing.com)",
+    "url": "https://www.investing.com/news/stock-market-news/assa-abloy-shares-up-as-rbc-eyes-ma-bounty-20-upside-ahead-of-fy26-4744036"
+   },
+   {
+    "title": "Affärsvärlden: EV/EBIT valuation (Placera, Apr 2025)",
+    "url": "https://www.placera.se/analys/assa-abloy-vi-tar-hojd-for-viss-motvind-i-ar-2025-04-25"
+   },
+   {
+    "title": "Share price and news (Nordnet)",
+    "url": "https://www.nordnet.se/aktier/kurser/assa-abloy-b-assa-b-xsto"
+   },
+   {
+    "title": "Statistics and 5-year beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/ASSA.B/statistics/"
+   },
+   {
+    "title": "Year-end market values (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/ASSA.B/market-cap/"
+   },
+   {
+    "title": "EPS forecast 2026 (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/ASSA.B/forecast/"
+   },
+   {
+    "title": "Q3 report date and Deutsche Bank warning (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/assa-abloy-stock-heads-toward-its-october-27-results/70255245"
+   },
+   {
+    "title": "Evercore ISI target, 8 Oct 2026 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/assa-abloy-aktie-bei-31-11-euro-5-8-prozent-im-jahresminus/70302616"
+   },
+   {
+    "title": "Sweden 10-year bond yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "Allegion statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/alle/statistics/"
+   },
+   {
+    "title": "Fortune Brands statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/fbin/statistics/"
+   },
+   {
+    "title": "dormakaba statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/swx/DOKA/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus",
+    "formula": "2027 EBIT = consensus forecast",
+    "plain": "We use the analysts' average forecast for 2027 operating profit (EBIT, excluding one-offs). It is about 10% above the 2026 forecast, helped by acquisitions and a slightly higher margin (17.0%).",
+    "result": "SEK 29,134m",
+    "title": "What will Assa Abloy earn next year?"
+   },
+   {
+    "calc": "(15.6 + 17.2 + 17.2) ÷ 3",
+    "formula": "Normal forward EV/EBIT = average of the last three year-ends",
+    "plain": "The forward EV/EBIT is the enterprise value at year-end divided by the next year's operating profit. It was 15.6 at the end of 2023, 17.2 at the end of 2024 and 17.2 at the end of 2025. The average is 16.7.",
+    "result": "16.7",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "(16.7 × 29,134 − 60,218) ÷ 1,110.8",
+    "formula": "Price in 12 months = (normal EV/EBIT × 2027 EBIT − net debt) ÷ shares",
+    "plain": "Value the whole company at the normal multiple, subtract what is owed to lenders, and divide by the number of shares.",
+    "result": "SEK 384",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "383.8 ÷ 1.0759",
+    "formula": "Fair value = price in 12 months ÷ (1 + 7.6%)",
+    "plain": "Shareholders want a return for waiting a year: 3.19% bond yield + 0.8 × 5.5% = 7.6%.",
+    "result": "SEK 357",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "356.7 ÷ 348.45 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is within 10% of our value, so on its usual multiple Assa Abloy looks roughly fairly priced.",
+    "result": "+2.4%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Assa Abloy the way Swedish analysts value industrial companies: EV/EBIT, the value of the whole company against next year's operating profit. At the forward multiple Assa Abloy has averaged at the last three year-ends (16.7) on the SEK 29,134m of operating profit expected for 2027, the share would be worth about SEK 384 in a year, or SEK 357 today, only 2% above today's SEK 348.45.",
+  "targets": {
+   "items": [
+    "Financial targets: sales growth of 10% a year over a business cycle (organic growth plus acquisitions) and an operating (EBIT) margin of 16–17%. The CEO aims for the upper end of the margin range over time.",
+    "Track record: sales grew 12.5% a year in 2021–25, so the growth target was met, but mostly through acquisitions; organic growth was only −1% to +3% a year in 2023–25. The margin rose from 14.9% to 16.2% and has been inside the target range in 2024 and 2025."
+   ],
+   "title": "Does Assa Abloy have a growth goal we can use?",
+   "verdict": "We use the targets as a reasonableness check, not as the forecast. The 2027 consensus (EBIT SEK 29,134m on sales of SEK 170,911m) means a 17.0% margin and about 8% sales growth a year from 2025, which fits the targets: slow organic growth plus steady acquisitions. Our cash-flow check uses the same habits: 4% organic growth and 60% of free cash spent on acquisitions."
+  },
+  "ticker": "ASSA B",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "The world's largest maker of locks, doors and access systems: mechanical and digital locks, automatic entrance doors, industrial doors, hotel key cards and identity technology (HID). It has grown by buying more than 400 companies, spending SEK 11.4 billion on 23 acquisitions in 2025 alone."
+ },
  {
   "company": "Progressive",
   "consensus": {
