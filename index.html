@@ -664,11 +664,574 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Defence",
   "teaser": "Europe is rearming and the order book keeps growing: how much of that boom is already in Rheinmetall's share price?",
   "ticker": "RHM"
+ },
+ {
+  "company": "Axfood",
+  "date": "2026-11-11",
+  "market": "Sweden",
+  "method": "Forward P/E",
+  "sector": "Food retail (grocery)",
+  "teaser": "Sweden's discount grocer behind Willys: how much should you pay for steady, low-margin food sales?",
+  "ticker": "AXFO"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Alphabet",
+  "consensus": {
+   "analysts": 62,
+   "asOf": "12 Oct 2026",
+   "explain": "The average target of $430 is a price in 12 months; discounted one year at 11.8% it is worth about $385 today, 30% above our $296 (our value is 23% below it). The target works out at 28.2 × 2027 earnings, while we use Alphabet's own normal forward P/E of 21.7. The forecast is the same, so the whole gap is the multiple: analysts assume investors will keep paying a premium like Microsoft's (27.5 × at Wells Fargo), while Alphabet's last three year-ends averaged far less, including a low 17.8 at the end of 2023 when investors feared AI would hurt Search.",
+   "high": 515,
+   "low": 340,
+   "method": "Analysts value Alphabet with a P/E on next year's (2027) earnings. Wells Fargo's $417 target (6 Oct 2026) is 27.5 × its 2027 EPS forecast of $15.17 (Investing.com). Others, such as Bernstein ($385, Hold) and UBS ($400, Neutral), are more cautious because heavy AI spending is pushing free cash flow down. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Strong Buy",
+   "source": "stockanalysis.com (S&P Global poll)",
+   "target": 430.4,
+   "targetToday": 385
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = $353.78",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model gives only about $188 today. It uses the analysts' sales and profit forecasts for 2027–28 (sales $618bn and $741bn), then growth slowing from 12% to 2.5% by year 10, and a 36% operating margin. Because of record AI spending, free cash flow is negative in 2027 (consensus −$37.7bn) and near zero in 2028; we assume cash conversion then recovers to 40%, 55%, 65% and 75% (it was 83% in 2021–23). The cash is discounted at 11.6% (WACC) and the $142bn net cash is added. Today's price would need a discount rate of about 7.8% in this model. The multiples say a little expensive, the cash says clearly expensive: the market is betting that the AI spending will pay off.",
+   "result": "≈ 7.8% (value at 11.6%: $188)"
+  },
+  "crossChecks": [
+   {
+    "calc": "(17.8 × 218,162 + 142,310) ÷ 12,230 ÷ 1.118",
+    "name": "Check: EV/EBIT on the same basis",
+    "note": "Almost the same as the P/E answer, so the two multiples agree.",
+    "plain": "EV/EBIT values the whole business (market value minus net cash) against operating profit. Alphabet's forward EV/EBIT averaged 17.8 at year-ends 2023–2025. Applied to 2027 operating profit ($218.2bn), plus $142.3bn net cash, divided by shares and discounted one year:",
+    "result": "≈ $294"
+   },
+   {
+    "calc": "26.25 ÷ 26.26 × 353.78",
+    "name": "Check: peers' forward P/E",
+    "note": "On this basis Alphabet is priced exactly like its peers today. The gap to our value comes from Alphabet's own history: it has usually traded at a discount to Microsoft and Amazon, and the market has now closed that gap.",
+    "plain": "Microsoft (27.5), Meta (23.7) and Amazon (27.6) trade at an average forward P/E of 26.3 (stockanalysis.com, 13 Oct 2026). Alphabet trades at 26.3 on the same basis, so applying the peer average gives today's price.",
+    "result": "≈ $354"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-14",
+  "dateLabel": "Wednesday 14 October 2026",
+  "exchange": "Nasdaq",
+  "fairValue": 296,
+  "history": {
+   "caption": "US$ million unless stated. Fiscal year = calendar year. From Alphabet's 10-K annual reports and earnings releases (US GAAP), via stockanalysis.com (S&P Global data) and checked against the FY2025 earnings release. 'EPS excl. one-offs' is our own figure: pre-tax profit minus gains (losses) on equity securities, taxed at that year's effective rate, ÷ diluted shares. Year-end share prices are Class A closes (2021 split-adjusted ÷ 20). Net cash = cash and marketable securities − borrowings, excluding leases. Last column: 12 months to 30 June 2026, or the 2023–25 average for the multiples.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "TTM Jun 2026 / avg"
+   ],
+   "rows": [
+    {
+     "label": "Sales",
+     "note": "Growth 2021–25: 11.8% a year",
+     "values": [
+      "257,637",
+      "282,836",
+      "307,394",
+      "350,018",
+      "402,836",
+      "445,866"
+     ]
+    },
+    {
+     "label": "Sales growth",
+     "note": "TTM: +20% vs a year earlier (Wells Fargo); Q2 2026 +24%",
+     "values": [
+      "n/a",
+      "9.8%",
+      "8.7%",
+      "13.9%",
+      "15.1%",
+      "+20%"
+     ]
+    },
+    {
+     "label": "EBIT (operating profit)",
+     "values": [
+      "78,714",
+      "74,842",
+      "84,293",
+      "112,390",
+      "129,039",
+      "147,628"
+     ]
+    },
+    {
+     "label": "EBIT margin",
+     "values": [
+      "30.6%",
+      "26.5%",
+      "27.4%",
+      "32.1%",
+      "32.0%",
+      "33.1%"
+     ]
+    },
+    {
+     "label": "Gains (losses) on stakes in other companies",
+     "note": "Excluded from our EPS. 2026: big gains on equity stakes",
+     "values": [
+      "12,270",
+      "−5,519",
+      "−823",
+      "2,671",
+      "24,620",
+      "149,012"
+     ]
+    },
+    {
+     "label": "EPS as reported",
+     "values": [
+      "5.61",
+      "4.56",
+      "5.80",
+      "8.04",
+      "10.81",
+      "19.93"
+     ]
+    },
+    {
+     "label": "EPS excl. one-offs (stake gains/losses)",
+     "note": "Our calculation; growth 2021–25: 17% a year",
+     "values": [
+      "4.85",
+      "4.91",
+      "5.86",
+      "7.86",
+      "9.13",
+      "10.01"
+     ]
+    },
+    {
+     "label": "Share price at year-end",
+     "values": [
+      "144.85",
+      "88.23",
+      "139.69",
+      "189.30",
+      "313.00",
+      "353.78 (today)"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Year-end price ÷ that year's EPS excl. one-offs. Last column: 2023–25 average",
+     "values": [
+      "29.9",
+      "18.0",
+      "23.9",
+      "24.1",
+      "34.3",
+      "27.4"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ the NEXT year's EPS excl. one-offs (2025: ÷ the $11.82 consensus for 2026). This is the multiple analysts use. Last column: 2023–25 average; 2021 left out (near-zero interest rates)",
+     "strong": true,
+     "values": [
+      "29.5",
+      "15.1",
+      "17.8",
+      "20.7",
+      "26.5",
+      "21.7"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "(Market value − net cash) ÷ next year's EBIT (2025: ÷ $171.7bn consensus for 2026). Last column: 2023–25 average",
+     "values": [
+      "23.9",
+      "12.3",
+      "14.6",
+      "17.3",
+      "21.6",
+      "17.8"
+     ]
+    },
+    {
+     "label": "Net cash excl. leases",
+     "note": "June 2026 includes $87.1bn of listed stakes in other companies",
+     "values": [
+      "126,805",
+      "100,905",
+      "98,046",
+      "81,475",
+      "78,300",
+      "142,310"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid",
+     "values": [
+      "91,652",
+      "91,495",
+      "101,746",
+      "125,299",
+      "164,713",
+      "185,675"
+     ]
+    },
+    {
+     "label": "+ Interest, after tax",
+     "note": "Interest expense from the income statement used as a stand-in for interest paid (small)",
+     "values": [
+      "290",
+      "300",
+      "265",
+      "224",
+      "612",
+      "1,874"
+     ]
+    },
+    {
+     "label": "− Data centres & equipment (capex)",
+     "note": "2026 guidance raised to $195–205bn",
+     "values": [
+      "24,640",
+      "31,485",
+      "32,251",
+      "52,535",
+      "91,447",
+      "132,402"
+     ]
+    },
+    {
+     "label": "− Finance lease repayments",
+     "note": "Not found separately in our sources; Alphabet's finance leases are small",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "67,302",
+      "60,310",
+      "69,760",
+      "72,988",
+      "73,878",
+      "55,147"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBIT)",
+     "note": "2021–23: 83% before the AI build-out",
+     "strong": true,
+     "values": [
+      "86%",
+      "81%",
+      "83%",
+      "65%",
+      "57%",
+      "37%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "values": [
+      "2,618",
+      "6,969",
+      "495",
+      "2,931",
+      "1,592",
+      "34,936"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq close, 13 Oct 2026 (stockanalysis.com). Market value about $4.33 trillion",
+    "value": "$353.78"
+   },
+   {
+    "label": "Analyst EPS forecasts",
+    "note": "stockanalysis.com consensus, excluding gains on stakes. MarketScreener has $15.02 for 2027. Forward P/E today: 353.78 ÷ 15.24 = 23.2",
+    "value": "$11.82 (2026) / $15.24 (2027)"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of year-ends 2023 (17.8), 2024 (20.7) and 2025 (26.5): price ÷ next year's EPS",
+    "value": "21.7"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.21% US 10-year yield + beta 1.2 × 5.5% equity risk premium; used to bring the 12-month price back to today",
+    "value": "11.8%"
+   },
+   {
+    "label": "EPS excl. one-offs, last 12 months",
+    "note": "12 months to June 2026; as reported $19.93 because of stake gains. Trailing P/E on our basis: 35.3",
+    "value": "$10.01"
+   },
+   {
+    "label": "Operating profit forecasts",
+    "note": "MarketScreener consensus; used for the EV/EBIT check and the DCF",
+    "value": "$171.7bn (2026) / $218.2bn (2027)"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "30 June 2026 (stockanalysis.com balance sheet)",
+    "value": "12,230 million"
+   },
+   {
+    "label": "Net cash excl. leases",
+    "note": "30 Jun 2026: cash and marketable securities $242,474m (incl. $87.1bn listed stakes) − debt $100,164m",
+    "value": "$142,310m"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "US 10-year Treasury, 5.21% on 13 Oct 2026 (YCharts)",
+    "value": "5.2%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 1.21 (stockanalysis.com)",
+    "value": "1.2"
+   },
+   {
+    "label": "Equity risk premium / cost of debt",
+    "note": "Our assumptions: debt at 4.8% before tax, tax rate 16.8% (2025 effective rate)",
+    "value": "5.5% / 4.0% after tax"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large internet companies)",
+   "why": "For large internet and tech companies, analysts set their targets as a P/E times next year's earnings forecast. Wells Fargo's $417 target, for example, is 27.5 × its 2027 earnings. We do the same: we take the forward P/E Alphabet has normally traded at (price ÷ the next year's earnings, average of year-ends 2023–2025), apply it to the consensus forecast for 2027, which gives a price in 12 months, and discount that one year at the 11.8% return shareholders demand. Alphabet's fiscal year is the calendar year, so no blending is needed.",
+   "whyNot": "We do not blend in other methods, because analysts in this sector don't: P/E is the standard. EV/EBIT and a cash-flow model (DCF) are shown below only as checks. The DCF is very low right now because Alphabet is spending around $200 billion a year on data centres, so free cash flow is close to zero, and because US bond yields are about 5.2%. Price-to-book makes little sense: most of Alphabet's value is software, data, brands and users that are not on the balance sheet. We use earnings excluding gains and losses on Alphabet's stakes in other companies (huge in 2026: about $149 billion in the 12 months to June), because analysts' forecasts exclude them too."
+  },
+  "price": 353.78,
+  "priceDate": "close 13 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 309,
+  "rangeLow": 282,
+  "reasoning": [
+   "Alphabet has grown steadily: sales rose 12% a year in 2021–25, the operating margin climbed from 26.5% to 32–33%, and earnings per share (excluding stake gains) grew about 17% a year. Growth is now speeding up, with sales +24% and Google Cloud +82% in Q2 2026.",
+   "Valued the way analysts value big internet companies, at its normal forward P/E (21.7) on 2027 earnings, the share is worth about $331 in a year and $296 today. Today it trades at 23.2 × 2027 earnings, above that average.",
+   "EV/EBIT on the same basis gives about $294, so the two multiples agree. The warning sign is cash: with around $200bn of AI capex in 2026, only 37% of profit became free cash in the last 12 months, and a cash-flow model at today's 5.2% bond yield gives just $188.",
+   "Fair value $296 (range $282–309). At $353.78 the stock looks overvalued by about 16% on its own history, while analysts' average target ($385 in today's money) assumes a Microsoft-like multiple of about 28."
+  ],
+  "risks": [
+   "Forecast risk: analysts expect EPS to grow about 29% in both 2026 and 2027. If 2027 earnings come in 10% lower, the fair value falls to about $266.",
+   "Multiple risk: at the analysts' implied 28.2 × 2027 EPS the value would be about $385; at today's 23.2 it would be about $316. Our 21.7 includes the depressed 17.8 of end-2023, when investors feared AI chatbots would hurt Search.",
+   "Cash and spending: capex of $195–205bn in 2026 and more in 2027 means free cash flow is close to zero (consensus −$37.7bn in 2027), and Alphabet has paused buybacks and doubled its debt to $98bn. If AI demand cools, the multiple could fall.",
+   "Upside: the $514bn Cloud backlog, outside sales of TPU chips (Wells Fargo forecasts $9.2bn in Q3 2026) and $87bn of listed stakes are not fully in the 2027 forecast. Q3 2026 results are due in late October."
+  ],
+  "sector": "Internet",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in US$ per share for different forward P/Es (rows) and for 2027 earnings coming in higher or lower than forecast (columns). Base case: P/E 21.7 on EPS of $15.24, discounted at 11.8%.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "19.7",
+    "20.7",
+    "21.7",
+    "22.7",
+    "23.7"
+   ],
+   "values": [
+    [
+     242,
+     255,
+     269,
+     282,
+     295
+    ],
+    [
+     254,
+     268,
+     282,
+     296,
+     310
+    ],
+    [
+     266,
+     281,
+     296,
+     311,
+     325
+    ],
+    [
+     278,
+     294,
+     309,
+     325,
+     340
+    ],
+    [
+     291,
+     307,
+     323,
+     339,
+     355
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Alphabet Q4 and fiscal year 2025 earnings release",
+    "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf"
+   },
+   {
+    "title": "Alphabet 10-K fiscal 2025 (SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+   },
+   {
+    "title": "Alphabet income statement 2021–TTM (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/financials/income-statement/"
+   },
+   {
+    "title": "Alphabet financials overview (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/financials/"
+   },
+   {
+    "title": "Alphabet cash flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Alphabet balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/financials/balance-sheet/"
+   },
+   {
+    "title": "Alphabet statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/statistics/"
+   },
+   {
+    "title": "Alphabet analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/forecast/"
+   },
+   {
+    "title": "Alphabet price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/history/"
+   },
+   {
+    "title": "Alphabet forecasts 2026–2028 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/ALPHABET-INC-24203373/finances/"
+   },
+   {
+    "title": "Alphabet year-end share prices (Digrin)",
+    "url": "https://www.digrin.com/stocks/detail/GOOGL/price"
+   },
+   {
+    "title": "Wells Fargo raises Alphabet target to $417, 27.5 × 2027 EPS (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-raises-alphabet-stock-price-target-on-tpu-sales-outlook-93CH-4933882"
+   },
+   {
+    "title": "Piper Sandler raises Alphabet target to $400 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/piper-sandler-raised-target-for-alphabet-stock-to-usd-400-00/70312562"
+   },
+   {
+    "title": "Alphabet price targets: Bernstein, UBS, Morgan Stanley, Citi and others (Tickeron)",
+    "url": "https://tickeron.com/blogs/alphabet-googl-price-targets-point-to-25-upside-toward-430-17574/"
+   },
+   {
+    "title": "Alphabet price prediction and Q2 2026 details (24/7 Wall St.)",
+    "url": "https://247wallst.com/investing/2026/10/08/alphabet-price-prediction-56-analysts-bullish-zero-sells/"
+   },
+   {
+    "title": "Alphabet Q2 2026 earnings call highlights (Nasdaq/MarketBeat)",
+    "url": "https://www.nasdaq.com/articles/alphabet-q2-earnings-call-highlights"
+   },
+   {
+    "title": "Alphabet raises capex guidance (The Motley Fool)",
+    "url": "https://fool.com/investing/2026/08/16/sundar-pichai-raised-alphabets-capex-guidance-to-2"
+   },
+   {
+    "title": "US 10-year Treasury rate (YCharts)",
+    "url": "https://ycharts.com/indicators/10_year_treasury_rate"
+   },
+   {
+    "title": "Microsoft statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/msft/statistics/"
+   },
+   {
+    "title": "Meta statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/meta/statistics/"
+   },
+   {
+    "title": "Amazon statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/amzn/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "stockanalysis.com consensus (MarketScreener: $15.02)",
+    "formula": "Next-year EPS = consensus 2027 EPS",
+    "plain": "Analysts expect earnings per share (EPS) of $15.24 in 2027, excluding gains on stakes in other companies. That is 29% more than the $11.82 they expect for 2026. Alphabet's year is the calendar year, so 2027 is 'next year' for a 12-month target.",
+    "result": "$15.24 a share",
+    "title": "What will Alphabet earn next year?"
+   },
+   {
+    "calc": "(17.8 + 20.7 + 26.5) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the coming year's earnings. At the end of 2023, 2024 and 2025 it was 17.8, 20.7 and 26.5. The average is 21.7. We skip 2021, when interest rates were near zero.",
+    "result": "21.7",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "21.7 × 15.24",
+    "formula": "Price in 12 months = normal forward P/E × 2027 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is exactly how an analyst's price target is built.",
+    "result": "$331",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "330.7 ÷ 1.118",
+    "formula": "Fair value = price in 12 months ÷ (1 + 11.8%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.2% bond yield + 1.2 × 5.5% = 11.8% a year.",
+    "result": "$296",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "296 ÷ 353.78 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is 16% above our value. In other words, the market already pays 23.2 × 2027 earnings, more than Alphabet's own normal 21.7, so Alphabet looks overvalued on this method.",
+    "result": "−16%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Alphabet the way analysts value big internet companies: a price-to-earnings multiple (P/E) on next year's expected profit. Analysts expect earnings of $15.24 a share in 2027; at the forward P/E Alphabet has normally traded at (21.7) the share would be worth about $331 in a year, or $296 today, 16% below today's $353.78. The market is paying a higher multiple than Alphabet's own history because it expects the AI and cloud boom to keep earnings growing fast.",
+  "targets": {
+   "items": [
+    "Alphabet has no long-term financial targets. It gives no revenue or profit guidance, only a capex outlook.",
+    "Capex: guided at $175–185bn for 2026 in February, raised to $195–205bn in July, and expected to 'increase significantly' in 2027. Management expects a little over half of the $514bn Google Cloud backlog to turn into revenue within 24 months.",
+    "Track record: sales grew 12% a year in 2021–25 and the operating margin rose from 26.5% (2022) to 32–33%. In Q2 2026 sales grew 24% and operating profit 30%; Google Cloud grew 82% with a 35.6% margin."
+   ],
+   "title": "Does Alphabet have a growth goal we can use?",
+   "verdict": "With no company goal, we use the analysts' consensus: EPS of $11.82 for 2026 (+29% on our $9.13 for 2025) and $15.24 for 2027 (+29%). That is demanding: to reach the 2026 operating-profit forecast ($171.7bn), the second half must be about 36% higher than a year earlier, after +30% in Q2. Wells Fargo's forecast of large outside TPU chip sales is one reason analysts expect this."
+  },
+  "ticker": "GOOGL",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Alphabet owns Google: Search and its ads, YouTube, Android, Chrome and the fast-growing Google Cloud, which also rents out Google's own AI chips (TPUs) and Gemini AI models. It also owns 'Other Bets' such as the self-driving car company Waymo, and holds large stakes in other companies."
+ },
  {
   "company": "Assa Abloy",
   "consensus": {
