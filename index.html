@@ -673,11 +673,518 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Food retail (grocery)",
   "teaser": "Sweden's discount grocer behind Willys: how much should you pay for steady, low-margin food sales?",
   "ticker": "AXFO"
+ },
+ {
+  "company": "Apple",
+  "date": "2026-11-12",
+  "market": "United States",
+  "method": "Forward P/E",
+  "sector": "Consumer technology (iPhone, Mac, services)",
+  "teaser": "Investors pay a premium for the iPhone maker's steady services cash: is that premium still earned?",
+  "ticker": "AAPL"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Realty Income",
+  "consensus": {
+   "analysts": 25,
+   "asOf": "9 Oct 2026",
+   "explain": "The average target of $65.63 is a price in 12 months; discounted one year at 9.1% it is worth about $60.2 today, so our $54 is 9.5% lower. On 2027 AFFO of $4.57 the target implies 14.4 times, versus the 13.0 times we use (the 2023–25 year-end average). The gap is in the multiple, not the forecast: many targets were set when the share traded at about 14 times (June 2026) and are only now being cut as the 10-year Treasury yield passed 5.2%.",
+   "high": 74,
+   "low": 59,
+   "method": "Recent notes are mostly cuts: Scotiabank cut to $59 and downgraded to Sector Perform (24 Sep 2026), citing rising interest rates squeezing FFO growth and above-peer rate sensitivity; Mizuho cut to $61, RBC to $60, Stifel to $64, Truist started at Hold with $60, while UBS keeps Buy at $74. The public summaries do not give the multiple each broker uses, but they all centre on AFFO/FFO per share growth and interest rates, and TIKR reports a Street average NAV of about $61. A target price is where analysts expect the share to be in 12 months.",
+   "rating": "Hold",
+   "source": "stockanalysis.com (S&P Global)",
+   "target": 65.63,
+   "targetToday": 60.2
+  },
+  "crossCheck": {
+   "calc": "55.17 ÷ 61",
+   "name": "NAV check: price compared with the value of the buildings (not in the fair value)",
+   "plain": "Net asset value (NAV) is what the buildings would sell for, minus the debt, per share. Realty Income does not publish a NAV, but the average analyst estimate is about $61 (TIKR, Sep 2026). Today's price is about 0.90 times that, a 10% discount. Net-lease REITs often trade near or above NAV when rates are low, and below it when rates are high, as now. The check says the share is not expensive against its property, but a 10% discount alone is not a strong signal.",
+   "result": "≈ 0.90 × NAV (10% discount)"
+  },
+  "crossChecks": [
+   {
+    "calc": "Solve DCF(WACC) = $55.17",
+    "name": "Cash-flow check (10-year DCF)",
+    "note": "New deals add value only if their yield (7.3% on Q2 2026 investments) beats the cost of capital (about 8%); today it does not, which is why the market pays a lower multiple than in 2021.",
+    "plain": "Cash available to all investors = operating cash flow $4,166m + interest paid $1,109m − leasing costs and upkeep capex $7m = $5,268m a year (as a REIT, it pays almost no US tax, so interest gives no tax saving). We let it grow 3.5% next year (property already bought), 1.5% a year in years 2–5 (rent increases on existing leases) and 2% after that, with no new deals. Discounted at 8.0% (9.1% cost of equity, 6.2% cost of debt, 62/38 market-value weights), minus net debt $30.8bn and $2.4bn owed to partners, that gives about $60 a share. Today's price would need a discount rate of about 8.3%. The cash supports today's price and our multiple.",
+    "result": "≈ $60 (price needs 8.3%)"
+   },
+   {
+    "calc": "3.258 ÷ 5.63%",
+    "name": "Check: dividend yield history",
+    "note": "Today's yield is 5.9%, a bit above normal, so this check is slightly more positive than our fair value. The dividend uses about 74% of AFFO, the same share as in past years.",
+    "plain": "At the 2023–2025 year-ends the dividend yield averaged 5.6%. At that yield, today's annual dividend of $3.26 would be worth:",
+    "result": "≈ $58"
+   },
+   {
+    "calc": "12.6 × 4.445",
+    "name": "Check: peers' P/AFFO",
+    "note": "Realty Income itself trades at 12.4 times 2026 AFFO on the same basis, just below the peer average. Agree Realty earns a higher multiple for faster growth; NNN trades lower.",
+    "plain": "On 14 Oct 2026, on each company's 2026 AFFO guidance midpoint, NNN REIT traded at 11.4 times, Agree Realty at 14.3 and W. P. Carey at 12.1 (price 9 Oct). The average is 12.6. Applied to Realty Income's 2026 AFFO of $4.445:",
+    "result": "≈ $56"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-15",
+  "dateLabel": "Thursday 15 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 54,
+  "history": {
+   "caption": "From Realty Income's year-end releases (AFFO per diluted share, shares, debt) and stockanalysis.com (cash-flow statement). Year-end prices unadjusted (Digrin). Forward P/AFFO = year-end price ÷ the NEXT year's actual AFFO; for 2025 we use the current 2026 consensus ($4.44, in line with guidance $4.44–4.45). Net debt = total debt − cash (2024 and 2025 as reported by the company). Latest: price 14 Oct 2026, AFFO last 12 months to June 2026, forward on 2027 consensus $4.57.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "AFFO per share, $",
+     "note": "Latest = 12 months to June 2026 ($4.28 − 2.11 + 2.22). Guidance 2026: $4.44–4.45",
+     "values": [
+      "3.59",
+      "3.92",
+      "4.00",
+      "4.19",
+      "4.28",
+      "4.39"
+     ]
+    },
+    {
+     "label": "Share price at year-end, $",
+     "values": [
+      "71.59",
+      "63.43",
+      "57.42",
+      "53.41",
+      "56.37",
+      "55.17"
+     ]
+    },
+    {
+     "label": "Price ÷ AFFO, trailing",
+     "values": [
+      "19.9",
+      "16.2",
+      "14.4",
+      "12.7",
+      "13.2",
+      "12.6"
+     ]
+    },
+    {
+     "label": "Price ÷ AFFO, forward (next year)",
+     "note": "This is the multiple we use. Average 2023–25: 13.0. 2021–22 left out (near-zero interest rates). Latest: on 2027 consensus $4.57",
+     "strong": true,
+     "values": [
+      "18.3",
+      "15.9",
+      "13.7",
+      "12.5",
+      "12.7",
+      "12.1"
+     ]
+    },
+    {
+     "label": "Dividend per share paid, $",
+     "values": [
+      "2.75",
+      "2.97",
+      "3.05",
+      "3.13",
+      "3.22",
+      "3.26 (annual rate)"
+     ]
+    },
+    {
+     "label": "Dividend yield at year-end",
+     "note": "Average 2023–25: 5.6%",
+     "values": [
+      "3.8%",
+      "4.7%",
+      "5.3%",
+      "5.9%",
+      "5.7%",
+      "5.9%"
+     ]
+    },
+    {
+     "label": "Dividend ÷ AFFO (payout)",
+     "values": [
+      "77%",
+      "76%",
+      "76%",
+      "75%",
+      "75%",
+      "74%"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities, $m",
+     "note": "IFRS/GAAP cash-flow statement, after interest paid. Latest: 12 months to June 2026",
+     "values": [
+      "1,322",
+      "2,564",
+      "2,959",
+      "3,573",
+      "3,995",
+      "4,166"
+     ]
+    },
+    {
+     "label": "Interest paid, $m",
+     "values": [
+      "355",
+      "502",
+      "692",
+      "970",
+      "1,072",
+      "1,109"
+     ]
+    },
+    {
+     "label": "Property bought minus property sold, $m",
+     "note": "The growth engine: mostly funded by new shares and new debt",
+     "values": [
+      "6,082",
+      "8,546",
+      "8,005",
+      "2,794",
+      "4,036",
+      "5,266"
+     ]
+    },
+    {
+     "label": "Shares outstanding at year-end, millions",
+     "note": "Big jumps come from all-share mergers (VEREIT in 2021, Spirit Realty in 2024) and new shares sold to fund purchases",
+     "values": [
+      "591.3",
+      "660.3",
+      "752.5",
+      "891.5",
+      "934.0",
+      "946.2 (Jun)"
+     ]
+    },
+    {
+     "label": "Net debt, $m",
+     "note": "Net debt ÷ EBITDAre has stayed at about 5.4–5.6×",
+     "values": [
+      "n/a",
+      "17,764",
+      "21,248",
+      "26,725",
+      "29,300",
+      "30,438 (Jun)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close 14 Oct 2026 (+0.33%); 52-week range $53.15–67.94",
+    "value": "$55.17"
+   },
+   {
+    "label": "2027 AFFO per share (consensus)",
+    "note": "About +3% on 2026 (TIKR, Sep 2026); 2026 guidance $4.44–4.45",
+    "value": "$4.57"
+   },
+   {
+    "label": "Normal forward P/AFFO",
+    "note": "Average of year-ends 2023 (13.7), 2024 (12.5) and 2025 (12.7)",
+    "value": "13.0"
+   },
+   {
+    "label": "Forward P/AFFO today",
+    "note": "55.17 ÷ 4.57",
+    "value": "12.1"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.21% US 10-year Treasury (Fed H.15, 13 Oct 2026) + beta 0.7 × 5.5%",
+    "value": "9.1%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.70 (stockanalysis.com)",
+    "value": "0.7"
+   },
+   {
+    "label": "Net debt / NCI",
+    "note": "Debt $31.33bn − cash $0.57bn (stockanalysis.com); noncontrolling interests $2.38bn at 30 Jun 2026",
+    "value": "$30.8bn / $2.4bn"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "stockanalysis.com, Oct 2026",
+    "value": "945.9 million"
+   },
+   {
+    "label": "Dividend",
+    "note": "Yield 5.9% at today's price",
+    "value": "$3.26 a year ($0.2715 a month)"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: price ÷ next year's AFFO (P/AFFO), how analysts value US REITs, with a NAV check",
+   "why": "A REIT must pay out most of its profit, and ordinary earnings (EPS) are pushed down by large depreciation charges on buildings that often hold their value: Realty Income earned $1.17 a share in 2025 but generated $4.28 of AFFO. So US REIT analysts compare the price with FFO/AFFO, the cash profit after interest and small upkeep costs. Analyst coverage of Realty Income (Scotiabank, Stifel, UBS) is framed around AFFO per share and its growth; Stifel, for example, publishes a 2027 AFFO estimate alongside its target. We use the average forward P/AFFO at the 2023–2025 year-ends and the consensus 2027 AFFO.",
+   "whyNot": "P/E would be misleading because of depreciation (trailing P/E about 40). A DCF is shown only as a check because for a landlord with 98.8% occupancy it mostly repeats the rent roll, and the value depends heavily on the discount rate. NAV (the value of the buildings minus debt) is shown as a check, as is the dividend yield and peers' P/AFFO. The Q3 report comes on 2 November 2026."
+  },
+  "price": 55.17,
+  "priceDate": "close 14 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 59,
+  "rangeLow": 50,
+  "reasoning": [
+   "Realty Income's record is steady: AFFO per share grew every year from $3.59 in 2021 to $4.28 in 2025, always within guidance, and is up 5% in the first half of 2026. But the price investors pay for that AFFO has fallen from 18 times in 2021 to about 12–14 times as interest rates rose.",
+   "At the normal 13.0 times on the $4.57 consensus for 2027 the share is worth about $59 in a year, or $54 today. The cash-flow check ($60), the dividend-yield check ($58) and the peer check ($56) are all close to today's price; the NAV check shows a 10% discount.",
+   "Analysts' average target is worth $60 today, about 10% more than our value, because it implies 14.4 times AFFO, a multiple the share last had before the 10-year Treasury yield rose above 5.2%.",
+   "Fair value $54 (range 50–59). At $55.17 the share looks roughly fairly priced, about 1% above our value."
+  ],
+  "risks": [
+   "Forecast risk: if 2027 AFFO is 10% lower than the $4.57 consensus (for example if tenants fail or financing costs jump), the fair value falls to about $49. About 5.8–5.9% of rent is on the company's own watch list.",
+   "Multiple risk: at the 14.4 times implied by analysts' target the value would be about $60; at today's 12.1 times it would be about $51. Each 1 point of multiple moves the value by about $4.",
+   "Interest rates: the share trades like a bond. The 10-year Treasury is at about 5.2%; Scotiabank calls Realty Income more rate-sensitive than peers. Net debt is $30.8bn, about 5.4 times EBITDAre, and older cheap debt is gradually refinanced at higher rates (interest paid rose from $692m in 2023 to $1,109m in the last 12 months).",
+   "Upside: if rates fall, the multiple could return toward 14–15 times (about $59–63 in today's money). Selling stakes to partners such as KKR (49% of a European portfolio for €528m) brings in cash without issuing shares below NAV."
+  ],
+  "sector": "Real estate (REIT, net-lease)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in $ per share for different forward P/AFFO multiples (rows) and for 2027 AFFO coming in higher or lower than the $4.57 consensus (columns). Base case: 13.0 × $4.57, discounted at 9.1%.",
+   "colLabel": "2027 AFFO vs $4.57",
+   "cols": [
+    "−10%",
+    "−5%",
+    "$4.57",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/AFFO",
+   "rows": [
+    "15.0",
+    "14.0",
+    "13.0",
+    "12.0",
+    "11.0"
+   ],
+   "values": [
+    [
+     57,
+     60,
+     63,
+     66,
+     69
+    ],
+    [
+     53,
+     56,
+     59,
+     62,
+     65
+    ],
+    [
+     49,
+     52,
+     54,
+     57,
+     60
+    ],
+    [
+     45,
+     48,
+     50,
+     53,
+     55
+    ],
+    [
+     41,
+     44,
+     46,
+     48,
+     51
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Realty Income Q2 2026 earnings release and supplemental information (PDF)",
+    "url": "https://www.realtyincome.com/sites/realty-income/files/2026-08/realty-income-earnings-release-and-supplemental-information-q2-2026.pdf"
+   },
+   {
+    "title": "Realty Income Q4 2025 supplemental (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000009/realtyincomeq42025supple.htm"
+   },
+   {
+    "title": "Realty Income Q4 2024 results (SEC 8-K Ex. 99.1)",
+    "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672825000049/o-991q42024.htm"
+   },
+   {
+    "title": "Realty Income Q4 2023 earnings release (PDF)",
+    "url": "https://www.realtyincome.com/sites/realty-income/files/2024-02/q4-2023-earning-release.pdf"
+   },
+   {
+    "title": "Realty Income Q4 2022 results (SEC 8-K Ex. 99.1)",
+    "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672823000038/realtyincomeex991q42022.htm"
+   },
+   {
+    "title": "Realty Income Q4 2021 results (StockTitan)",
+    "url": "https://www.stocktitan.net/news/O/realty-income-announces-operating-results-for-the-three-months-and-31eimuv73yax.html"
+   },
+   {
+    "title": "Realty Income Q3 2026 earnings release date (Finviz)",
+    "url": "https://finviz.com/news/397989/realty-income-announces-third-quarter-2026-earnings-release-date"
+   },
+   {
+    "title": "Sure Dividend: Realty Income report, AFFO and dividend history (May 2026, PDF)",
+    "url": "https://www.suredividend.com/wp-content/uploads/2026/05/O-2026-05-08.pdf"
+   },
+   {
+    "title": "Realty Income price history, year-end prices (Digrin)",
+    "url": "https://www.digrin.com/stocks/detail/O/price"
+   },
+   {
+    "title": "Realty Income quote and close 14 Oct 2026 (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/o/"
+   },
+   {
+    "title": "Realty Income statistics: beta, debt, cash (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/o/statistics/"
+   },
+   {
+    "title": "Realty Income cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/o/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Realty Income analyst forecasts and targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/o/forecast/"
+   },
+   {
+    "title": "Realty Income analyst actions (MarketBeat)",
+    "url": "https://www.marketbeat.com/stocks/NYSE/O/forecast/"
+   },
+   {
+    "title": "Scotiabank downgrade, 2027 AFFO consensus, Street NAV (TIKR, Sep 2026)",
+    "url": "https://www.tikr.com/blog/realty-income-stock-sits-18-below-its-52-week-high-after-a-scotiabank-downgrade-heres-where-the-stock-could-go"
+   },
+   {
+    "title": "Mizuho cuts target to $61 (finanztrends, Sep 2026)",
+    "url": "https://www.finanztrends.de/news/realty-income-aktie-mizuho-kappt-kursziel-auf-61-dollar/"
+   },
+   {
+    "title": "Evercore ISI cuts target to $65 (MarketScreener, Sep 2026)",
+    "url": "https://www.marketscreener.com/news/evercore-isi-adjusts-price-target-on-realty-income-to-65-from-68-maintains-in-line-rating-ce785adbdd8bfe27"
+   },
+   {
+    "title": "UBS keeps Buy, $74 target (24/7 Wall St., Oct 2026)",
+    "url": "https://247wallst.com/investing/2026/10/08/realty-income-fell-10-over-12-months-a-respected-analyst-predicts-40-gains-for-investors-from-today/"
+   },
+   {
+    "title": "UBS sets $74 target (ad-hoc-news, Oct 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ubs-sets-usd-74-target-for-realty-income-stock/70300200"
+   },
+   {
+    "title": "Truist initiates at Hold, $60 (rallies.ai)",
+    "url": "https://rallies.ai/news/realty-income-truist-initiates-coverage-with-hold-rating-60-target-e0d743d36173cbd9"
+   },
+   {
+    "title": "Stifel keeps Buy, 2027 AFFO estimate (Yahoo Finance, 2025)",
+    "url": "https://finance.yahoo.com/news/stifel-maintains-bullish-outlook-realty-142421162.html"
+   },
+   {
+    "title": "Rates above 5.3% and Truist initiation (ad-hoc-news, Oct 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/realty-income-s-growth-engine-meets-a-5-3-prozent-treasury-yield/70280694"
+   },
+   {
+    "title": "Federal Reserve H.15: 10-year Treasury yield",
+    "url": "https://www.federalreserve.gov/releases/h15/"
+   },
+   {
+    "title": "NNN REIT Q2 2026 results, 2026 AFFO guidance (SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000751364/000119312526333958/nnn-ex99_1.htm"
+   },
+   {
+    "title": "Agree Realty Q2 2026 results, 2026 AFFO guidance (SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000917251/000091725126000061/adc20260630-ex991.htm"
+   },
+   {
+    "title": "W. P. Carey raises 2026 AFFO guidance (TipRanks)",
+    "url": "https://www.tipranks.com/news/company-announcements/w-p-carey-raises-2026-affo-guidance-dividend"
+   },
+   {
+    "title": "NNN REIT statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nnn/statistics/"
+   },
+   {
+    "title": "Agree Realty statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/adc/statistics/"
+   },
+   {
+    "title": "W. P. Carey statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wpc/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "$4.445 × about 1.03",
+    "formula": "2027 AFFO per share = analyst consensus",
+    "plain": "AFFO is the cash profit per share after interest, before the large accounting charge for building wear (depreciation). Analysts expect $4.57 a share in 2027, about 3% more than the $4.44–4.45 the company guides for 2026.",
+    "result": "$4.57 a share",
+    "title": "What will Realty Income earn next year?"
+   },
+   {
+    "calc": "(13.7 + 12.5 + 12.7) ÷ 3",
+    "formula": "Normal forward P/AFFO = average of the last three year-ends",
+    "plain": "The forward P/AFFO is the share price divided by the AFFO of the coming year. At the end of 2023, 2024 and 2025 it was 13.7, 12.5 and 12.7. The average is 13.0. We skip 2021–22, when interest rates were near zero and the multiple was 16–18.",
+    "result": "13.0",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "13.0 × 4.57",
+    "formula": "Price in 12 months = 13.0 × $4.57",
+    "plain": "Multiply next year's expected AFFO by the normal multiple. This is how an analyst's 12-month price target is built.",
+    "result": "$59.4",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "59.4 ÷ 1.0906",
+    "formula": "Fair value = price in 12 months ÷ (1 + 9.1%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.21% Treasury yield + 0.7 × 5.5% = 9.1% a year. (The share also pays about $3.26 of dividends over the year; like analysts' targets, the price target here excludes them.)",
+    "result": "$54",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "54.47 ÷ 55.17 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is within a few percent of our value, so Realty Income looks roughly fairly priced. It trades at 12.1 times 2027 AFFO, a little below its normal 13.0.",
+    "result": "−1.3%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Realty Income the way analysts value US property trusts (REITs): price ÷ AFFO, the cash profit per share after interest, on next year's expected figure. Analysts expect AFFO of about $4.57 a share in 2027; at the 13.0 times investors normally paid at the last three year-ends, the share would be worth about $59 in a year, or $54 today, 1% below today's $55.17.",
+  "targets": {
+   "items": [
+    "Realty Income has no long-term financial targets. It gives yearly guidance for AFFO per share and for how much property it will buy.",
+    "For 2026 it guides AFFO of $4.44–4.45 a share (raised from $4.38–4.42 in February) and $10 billion of investments (raised from $8 billion). First half 2026: AFFO $2.22 vs $2.11 a year earlier (+5.2%).",
+    "Track record: AFFO landed inside the original guidance range every year we checked — 2022 $3.92 (guided $3.84–3.97), 2023 $4.00 ($3.93–4.03), 2024 $4.19 ($4.13–4.21) and 2025 $4.28 ($4.22–4.28)."
+   ],
+   "title": "Does Realty Income have a growth goal we can use?",
+   "verdict": "Guidance is reliable, so the 2026 figure (about $4.44) is close to certain. The 2027 consensus of $4.57 means growth of about 3%, slower than the 5% of the first half of 2026, because new property costs more to finance with the 10-year Treasury yield above 5.2%. We use the consensus without changes."
+  },
+  "ticker": "O",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Realty Income owns thousands of buildings, mainly shops, warehouses and factories in the US and Europe, and rents them out on long 'net leases' where the tenant pays the taxes, insurance and upkeep. It pays its dividend every month and calls itself 'The Monthly Dividend Company'."
+ },
  {
   "company": "Alphabet",
   "consensus": {
