@@ -682,11 +682,625 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Consumer technology (iPhone, Mac, services)",
   "teaser": "Investors pay a premium for the iPhone maker's steady services cash: is that premium still earned?",
   "ticker": "AAPL"
+ },
+ {
+  "company": "Heidelberg Materials",
+  "date": "2026-11-13",
+  "market": "Germany",
+  "method": "Forward EV/EBITDA (mid-cycle check for a cyclical)",
+  "sector": "Building materials (cement and aggregates)",
+  "teaser": "Cement is a cyclical business: what is Heidelberg Materials worth on a normal year's profit rather than a record one?",
+  "ticker": "HEI"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Visa",
+  "consensus": {
+   "analysts": 40,
+   "asOf": "15 Oct 2026",
+   "explain": "The average target of $421.69 is a price in 12 months; discounted one year at 9.6% it is worth about $385 today, 12% above our $343 (our value is 11% below it). The target works out at 27.2 × calendar-2027 earnings, while we use Visa's own normal forward P/E of 24.2. We use the same forecast, so the whole gap is the multiple: analysts assume investors will keep paying a Mastercard-like 27–29 × earnings, while Visa's last three fiscal year-ends averaged 24.2 (and 23.9 on 30 September 2026, before the latest rally).",
+   "high": 475,
+   "low": 330,
+   "method": "Recent targets include Wells Fargo $432 (Buy, 15 Oct), Goldman Sachs $439 (Buy, 13 Oct), BMO $425 (14 Oct), Baird $430 (Outperform, 12 Oct) and Evercore ISI $370 (Hold, 13 Oct). The reports we could read do not publish the exact multiple behind each target, but the standard yardstick quoted for Visa is the forward P/E (Zacks: 24.9 × the next 12 months' earnings in September, against a five-year median of 25.7). A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Strong Buy",
+   "source": "stockanalysis.com (S&P Global poll)",
+   "target": 421.69,
+   "targetToday": 385
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = $399.75",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model gives about $293 a share. It uses the analysts' sales forecasts for fiscal 2027–28 ($50.8bn and $56.1bn) and their 68% operating margin, then growth slowing from 10% to 2.5% by year 10. 84% of operating profit becomes free cash, the 2023–25 average after tax and lawsuit payments. The cash is discounted at 9.4% (WACC: 97% equity at 9.6%, 3% debt at 4.6% after tax) and the $10.1bn net debt is subtracted. Today's price would need a discount rate of about 7.7% in this model. Visa's cash is real and growing, but at today's 5.2% bond yield it supports a lower multiple than the market pays.",
+   "result": "≈ 7.7% (value at 9.4%: $293)"
+  },
+  "crossChecks": [
+   {
+    "calc": "(20.8 × 35,301 − 10,066) ÷ 1,898 ÷ 1.096",
+    "name": "Check: EV/EBIT on the same basis",
+    "note": "Close to the P/E answer, so the two multiples agree. Today the market pays 21.8 × calendar-2027 operating profit.",
+    "plain": "EV/EBIT values the whole business (market value plus net debt) against operating profit. Visa's forward EV/EBIT averaged 20.8 at year-ends 2023–2025. Applied to calendar-2027 operating profit excluding one-offs ($35.3bn), minus $10.1bn net debt, divided by shares and discounted one year:",
+    "result": "≈ $348"
+   },
+   {
+    "calc": "22.9 ÷ 27.67 × 399.75",
+    "name": "Check: peers' forward P/E",
+    "note": "Visa is priced just below Mastercard, its closest twin, and far above American Express, which also lends money and takes credit risk. Against Mastercard alone Visa would look cheap; the blend of the two says expensive. PayPal (10.3) is left out because it is a wallet, not a card network.",
+    "plain": "Mastercard (28.9) and American Express (16.9) trade at an average forward P/E of 22.9 (stockanalysis.com, 15 Oct 2026). Visa trades at 27.7 on the same basis. Applying the peer average to Visa:",
+    "result": "≈ $331"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-16",
+  "dateLabel": "Friday 16 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 343,
+  "history": {
+   "caption": "US$ million unless stated. Visa's fiscal year ends on 30 September (2025 = Oct 2024–Sep 2025). From Visa's 10-K annual reports and year-end earnings releases (US GAAP), via stockanalysis.com and checked against the Q4 earnings releases. 'Excl. one-offs' figures are Visa's own non-GAAP numbers (they remove litigation provisions, severance, investment gains/losses and amortisation of acquired intangibles). Share prices are the unadjusted close at the end of September (Digrin). Shares are diluted, as-converted class A shares (yearly average). Net debt = debt − cash − investment securities, excluding leases. Rent on ordinary leases is already inside cash from operations under US rules. Last column: 12 months to 30 June 2026, or the 2023–25 average for the multiples.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "TTM Jun 2026 / avg"
+   ],
+   "rows": [
+    {
+     "label": "Net revenue",
+     "note": "Growth 2021–25: 13.5% a year",
+     "values": [
+      "24,105",
+      "29,310",
+      "32,653",
+      "35,926",
+      "40,000",
+      "44,488"
+     ]
+    },
+    {
+     "label": "Revenue growth",
+     "note": "Q3 2026: +14%; nine months +15%",
+     "values": [
+      "10%",
+      "21.6%",
+      "11.4%",
+      "10.0%",
+      "11.3%",
+      "+15% (9 months)"
+     ]
+    },
+    {
+     "label": "Operating profit (GAAP)",
+     "values": [
+      "15,807",
+      "19,681",
+      "21,927",
+      "23,996",
+      "26,808",
+      "29,752"
+     ]
+    },
+    {
+     "label": "Litigation provisions (GAAP)",
+     "note": "Mostly the US interchange lawsuits; excluded from Visa's adjusted figures",
+     "values": [
+      "3",
+      "868",
+      "927",
+      "462",
+      "2,562",
+      "2,193"
+     ]
+    },
+    {
+     "label": "Operating profit excl. one-offs",
+     "note": "Revenue − Visa's non-GAAP operating expenses. 2021–22 not published as a total in the releases we read",
+     "values": [
+      "n/a",
+      "n/a",
+      "22,172",
+      "24,317",
+      "27,094",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Operating margin excl. one-offs",
+     "values": [
+      "n/a",
+      "n/a",
+      "67.9%",
+      "67.7%",
+      "67.7%",
+      "n/a"
+     ]
+    },
+    {
+     "label": "EPS as reported",
+     "values": [
+      "5.63",
+      "7.00",
+      "8.28",
+      "9.73",
+      "10.20",
+      "11.75"
+     ]
+    },
+    {
+     "label": "EPS excl. one-offs",
+     "note": "Visa's non-GAAP EPS; growth 2021–25: 18% a year. TTM = $9.79 (9 months) + $2.98 (Q4 2025)",
+     "values": [
+      "5.91",
+      "7.50",
+      "8.77",
+      "10.05",
+      "11.47",
+      "12.77"
+     ]
+    },
+    {
+     "label": "Share price at year-end (30 Sep)",
+     "note": "30 Sep 2026: $359.33",
+     "values": [
+      "222.75",
+      "177.65",
+      "230.01",
+      "274.95",
+      "341.38",
+      "399.75 (today)"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Year-end price ÷ that year's EPS excl. one-offs. Last column: 2023–25 average",
+     "values": [
+      "37.7",
+      "23.7",
+      "26.2",
+      "27.4",
+      "29.8",
+      "27.8"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ the NEXT year's EPS excl. one-offs (2025: ÷ the $13.23 consensus for fiscal 2026). This is the multiple analysts use. Last column: 2023–25 average; 2021 left out (near-zero interest rates). At 30 Sep 2026 it was 23.9 (÷ $15.01 for fiscal 2027)",
+     "strong": true,
+     "values": [
+      "29.7",
+      "20.3",
+      "22.9",
+      "24.0",
+      "25.8",
+      "24.2"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "(Market value + net debt) ÷ next year's operating profit excl. one-offs (2025: ÷ $30,849m consensus for 2026). Last column: 2023–25 average",
+     "values": [
+      "n/a",
+      "17.3",
+      "19.7",
+      "20.8",
+      "22.0",
+      "20.8"
+     ]
+    },
+    {
+     "label": "Net debt excl. leases",
+     "values": [
+      "2,465",
+      "4,250",
+      "649",
+      "5,661",
+      "6,174",
+      "10,066"
+     ]
+    },
+    {
+     "label": "Diluted shares (million)",
+     "note": "Last column: Q3 2026 average",
+     "values": [
+      "2,188",
+      "2,136",
+      "2,085",
+      "2,029",
+      "1,966",
+      "1,898"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid; after litigation payments",
+     "values": [
+      "15,227",
+      "18,849",
+      "20,755",
+      "19,950",
+      "23,059",
+      "22,580"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "note": "Interest paid × (1 − 17.7% tax)",
+     "values": [
+      "529",
+      "500",
+      "508",
+      "480",
+      "483",
+      "533"
+     ]
+    },
+    {
+     "label": "− Capex (property, equipment and technology)",
+     "values": [
+      "705",
+      "970",
+      "1,059",
+      "1,257",
+      "1,482",
+      "1,567"
+     ]
+    },
+    {
+     "label": "− Finance lease repayments",
+     "note": "Not shown separately; Visa's leases are small and mostly ordinary leases already in cash from operations",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a"
+     ]
+    },
+    {
+     "label": "= Free cash flow (FCFF)",
+     "strong": true,
+     "values": [
+      "15,051",
+      "18,379",
+      "20,204",
+      "19,173",
+      "22,060",
+      "21,546"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCFF ÷ operating profit excl. one-offs)",
+     "note": "Average 2023–25: 84% (after tax and litigation payments)",
+     "strong": true,
+     "values": [
+      "n/a",
+      "n/a",
+      "91%",
+      "79%",
+      "81%",
+      "84%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "TTM column: nine months to June 2026",
+     "values": [
+      "75",
+      "1,948",
+      "0",
+      "915",
+      "887",
+      "705"
+     ]
+    },
+    {
+     "label": "Share buybacks",
+     "values": [
+      "8,820",
+      "11,709",
+      "12,231",
+      "16,921",
+      "18,597",
+      "21,656"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close, 15 Oct 2026 (stockanalysis.com). About 11% above the $359.33 close on 30 Sep 2026",
+    "value": "$399.75"
+   },
+   {
+    "label": "Analyst EPS forecasts",
+    "note": "stockanalysis.com consensus, excluding one-offs. Fiscal 2028 is our derivation: $15.01 × MarketScreener's fiscal 2028/2027 EPS growth (16.89 ÷ 14.86) = $17.06",
+    "value": "$13.23 (FY2026) / $15.01 (FY2027) / ≈$17.06 (FY2028)"
+   },
+   {
+    "label": "Calendar-2027 EPS",
+    "note": "¾ × FY2027 + ¼ × FY2028 (Visa's year ends in September). Forward P/E today: 399.75 ÷ 15.52 = 25.8",
+    "value": "$15.52"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of year-ends 2023 (22.9), 2024 (24.0) and 2025 (25.8): price ÷ next year's EPS",
+    "value": "24.2"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.19% US 10-year yield + beta 0.8 × 5.5% equity risk premium; used to bring the 12-month price back to today",
+    "value": "9.6%"
+   },
+   {
+    "label": "Operating profit forecasts (excl. one-offs)",
+    "note": "MarketScreener consensus; used for the EV/EBIT check and the DCF. Calendar 2027 = $35,301m",
+    "value": "$30.8bn (FY2026) / $34.4bn (FY2027) / $38.1bn (FY2028)"
+   },
+   {
+    "label": "Shares",
+    "note": "Diluted, as-converted class A shares, Q3 fiscal 2026 average",
+    "value": "1,898 million"
+   },
+   {
+    "label": "Net debt excl. leases",
+    "note": "30 Jun 2026: debt $23,858m − cash and investment securities $13,792m",
+    "value": "$10,066m"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "US 10-year Treasury, 5.19% on 14 Oct 2026 (Federal Reserve H.15)",
+    "value": "5.2%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.77 (stockanalysis.com)",
+    "value": "0.8"
+   },
+   {
+    "label": "Equity risk premium / cost of debt",
+    "note": "Our assumptions: debt at 5.6% before tax, tax rate 17.7% (Visa's fiscal 2025 non-GAAP rate)",
+    "value": "5.5% / 4.6% after tax"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large US payment networks)",
+   "why": "Visa's profits are steady, high-margin and grow with consumer spending, so analysts set targets as a P/E times next year's earnings forecast, the same way they value Mastercard and big consumer brands. Zacks, for example, compares Visa's forward 12-month P/E (24.9 in September) with its five-year median (25.7) and with Mastercard (25.9). We take the forward P/E Visa has normally traded at (price on 30 September ÷ the next fiscal year's earnings, average of 2023–2025), apply it to the consensus for calendar 2027, which gives a price in 12 months, and discount that one year at the 9.6% return shareholders demand.",
+   "whyNot": "We do not blend in other methods, because analysts in this sector don't: P/E is the standard. EV/EBIT and a cash-flow model (DCF) are shown below only as checks. Price-to-book makes no sense for Visa: its value is its network and brand, which are not on the balance sheet, and it buys back so many shares that its book value barely grows. We use earnings excluding one-offs as Visa reports them (mainly provisions for the long-running US interchange lawsuits, severance and gains or losses on investments), because analysts' forecasts exclude them too. Those lawsuit costs are real cash, though, so they appear in the cash-flow check."
+  },
+  "price": 399.75,
+  "priceDate": "close 15 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 357,
+  "rangeLow": 329,
+  "reasoning": [
+   "Visa is a remarkably steady business: revenue grew 13.5% a year in 2021–25, the operating margin (excluding one-offs) has stayed near 68%, and adjusted EPS grew 18% a year, helped by large buybacks. Fiscal 2026 is running even better, with revenue and EPS both up 15% after nine months.",
+   "Valued the way analysts value large payment networks, at its normal forward P/E (24.2) on calendar-2027 earnings, the share is worth about $376 in a year and $343 today. Today it trades at 25.8 × those earnings, after an 11% jump since 30 September on China's approval and record highs.",
+   "EV/EBIT on the same basis gives about $348, so the two multiples agree, and a cash-flow model at today's 5.2% bond yield gives about $293. Analysts' average target ($385 in today's money) assumes investors keep paying about 27 × earnings, closer to Mastercard.",
+   "Fair value $343 (range $329–357). At $399.75 the stock looks overvalued by about 14% on its own history."
+  ],
+  "risks": [
+   "Forecast risk: analysts expect adjusted EPS to grow about 15% in fiscal 2026 and 13% in fiscal 2027. If calendar-2027 earnings come in 10% lower, the fair value falls to about $308. Results for fiscal 2026 come on 27 October 2026.",
+   "Multiple risk: at the analysts' implied 27.2 × calendar-2027 EPS the value would be about $385; at today's 25.8 it would be about $365. Our 24.2 is close to where Visa traded on 30 September 2026 (23.9).",
+   "Legal and regulation: the US interchange lawsuits cost $2.6bn in provisions in fiscal 2025 and $1.3bn in the first nine months of 2026; caps on card fees (US, UK, EU) or new payment rails such as account-to-account payments and stablecoins could slow growth.",
+   "Upside: China's central bank let Visa start preparing a domestic clearing business (October 2026), cross-border volumes grew 13% in Q3, and value-added services grew 34%. Visa also bought back $21.7bn of shares in the last 12 months, which lifts EPS by about 3% a year."
+  ],
+  "sector": "Payments",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in US$ per share for different forward P/Es (rows) and for calendar-2027 earnings coming in higher or lower than forecast (columns). Base case: P/E 24.2 on EPS of $15.52, discounted at 9.6%.",
+   "colLabel": "Calendar-2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "22.2",
+    "23.2",
+    "24.2",
+    "25.2",
+    "26.2"
+   ],
+   "values": [
+    [
+     283,
+     299,
+     314,
+     330,
+     346
+    ],
+    [
+     296,
+     312,
+     329,
+     345,
+     361
+    ],
+    [
+     308,
+     326,
+     343,
+     360,
+     377
+    ],
+    [
+     321,
+     339,
+     357,
+     375,
+     393
+    ],
+    [
+     334,
+     352,
+     371,
+     390,
+     408
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Visa Q4 and fiscal 2025 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm"
+   },
+   {
+    "title": "Visa Q4 and fiscal 2024 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316124000053/q42024earningsrelease.htm"
+   },
+   {
+    "title": "Visa Q4 and fiscal 2023 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316123000092/q42023earningsrelease.htm"
+   },
+   {
+    "title": "Visa Q4 and fiscal 2022 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316122000076/q42022earningsrelease.htm"
+   },
+   {
+    "title": "Visa Q4 and fiscal 2021 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000056/q42021earningsrelease.htm"
+   },
+   {
+    "title": "Visa Q3 fiscal 2026 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001403161/000140316126000103/q32026earningsrelease.htm"
+   },
+   {
+    "title": "Visa Q4 2025 earnings call transcript, fiscal 2026 outlook (The Motley Fool)",
+    "url": "https://www.fool.com/earnings/call-transcripts/2025/10/28/visa-v-q4-2025-earnings-call-transcript/"
+   },
+   {
+    "title": "Visa Q3 2026: outlook raised, layoffs (TIKR)",
+    "url": "https://www.tikr.com/blog/visas-q3-earnings-crossed-4-trillion-in-volume-then-came-the-layoffs"
+   },
+   {
+    "title": "Visa income statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/v/financials/income-statement/"
+   },
+   {
+    "title": "Visa cash flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/v/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Visa balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/v/financials/balance-sheet/"
+   },
+   {
+    "title": "Visa statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/v/statistics/"
+   },
+   {
+    "title": "Visa analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/v/forecast/"
+   },
+   {
+    "title": "Visa price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/v/history/"
+   },
+   {
+    "title": "Visa forecasts fiscal 2026–2028 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/VISA-INC-2277468/finances/"
+   },
+   {
+    "title": "Visa month-end share prices (Digrin)",
+    "url": "https://www.digrin.com/stocks/detail/V/price"
+   },
+   {
+    "title": "Visa earnings preview: Q4 and fiscal 2027 consensus (Barchart via Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/visa-earnings-preview-expect-124305188.html"
+   },
+   {
+    "title": "Visa forward P/E vs five-year median and peers (Zacks via Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/visa-stock-offers-growth-worth-161600235.html"
+   },
+   {
+    "title": "Baird raises Visa target to $430 (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/baird-raises-visa-stock-price-target-to-430-on-growth-outlook-93CH-4944288"
+   },
+   {
+    "title": "Why is Visa stock surging: China clearing approval (Investing.com)",
+    "url": "https://www.investing.com/news/stock-market-news/why-is-visa-stock-surging-today-93CH-4946260"
+   },
+   {
+    "title": "Visa analyst ratings: Goldman, RBC, Morgan Stanley and others (The Cerbat Gem/MarketBeat)",
+    "url": "https://www.thecerbatgem.com/2026/10/14/visa-nysev-stock-price-expected-to-rise-robert-w-baird-analyst-says.html"
+   },
+   {
+    "title": "Federal Reserve H.15: 10-year Treasury yield",
+    "url": "https://www.federalreserve.gov/releases/h15/"
+   },
+   {
+    "title": "Mastercard statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/ma/statistics/"
+   },
+   {
+    "title": "American Express statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/axp/statistics/"
+   },
+   {
+    "title": "PayPal statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pypl/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "0.75 × 15.01 + 0.25 × 17.06",
+    "formula": "Calendar-2027 EPS = ¾ × FY2027 + ¼ × FY2028",
+    "plain": "Analysts quote 12-month targets on calendar-year earnings. Visa's fiscal year ends in September, so calendar 2027 is nine months of fiscal 2027 (Oct 2026–Sep 2027) and three months of fiscal 2028. Analysts expect earnings per share (EPS) of $15.01 for fiscal 2027 and about $17.06 for fiscal 2028, excluding one-offs.",
+    "result": "$15.52 a share",
+    "title": "What will Visa earn next year?"
+   },
+   {
+    "calc": "(22.9 + 24.0 + 25.8) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the coming year's earnings. On 30 September 2023, 2024 and 2025 it was 22.9, 24.0 and 25.8. The average is 24.2. We skip 2021, when interest rates were near zero. (On 30 September 2026 it was 23.9, close to this average.)",
+    "result": "24.2",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "24.2 × 15.52",
+    "formula": "Price in 12 months = normal forward P/E × calendar-2027 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is exactly how an analyst's price target is built.",
+    "result": "$376",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "375.6 ÷ 1.096",
+    "formula": "Fair value = price in 12 months ÷ (1 + 9.6%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.2% bond yield + 0.8 × 5.5% = 9.6% a year. Visa's low beta (0.8) means its shares move less than the market, so the required return is fairly low.",
+    "result": "$343",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "343 ÷ 399.75 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is 17% above our value, or put the other way, our value is 14% below the price. The market already pays 25.8 × calendar-2027 earnings, more than Visa's own normal 24.2, so Visa looks overvalued on this method.",
+    "result": "−14%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Visa the way analysts value large US payment and consumer-brand companies: a price-to-earnings multiple (P/E) on next year's expected profit. Analysts expect earnings of about $15.52 a share in calendar 2027; at the forward P/E Visa has normally traded at (24.2) the share would be worth about $376 in a year, or $343 today, 14% below today's $399.75. The share has jumped 11% since 30 September (China approval, record highs), so the market now pays more than Visa's own normal multiple.",
+  "targets": {
+   "items": [
+    "Visa has no long-term financial targets. Each October it gives a one-year outlook for adjusted (non-GAAP) revenue, costs and EPS growth.",
+    "Fiscal 2026: in October 2025 the CFO guided for revenue and EPS growth 'in the low double digits'. In July 2026 Visa raised this to the low end of the low teens for revenue and the low end of the mid-teens for EPS. After nine months revenue was up 15% and adjusted EPS up 15% ($9.79 vs $8.49).",
+    "Track record: fiscal 2025 came in 'above our expectations' (CFO): revenue +11% to $40.0bn and adjusted EPS +14% to $11.47. Adjusted EPS has grown every year since 2021, from $5.91 to $11.47 (18% a year)."
+   ],
+   "title": "Does Visa have a growth goal we can use?",
+   "verdict": "Visa usually meets or beats its own outlook, so we use the analysts' consensus: adjusted EPS of $13.23 for fiscal 2026 (+15%) and $15.01 for fiscal 2027 (+13%). That fits the nine-month run rate. Fiscal 2026 results are due on 27 October 2026 (consensus for Q4: $3.43). Baird expects growth to slow in fiscal 2027 to high-single or low-double digits."
+  },
+  "ticker": "V",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Visa runs the world's largest card network: when you pay with a Visa card or phone, Visa's systems pass the payment between your bank and the shop's bank and take a small fee for every transaction. It does not lend money itself, so it carries no credit risk and keeps about two-thirds of its revenue as operating profit."
+ },
  {
   "company": "Realty Income",
   "consensus": {
