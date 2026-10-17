@@ -691,11 +691,500 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Building materials (cement and aggregates)",
   "teaser": "Cement is a cyclical business: what is Heidelberg Materials worth on a normal year's profit rather than a record one?",
   "ticker": "HEI"
+ },
+ {
+  "company": "Securitas",
+  "date": "2026-11-14",
+  "market": "Sweden",
+  "method": "Forward EV/EBITA",
+  "sector": "Security services (guarding and alarm technology)",
+  "teaser": "A security-guard company moving into higher-margin alarm and camera technology: does that shift deserve a higher multiple?",
+  "ticker": "SECU B"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Swedbank",
+  "consensus": {
+   "analysts": 16,
+   "asOf": "16 Oct 2026 (page read 17 Oct)",
+   "explain": "The average target of SEK 407.94 is a price in 12 months; discounted one year at 7.0% it is worth about SEK 381 today, so our SEK 398 is about 5% higher. The target works out at 12.8 × the 2027 earnings forecast, far above the 8.6 × we use for the P/E half (Swedbank's own average at the last three year-ends), so on earnings alone analysts are much more generous than history. Our total still ends up close to theirs because the price-to-book half, with a 15.8% expected return on equity against a 7.0% required return, justifies 2.9 × book while the market pays 2.2 ×.",
+   "high": 510,
+   "low": 307,
+   "method": "Bank analysts look at Swedbank through its earnings multiple and its price compared with its equity. Morgan Stanley, when it upgraded the share to Equal-weight with a SEK 386 target (1 September 2026), described it as trading at 12.5 × 2027 earnings and 2.1 × tangible book value for a 17.5% return on tangible equity. Citi raised its target to SEK 415 (9 October) after lifting its 2027–28 earnings forecasts by 9% on expected Riksbank and ECB rate hikes. Recent targets range from SEK 307 to SEK 510 (BNP Paribas, Outperform); a price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Outperform (mean)",
+   "source": "MarketScreener",
+   "target": 407.94,
+   "targetToday": 381
+  },
+  "crossCheck": {
+   "calc": "26.93 ÷ (7.02% − 2.47%) = SEK 591; 26.93 ÷ 402.50 + 2.47% = 9.2%",
+   "name": "Cash-return check (dividends), not in the fair value",
+   "plain": "For a bank, the cash that reaches shareholders is its dividends (Swedbank does no buybacks). If Swedbank pays the expected SEK 26.93 a share for 2027 and that grows 2.5% a year, the share is worth about SEK 591 at a 7.0% required return. Today's price needs a required return of about 9.2% instead. So the dividends comfortably support today's price at our required return; the market is simply asking for a higher return from Swedbank than our model does, or doubts that such high payouts can last.",
+   "result": "≈ SEK 591; price needs ≈ 9.2%"
+  },
+  "crossChecks": [
+   {
+    "calc": "1.29 × 184.20",
+    "name": "Check: Swedbank's own price-to-book history",
+    "note": "Far below our value. Today Swedbank trades at 2.19 × book, well above any recent year-end, partly because June's book value is low right after the SEK 29.80 dividend. The market has already re-rated the share.",
+    "plain": "At year-ends 2023–2025 Swedbank traded at 1.15, 1.12 and 1.60 × book value, an average of 1.29. Applied to June's book value of SEK 184.20:",
+    "result": "≈ SEK 238"
+   },
+   {
+    "calc": "11.33 × 31.91 ÷ 1.0702",
+    "name": "Check: other big Nordic banks' forward P/E",
+    "note": "Swedbank's own forward P/E is 12.8 on the same source (12.6 on its own consensus), above the peer average. Its expected 2027 ROE (15.5% on MarketScreener) is similar to Nordea (15.9%) and SEB (15.0%) and well above Handelsbanken (12.6%).",
+    "plain": "SEB (11.6), Handelsbanken (12.5) and Nordea (9.9) trade at an average 11.3 × 2027 earnings (MarketScreener, prices of 16 Oct 2026). Applied to Swedbank's 2027 EPS and brought back one year:",
+    "result": "≈ SEK 338"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-17",
+  "dateLabel": "Saturday 17 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 398,
+  "history": {
+   "caption": "From Swedbank's share statistics page, year-end reports and the Q2 2026 interim report (IFRS). Year-end price of the A share on 31 December. EPS 'excl. one-offs' is our own estimate, removing items Swedbank reports separately: 2023 an administrative fine of SEK 887m (fines are not tax-deductible); 2024 a SEK 790m impairment of tangible and intangible assets; 2025 VAT refunds of SEK 1,539m (a gain) minus a SEK 354m start-up loan-loss provision for Entercard; 2024–25 items taken after 20.6% tax. 2021–22 are reported figures. Banks have no 'net debt' in the normal sense (debt is their raw material), so the table shows book value instead. Latest = last 12 months to June 2026 (excl. the SEK 860m restructuring cost in Q2 2026 and the SEK 379m VAT refund in H1 2025), book value 30 Jun 2026 (after the SEK 29.80 dividend paid in March), price 16 Oct 2026.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "Earnings per share, reported (SEK)",
+     "note": "After dilution. Latest = 2025 − H1 2025 (14.24) + H1 2026 (12.86)",
+     "values": [
+      "18.56",
+      "18.89",
+      "30.27",
+      "30.86",
+      "28.98",
+      "27.60"
+     ]
+    },
+    {
+     "label": "Earnings per share, excl. one-offs (SEK)",
+     "note": "H1 2026: 13.46 vs 13.97 a year earlier (−4%)",
+     "values": [
+      "18.56",
+      "18.89",
+      "31.06",
+      "31.42",
+      "28.15",
+      "27.64"
+     ]
+    },
+    {
+     "label": "Share price at year-end (SEK)",
+     "values": [
+      "182.10",
+      "177.30",
+      "203.30",
+      "218.30",
+      "321.10",
+      "402.50"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Price ÷ that year's earnings excl. one-offs",
+     "values": [
+      "9.8",
+      "9.4",
+      "6.5",
+      "6.9",
+      "11.4",
+      "14.6"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Price ÷ the NEXT year's earnings excl. one-offs. 2025 uses the current 2026 consensus (SEK 27.47); latest uses the 2027 consensus SEK 31.91 (both Swedbank's own consensus page, 15 Oct 2026). Normal = average 2023–25 = 8.6 (2021 skipped: near-zero interest rates)",
+     "strong": true,
+     "values": [
+      "9.6",
+      "5.7",
+      "6.5",
+      "7.8",
+      "11.7",
+      "12.6"
+     ]
+    },
+    {
+     "label": "Book value (equity) per share (SEK)",
+     "note": "Up 8.7% a year 2021–25",
+     "values": [
+      "144.16",
+      "156.80",
+      "176.70",
+      "194.50",
+      "200.90",
+      "184.20"
+     ]
+    },
+    {
+     "label": "Price ÷ book value",
+     "values": [
+      "1.26",
+      "1.13",
+      "1.15",
+      "1.12",
+      "1.60",
+      "2.19"
+     ]
+    },
+    {
+     "label": "Return on equity (ROE)",
+     "note": "Profit ÷ shareholders' equity. Excl. one-offs (our estimate): 18.8% in 2023, 17.4% in 2024, 14.8% in 2025; H1 2026 14.3% excl. restructuring. Target: at least 15%",
+     "strong": true,
+     "values": [
+      "13.2%",
+      "13.3%",
+      "18.3%",
+      "17.1%",
+      "15.2%",
+      "13.6% (H1)"
+     ]
+    },
+    {
+     "label": "Dividend per share (SEK), for the year",
+     "note": "Incl. special dividends: 2021 SEK 2.00, 2025 SEK 9.35",
+     "values": [
+      "11.25",
+      "9.75",
+      "15.15",
+      "21.70",
+      "29.80",
+      "—"
+     ]
+    },
+    {
+     "label": "Core capital ratio (CET1)",
+     "note": "June 2026: 2.6 points above the 14.8% requirement (target 1–3 points, normally 2)",
+     "values": [
+      "n/a",
+      "n/a",
+      "19.0%",
+      "19.8%",
+      "17.8%",
+      "17.4%"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close, 16 Oct 2026 (MarketScreener). Market value about SEK 450bn",
+    "value": "SEK 402.50"
+   },
+   {
+    "label": "2027 EPS forecast",
+    "note": "Consensus compiled by Infront for Swedbank, 15 Oct 2026; MarketScreener shows SEK 31.39. 2026: SEK 27.47",
+    "value": "SEK 31.91"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of year-ends 2023 (6.5), 2024 (7.8) and 2025 (11.7)",
+    "value": "8.6"
+   },
+   {
+    "label": "2027 return on equity (ROE)",
+    "note": "Same consensus (MarketScreener: 15.5%)",
+    "value": "15.8%"
+   },
+   {
+    "label": "Book value per share",
+    "note": "30 Jun 2026 (Q2 2026 report)",
+    "value": "SEK 184.20"
+   },
+   {
+    "label": "Payout (dividends)",
+    "note": "2027 consensus dividend SEK 26.93 ÷ EPS SEK 31.91 (ordinary 60–70% plus expected special dividends; no buybacks). Growth = 15.8% × (1 − 84%) = 2.5%",
+    "value": "84%"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "Swedish 10-year government bond, 16 Oct 2026 (Trading Economics)",
+    "value": "3.17%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured against the Swedish OMXS30 index: 0.74 (Infront Analytics). stockanalysis.com shows 0.56 against a broader index, which would give a cost of equity of 6.3% and make the price-to-book formula explode (3.7 × book); GuruFocus shows 0.84. As for SEB, we use the home-market beta",
+    "value": "0.7"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.17% + 0.7 × 5.5% equity risk premium: the yearly return shareholders demand",
+    "value": "7.0%"
+   },
+   {
+    "label": "Analyst target",
+    "note": "Average of 16 analysts, MarketScreener, 16 Oct 2026; range SEK 307–510",
+    "value": "SEK 407.94"
+   },
+   {
+    "label": "Dividend",
+    "note": "SEK 20.45 ordinary (70% of profit) + SEK 9.35 special; 7.4% of today's price",
+    "value": "SEK 29.80 for 2025"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: forward P/E and justified price-to-book, 50/50 (how analysts value banks)",
+   "why": "A bank's 'product' is money, so its equity (book value) and the return it earns on that equity (ROE) drive its value, and its profit is what shareholders receive. Nordic bank analysts therefore look at both a P/E on next year's earnings and price-to-book: Morgan Stanley framed Swedbank as 12.5 × 2027 earnings and 2.1 × tangible book for a 17.5% return on tangible equity. We give each half the same weight. Justified price-to-book = (ROE − growth) ÷ (cost of equity − growth): a bank that earns more on its equity than shareholders demand deserves to trade above book.",
+   "whyNot": "We do not use a cash-flow model (DCF): for a bank, deposits and loans are its raw material, so 'free cash flow' mostly reflects the balance sheet growing or shrinking and says little about value. Instead we check the result against the dividends Swedbank pays out (it currently does no buybacks), its own price-to-book history, and the P/E of other big Nordic banks."
+  },
+  "price": 402.5,
+  "priceDate": "close 16 Oct 2026 (MarketScreener)",
+  "rangeHigh": 413,
+  "rangeLow": 384,
+  "reasoning": [
+   "Swedbank's track record is solid but uneven: it beat its 15% return-on-equity goal in 2023 and 2024, only just reached it in 2025, and fell short in the first half of 2026 (14.3% excl. restructuring costs). Book value per share grew almost 9% a year from 2021 to 2025 while it paid large dividends.",
+   "The price has risen much faster than the profits: the forward P/E went from 6.5 at the end of 2023 to 12.6 today, and price-to-book from 1.15 to 2.19. At its normal 8.6 × 2027 earnings the share is worth only about SEK 258 today, but a 15.8% ROE against a 7.0% required return justifies about SEK 539.",
+   "The checks point both ways: Swedbank's own price-to-book history gives about SEK 238 and peers' P/E about SEK 338, while its dividends are worth about SEK 591 at our required return. The answer depends mostly on how much return investors demand from a bank, and on whether the 16% profit jump expected for 2027 happens.",
+   "Fair value SEK 398 (range SEK 384–413). At SEK 402.50 the share looks roughly fairly priced; analysts' average target (SEK 381 in today's money) is a little lower, but it implies paying 12.8 × 2027 earnings, far above Swedbank's own recent history."
+  ],
+  "risks": [
+   "Forecast risk: the 2027 forecast assumes 16% earnings growth after a 4% fall in the first half of 2026. If 2027 earnings come in 10% lower (ROE about 14.2%), the fair value falls to about SEK 346. The Q3 report on 22 October 2026 is the next test; it will include the USD 50m DFS settlement.",
+   "Multiple risk: at the analysts' implied 12.8 × earnings the P/E half would be worth SEK 381 and our blended value about SEK 460; at today's 12.6 × it would be about SEK 458. The bigger swing is in the price-to-book half.",
+   "Required-return risk: with a cost of equity one point higher (8.0%) the justified price-to-book falls to 2.40 × book and our fair value to about SEK 349; one point lower (6.0%) lifts it to about SEK 476. Rising Swedish bond yields would hurt.",
+   "Rates cut both ways: Citi lifted its 2027–28 forecasts by 9% because it expects Riksbank and ECB rate hikes, and Swedbank is especially sensitive to euro rates through its Baltic banks. If rates instead fall, interest income (flat in H1 2026 at SEK 22.4bn) would come under pressure; loan losses are still low (0.05% of lending in H1 2026)."
+  ],
+  "sector": "Banking",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share (50% P/E, 50% justified P/B) for different forward P/Es (rows) and for 2027 earnings coming in higher or lower than forecast (columns; the return on equity and dividend move with earnings). Base case: P/E 8.6 on EPS of SEK 31.91 and ROE 15.8%, cost of equity 7.0%.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "6.6",
+    "7.6",
+    "8.6",
+    "9.6",
+    "10.6"
+   ],
+   "values": [
+    [
+     319,
+     343,
+     369,
+     395,
+     422
+    ],
+    [
+     333,
+     358,
+     384,
+     411,
+     439
+    ],
+    [
+     346,
+     372,
+     398,
+     426,
+     455
+    ],
+    [
+     360,
+     386,
+     413,
+     442,
+     472
+    ],
+    [
+     373,
+     400,
+     428,
+     458,
+     488
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Swedbank interim report Q2 2026 (PDF, Cision)",
+    "url": "https://mb.cision.com/Main/67/4375557/4196737.pdf"
+   },
+   {
+    "title": "Swedbank Q2 2026 press release (PDF, Cision)",
+    "url": "https://mb.cision.com/Public/67/4375557/a786a613a9772996.pdf"
+   },
+   {
+    "title": "Swedbank's interim report for the second quarter 2026 (Swedbank newsroom)",
+    "url": "https://www.swedbank.com/newsroom/press-releases.details.swedbank%E2%80%99s-interim-report-for-the-second-quarter-2026.DA59ABC946065D11.html"
+   },
+   {
+    "title": "Swedbank full-year report 2025 (PDF, Cision)",
+    "url": "https://mb.cision.com/Main/67/4299468/3904840.pdf"
+   },
+   {
+    "title": "Swedbank year-end report 2024",
+    "url": "https://swedbank.com/newsroom/press-releases.details.swedbank%E2%80%99s-year-end-report-2024.3C2DC172F2E9267C.html"
+   },
+   {
+    "title": "Swedbank share statistics 2021–2025",
+    "url": "https://www.swedbank.com/investor-relations/the-share/share-statistics.html"
+   },
+   {
+    "title": "Swedbank financial targets",
+    "url": "https://swedbank.com/investor-relations/reports-and-presentations/financial-targets.html"
+   },
+   {
+    "title": "Swedbank Investor Day 2025 (15/27 plan)",
+    "url": "https://www.swedbank.com/newsroom/press-releases.details.swedbank%E2%80%99s-investor-day-2025.92F4E92F3CB1340A.html"
+   },
+   {
+    "title": "Swedbank consensus estimates (Infront, 15 Oct 2026)",
+    "url": "https://www.swedbank.com/investor-relations/the-share/consensus-estimates.html"
+   },
+   {
+    "title": "Swedbank forecasts: EPS, ROE, book value, dividends (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/SWEDBANK-AB-6496651/finances/"
+   },
+   {
+    "title": "Swedbank analyst consensus and target changes (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/SWEDBANK-AB-6496651/consensus/"
+   },
+   {
+    "title": "Swedbank quote and news, close 16 Oct 2026 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/SWEDBANK-AB-6496651/"
+   },
+   {
+    "title": "Swedbank statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SWED.A/statistics/"
+   },
+   {
+    "title": "Swedbank beta against OMXS30 (Infront Analytics)",
+    "url": "https://infrontanalytics.com/fe-en/30074SS/Swedbank-AB/Beta"
+   },
+   {
+    "title": "Swedbank beta (GuruFocus)",
+    "url": "https://www.gurufocus.com/term/beta/OSTO:SWED A"
+   },
+   {
+    "title": "Morgan Stanley upgrades Swedbank: 12.5 × 2027 P/E, 2.1 × tangible book (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/morgan-stanley-upgrades-swedbank-stock-rating-on-mortgage-momentum-93CH-4883574"
+   },
+   {
+    "title": "Citi höjer riktkursen för Swedbank till 415 kronor (Placera/Finwire)",
+    "url": "https://www.placera.se/telegram/swedbank-citi-hojer-riktkursen-for-swedbank-till-415-kronor-20261009"
+   },
+   {
+    "title": "Citi keeps SEK 415 target for Swedbank A (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/swedbank-a-stock-citi-keeps-sek-415-target-for-swedbank-a-stock/70341526"
+   },
+   {
+    "title": "Barclays upgrades Swedbank to Overweight, SEK 467 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/barclays-upgrades-swedbank-stock-to-overweight/70298994"
+   },
+   {
+    "title": "Handelsbanken raises Swedbank target to SEK 452 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/handelsbanken-raises-target-for-swedbank-stock-to-sek-452/70323634"
+   },
+   {
+    "title": "KBW raises Swedbank target to SEK 395 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/kbw-raises-target-for-swedbank-a-stock-to-sek-395/70313846"
+   },
+   {
+    "title": "Sweden 10-year government bond yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "SEB forecasts and multiples (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/ENSKILDA-BANKEN-6491107/finances/"
+   },
+   {
+    "title": "Handelsbanken forecasts and multiples (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/SVENSKA-HANDELSBANKEN-AB-22252916/finances/"
+   },
+   {
+    "title": "Nordea forecasts and multiples (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/NORDEA-BANK-ABP-46475557/finances/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "Infront consensus on Swedbank's website, 15 Oct 2026",
+    "formula": "2027 EPS = analyst consensus",
+    "plain": "Analysts expect earnings of SEK 31.91 a share in 2027, 16% more than the SEK 27.47 they expect for 2026. That is ambitious: earnings excl. one-offs fell 4% in the first half of 2026. It relies on higher interest income (analysts expect +10%) as Swedish and euro rates are expected to rise, and lower costs after the restructuring.",
+    "result": "SEK 31.91 a share",
+    "title": "What will Swedbank earn next year?"
+   },
+   {
+    "calc": "(6.47 + 7.76 + 11.69) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the coming year's earnings. At the end of 2023, 2024 and 2025 it was 6.5, 7.8 and 11.7. The average is 8.6. We skip 2021, when interest rates were near zero. Today it is 12.6, higher than at any of those year-ends: the share has been re-rated.",
+    "result": "8.6",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "8.64 × 31.91",
+    "formula": "Price in 12 months = normal forward P/E × 2027 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is how an analyst's price target is built.",
+    "result": "SEK 276",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "275.7 ÷ 1.0702",
+    "formula": "P/E value = price in 12 months ÷ (1 + 7.0%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 3.17% bond yield + 0.7 × 5.5% = 7.0% a year. This is the P/E half of our value.",
+    "result": "SEK 258",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "(15.80% − 2.47%) ÷ (7.02% − 2.47%) = 2.93; 2.93 × 184.20",
+    "formula": "P/B = (ROE − g) ÷ (cost of equity − g); g = ROE × (1 − payout)",
+    "plain": "Swedbank is expected to earn 15.8% on its equity in 2027, while shareholders demand 7.0%. It pays out about 84% of its profit, so equity grows only about 2.5% a year. A bank that earns well above its cost of equity deserves a price above book: here 2.93 × book, applied to June's book value of SEK 184.20. This half is very sensitive: one point more or less in the required return moves it by roughly SEK 100–150.",
+    "result": "SEK 539",
+    "title": "Justified price-to-book (the second half)"
+   },
+   {
+    "calc": "0.5 × 257.6 + 0.5 × 539.3",
+    "formula": "Fair value = ½ × P/E value + ½ × P/B value",
+    "plain": "Bank analysts use both views, so we weight them equally. The two halves are very far apart, which is itself a warning: Swedbank's history says the market paid a low P/E for its profits, while its high return on equity says it deserves much more.",
+    "result": "SEK 398",
+    "title": "Blend the two, 50/50"
+   },
+   {
+    "calc": "398 ÷ 402.50 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is about 1% below today's price, well inside the ±10% band we call fair. On its own normal P/E Swedbank would look expensive; on its return on equity it would look cheap.",
+    "result": "−1.0%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Swedbank the way analysts value banks: half on a price-to-earnings multiple (P/E) of next year's expected profit, half on a 'justified' price-to-book, which asks what each krona of the bank's equity is worth given the return it earns on it. The two halves disagree strongly: Swedbank's normal P/E gives only SEK 258, while its expected 15.8% return on equity justifies about SEK 539. Blended, our fair value is SEK 398, about 1% below today's SEK 402.50.",
+  "targets": {
+   "items": [
+    "Swedbank has no profit growth target. Its main goal (the '15/27' plan from the June 2025 investor day) is a sustainable return on equity (ROE) of at least 15%.",
+    "Track record: it missed 15% in 2021 (13.2%) and 2022 (13.3%), beat it in 2023 (18.3%) and 2024 (17.1%), and just reached it in 2025 (15.2%, about 14.8% excl. one-offs). The first half of 2026 was 13.6% (14.3% excl. restructuring costs); Q2 alone was 15.5% excl. those costs.",
+    "Cost goal: costs no more than 0.40 of income. It met this every year from 2023 to 2025 (0.33–0.36), but the first half of 2026 was 0.42 (0.39 excl. the SEK 860m restructuring, mostly severance pay as IT is centralised).",
+    "It pays out 60–70% of profit as an ordinary dividend and keeps its core capital (CET1) 1–3 points above the requirement; extra capital goes out as special dividends (SEK 9.35 for 2025). A USD 50m settlement with New York's DFS, closing the last probe into historical money-laundering shortcomings, will be booked in Q3 2026."
+   ],
+   "title": "Does Swedbank have a growth goal we can use?",
+   "verdict": "We use the analysts' 2027 forecast from Swedbank's own consensus page: EPS of SEK 31.91 and an ROE of 15.8%, slightly above the 15% goal. Note the forecast is 16% above 2026's SEK 27.47, while first-half 2026 earnings fell 4% (excl. one-offs); it relies on net interest income rising 10% and costs falling. With dividends taking about 84% of 2027 profit, Swedbank can grow its equity by only about 2.5% a year (15.8% × 16% kept)."
+  },
+  "ticker": "SWED A",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Swedbank is Sweden's biggest bank for ordinary households: it has the most private customers in Sweden and is the largest bank in Estonia, Latvia and Lithuania, earning most of its money from mortgages, savings and everyday banking. It also lends to companies, runs the fund manager Swedbank Robur and works with about 60 independent Swedish savings banks."
+ },
  {
   "company": "Visa",
   "consensus": {
