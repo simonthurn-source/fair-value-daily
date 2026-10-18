@@ -700,11 +700,576 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Security services (guarding and alarm technology)",
   "teaser": "A security-guard company moving into higher-margin alarm and camera technology: does that shift deserve a higher multiple?",
   "ticker": "SECU B"
+ },
+ {
+  "company": "Eli Lilly",
+  "date": "2026-11-15",
+  "market": "United States",
+  "method": "Forward P/E",
+  "sector": "Pharmaceuticals (obesity and diabetes drugs)",
+  "teaser": "Obesity drugs made it one of the world's most valuable companies: how much future growth is already in the price?",
+  "ticker": "LLY"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Caterpillar",
+  "consensus": {
+   "analysts": 28,
+   "asOf": "16 Oct 2026",
+   "explain": "The average target of $951 is a price in 12 months; discounted one year at 13.9% it is worth about $835 today, 64% above our $509 (our value is 39% below it). The target works out at 29.2 × 2027 earnings, against our 17.8 ×, so the whole gap is the multiple, not the forecast: most analysts assume Caterpillar's old cyclical multiple no longer applies. Bernstein's $749 is 23.0 × 2027 earnings, the closest to our view.",
+   "high": 1155,
+   "low": 575,
+   "method": "Analysts value Caterpillar with a P/E on next year's earnings. Barron's noted that from 2019 to 2025 the shares usually traded at about 17 × next year's estimated earnings, and JPMorgan argues the stock deserves a lasting 're-rating' to a higher multiple because of power generation. Bernstein, which cut its target to $749 on 14 Oct 2026, says today's P/E prices in orders running at about 1.5 × sales, and that a fall to 1.2 × could mean a roughly 20% de-rating to about 20 × earnings. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Buy",
+   "source": "stockanalysis.com",
+   "target": 951.11,
+   "targetToday": 835
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = $730.76",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model gives only about $303 per share. It uses the sales consensus for 2026–27, growth of 11% in 2028 fading to 2.5% by years 9–10, a margin of 20–21.5% in 2027–29 easing to 20%, and 75% cash conversion (close to the 77% of 2021–25). The cash is discounted at 13.6% (WACC: mostly equity at 13.9%, a little debt at 4.3% after tax) and machinery net debt is subtracted. Today's $730.76 would need a discount rate of about 7.3% in that model. The cash does not support today's price, and only supports our multiple value at a rate near 9%: the market is pricing in many more years of strong growth than this model assumes.",
+   "result": "≈ 7.3% (value at 13.6%: ≈ $303)"
+  },
+  "crossChecks": [
+   {
+    "calc": "(15.0 × 18,014 − 5,038) ÷ 459.67 ÷ 1.139",
+    "name": "Check: forward EV/EBIT on its own history",
+    "note": "Almost the same as the P/E answer, so the two multiples agree. On today's price the share trades at 18.9 × 2027 operating profit, above every year-end since 2021.",
+    "plain": "EV (enterprise value) is the market value of the shares plus the machinery net debt. Caterpillar's EV divided by next year's operating profit averaged 15.0 at the 2023–25 year-ends (11.6, 15.5, 18.0). Applied to the $18,014m expected for 2027, minus $5.0bn of net debt, that gives about $577 in 12 months, worth today:",
+    "result": "≈ $506"
+   },
+   {
+    "calc": "21.36 × 32.59 ÷ 1.139",
+    "name": "Check: at the peers' multiple",
+    "note": "On the same source Caterpillar trades at 25.2 × forward earnings, above the peer average. Deere's 30.9 is inflated by trough farm-machinery profits; without it the peers average 16.6 ×, close to Caterpillar's own norm.",
+    "plain": "Deere (30.9), Cummins (16.2) and PACCAR (17.0) trade at an average forward P/E of 21.4 (stockanalysis.com, 16–17 Oct 2026). At that multiple on Caterpillar's 2027 EPS, discounted one year:",
+    "result": "≈ $611"
+   },
+   {
+    "calc": "17.8 × 27.91 ÷ 1.139",
+    "name": "Check: a mid-cycle year instead of 2027",
+    "note": "About 14% below the main value: the 2027 forecast assumes margins well above Caterpillar's average year, which is plausible with a $72bn backlog but leaves less room if orders slow.",
+    "plain": "If 2027 earns only the average 2021–25 margin (17.5%) instead of the forecast 20.4%, EPS would be about $27.91 instead of $32.59. At the normal forward P/E that is worth today:",
+    "result": "≈ $436"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-18",
+  "dateLabel": "Sunday 18 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 509,
+  "history": {
+   "caption": "US$ million unless stated. From Caterpillar's year-end results releases and 10-K annual reports (US GAAP). Profit and earnings per share exclude one-offs (pension mark-to-market, restructuring) as Caterpillar itself reports them. Cash-flow rows are for the machinery business only (ME&T, now called MP&E), which excludes the finance arm; 2024–25 are from the 2025 release (MP&E basis), 2021–23 from earlier releases (ME&T). Year-end share prices are unadjusted closes (Digrin). EV = year-end price × diluted shares + machinery net debt (excl. leases and pensions). Last column: 2023–25 averages or totals.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2023–25"
+   ],
+   "rows": [
+    {
+     "label": "Sales and revenues",
+     "note": "Growth 2021–25: 7% a year. H1 2026: 37,958 (+23%)",
+     "values": [
+      "50,971",
+      "59,427",
+      "67,060",
+      "64,809",
+      "67,589",
+      "+7%/yr"
+     ]
+    },
+    {
+     "label": "Adjusted operating profit",
+     "note": "Q2 2026: 4,497 (+54%)",
+     "values": [
+      "6,968",
+      "9,128",
+      "13,746",
+      "13,431",
+      "11,595",
+      "38,772"
+     ]
+    },
+    {
+     "label": "Adjusted operating margin",
+     "note": "2021–25 average 17.5% (our mid-cycle margin)",
+     "values": [
+      "13.7%",
+      "15.4%",
+      "20.5%",
+      "20.7%",
+      "17.2%",
+      "19.5%"
+     ]
+    },
+    {
+     "label": "Earnings per share (excl. one-offs)",
+     "note": "Reported EPS: 11.83, 12.64, 20.12, 22.05, 18.81. Q2 2026: 8.17 (Q2 2025: 4.72)",
+     "values": [
+      "10.81",
+      "13.84",
+      "21.21",
+      "21.90",
+      "19.06",
+      "+15%/yr"
+     ]
+    },
+    {
+     "label": "Year-end share price",
+     "note": "US$, unadjusted close",
+     "values": [
+      "206.74",
+      "239.56",
+      "295.67",
+      "362.76",
+      "572.87",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Machinery net debt",
+     "note": "Debt minus cash, machinery business (excl. Cat Financial). 30 Jun 2026: 5,038",
+     "values": [
+      "1,398",
+      "3,610",
+      "3,564",
+      "2,612",
+      "1,657",
+      "n/a"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Year-end price ÷ that year's EPS excl. one-offs. Last column: 2023–25 average",
+     "values": [
+      "19.1",
+      "17.3",
+      "13.9",
+      "16.6",
+      "30.1",
+      "20.2"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ the next year's EPS excl. one-offs (2025: ÷ today's 2026 consensus of $27.33). This is the multiple we use. Last column: 2023–25 average",
+     "strong": true,
+     "values": [
+      "14.9",
+      "11.3",
+      "13.5",
+      "19.0",
+      "21.0",
+      "17.8"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "EV ÷ next year's adjusted operating profit (2025: ÷ 2026 consensus EBIT $15,158m). Last column: 2023–25 average",
+     "values": [
+      "12.6",
+      "9.5",
+      "11.6",
+      "15.5",
+      "18.0",
+      "15.0"
+     ]
+    },
+    {
+     "label": "Cash from operations (machinery)",
+     "note": "US GAAP, after tax and interest paid",
+     "values": [
+      "7,177",
+      "6,358",
+      "11,688",
+      "11,437",
+      "12,278",
+      "35,403"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "note": "Machinery interest expense × (1 − adjusted tax rate)",
+     "values": [
+      "386",
+      "346",
+      "403",
+      "398",
+      "381",
+      "1,182"
+     ]
+    },
+    {
+     "label": "− Capex (incl. equipment leased out)",
+     "note": "Guided at about $3.5bn for 2026",
+     "values": [
+      "1,129",
+      "1,298",
+      "1,663",
+      "1,988",
+      "2,794",
+      "6,445"
+     ]
+    },
+    {
+     "label": "− Lease repayments",
+     "note": "Rent is already inside cash from operations under US rules; finance leases not shown separately",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "6,434",
+      "5,406",
+      "10,428",
+      "9,847",
+      "9,865",
+      "30,140"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ adjusted operating profit)",
+     "note": "2021–25: 77%. Slightly understated, because operating profit includes Cat Financial while the cash rows do not",
+     "strong": true,
+     "values": [
+      "92%",
+      "59%",
+      "76%",
+      "73%",
+      "85%",
+      "78%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "Under 1% of sales; Caterpillar is not a serial acquirer",
+     "values": [
+      "490",
+      "88",
+      "75",
+      "34",
+      "47",
+      "156"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close, 16 Oct 2026 (stockanalysis.com); down 32% from the 52-week high of $1,073. Market value about $336bn",
+    "value": "$730.76"
+   },
+   {
+    "label": "Analyst EPS forecasts (excl. one-offs)",
+    "note": "stockanalysis.com consensus. Forward P/E today: 730.76 ÷ 32.59 = 22.4",
+    "value": "$27.33 (2026) / $32.59 (2027)"
+   },
+   {
+    "label": "Normal forward P/E",
+    "note": "Average of year-ends 2023 (13.5), 2024 (19.0) and 2025 (21.0); 2020–21 skipped (near-zero interest rates)",
+    "value": "17.8"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.1% US 10-year yield + beta 1.6 × 5.5% equity risk premium; used to bring the 12-month price back to today",
+    "value": "13.9%"
+   },
+   {
+    "label": "Earnings per share, 2025",
+    "note": "Excl. one-offs. First half 2026 is running far ahead: Q2 2026 $8.17 vs $4.72",
+    "value": "$19.06"
+   },
+   {
+    "label": "Sales forecasts",
+    "note": "stockanalysis.com (2026–27); MarketScreener 2028: $98.5bn",
+    "value": "$79.6bn (2026) / $88.7bn (2027)"
+   },
+   {
+    "label": "Operating profit (EBIT) forecasts",
+    "note": "MarketScreener consensus; 2027 margin 18,014 ÷ 88,247 = 20.4%",
+    "value": "$15,158m (2026) / $18,014m (2027)"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "stockanalysis.com, Oct 2026 (465.3m at end-2025; buybacks continue)",
+    "value": "459.7 million"
+   },
+   {
+    "label": "Machinery net debt",
+    "note": "30 Jun 2026: debt $10,983m − cash $5,945m (MP&E column of the Q2 release). Cat Financial's debt is excluded: it is backed by customer loans",
+    "value": "$5,038m"
+   },
+   {
+    "label": "Risk-free rate",
+    "note": "US 10-year Treasury, 5.09% on 16 Oct 2026, near its highest since 2002 (Trading Economics)",
+    "value": "5.1%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 1.58 (stockanalysis.com)",
+    "value": "1.6"
+   },
+   {
+    "label": "Cost of debt / tax rate",
+    "note": "Our assumption for debt; tax rate is Caterpillar's 2026 guidance (about 23%)",
+    "value": "5.6% before tax / 23%"
+   },
+   {
+    "label": "Mid-cycle margin",
+    "note": "Average adjusted operating margin 2021–25",
+    "value": "17.5%"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings, checked against a mid-cycle year (how analysts value US machinery makers)",
+   "why": "For large US capital-goods companies like Caterpillar, analysts set price targets as a multiple of next year's earnings per share, and the debate is about which multiple is right: Barron's puts Caterpillar's 2019–2025 norm at about 17 × next year's estimate, while Bernstein frames the risk as a de-rating from about 25 × to 20 ×. We take the forward P/E Caterpillar actually traded at over the last three year-ends (price ÷ the next year's earnings excluding one-offs), apply it to the 2027 consensus, which gives a price in 12 months, and discount that one year at the 13.9% return shareholders demand.",
+   "whyNot": "P/E suits Caterpillar because its machinery business carries little net debt (about $5bn) and the finance arm, Cat Financial, is a lender whose debt is backed by customer loans, so an EV multiple over the whole group would be distorted. Because machinery profits move in cycles, we also check whether 2027 looks like a peak year (its forecast 20.4% margin is above the 17.5% average of 2021–25). EV/EBIT, peers and a cash-flow model (DCF) are shown only as checks; the DCF swings strongly with the 13.6% discount rate that today's high bond yields and Caterpillar's high beta produce."
+  },
+  "price": 730.76,
+  "priceDate": "close 16 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 538,
+  "rangeLow": 481,
+  "reasoning": [
+   "Caterpillar is a cyclical company that has become much more profitable: sales grew 7% a year in 2021–25, the adjusted margin rose from 13.7% to over 20% in 2023–24, and 2026 is running far ahead (Q2 earnings per share +73%) on a record $72bn backlog driven by data-centre power.",
+   "Valued the way analysts value machinery makers, at its normal forward P/E (17.8) on 2027 forecast earnings ($32.59), the share is worth about $580 in a year and $509 today. EV/EBIT gives almost the same ($506); peers give $611; a mid-cycle year gives $436.",
+   "The cash-flow check gives only about $303 at a 13.6% discount rate, so the cash does not support today's price. The market, and most analysts (average target $951, or $835 today, 29 × 2027 earnings), assume Caterpillar now deserves a permanently higher multiple.",
+   "Fair value $509 (range $481–538). At $730.76 the stock looks overvalued by about 30% on its own history, even after falling 32% from its high; the gap to the analysts is entirely about the multiple."
+  ],
+  "risks": [
+   "Forecast risk: analysts expect 2027 EPS 19% above 2026 and 71% above 2025. If 2027 earnings come in 10% lower, the fair value falls to about $458.",
+   "Multiple risk (upside): at the analysts' implied 29.2 × the value is about $835; at today's 22.4 × it is about $642; at Bernstein's 'de-rated' 20 × it is about $572. If the data-centre power business really makes Caterpillar a steadier grower, our 17.8 × is too low.",
+   "Orders: Bernstein expects order intake to slow from about 1.5 × sales to 1.2 × in Q3, and notes that behind-the-meter data-centre power projects under construction have been flat at 15 GW since May 2026. Long-term US bond yields above 5% raise financing costs for equipment buyers.",
+   "Pending: the Q3 2026 report is due in late October (29 Oct per StreetInsider). Tariffs cost about $2.2bn in 2026, and US regulators (FTC and USDA) opened an inquiry into competition in farm equipment on 7 Oct 2026."
+  ],
+  "sector": "Machinery (cyclical)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in US$ per share for different forward P/Es (rows) and for 2027 earnings coming in higher or lower than forecast (columns). Base case: P/E 17.8 on EPS of $32.59, discounted at 13.9%.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "15.8",
+    "16.8",
+    "17.8",
+    "18.8",
+    "19.8"
+   ],
+   "values": [
+    [
+     407,
+     429,
+     452,
+     475,
+     497
+    ],
+    [
+     433,
+     457,
+     481,
+     505,
+     529
+    ],
+    [
+     458,
+     484,
+     509,
+     535,
+     560
+    ],
+    [
+     484,
+     511,
+     538,
+     565,
+     592
+    ],
+    [
+     510,
+     538,
+     567,
+     595,
+     623
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Caterpillar 4Q 2025 financial results (incl. MP&E supplemental data)",
+    "url": "https://www.caterpillar.com/content/dam/caterpillarDotCom/releases/4q25/4q25-caterpillar-inc-financial-results.pdf"
+   },
+   {
+    "title": "Caterpillar 4Q 2023 financial results (2022–23 figures)",
+    "url": "https://www.caterpillar.com/content/dam/caterpillarDotCom/releases/4q23/4q23-caterpillar-inc-financial-results.pdf"
+   },
+   {
+    "title": "Caterpillar 4Q 2021 financial results (2020–21 figures)",
+    "url": "https://www.caterpillar.com/content/dam/caterpillarDotCom/releases/4q21/4q21-caterpillar-inc-financial-results.pdf"
+   },
+   {
+    "title": "Caterpillar 10-K 2025: consolidated income statement",
+    "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/R3.htm"
+   },
+   {
+    "title": "Caterpillar 10-K 2025: consolidated cash flow statement",
+    "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/R9.htm"
+   },
+   {
+    "title": "Caterpillar 2025 annual report (adjusted EPS, shares outstanding)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000018230/000130817926000360/cat015318-ars.pdf"
+   },
+   {
+    "title": "Caterpillar Q2 2026 earnings release (8-K exhibit 99.1)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000018230/000001823026000040/ex991toformcat2q2026earnin.htm"
+   },
+   {
+    "title": "Caterpillar Q2 2026 analyst slide deck (outlook, targets, backlog)",
+    "url": "https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Analyst-Slide-Deck_Final.pdf"
+   },
+   {
+    "title": "Caterpillar Q2 2026 earnings call summary (TipRanks)",
+    "url": "https://www.tipranks.com/news/company-announcements/caterpillar-lifts-2026-outlook-after-record-quarter"
+   },
+   {
+    "title": "Caterpillar analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cat/forecast/"
+   },
+   {
+    "title": "Caterpillar statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cat/statistics/"
+   },
+   {
+    "title": "Caterpillar price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cat/history/"
+   },
+   {
+    "title": "Caterpillar year-end share prices (Digrin)",
+    "url": "https://www.digrin.com/stocks/detail/CAT/price"
+   },
+   {
+    "title": "Caterpillar consensus estimates 2026–28 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/CATERPILLAR-INC-4817/finances/"
+   },
+   {
+    "title": "Bernstein cuts Caterpillar price target on bookings concerns (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/bernstein-cuts-caterpillar-stock-price-target-on-bookings-concerns-93CH-4949282"
+   },
+   {
+    "title": "Caterpillar shares drop on analyst target cuts (StreetInsider)",
+    "url": "https://www.streetinsider.com/Investing/Caterpillar+shares+drop+on+analyst+downgrades/27191228.html"
+   },
+   {
+    "title": "Why is Caterpillar stock sliding today? Citi cut (Investing.com)",
+    "url": "https://ca.investing.com/news/stock-market-news/why-is-caterpillar-stock-sliding-5-today-93CH-4878849"
+   },
+   {
+    "title": "Caterpillar shares dip as Citi and Oppenheimer cut targets (ScanX)",
+    "url": "https://scanx.trade/stock-market-news/companies/caterpillar-shares-dip-citi-cuts-price-target-950/53535344"
+   },
+   {
+    "title": "Caterpillar stock is up; a 're-rating' is possible (Barron's via Tiger)",
+    "url": "https://www.itiger.com/news/2581774876"
+   },
+   {
+    "title": "JPMorgan and Wells Fargo raise Caterpillar targets; sales CAGR target (TIKR)",
+    "url": "https://www.tikr.com/blog/jpmorgan-and-wells-fargo-just-raised-caterpillar-targets-heres-what-changed"
+   },
+   {
+    "title": "Baird downgrades Caterpillar (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/apple-upgraded-qualcomm-downgraded-wall-133634577.html"
+   },
+   {
+    "title": "US 10-year Treasury yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+   },
+   {
+    "title": "Deere valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/de/statistics/"
+   },
+   {
+    "title": "Cummins valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cmi/statistics/"
+   },
+   {
+    "title": "PACCAR valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pcar/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "Consensus 2027 EPS (stockanalysis.com, 16 Oct 2026)",
+    "formula": "2027 EPS = analyst consensus",
+    "plain": "Caterpillar's fiscal year is the calendar year, so 'next year' is 2027. The 28 analysts tracked by stockanalysis.com expect earnings per share, excluding one-offs, of $32.59, up 19% on the $27.33 they expect for 2026 (2025: $19.06).",
+    "result": "$32.59 a share",
+    "title": "What will Caterpillar earn next year?"
+   },
+   {
+    "calc": "(13.5 + 19.0 + 21.0) ÷ 3",
+    "formula": "Normal forward P/E = average of the last three year-ends",
+    "plain": "The forward P/E is the share price divided by the following year's earnings. At the end of 2023, 2024 and 2025 it was 13.5, 19.0 and 21.0. The average is 17.8, close to the 'about 17 ×' Barron's reports for 2019–2025. We skip 2020–21, when interest rates were near zero.",
+    "result": "17.8",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "17.8 × 32.59",
+    "formula": "Price in 12 months = normal forward P/E × 2027 EPS",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is exactly how an analyst's price target is built.",
+    "result": "$580",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "580.10 ÷ 1.139",
+    "formula": "Fair value = price in 12 months ÷ (1 + 13.9%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.1% bond yield + 1.6 × 5.5% = 13.9% a year. Caterpillar's beta is high (its shares swing more than the market), so the required return is high too.",
+    "result": "$509",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "509 ÷ 730.76 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is about 30% above our value: investors are paying 22.4 × 2027 earnings instead of Caterpillar's usual 17.8 ×.",
+    "result": "−30%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Caterpillar the way analysts value big US machinery makers: a price-to-earnings multiple (P/E) on next year's expected profit. Analysts expect earnings of $32.59 a share in 2027; at the forward P/E Caterpillar normally traded at (17.8) the share would be worth about $580 in a year, or $509 today, 30% below today's $730.76. The market is paying about 22 × 2027 earnings, betting that the data-centre power boom has made Caterpillar a permanently higher-rated company.",
+  "targets": {
+   "items": [
+    "Caterpillar targets sales growth of 6–9% a year from 2024 to 2030 (raised from its earlier goal), an adjusted operating margin that rises with sales (15–19% at $60bn of sales, 18–22% at $72bn, 21–25% at $100bn) and machinery free cash flow of $6–15bn a year.",
+    "Track record: the margin was at or above the top of its range in 2023–24 (20.5–20.7%) and in the lower half in 2025 (17.2%, a year hit by new US tariffs). Free cash flow has been $9.5–10bn a year in 2023–25, inside the range.",
+    "2026 outlook (Q2 report): sales up by a mid-to-high-teens percentage, margin near the bottom of the range excluding tariff refunds, about $2.2bn of tariff costs and free cash flow in the top half of the range. The order backlog hit a record $72.1bn, nearly double a year earlier."
+   ],
+   "title": "Does Caterpillar have a growth goal we can use?",
+   "verdict": "The targets tell us what a normal year looks like. At the forecast $88bn of 2027 sales the range is roughly 20–24%, so the consensus 20.4% margin is not aggressive by Caterpillar's own yardstick, but it is well above the 17.5% average of 2021–25. We keep the consensus in the main value and show a mid-cycle version as a check."
+  },
+  "ticker": "CAT",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Caterpillar is the world's largest maker of construction and mining machines (diggers, bulldozers, giant mining trucks) and also builds engines, gas turbines and generators, a business now booming because data centres need their own power. It sells through independent dealers worldwide and lends to customers through its finance arm, Cat Financial."
+ },
  {
   "company": "Swedbank",
   "consensus": {
