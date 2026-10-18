@@ -222,8 +222,7 @@ button.cal-cell:hover{border-color:var(--cyan)}
   <p class="disclaimer">Personal project by Simon Thurn, BSc International Economics student at Jönköping International Business School. Each analysis is researched and built with the help of AI (Claude). This is an educational worked example, not investment advice. Fair values depend on the assumptions shown, so you can judge them yourself. Prices are delayed and figures come from the sources listed; check them before acting.</p>
 </div>
 
-<script type="application/json" id="fvd-schedule">
-[
+<script type="application/json" id="fvd-schedule">[
  {
   "company": "Beijer Ref",
   "date": "2026-09-23",
@@ -459,13 +458,13 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "ticker": "CAT"
  },
  {
-  "company": "Essity",
+  "company": "Svedbergs Group",
   "date": "2026-10-19",
   "market": "Sweden",
-  "method": "DCF",
-  "sector": "Hygiene products",
-  "teaser": "Everyday products with stable cash: how much is stability worth?",
-  "ticker": "ESSITY B"
+  "method": "Forward EV/EBITA",
+  "sector": "Bathroom products (serial acquirer)",
+  "teaser": "A Swedish bathroom-furniture maker that has grown by buying brands in the UK and the Netherlands: what is next year's operating profit worth?",
+  "ticker": "SVED B"
  },
  {
   "company": "Prologis",
@@ -709,11 +708,18 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Pharmaceuticals (obesity and diabetes drugs)",
   "teaser": "Obesity drugs made it one of the world's most valuable companies: how much future growth is already in the price?",
   "ticker": "LLY"
+ },
+ {
+  "company": "Essity",
+  "date": "2026-11-16",
+  "market": "Sweden",
+  "method": "Forward P/E",
+  "sector": "Hygiene products",
+  "teaser": "Everyday products with stable cash: how much is stability worth?",
+  "ticker": "ESSITY B"
  }
-]
-</script>
-<script type="application/json" id="fvd-data">
-[
+]</script>
+<script type="application/json" id="fvd-data">[
  {
   "company": "Caterpillar",
   "consensus": {
@@ -14419,8 +14425,7 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "verdict": "Looks undervalued",
   "whatTheyDo": "One of the world's largest wholesalers of refrigeration, air-conditioning and heat-pump equipment, selling to installers in Europe, North America and Asia-Pacific. It has grown mainly by buying other distributors: in 2023 alone it spent SEK 8.9 billion on acquisitions, mainly the US distributor Heritage."
  }
-]
-</script>
+]</script>
 <script>
 (function(){
   var app=document.getElementById('app');
