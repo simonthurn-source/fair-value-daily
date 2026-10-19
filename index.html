@@ -222,7 +222,8 @@ button.cal-cell:hover{border-color:var(--cyan)}
   <p class="disclaimer">Personal project by Simon Thurn, BSc International Economics student at Jönköping International Business School. Each analysis is researched and built with the help of AI (Claude). This is an educational worked example, not investment advice. Fair values depend on the assumptions shown, so you can judge them yourself. Prices are delayed and figures come from the sources listed; check them before acting.</p>
 </div>
 
-<script type="application/json" id="fvd-schedule">[
+<script type="application/json" id="fvd-schedule">
+[
  {
   "company": "Beijer Ref",
   "date": "2026-09-23",
@@ -717,9 +718,561 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Hygiene products",
   "teaser": "Everyday products with stable cash: how much is stability worth?",
   "ticker": "ESSITY B"
+ },
+ {
+  "company": "Union Pacific",
+  "date": "2026-11-17",
+  "market": "United States",
+  "method": "Forward P/E",
+  "sector": "Railroads (freight transport)",
+  "teaser": "America's largest freight railroad earns like a toll road: how much is a slow but steady stream of profit worth?",
+  "ticker": "UNP"
  }
-]</script>
-<script type="application/json" id="fvd-data">[
+]
+</script>
+<script type="application/json" id="fvd-data">
+[
+ {
+  "company": "Svedbergs Group",
+  "consensus": {
+   "analysts": 2,
+   "asOf": "13 Oct 2026",
+   "explain": "The average target of SEK 78.5 is a price in 12 months; discounted one year at 10.9% it is worth about SEK 71 today. Our SEK 51 is 28% below that. We use the same type of method; the gap is the multiple, not the profit forecast. SEK 78.5 works out at about 11.3 × 2027 EBITA, while Svedbergs' own forward average for the last three year-ends is 8.7: the analysts assume the share keeps the higher rating it reached in 2025, after a 2024 share issue cut the debt.",
+   "high": 82,
+   "low": 75,
+   "method": "SB1 Markets bases its SEK 75 target on an equal mix of 10 × EV/EBIT on 2027 and a cash-flow model (Placera, 28 Sep 2026); the multiple half alone works out at about SEK 64. Nordea (SEK 82, 13 Oct 2026) expects adjusted EBITA to grow about 13% a year in 2025–2027 but did not publish its multiple. ABG's commissioned fair value range of SEK 57–77 equals 10.4–14 × 2027e P/E; in January ABG used 9–12 × 2026e EV/EBITA. A price target is where analysts expect the share to be in 12 months.",
+   "rating": "Buy (both)",
+   "source": "Börskollen and Placera (Nordea SEK 82, SB1 Markets SEK 75)",
+   "target": 78.5,
+   "targetToday": 70.8
+  },
+  "crossCheck": {
+   "calc": "Solve DCF(discount rate) = SEK 56.50",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "A 10-year cash-flow model, turning 82% of EBITA into free cash (the 2022–25 average), growing 5% a year to 2031 and fading to 2.5% by 2036 (2% after that), gives about SEK 82 per share at a 9.6% discount rate (cost of equity 10.9%, debt at 4.4% after tax). Today's SEK 56.50 would need a discount rate of about 12.2%. On past cash the business supports more than the multiple, but the model assumes no new acquisitions and H1 2026 cash was weak.",
+   "result": "≈ 12.2% (value at 9.6%: SEK 82)"
+  },
+  "crossChecks": [
+   {
+    "calc": "11.3 × 5.15 ÷ 1.1087",
+    "name": "Check: forward P/E on its own history",
+    "note": "Close to the EV/EBITA result. ABG's range of 10.4–14 × 2027e P/E is in the same area as the 2024–25 year-ends.",
+    "plain": "At year-end Svedbergs traded at 6.6 (2023), 10.2 (2024) and 17.0 (2025) times the next year's profit; average 11.3. Applied to 2027 consensus profit per share (SEK 5.15) and brought back one year:",
+    "result": "≈ SEK 53"
+   },
+   {
+    "calc": "(13.9 × 326 − 1,182) ÷ 53.32",
+    "name": "Check: at the peers' multiple",
+    "note": "Svedbergs trades at about 12.6 × on the same basis, a small discount to these peers. Premium market leader Geberit trades at 24.6 ×.",
+    "plain": "Nordic window maker Inwido (14.5) and bathroom maker Villeroy & Boch (13.4) trade at about 13.9 × last-year operating profit (EV/EBIT incl. leases, stockanalysis.com). Applied to Svedbergs' SEK 326m and net debt including leases (SEK 1,182m):",
+    "result": "≈ SEK 63"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-19",
+  "dateLabel": "Monday 19 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 51,
+  "history": {
+   "caption": "SEK million unless stated. Sales, EBITA and net profit from Svedbergs' annual report 2025 (five-year overview). Year-end market value, EPS (adjusted for the 2024 share issue), cash interest and the 2021–23 capex and balance sheet from stockanalysis.com, built from the company's reports; 2024–25 net debt and capex from the annual report. Net debt excludes leases. Forward multiples divide the year-end value by the NEXT year's actual result (2025: by the 2026 forecast). Last column: 2023–25 averages or totals.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2023–25"
+   ],
+   "rows": [
+    {
+     "label": "Sales",
+     "note": "Bought: Roper Rhodes (UK), Thebalux (Netherlands). 2021–25: +27% a year",
+     "values": [
+      "869",
+      "1,833",
+      "1,824",
+      "2,184",
+      "2,253",
+      "27%/yr"
+     ]
+    },
+    {
+     "label": "Organic growth",
+     "note": "Growth without acquisitions. H1 2026: 2.2%",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "6.4%",
+      "n/a"
+     ]
+    },
+    {
+     "label": "EBITA (operating profit)",
+     "values": [
+      "119",
+      "251",
+      "240",
+      "312",
+      "344",
+      "896"
+     ]
+    },
+    {
+     "label": "EBITA margin",
+     "note": "Target: 15%",
+     "values": [
+      "13.7%",
+      "13.7%",
+      "13.2%",
+      "14.3%",
+      "15.2%",
+      "14.3%"
+     ]
+    },
+    {
+     "label": "Net profit",
+     "values": [
+      "59",
+      "166",
+      "119",
+      "168",
+      "216",
+      "503"
+     ]
+    },
+    {
+     "label": "Earnings per share (SEK)",
+     "values": [
+      "2.77",
+      "4.90",
+      "3.37",
+      "3.25",
+      "4.07",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Market value at year-end",
+     "values": [
+      "1,822",
+      "890",
+      "1,102",
+      "2,195",
+      "3,621",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Net debt excl. leases",
+     "note": "30 Jun 2026: 758 (after buying UBC)",
+     "values": [
+      "927",
+      "424",
+      "1,033",
+      "651",
+      "326",
+      "n/a"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Market value ÷ that year's net profit",
+     "values": [
+      "31.1",
+      "5.4",
+      "9.3",
+      "13.1",
+      "16.8",
+      "13.0"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Market value ÷ next year's net profit (2025: ÷ 2026 forecast SEK 213m)",
+     "values": [
+      "11.0",
+      "7.5",
+      "6.6",
+      "10.2",
+      "17.0",
+      "11.3"
+     ]
+    },
+    {
+     "label": "EV/EBITA at year-end",
+     "note": "(Market value + net debt) ÷ that year's EBITA",
+     "values": [
+      "23.0",
+      "5.2",
+      "8.9",
+      "9.1",
+      "11.5",
+      "9.8"
+     ]
+    },
+    {
+     "label": "Forward EV/EBITA at year-end",
+     "note": "Year-end EV ÷ next year's EBITA (2025: ÷ the 2026 forecast of about SEK 358m). The multiple analysts use",
+     "strong": true,
+     "values": [
+      "10.9",
+      "5.5",
+      "6.8",
+      "8.3",
+      "11.0",
+      "8.7"
+     ]
+    },
+    {
+     "label": "Cash from operations",
+     "note": "After tax and interest paid (IFRS cash-flow statement)",
+     "values": [
+      "96",
+      "240",
+      "196",
+      "189",
+      "403",
+      "787"
+     ]
+    },
+    {
+     "label": "+ Interest paid, after tax",
+     "values": [
+      "18",
+      "19",
+      "36",
+      "46",
+      "30",
+      "112"
+     ]
+    },
+    {
+     "label": "− Equipment & systems (capex)",
+     "values": [
+      "7",
+      "22",
+      "12",
+      "61",
+      "36",
+      "109"
+     ]
+    },
+    {
+     "label": "− Lease payments",
+     "values": [
+      "n/a",
+      "18",
+      "23",
+      "23",
+      "29",
+      "75"
+     ]
+    },
+    {
+     "label": "= Free cash flow",
+     "strong": true,
+     "values": [
+      "n/a",
+      "220",
+      "197",
+      "151",
+      "368",
+      "715"
+     ]
+    },
+    {
+     "label": "Cash conversion (FCF ÷ EBITA)",
+     "note": "2025 helped by lower stock; H1 2026 cash from operations only SEK 24m",
+     "strong": true,
+     "values": [
+      "n/a",
+      "88%",
+      "82%",
+      "48%",
+      "107%",
+      "80%"
+     ]
+    },
+    {
+     "label": "Spent on acquisitions",
+     "note": "2025: earn-out for Roper Rhodes. H1 2026: SEK 249m for UBC",
+     "values": [
+      "788",
+      "149",
+      "477",
+      "0",
+      "188",
+      "665"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close, 16 Oct 2026 (MarketScreener/Zonebourse). Market value SEK 3,013m",
+    "value": "SEK 56.50"
+   },
+   {
+    "label": "Enterprise value (EV) today",
+    "note": "56.50 × 53.32m shares + 758m net debt. EV/EBITA today: 10.5 on 2026, 8.6 on 2027",
+    "value": "SEK 3,771m"
+   },
+   {
+    "label": "EBITA forecasts",
+    "note": "2026: consensus EBIT 334.6 + 14.2 brand amortisation + 9.0 one-off deal costs. 2027: average of consensus EBIT 419.3 + 14.2 (=434) and Nordea's ~13% a year from 2025 (=439). Last 12 months: SEK 340m",
+    "value": "SEK 358m (2026) / 436m (2027)"
+   },
+   {
+    "label": "Normal forward EV/EBITA",
+    "note": "Average of year-ends 2023 (6.8), 2024 (8.3) and 2025 (11.0)",
+    "value": "8.7"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "Q2 2026 report: 53,338,064 shares less 14,361 held by the company",
+    "value": "53.32 million"
+   },
+   {
+    "label": "Net debt excl. leases",
+    "note": "30 Jun 2026, includes an 88m liability to buy the last 20% of UBC. Including leases: SEK 1,182m",
+    "value": "SEK 758m"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.17% Swedish 10-year bond (16 Oct 2026) + beta 1.4 × 5.5%; brings the 12-month price back to today",
+    "value": "10.9%"
+   },
+   {
+    "label": "Analyst profit forecasts",
+    "note": "MarketScreener consensus. Per share about SEK 4.00 / 5.15; P/E on 2027: 11.0",
+    "value": "Net profit SEK 213m (2026) / 275m (2027)"
+   },
+   {
+    "label": "Sales forecasts",
+    "note": "MarketScreener consensus; 2025 actual SEK 2,253m",
+    "value": "SEK 2,466m (2026) / 2,682m (2027)"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: forward EV/EBITA on next year's operating profit (how analysts value Nordic industrial companies and serial acquirers)",
+   "why": "Swedish analysts value companies like Svedbergs mainly on enterprise value against next year's operating profit. ABG, for example, set its January 2026 fair value at 9–12 × 2026e EV/EBITA, and SB1 Markets uses 10 × 2027 EV/EBIT. EV (enterprise value) is the value of all shares plus net debt; EBITA is operating profit before write-downs of acquired brands. That is fair for a company that buys other businesses with borrowed money. We take the forward EV/EBITA Svedbergs has normally traded at, apply it to the 2027 EBITA forecast, subtract net debt, and bring the 12-month price back to today.",
+   "whyNot": "We do not use P/E as the main method, because interest on acquisition debt and amortisation of bought brands distort earnings; it is shown as a check. The cash-flow model (DCF) is also only a check: it depends heavily on a long-term growth guess. We skip the 2021 year-end multiple because interest rates were near zero then, and we use net debt without leases (IFRS 16), since EBITA is after rent costs."
+  },
+  "price": 56.5,
+  "priceDate": "close 16 Oct 2026",
+  "rangeHigh": 59,
+  "rangeLow": 44,
+  "reasoning": [
+   "Svedbergs has grown fast by buying bathroom brands: sales rose from SEK 0.9bn in 2021 to SEK 2.3bn in 2025, and the EBITA margin climbed to 15.2%, meeting its target. Over 2022–25 it turned about 82% of EBITA into free cash.",
+   "Valued the way Nordic analysts value such companies, at its normal forward EV/EBITA (8.7) on about SEK 436m of 2027 EBITA, the share is worth about SEK 57 in a year and SEK 51 today. Today it trades at 8.6 × 2027 EBITA, about its normal level.",
+   "The checks point higher: forward P/E gives about SEK 53, peers' multiple about SEK 63 and the cash-flow model about SEK 82. Analysts (SEK 71 in today's money) assume a higher multiple of about 11.3, closer to where the share stood at the end of 2025.",
+   "Fair value SEK 51 (range 44.0–59). At SEK 56.50 the stock looks roughly fairly priced on its usual multiple, but it depends on a big profit jump in 2027."
+  ],
+  "risks": [
+   "Forecast risk: 2027 EBITA must rise about 22% from the 2026 forecast. If 2027 EBITA comes in 10% lower, the fair value falls to about SEK 44.9.",
+   "Multiple risk: our normal multiple (8.7) includes 6.8 from the end of 2023, when debt was high before the 2024 share issue. Without it (average 9.7) the value is about SEK 59; at the analysts' implied 11.3 × it is about SEK 71; at today's 8.6 × it is about SEK 51.",
+   "Cash and debt: cash from operations was only SEK 24m in H1 2026 (134m a year earlier), stock rose to SEK 656m (550m), and net debt excl. leases rose from SEK 326m at year-end to 758m after buying UBC.",
+   "Pending: the Q3 report is due on 22 October 2026. Nordea expects organic growth of 0.7% and a 14.4% adjusted EBITA margin, hurt by UBC and temporary UK logistics costs; the move to one UK warehouse should be finished by the end of Q4, and a cost programme should save about SEK 25m a year from 2027."
+  ],
+  "sector": "Bathroom products (serial acquirer)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different forward EV/EBITA multiples (rows) and for 2027 EBITA coming in higher or lower than forecast (columns). Base case: 8.7 × SEK 436m.",
+   "colLabel": "2027 EBITA vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBITA",
+   "rows": [
+    "6.7",
+    "7.7",
+    "8.7",
+    "9.7",
+    "10.7"
+   ],
+   "values": [
+    [
+     31.6,
+     34.1,
+     36.6,
+     39.1,
+     41.5
+    ],
+    [
+     38.3,
+     41.1,
+     44,
+     46.8,
+     49.6
+    ],
+    [
+     44.9,
+     48.1,
+     51,
+     55,
+     58
+    ],
+    [
+     52,
+     55,
+     59,
+     62,
+     66
+    ],
+    [
+     58,
+     62,
+     66,
+     70,
+     74
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Svedbergs Group annual and sustainability report 2025 (PDF)",
+    "url": "https://www.svedbergsgroup.com/wp-content/uploads/2026/09/svedbergs-group-ab-ars-och-hallbarhetsredovisning-2025.pdf"
+   },
+   {
+    "title": "Svedbergs Group half-year report 2026 (press release)",
+    "url": "https://svedbergsgroup.com/mfn_news/half-year-report-2026-january-june/"
+   },
+   {
+    "title": "Svedbergs Group Q2 2026 report (PDF)",
+    "url": "https://storage.mfn.se/00a224cc-00a6-49d8-8a77-b28552e39ac2/q2-rapport-2026.pdf"
+   },
+   {
+    "title": "Income statement history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SVED.B/financials/"
+   },
+   {
+    "title": "Cash-flow history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SVED.B/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Balance sheet history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SVED.B/financials/balance-sheet/"
+   },
+   {
+    "title": "Quarterly balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SVED.B/financials/balance-sheet/?p=quarterly"
+   },
+   {
+    "title": "Year-end market values and multiples (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SVED.B/financials/ratios/"
+   },
+   {
+    "title": "Statistics and 5-year beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SVED.B/statistics/"
+   },
+   {
+    "title": "Consensus forecasts and last price (MarketScreener/Zonebourse)",
+    "url": "https://www.zonebourse.com/cours/action/SVEDBERGS-GROUP-AB-6491497/finances/"
+   },
+   {
+    "title": "Analyst price targets (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/svedbergs/riktkurs"
+   },
+   {
+    "title": "Nordea raises target to SEK 82 (Placera, 13 Oct 2026)",
+    "url": "https://www.placera.se/telegram/svedbergs-group-nordea-hojer-riktkursen-for-svedbergs-till-82-kronor-upprepar-kop-20261013"
+   },
+   {
+    "title": "SB1 Markets: Buy, target SEK 75, 10 × 2027 EV/EBIT + DCF (Placera, 28 Sep 2026)",
+    "url": "https://www.placera.se/telegram/svedbergs-group-sb1-upprepar-kop-for-svedbergs-och-riktkurs-75-kronor-20260928"
+   },
+   {
+    "title": "ABG: fair value SEK 57–77, 10.4–14 × 2027e P/E (Börsvärlden, 2 Oct 2026)",
+    "url": "https://borsvarlden.com/artiklar/svedbergs-group-swedish-savings-boost-27e-ebita-by-2-abg"
+   },
+   {
+    "title": "ABG: Scaling up, 9–12 × 2026e EV/EBITA (Jan 2026, PDF)",
+    "url": "https://cr.abgsc.com/contentassets/48b66f27db7240918524c4b830e84e2f/pdf/scaling-up.pdf"
+   },
+   {
+    "title": "DNB Carnegie Q3 preview (Placera, 16 Oct 2026)",
+    "url": "https://placera.se/externa-analyser/svedbergs-group-svedbergs-group-looking-for-the-margin-to-recover-in-2027e-q3-preview-20261016"
+   },
+   {
+    "title": "Share price and news (Nordnet)",
+    "url": "https://www.nordnet.se/aktier/kurser/svedbergs-group-b-sved-b-xsto"
+   },
+   {
+    "title": "Sweden 10-year bond yield (Trading Economics)",
+    "url": "https://de.tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "Inwido valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/INWI/statistics/"
+   },
+   {
+    "title": "Villeroy & Boch valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/VIB3/statistics/"
+   },
+   {
+    "title": "Geberit valuation statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/swx/GEBN/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "(433.5 + 438.6) ÷ 2",
+    "formula": "2027 EBITA ≈ average of the two estimates",
+    "plain": "Analysts expect operating profit (EBITA) to jump in 2027, helped by a full year of UBC, cost savings and the new UK warehouse. Consensus EBIT plus brand amortisation gives SEK 434m; Nordea's ~13% yearly growth from 2025 gives SEK 439m. We use the middle.",
+    "result": "≈ SEK 436m",
+    "title": "What will Svedbergs earn next year?"
+   },
+   {
+    "calc": "(6.8 + 8.3 + 11.0) ÷ 3",
+    "formula": "Normal forward EV/EBITA = average of the last three year-ends",
+    "plain": "The forward EV/EBITA is the company's value at year-end divided by the next year's EBITA. It was 6.8 at the end of 2023 (when debt was high), 8.3 at the end of 2024 and 11.0 at the end of 2025. The average is 8.7.",
+    "result": "8.7",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "(8.7 × 436 − 758) ÷ 53.32",
+    "formula": "Price in 12 months = (normal EV/EBITA × 2027 EBITA − net debt) ÷ shares",
+    "plain": "Value the whole company at the normal multiple, subtract what is owed to lenders, and divide by the number of shares.",
+    "result": "SEK 57",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "56.9 ÷ 1.1087",
+    "formula": "Fair value = price in 12 months ÷ (1 + 10.9%)",
+    "plain": "Shareholders want a return for waiting a year: 3.17% bond yield + 1.4 × 5.5% = 10.9%.",
+    "result": "SEK 51",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "51 ÷ 56.50 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is above our value, but by less than 10%. The share already trades at about its normal multiple on 2027 profit, so we call it roughly fairly priced.",
+    "result": "-9.7%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Svedbergs the way Nordic analysts value industrial companies: forward EV/EBITA, the value of the whole company against next year's operating profit. At the multiple Svedbergs has normally traded at (8.7) on about SEK 436m of EBITA expected for 2027, the share would be worth about SEK 57 in a year, or SEK 51 today, 10% below today's SEK 56.50. That is within 10%, so we call it roughly fairly priced.",
+  "targets": {
+   "items": [
+    "Targets: sales growth of 10% a year on average, through both organic growth and acquisitions; an EBITA margin of 15%; and a dividend of up to 50% of net profit.",
+    "Track record: sales grew 20% a year on average over the last seven years (target met, mostly through acquisitions), but only 3.2% in 2025 (organic 6.4%). The margin reached 15.2% in 2025 (met) after 13.2% in 2023 and 14.3% in 2024 (missed). Last 12 months to June 2026: 15.0%. The 2025 dividend was 49% of profit."
+   ],
+   "title": "Does Svedbergs have a growth goal we can use?",
+   "verdict": "We do not build the value on the targets, but they help to judge the forecast. Consensus for 2027 (sales SEK 2,682m, EBITA about SEK 436m) means a margin of about 16.3%, above the 15% target and the 14.8% of H1 2026. It relies on a full year of UBC, SEK 25m of cost savings and a cheaper UK warehouse set-up. That is possible but demanding, so forecast risk matters here."
+  },
+  "ticker": "SVED B",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Svedbergs makes and sells bathroom furniture, mirrors, shower walls and fittings for homes, mostly for renovation. It started in Sweden and has grown by buying brands abroad: Roper Rhodes in the UK, Thebalux in the Netherlands and, in June 2026, 80% of UBC in the Czech Republic."
+ },
  {
   "company": "Caterpillar",
   "consensus": {
@@ -14425,7 +14978,8 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "verdict": "Looks undervalued",
   "whatTheyDo": "One of the world's largest wholesalers of refrigeration, air-conditioning and heat-pump equipment, selling to installers in Europe, North America and Asia-Pacific. It has grown mainly by buying other distributors: in 2023 alone it spent SEK 8.9 billion on acquisitions, mainly the US distributor Heritage."
  }
-]</script>
+]
+</script>
 <script>
 (function(){
   var app=document.getElementById('app');
