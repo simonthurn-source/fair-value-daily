@@ -727,11 +727,548 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Railroads (freight transport)",
   "teaser": "America's largest freight railroad earns like a toll road: how much is a slow but steady stream of profit worth?",
   "ticker": "UNP"
+ },
+ {
+  "company": "Deutsche Telekom",
+  "date": "2026-11-18",
+  "market": "Germany",
+  "method": "Forward EV/EBITDA",
+  "sector": "Telecoms",
+  "teaser": "Deutsche Telekom owns most of T-Mobile US: is the German parent worth more or less than its share of its fast-growing American child?",
+  "ticker": "DTE"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Prologis",
+  "consensus": {
+   "analysts": 17,
+   "asOf": "19 Oct 2026",
+   "explain": "The average target of $155.85 is a price in 12 months; discounted one year at 12.2% it is worth about $139 today, so our $125 is about 10% lower. On 2027 FFO of $6.73 the target implies 23.2 times, versus the 20.8 times we use (average of the 2023–2025 year-ends). The forecast is the same, so the whole gap is the multiple: analysts pay for a rental recovery and data centres at a multiple closer to the 2023 level (24 times), while we use the average that includes the weak 2024 year-end (18 times).",
+   "high": 170,
+   "low": 140,
+   "method": "Most brokers cut their targets slightly after the Q3 report on 15 October because higher interest rates delay deals: BMO to $150 (Outperform), Jefferies to $150, Freedom Broker to $142 (but upgraded to Buy because the price had fallen further), while BTIG keeps $170 and Wells Fargo $166 (both Buy). The public summaries do not state each broker's multiple, but they are built on FFO per share: BMO expects $6.29 for 2026 and $6.73 for 2027 (+7.0%), so its $150 target is about 22.3 times 2027 FFO. A target price is where analysts expect the share to be in 12 months.",
+   "rating": "Buy",
+   "source": "stockanalysis.com (S&P Global)",
+   "target": 155.85,
+   "targetToday": 138.9
+  },
+  "crossCheck": {
+   "calc": "NAV at 5.0% cap rate ≈ $130; price $124.09 implies 5.2%",
+   "name": "NAV check: price compared with the value of the buildings (not in the fair value)",
+   "plain": "Net asset value (NAV) is what the buildings and other assets would sell for, minus debt, per share. Prologis publishes the pieces but not the total. Its warehouses earn $6.96bn of yearly cash rent profit (NOI, Prologis's share, June 2026). Valued at a 5.0% yield ('cap rate'), plus developments ($4.5bn), land ($4.9bn), other assets ($12.8bn) and the fund business (our assumption: 20 × fee profit and average promotes = $9.4bn), minus debt ($42.5bn, including its share of joint ventures) and other liabilities, NAV is about $130 a share. Today's price means buyers value the warehouses at a 5.2% cap rate, close to the 5.1% at which Prologis sold buildings in Q3 and above the 4.2% it paid when buying. So the share is roughly at NAV, neither cheap nor expensive.",
+   "result": "≈ 0.95 × NAV at a 5.0% cap rate (5% discount)"
+  },
+  "crossChecks": [
+   {
+    "calc": "Solve DCF(WACC) = $124.09",
+    "name": "Cash-flow check (10-year DCF)",
+    "note": "Prologis creates value by building: about $516m of value creation from finished developments in the first nine months of 2026, and a 5.8 GW data-centre pipeline. A DCF without that growth is a floor, not a fair value.",
+    "plain": "Cash available to all investors = operating cash flow $5,241m + interest paid $901m − upkeep and leasing capex about $967m (13.9% of NOI) = $5,175m a year (as a REIT it pays almost no US tax). We let it grow 7% in years 1–2 (leases renewing at higher rents), easing to 4% in year 5 and 2.5% by year 10, with no new development. Discounted at 10.3% (12.2% cost of equity, 4.0% cost of new debt, 77/23 market-value weights), minus net debt $34.6bn and $4.4bn owed to partners, that gives about $42 a share. Today's price would need a discount rate of about 6.4%. On its own the existing rent cash does not support today's multiple at our discount rate; the price also pays for future developments and data centres, which this check leaves out.",
+    "result": "≈ $42 (price needs 6.4%)"
+   },
+   {
+    "calc": "4.28 ÷ 3.14%",
+    "name": "Check: dividend yield history",
+    "note": "Today's yield is 3.4%, a bit above normal, so this check is more positive than our fair value. The dividend uses about 68% of 2026 Core FFO.",
+    "plain": "At the 2023–2025 year-ends the dividend yield averaged 3.1%. At that yield, today's annual dividend of $4.28 would be worth:",
+    "result": "≈ $136"
+   },
+   {
+    "calc": "124.09 × 18.77 ÷ 18.22",
+    "name": "Check: peers' P/FFO",
+    "note": "Prologis sits just below the peer average. EastGroup earns a higher multiple for Sun Belt growth; Rexford is lower after falling Southern California rents.",
+    "plain": "On 19 Oct 2026, on trailing FFO (stockanalysis.com), Rexford Industrial traded at 15.9 times, EastGroup at 21.1 and First Industrial at 19.2. The average is 18.8. Prologis trades at 18.2 on the same basis, so at the peer average it would be worth:",
+    "result": "≈ $128"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-20",
+  "dateLabel": "Tuesday 20 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 125,
+  "history": {
+   "caption": "From Prologis's year-end releases (Core FFO per diluted share; 2021 excl. promotes = $4.15 − $0.06 net promote income) and stockanalysis.com (cash-flow statement, debt, cash, shares). Year-end prices unadjusted (Digrin). Forward P/FFO = year-end price ÷ the NEXT year's actual Core FFO excl. promotes; for 2025 we use the 2026 guidance midpoint $6.27 (guidance $6.25–6.29, consensus $6.27). EV = year-end price × shares + net debt. Latest: price 19 Oct 2026, FFO for the 12 months to Sep 2026 ($5.86 − 4.41 + 4.72), forward on BMO's 2027 forecast $6.73.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "Core FFO per share, excl. promotes, $",
+     "note": "Up every year; +7.0% in the first nine months of 2026 ($4.72 vs $4.41)",
+     "values": [
+      "4.09",
+      "4.61",
+      "5.10",
+      "5.53",
+      "5.86",
+      "6.17"
+     ]
+    },
+    {
+     "label": "Core FFO per share as reported, $",
+     "note": "Includes promotes (fees from funds), which jumped in 2022–2023",
+     "values": [
+      "4.15",
+      "5.16",
+      "5.61",
+      "5.56",
+      "5.81",
+      "6.17"
+     ]
+    },
+    {
+     "label": "Share price at year-end, $",
+     "values": [
+      "168.36",
+      "112.73",
+      "133.30",
+      "105.70",
+      "127.66",
+      "124.09"
+     ]
+    },
+    {
+     "label": "Price ÷ Core FFO, trailing",
+     "values": [
+      "41.2",
+      "24.5",
+      "26.1",
+      "19.1",
+      "21.8",
+      "20.1"
+     ]
+    },
+    {
+     "label": "Price ÷ Core FFO, forward (next year)",
+     "note": "This is the multiple we use. Average 2023–25: 20.8. 2021 left out (near-zero interest rates). Latest: on BMO's 2027 forecast $6.73",
+     "strong": true,
+     "values": [
+      "36.5",
+      "22.1",
+      "24.1",
+      "18.0",
+      "20.4",
+      "18.4"
+     ]
+    },
+    {
+     "label": "Enterprise value (EV), $bn",
+     "note": "Price × shares + net debt",
+     "values": [
+      "142.2",
+      "128.3",
+      "152.3",
+      "128.1",
+      "153.1",
+      "154.9"
+     ]
+    },
+    {
+     "label": "Dividend per share paid, $",
+     "values": [
+      "n/a",
+      "3.16",
+      "3.48",
+      "3.84",
+      "4.04",
+      "4.28 (annual rate)"
+     ]
+    },
+    {
+     "label": "Dividend yield at year-end",
+     "note": "Average 2023–25: 3.1%",
+     "values": [
+      "n/a",
+      "2.8%",
+      "2.6%",
+      "3.6%",
+      "3.2%",
+      "3.4%"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities, $m",
+     "note": "GAAP cash-flow statement, after interest paid. Latest: 12 months to June 2026",
+     "values": [
+      "2,996",
+      "4,126",
+      "5,373",
+      "4,912",
+      "5,008",
+      "5,241"
+     ]
+    },
+    {
+     "label": "Interest paid, $m",
+     "values": [
+      "279",
+      "234",
+      "457",
+      "711",
+      "842",
+      "901"
+     ]
+    },
+    {
+     "label": "Property bought and built minus property sold, $m",
+     "note": "Acquisitions and development spend minus sales (stockanalysis.com)",
+     "values": [
+      "1,237",
+      "4,189",
+      "6,556",
+      "2,630",
+      "3,225",
+      "2,323"
+     ]
+    },
+    {
+     "label": "Shares outstanding, millions",
+     "note": "Jump in 2022 = all-share takeover of Duke Realty; 2026 = new shares sold ahead of the SEGRO deal",
+     "values": [
+      "739.8",
+      "923.1",
+      "924.4",
+      "926.3",
+      "929.2",
+      "969.6"
+     ]
+    },
+    {
+     "label": "Net debt, $m",
+     "note": "Debt − cash (stockanalysis.com; may include small lease liabilities). Debt ÷ adjusted EBITDA 4.5× at Sep 2026",
+     "values": [
+      "17,607",
+      "24,191",
+      "29,127",
+      "30,166",
+      "34,533",
+      "34,560 (Sep)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close 19 Oct 2026 (−1.3%); 52-week range $121.40–153.35",
+    "value": "$124.09"
+   },
+   {
+    "label": "2027 Core FFO per share",
+    "note": "BMO Capital, 16 Oct 2026 (+7.0%); Truist $6.72 (Apr 2026). 2026 guidance $6.25–6.29",
+    "value": "$6.73"
+   },
+   {
+    "label": "Normal forward P/FFO",
+    "note": "Average of year-ends 2023 (24.1), 2024 (18.0) and 2025 (20.4)",
+    "value": "20.8"
+   },
+   {
+    "label": "Forward P/FFO today",
+    "note": "124.09 ÷ 6.73",
+    "value": "18.4"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.09% US 10-year Treasury (Fed H.15, 16 Oct 2026) + beta 1.3 × 5.5%",
+    "value": "12.2%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 1.32 (stockanalysis.com)",
+    "value": "1.3"
+   },
+   {
+    "label": "Net debt",
+    "note": "Debt $36.83bn − cash $2.27bn at 30 Sep 2026; noncontrolling interests $4.4bn (book, Jun 2026)",
+    "value": "$34.6bn"
+   },
+   {
+    "label": "Shares outstanding",
+    "note": "stockanalysis.com, Oct 2026; Q3 diluted shares and units 968.5 million",
+    "value": "969.6 million"
+   },
+   {
+    "label": "Dividend",
+    "note": "Yield 3.4% at today's price",
+    "value": "$4.28 a year ($1.07 a quarter)"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: price ÷ next year's FFO (P/FFO), how analysts value US REITs, with a NAV check",
+   "why": "A REIT must pay out most of its profit, and ordinary earnings (EPS) are distorted by large depreciation charges on buildings and by one-off gains from selling them: Prologis guides 2026 earnings of $4.05–4.15 a share but Core FFO of $6.25–6.29. So US REIT analysts compare the price with FFO (funds from operations: profit before depreciation and property-sale gains). For Prologis they use the company's 'Core FFO'; BMO, Truist and Zacks all publish forecasts and multiples on this basis (Zacks quotes 20.45 times forward FFO in September 2026). We use Core FFO excluding one-off performance fees from its funds ('promotes'), because those jump around from year to year. Today's calendar listed NAV as the method; for a US REIT the table and the brokers point to P/FFO, so NAV is shown as the main check instead.",
+   "whyNot": "P/E would mislead because of depreciation and sale gains (trailing P/E about 27). The AFFO figure is published only in total, not per share, and analysts quote FFO for Prologis, so we use FFO. NAV (value of the buildings minus debt) depends on a cap-rate assumption, so it is a check. A DCF is only a check because almost all of Prologis's value comes from rents that rise over decades, so the result swings with the discount rate. The SEGRO takeover (expected to close in the first half of 2027) is described by Prologis as broadly neutral to FFO per share, so we leave it out."
+  },
+  "price": 124.09,
+  "priceDate": "close 19 Oct 2026 (stockanalysis.com)",
+  "rangeHigh": 131,
+  "rangeLow": 119,
+  "reasoning": [
+   "Prologis's record is steady: Core FFO per share (excluding promotes) rose every year from $4.09 in 2021 to $5.86 in 2025 and is up 7% this year, usually at the top of guidance. But the price investors pay for it has fallen from 36 times in 2021 to 18–24 times as interest rates rose.",
+   "At the normal 20.8 times on BMO's $6.73 for 2027 the share is worth about $140 in a year, or $125 today. The NAV check (about $130 at a 5% cap rate), the peer check ($128) and the dividend check ($136) are at or a little above today's price; the DCF on existing rents alone ($42) shows how much of the price rests on future growth.",
+   "Analysts' average target is worth $139 today, about 10% more than our value, because it implies 23.2 times 2027 FFO, close to the 2023 multiple, while we use the 2023–25 average.",
+   "Fair value $125 (range 119–131). At $124.09 the share looks roughly fairly priced, about 1% below our value."
+  ],
+  "risks": [
+   "Forecast risk: if 2027 Core FFO is 10% lower than $6.73 (for example if tenants delay leasing or deals keep slipping), the fair value falls to about $112.",
+   "Multiple risk: at the 23.2 times implied by analysts' average target the value would be about $139; at today's 18.4 times it would be about $111. Each 1 point of multiple moves the value by about $6.",
+   "Interest rates: the 10-year Treasury is about 5.1%. Prologis says higher rates slow property sales and could push values down; it trimmed its 2026 sales and fund-contribution guidance to $3.5–4.75bn. About 95% of its debt is fixed-rate at an average 3.3%, but new borrowing is more expensive.",
+   "Upside and deal risk: rents on renewing leases are about 16% below market (about $780m a year of extra rent), and data centres (1 GW under letters of intent, mostly expected to start in 2027) could add growth. The $18.8bn SEGRO takeover (expected first half of 2027) is guided as FFO-neutral, but adds execution and currency risk in Europe."
+  ],
+  "sector": "Logistics real estate (REIT)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in $ per share for different forward P/FFO multiples (rows) and for 2027 Core FFO coming in higher or lower than the $6.73 forecast (columns). Base case: 20.8 × $6.73, discounted at 12.2%.",
+   "colLabel": "2027 Core FFO vs $6.73",
+   "cols": [
+    "−10%",
+    "−5%",
+    "$6.73",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/FFO",
+   "rows": [
+    "22.8",
+    "21.8",
+    "20.8",
+    "19.8",
+    "18.8"
+   ],
+   "values": [
+    [
+     123,
+     130,
+     137,
+     144,
+     151
+    ],
+    [
+     118,
+     124,
+     131,
+     137,
+     144
+    ],
+    [
+     112,
+     119,
+     125,
+     131,
+     137
+    ],
+    [
+     107,
+     113,
+     119,
+     125,
+     131
+    ],
+    [
+     102,
+     107,
+     113,
+     119,
+     124
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Prologis Q3 2026 results (PR Newswire, 15 Oct 2026)",
+    "url": "https://www.prnewswire.com/news-releases/prologis-reports-third-quarter-2026-results-302909334.html"
+   },
+   {
+    "title": "Prologis Q3 2026 results summary and guidance (StockTitan)",
+    "url": "https://www.stocktitan.net/news/PLD/prologis-reports-third-quarter-2026-fimktrflilmi.html"
+   },
+   {
+    "title": "Prologis Q3 2026 earnings call transcript (Motley Fool)",
+    "url": "https://www.fool.com/earnings/call-transcripts/2026/10/16/prologis-pld-q3-2026-earnings-call-transcript/"
+   },
+   {
+    "title": "PLD Q3 earnings call highlights: rent recovery and rate risks (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/real-estate/articles/pld-q3-earnings-call-highlights-130000696.html"
+   },
+   {
+    "title": "Prologis Q3 FFO tops estimates; FY2026 consensus (Zacks via Yahoo Finance)",
+    "url": "https://finance.yahoo.com/real-estate/articles/prologis-pld-q3-ffo-revenues-121145453.html"
+   },
+   {
+    "title": "Prologis Supplemental Information Q2 2026: NAV components (PDF)",
+    "url": "https://d1io3yog0oux5.cloudfront.net/_35bb16228492860f3527fe299baad741/prologis/db/2346/23888/supplemental_financial_report_pdf/Q2_2026_Prologis_Earnings_Supplemental.pdf"
+   },
+   {
+    "title": "Prologis Q4 and full year 2025 results",
+    "url": "https://ir.prologis.com/press-releases/detail/1029/prologis-reports-fourth-quarter-and-full-year-2025-results"
+   },
+   {
+    "title": "Prologis Q4 and full year 2024 results",
+    "url": "https://ir.prologis.com/press-releases/detail/1004/prologis-reports-fourth-quarter-and-full-year-2024-results"
+   },
+   {
+    "title": "Prologis Q4 and full year 2023 results",
+    "url": "https://ir.prologis.com/press-releases/detail/979/prologis-reports-fourth-quarter-and-full-year-2023-results"
+   },
+   {
+    "title": "Prologis Q4 and full year 2022 results",
+    "url": "https://ir.prologis.com/press-releases/detail/952/prologis-reports-strong-fourth-quarter-and-full-year-2022"
+   },
+   {
+    "title": "Prologis Q4 and full year 2021 results (StockTitan)",
+    "url": "https://www.stocktitan.net/news/PLD/prologis-reports-fourth-quarter-and-full-year-2021-earnings-wqqpqj8i78be.html"
+   },
+   {
+    "title": "Prologis announces recommended acquisition of SEGRO plc (4 Aug 2026)",
+    "url": "https://ir.prologis.com/news-events/press-releases/detail/1049/prologis-announces-recommended-acquisition-of-segro-plc"
+   },
+   {
+    "title": "SEGRO shareholder approval and expected close (ScanX)",
+    "url": "https://scanx.trade/stock-market-news/companies/prologis-q3-results-core-ffo-beats-estimate-revenue-misses/53612724"
+   },
+   {
+    "title": "Prologis quote, close 19 Oct 2026 (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pld/"
+   },
+   {
+    "title": "Prologis statistics: beta, debt, cash, P/FFO (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pld/statistics/"
+   },
+   {
+    "title": "Prologis analyst forecasts and targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pld/forecast/"
+   },
+   {
+    "title": "Prologis cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pld/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Prologis balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pld/financials/balance-sheet/"
+   },
+   {
+    "title": "Prologis dividend history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/pld/dividend/"
+   },
+   {
+    "title": "Prologis year-end prices (Digrin)",
+    "url": "https://www.digrin.com/stocks/detail/PLD/price"
+   },
+   {
+    "title": "BMO cuts Prologis target to $150; 2026–27 FFO estimates (Investing.com, 16 Oct 2026)",
+    "url": "https://www.investing.com/news/analyst-ratings/bmo-cuts-prologis-stock-price-target-on-earnings-timing-delays-93CH-4954462"
+   },
+   {
+    "title": "Truist raises Prologis target; 2027 FFO estimate (Investing.com, Apr 2026)",
+    "url": "https://www.investing.com/news/analyst-ratings/truist-raises-prologis-stock-price-target-on-strong-ffo-outlook-93CH-4635613"
+   },
+   {
+    "title": "Freedom Broker upgrades Prologis to Buy, target $142 (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/prologis-stock-rating-upgraded-to-buy-at-freedom-broker-on-valuation-93CH-4958133"
+   },
+   {
+    "title": "KeyBanc keeps Sector Weight on rates (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/prologis-stock-rating-held-at-sector-weight-by-keybanc-on-rates-93CH-4957714"
+   },
+   {
+    "title": "BTIG keeps $170 target (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/btig-keeps-usd-170-target-for-prologis-stock/70340338"
+   },
+   {
+    "title": "Wells Fargo sets $166 target (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/wells-fargo-sets-usd-166-target-for-prologis-stock/70327404"
+   },
+   {
+    "title": "Scotiabank upgrades Prologis to Outperform, $150 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/scotiabank-upgrades-prologis-stock-to-outperform-at-usd-150-00/70325736"
+   },
+   {
+    "title": "BMO $152 and Jefferies $150 targets (MarketScreener)",
+    "url": "https://www.marketscreener.com/news/bmo-capital-adjusts-price-target-on-prologis-to-152-from-163-ce785ddcd18cf126"
+   },
+   {
+    "title": "Realty Income vs. Prologis: forward P/FFO 20.45× (Zacks via Yahoo Finance, Sep 2026)",
+    "url": "https://finance.yahoo.com/real-estate/articles/realty-income-vs-prologis-reit-144700146.html"
+   },
+   {
+    "title": "Federal Reserve H.15: 10-year Treasury yield",
+    "url": "https://www.federalreserve.gov/releases/h15/"
+   },
+   {
+    "title": "Rexford Industrial statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/rexr/statistics/"
+   },
+   {
+    "title": "EastGroup Properties statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/egp/statistics/"
+   },
+   {
+    "title": "First Industrial statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/fr/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "$6.27 × about 1.073",
+    "formula": "2027 Core FFO per share = broker forecast (BMO)",
+    "plain": "Core FFO is the cash profit per share after interest, before the accounting charge for building wear (depreciation) and without gains from selling property. BMO expects $6.73 a share in 2027, 7% more than the $6.25–6.29 guided for 2026.",
+    "result": "$6.73 a share",
+    "title": "What will Prologis earn next year?"
+   },
+   {
+    "calc": "(24.1 + 18.0 + 20.4) ÷ 3",
+    "formula": "Normal forward P/FFO = average of the last three year-ends",
+    "plain": "The forward P/FFO is the share price divided by the coming year's FFO. At the end of 2023, 2024 and 2025 it was 24.1, 18.0 and 20.4. The average is 20.8. We skip 2021, when interest rates were near zero and the multiple was 36.",
+    "result": "20.8",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "20.83 × 6.73",
+    "formula": "Price in 12 months = 20.8 × $6.73",
+    "plain": "Multiply next year's expected FFO by the normal multiple. This is how an analyst's 12-month price target is built.",
+    "result": "$140.2",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "140.2 ÷ 1.1224",
+    "formula": "Fair value = price in 12 months ÷ (1 + 12.2%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 5.09% Treasury yield + 1.3 × 5.5% = 12.2% a year. (The share also pays about $4.28 of dividends over the year; like analysts' targets, the price here excludes them.)",
+    "result": "$125",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "124.9 ÷ 124.09 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is within 1% of our value, so Prologis looks roughly fairly priced. It trades at 18.4 times 2027 FFO, a little below its normal 20.8, but higher interest rates make a year of waiting more expensive.",
+    "result": "+0.7%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Prologis the way analysts value US property trusts (REITs): the share price divided by next year's FFO, the cash profit per share after interest. Brokers expect about $6.73 a share for 2027; at the 20.8 times investors normally paid at the last three year-ends, the share would be worth about $140 in a year, or $125 today, almost exactly today's $124.09.",
+  "targets": {
+   "items": [
+    "Prologis has no long-term financial targets. It gives yearly guidance for Core FFO per share, occupancy and rent growth, and will publish its first 2027 guidance in January 2027 (without SEGRO).",
+    "2026: Core FFO excl. promotes guided at $6.05–6.25 in January, now $6.25–6.29, above the original top end. Nine months: $4.72 vs $4.41 a year earlier (+7.0%).",
+    "Track record (Core FFO excl. promotes, first guidance → actual): 2023 $5.00–5.10 → $5.10; 2024 $5.50–5.64 → $5.53 (low end); 2025 $5.70–5.86 → $5.86 (top end).",
+    "Built-in growth: existing leases are on average 16% below today's market rents (about $780 million of extra yearly rent as they renew), and rents on renewed leases rose 38% in Q3 2026."
+   ],
+   "title": "Does Prologis have a growth goal we can use?",
+   "verdict": "Guidance is usually met, at the top end in three of the last four years, so the 2026 figure ($6.27) is close to certain. BMO's 2027 forecast of $6.73 (+7%) matches this year's growth rate and the rent uplift still to come, so we use it unchanged. Truist's $6.72 (April 2026) is almost the same. A free consensus figure for 2027 is not published, so we use BMO's as the forecast."
+  },
+  "ticker": "PLD",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Prologis is the world's largest owner of warehouses: about 1.3 billion square feet in 20 countries, rented to around 6,500 customers such as online retailers, shipping firms and manufacturers. It also manages warehouse funds for other investors and is starting to build data centres on its land."
+ },
  {
   "company": "Svedbergs Group",
   "consensus": {
