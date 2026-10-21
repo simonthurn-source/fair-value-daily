@@ -235,12 +235,31 @@ button.cal-cell:hover{border-color:var(--cyan)}
 .ifs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
 .if{border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45;border:1px solid}
 .if b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
-.if.hot{border-color:rgba(255,79,109,.45);background:rgba(255,79,109,.07)} .if.hot b{color:var(--neg)}
-.if.cool{border-color:rgba(57,255,136,.4);background:rgba(57,255,136,.06)} .if.cool b{color:var(--pos)}
+.if.hot{border-color:rgba(255,200,61,.45);background:rgba(255,200,61,.06)} .if.hot b{color:var(--warn)}
+.if.cool{border-color:rgba(63,216,255,.4);background:rgba(63,216,255,.06)} .if.cool b{color:var(--cyan)}
 dl.terms{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 dl.terms div{background:rgba(11,13,14,.5);border:1px solid var(--edge);border-radius:12px;padding:14px 16px}
 dl.terms dt{font-weight:600;font-size:14px;margin-bottom:4px}
 dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
+.regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.region .sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0}
+.reg-h{display:flex;align-items:center;gap:10px}
+.mk{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.06em;padding:2px 7px;border-radius:5px;border:1px solid var(--edge-2);color:var(--ink);background:rgba(236,232,223,.06);margin-left:0}
+.wdate .mk{display:block;width:max-content;margin-top:6px}
+.reg-q{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 12px;border-radius:10px;border:1px solid var(--edge);background:rgba(11,13,14,.5)}
+.reg-q .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.reg-q .v{font-family:var(--mono);font-weight:600;font-size:20px;font-variant-numeric:tabular-nums}
+.reg-q .s{font-family:var(--mono);font-size:12px;color:var(--faint);flex-basis:100%}
+.stk .sub-p{margin:0;font-size:15px;color:#cfcbc2}
+.stk-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.stk-list li{border:1px solid var(--edge);border-radius:12px;padding:12px 14px;background:rgba(11,13,14,.45)}
+.stk-list p{margin:4px 0 0;font-size:14px;color:#cfcbc2}
+.stk-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.stk-h b{font-size:16px;font-weight:600}
+.tk{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.stk.on h2{color:var(--pos)} .stk.off h2{color:var(--cyan)}
+.stk.on .stk-list li{border-left:3px solid var(--pos)} .stk.off .stk-list li{border-left:3px solid var(--cyan)}
+@media (max-width:900px){.regions{grid-template-columns:1fr}}
 @media (max-width:560px){
   .wcard{grid-template-columns:1fr;gap:6px}
   .ifs{grid-template-columns:1fr}
@@ -271,7 +290,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
 [
  {
   "date": "2026-10-21",
-  "dateLabel": "Wednesday 21 October 2026",
+  "dateLabel": "Week of 19 October 2026 · updated Wednesday 21 October",
   "mood": "Risk-off, easing",
   "headline": "Hot inflation sent investors out of AI stocks. This week they are slowly coming back.",
   "summary": "Last week US inflation came in higher than expected, mainly because petrol prices jumped during the conflict with Iran. That made another interest-rate hike from the Federal Reserve more likely, pushed bond yields above 5% and hit expensive growth and AI shares hardest. The mood has calmed a little this week, but oil above $105 and the Fed meeting on 28 October keep investors careful.",
@@ -364,7 +383,16 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
     "event": "Big tech earnings: Meta, Tesla, IBM, Texas Instruments, Lam Research",
     "why": "Not a macro number, but it decides whether the AI selloff continues. Investors want to see AI spending turning into revenue and cash, not just more spending.",
     "hot": "Strong revenue and confident guidance would likely pull money back into AI and chip shares.",
-    "cool": "Higher spending plans without more revenue would add to the debt worries and could extend the selloff."
+    "cool": "Higher spending plans without more revenue would add to the debt worries and could extend the selloff.",
+    "region": "US"
+   },
+   {
+    "date": "26 Oct",
+    "region": "DE",
+    "event": "Germany: Ifo business climate",
+    "why": "A big survey of German companies on how business is going. After the weak ZEW, it shows whether real companies feel the same gloom as investors.",
+    "hot": "A clear rise would ease worries about German industry and help the DAX, carmakers and Swedish exporters.",
+    "cool": "Another fall would confirm a slowdown in Europe’s biggest economy and weigh on cyclical shares."
    },
    {
     "date": "28 Oct",
@@ -372,31 +400,61 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
     "expected": "about a 1-in-3 chance of a rate hike (CME FedWatch after the CPI report)",
     "why": "The most important event of the month. Watch both the decision and what the Fed chair says about December.",
     "hot": "A hike, or clear signals of more hikes, would likely push yields up again and hit growth, AI and small-cap shares.",
-    "cool": "No hike and calm words about inflation would probably lift growth shares and lower bond yields."
+    "cool": "No hike and calm words about inflation would probably lift growth shares and lower bond yields.",
+    "region": "US"
    },
    {
     "date": "29 Oct",
     "event": "US GDP for Q3 (first estimate) and PCE inflation for September",
     "why": "GDP shows how fast the economy is growing. PCE is the inflation measure the Fed itself targets, so after the hot CPI it can confirm or calm the worry.",
     "hot": "High PCE inflation would back up the CPI scare and make a December hike more likely: bad for growth shares.",
-    "cool": "Lower PCE would suggest the CPI jump was mostly petrol and could ease rate fears."
+    "cool": "Lower PCE would suggest the CPI jump was mostly petrol and could ease rate fears.",
+    "region": "US"
+   },
+   {
+    "date": "29 Oct",
+    "region": "EU",
+    "event": "ECB rate decision (14:15 Swedish time) and German flash inflation",
+    "expected": "deposit rate now 2.50% after a hike in September",
+    "why": "The European Central Bank sets interest rates for the countries that use the euro. With eurozone inflation at 3.8% it may hike again, even though growth is weak.",
+    "hot": "A hike or tough words would lift European yields and hurt property, small caps and growth shares in Europe and Sweden.",
+    "cool": "A pause would give European shares some relief and could weaken the euro a little."
+   },
+   {
+    "date": "4 Nov",
+    "region": "SE",
+    "event": "Sweden: Riksbank rate decision · Eurozone flash inflation for October",
+    "expected": "Swedish policy rate now 1.75%",
+    "why": "With Swedish inflation excluding energy at only 0.5%, the Riksbank is unlikely to follow the Fed and the ECB upwards. The eurozone number shows whether energy is still pushing prices up.",
+    "hot": "Higher eurozone inflation would mean more ECB hikes and a tougher time for European shares.",
+    "cool": "A calm Riksbank and lower eurozone inflation would support Swedish property and bank shares and the krona."
+   },
+   {
+    "date": "5 Nov",
+    "region": "SE",
+    "event": "Sweden: flash inflation (KPIF) for October",
+    "why": "Shows whether the jump in electricity and petrol prices continued.",
+    "hot": "A big rise could make the Riksbank more careful and lift Swedish rates.",
+    "cool": "A small rise would confirm that Swedish inflation is mostly an energy story."
    },
    {
     "date": "6 Nov",
     "event": "US jobs report for October",
     "why": "A strong job market lets the Fed keep rates high; a weak one makes cuts more likely. Watch wage growth too, since rising wages can keep inflation up.",
     "hot": "Many new jobs and fast wage growth: rates stay high for longer.",
-    "cool": "Few new jobs: lower rate expectations, good for bonds and growth shares, but a sign the economy is slowing."
+    "cool": "Few new jobs: lower rate expectations, good for bonds and growth shares, but a sign the economy is slowing.",
+    "region": "US"
    },
    {
     "date": "10 Nov",
     "event": "US CPI inflation for October",
     "why": "The next test of whether September was a one-off from petrol prices. Keep an eye on oil until then: it feeds directly into this number.",
     "hot": "Another upside surprise would likely repeat last week's pattern: higher yields, AI and growth shares down, safe sectors up.",
-    "cool": "A lower number would be the clearest sign that the rate scare is over."
+    "cool": "A lower number would be the clearest sign that the rate scare is over.",
+    "region": "US"
    }
   ],
-  "takeaway": "Right now the market reacts to anything that changes the path of interest rates. Hot inflation means higher rates for longer, and that hurts the shares whose value lies furthest in the future, such as AI, tech and small companies. Oil prices are the link between the conflict with Iran and the next inflation number.",
+  "takeaway": "Right now the market reacts to anything that changes the path of interest rates, and the US decides the direction. Hot inflation means higher rates for longer, which hurts risk-on shares such as AI, tech, carmakers and industrials, and favours risk-off shares such as health care, telecoms and everyday products. Germany adds worries about weak industry and energy prices; Sweden's low inflation gives it a little more shelter, but its exporters still follow Germany.",
   "terms": [
    {
     "term": "Came in hot / cool",
@@ -425,6 +483,26 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
    {
     "term": "PCE",
     "plain": "Personal Consumption Expenditures price index: the inflation measure the Fed officially targets."
+   },
+   {
+    "term": "ECB",
+    "plain": "The European Central Bank. It sets interest rates for the countries that use the euro, including Germany."
+   },
+   {
+    "term": "Riksbank",
+    "plain": "Sweden's central bank. It sets the Swedish policy rate (styrräntan)."
+   },
+   {
+    "term": "KPIF",
+    "plain": "Sweden's main inflation measure. It is like CPI but leaves out the effect of changing mortgage rates."
+   },
+   {
+    "term": "ZEW and Ifo",
+    "plain": "Two German surveys. ZEW asks financial experts about the next six months; Ifo asks thousands of companies how business is going."
+   },
+   {
+    "term": "DAX and OMXS30",
+    "plain": "The main stock indexes of Germany (40 largest companies in Frankfurt) and Sweden (30 most traded shares in Stockholm)."
    }
   ],
   "sources": [
@@ -455,8 +533,146 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
    {
     "title": "2026 US economic calendar: FOMC, jobs and CPI dates (fedratecalc.com)",
     "url": "https://fedratecalc.com/us-economic-calendar/"
+   },
+   {
+    "title": "Germany ZEW: economic sentiment falls to 28.1 in October (FXStreet)",
+    "url": "https://www.fxstreet.com/news/germany-zew-survey-economic-sentiment-deteriorates-significantly-to-281-in-october-202610200903"
+   },
+   {
+    "title": "DAX closes 1.2 percent lower as AI fears hit stocks, 19 Oct 2026 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/dax-closes-1-2-percent-lower-as-ai-fears-hit-stocks/70364853"
+   },
+   {
+    "title": "Euro area inflation 3.8% in September 2026 (Trading Economics / Eurostat)",
+    "url": "https://tradingeconomics.com/euro-area/inflation-cpi"
+   },
+   {
+    "title": "ECB meeting October 2026: dates and deposit rate (Admiral Markets)",
+    "url": "https://admiralmarkets.com/analytics/traders-blog/ecb-meeting-october-2026"
+   },
+   {
+    "title": "Germany CPI flash and Ifo dates, October 2026 (FinanceCalendar)",
+    "url": "https://www.financecalendar.com/event/germany-cpi-flash-october-2026/"
+   },
+   {
+    "title": "SCB: KPIF 1.5% in September 2026",
+    "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/priser-och-ekonomiska-tendenser/priser/konsumentprisindex-kpi/pong/statistiknyhet/konsumentprisindex-kpi-september-2026"
+   },
+   {
+    "title": "Börsen 20 oktober 2026: OMXS30 −0,89 % (Affärslivet)",
+    "url": "https://xn--affrslivet-s5a.com/nyheter/borsen-20-oktober-2026/"
+   },
+   {
+    "title": "Veckans Affärsbrev vecka 42: Riksbank rate, krona (Affärslivet)",
+    "url": "https://xn--affrslivet-s5a.com/veckobrev/vecka-42-2026/"
+   },
+   {
+    "title": "Riksbank: press conference on the November decision, 4 Nov 2026",
+    "url": "https://www.riksbank.se/sv/press-och-publicerat/kalender/kalender-2026/2026-11-042"
    }
-  ]
+  ],
+  "connect": {
+   "title": "Three markets, one story",
+   "plain": "The US sets the tone. It is the world's biggest stock market, and US bond yields act as the price of money for investors everywhere, so a hot US inflation number moves Frankfurt and Stockholm too. But each market adds its own twist: Germany is full of exporters and carmakers that depend on world demand and on the European Central Bank (ECB), and Sweden is full of industrial companies and banks that depend on Germany, on the Riksbank and on the krona.",
+   "steps": [
+    "US inflation and the Fed move US bond yields",
+    "Higher US yields and a nervous Wall Street spill over to Europe the same day",
+    "Germany: weak business surveys and high energy prices decide how hard the DAX falls",
+    "Sweden: exporters follow Germany, while low Swedish inflation keeps the Riksbank calm"
+   ]
+  },
+  "regions": [
+   {
+    "code": "US",
+    "name": "United States",
+    "index": "S&P 500",
+    "value": "7,712.57",
+    "change": "+0.3%",
+    "dir": "up",
+    "note": "close 20 Oct",
+    "role": "Leads the world",
+    "data": "CPI 3.7% (expected 3.6%) · 10-year yield 5.19% · Fed decides 28 Oct",
+    "plain": "Everything on this page starts here. Hot US inflation raised the odds of another Fed hike, and that pushed up borrowing costs for the whole world.",
+    "link": "When Wall Street falls in the evening, Europe usually opens lower the next morning."
+   },
+   {
+    "code": "DE",
+    "name": "Germany",
+    "index": "DAX",
+    "value": "25,320",
+    "change": "−1.2%",
+    "dir": "down",
+    "note": "close 19 Oct",
+    "role": "Europe's industrial engine",
+    "data": "ZEW investor mood 28.1 (expected 32.0, Sept 34.7) · eurozone inflation 3.8% in Sept (Aug 3.2%) · ECB deposit rate 2.50%",
+    "plain": "German investors became more pessimistic in October: the ZEW survey of their expectations fell more than forecast. At the same time eurozone inflation is the highest since 2023 because energy prices jumped about 19% in a year, so the ECB, which already raised rates in September, may have to raise them again even though the economy is weak. That is a tough mix for carmakers and industrial companies.",
+    "link": "On 19 Oct the DAX fell 1.2% as falling US tech shares and higher yields spread to Europe; tyre and car-parts maker Continental lost 3.4% during the day."
+   },
+   {
+    "code": "SE",
+    "name": "Sweden",
+    "index": "OMXS30",
+    "value": "3,238.64",
+    "change": "−0.89%",
+    "dir": "down",
+    "note": "close 20 Oct",
+    "role": "Follows Germany and the US, with its own interest rate",
+    "data": "KPIF inflation 1.5% in Sept (Aug 0.7%); excluding energy only 0.5% · Riksbank rate 1.75% · EUR/SEK ≈ 11.17",
+    "plain": "Swedish inflation is much lower than in the US and the eurozone, and almost all of the September rise came from electricity (+11.7% in a month) and petrol (+13.3%). Without energy, prices rose only 0.5% in a year, so the Riksbank has little reason to raise rates. That helps rate-sensitive Swedish shares such as property companies.",
+    "link": "On 20 Oct industrial shares were the weakest group (median −2.3%) because they sell to Germany and the rest of the world, while property shares were the strongest (+1.9%) thanks to low Swedish rates."
+   }
+  ],
+  "stocks": {
+   "note": "Examples to show how different kinds of companies react to the market mood, taken from the markets this site covers. They are not recommendations to buy or sell.",
+   "riskOn": {
+    "title": "Risk-on: these usually rise most when investors feel brave",
+    "plain": "Their value depends on strong growth or on a busy world economy, so they gain most when rates fall and confidence returns, and fall most in a risk-off week like this one.",
+    "items": [
+     {
+      "name": "Nvidia",
+      "ticker": "NVDA",
+      "market": "US",
+      "why": "The AI chip leader. Much of its value lies in profits many years ahead, so it is very sensitive to interest rates and to doubts about AI spending."
+     },
+     {
+      "name": "Infineon",
+      "ticker": "IFX",
+      "market": "DE",
+      "why": "Germany's biggest chipmaker, selling to carmakers and factories. It moves with both the chip cycle and German industry."
+     },
+     {
+      "name": "Atlas Copco",
+      "ticker": "ATCO A",
+      "market": "SE",
+      "why": "Compressors and tools for factories worldwide. When industry invests, it wins; Swedish industrial shares were the weakest group on 20 Oct."
+     }
+    ]
+   },
+   "riskOff": {
+    "title": "Risk-off: these usually hold up when investors get nervous",
+    "plain": "They sell things people buy in good times and bad, so their profits are steady. Investors move money into them when they fear higher rates or a slowdown.",
+    "items": [
+     {
+      "name": "Johnson & Johnson",
+      "ticker": "JNJ",
+      "market": "US",
+      "why": "Medicines and medical devices. Health care was the best US sector on CPI day (+2.4%)."
+     },
+     {
+      "name": "Deutsche Telekom",
+      "ticker": "DTE",
+      "market": "DE",
+      "why": "Phone and internet subscriptions that people keep paying in any economy, plus a large stake in T-Mobile US."
+     },
+     {
+      "name": "Essity",
+      "ticker": "ESSITY B",
+      "market": "SE",
+      "why": "Hygiene products like tissues and diapers. Demand barely changes with the economy."
+     }
+    ]
+   }
+  }
  }
 ]
 </script>
@@ -16556,7 +16772,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
 
   function render(d){
     box.replaceChildren();
-    if(!d){var e=el('div','empty');e.append(el('h1',null,'Market notes are on their way'),el('p',null,'A short explanation of what moved the market is added every weekday morning.'));box.append(e);return;}
+    if(!d){var e=el('div','empty');e.append(el('h1',null,'Market notes are on their way'),el('p',null,'A short explanation of what moved the market is added every Monday morning.'));box.append(e);return;}
     var top=el('div','mkt-top');
     var hero=el('div','hero');
     hero.append(el('div','label','Markets · '+(d.dateLabel||d.date)));
@@ -16608,12 +16824,50 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
     }
     box.append(z1);
 
+    if(arr(d.regions).length){
+      var z3=zone('US, Germany and Sweden');
+      var c=d.connect||{};
+      var rp=panel(c.title||'Three markets, one story');
+      if(c.plain)rp.append(el('p',null,c.plain));
+      if(arr(c.steps).length){var co=el('ol','chain');c.steps.forEach(function(s,i){var li=el('li');var n=el('div','node');n.append(el('b',null,'Step '+(i+1)),document.createTextNode(s));li.append(n);co.append(li);});rp.append(co);}
+      z3.append(rp);
+      var rg=el('div','regions');
+      d.regions.forEach(function(r){
+        var a=el('article','prose glass region');
+        var h=el('div','reg-h');h.append(el('span','mk',r.code||''),el('h2',null,r.name||''));a.append(h);
+        if(r.role)a.append(el('p','sub',r.role));
+        if(r.index){var q=el('div','reg-q');q.append(el('span','k',r.index),el('span','v',r.value||''));if(r.change)q.append(el('span','chg '+(r.dir||'flat'),r.change));if(r.note)q.append(el('span','s',r.note));a.append(q);}
+        if(r.data)a.append(el('p','drv-data',r.data));
+        if(r.plain)a.append(el('p',null,r.plain));
+        if(r.link){var i=el('div','inset');i.append(el('h3',null,'What it did to stocks'),el('p',null,r.link));a.append(i);}
+        rg.append(a);
+      });
+      z3.append(rg);box.append(z3);
+    }
+
+    var st=d.stocks;
+    if(st&&(st.riskOn||st.riskOff)){
+      var z4=zone('Stocks that fit the mood');
+      var sg=el('div','duo');
+      [['riskOn','on'],['riskOff','off']].forEach(function(k){
+        var g=st[k[0]];if(!g)return;
+        var p=el('section','panel glass stk '+k[1]);p.append(el('h2',null,g.title||''));
+        if(g.plain)p.append(el('p','sub-p',g.plain));
+        var ul=el('ul','stk-list');
+        arr(g.items).forEach(function(x){var li=el('li');var t=el('div','stk-h');t.append(el('b',null,x.name||''),el('span','tk',[x.ticker,x.market].filter(Boolean).join(' · ')));li.append(t);if(x.why)li.append(el('p',null,x.why));ul.append(li);});
+        p.append(ul);sg.append(p);
+      });
+      z4.append(sg);
+      if(st.note)z4.append(el('p','cap',st.note));
+      box.append(z4);
+    }
+
     if(arr(d.watch).length){
       var z2=zone('What to watch next');
       var wp=panel('The next macro numbers',d.watchNote||'Each card says what the market expects and how stocks would likely react if the number comes in above (“hot”) or below (“cool”) that.');
       var w=el('div','watch');
       d.watch.forEach(function(x){
-        var c=el('div','wcard');c.append(el('div','wdate',x.date||''));
+        var c=el('div','wcard');var wd=el('div','wdate',x.date||'');if(x.region){wd.append(el('span','mk',x.region));}c.append(wd);
         var b=el('div','wbody');b.append(el('h3',null,x.event||''));
         if(x.expected)b.append(el('p','drv-data','Expected: '+x.expected));
         if(x.why)b.append(el('p',null,x.why));
