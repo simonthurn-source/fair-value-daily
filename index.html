@@ -736,11 +736,516 @@ button.cal-cell:hover{border-color:var(--cyan)}
   "sector": "Telecoms",
   "teaser": "Deutsche Telekom owns most of T-Mobile US: is the German parent worth more or less than its share of its fast-growing American child?",
   "ticker": "DTE"
+ },
+ {
+  "company": "L E Lundbergföretagen",
+  "date": "2026-11-19",
+  "market": "Sweden",
+  "method": "Net asset value (NAV) × own average discount",
+  "sector": "Investment company",
+  "teaser": "A family-run holding company that owns big stakes in Holmen, Industrivärden and Handelsbanken plus its own buildings: what is the whole worth compared with its parts?",
+  "ticker": "LUND B"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Sagax",
+  "consensus": {
+   "analysts": 8,
+   "asOf": "15 Oct 2026 (average of targets from the last 4 months)",
+   "explain": "The average target of SEK 184.50 is a price in 12 months; discounted one year at 11.4% it is worth about SEK 166 today, almost exactly today's price and about 24% below our SEK 219 (our value is 32% above it). On Pareto-based 2027 cash earnings of SEK 12.75 the target implies 14.5 times, versus the 19.1 times we use. The forecast is the same, so the gap is the multiple: analysts assume the lower multiple of today's era of higher interest rates and slow growth (0–3% a year) is here to stay, while we use the average of the last three year-ends, which still includes the 23 times of end-2023.",
+   "high": 210,
+   "low": 133,
+   "method": "Swedish brokers value Sagax mostly on a multiple of its cash earnings per share. Kepler Cheuvreux (December 2025) applied 18 times 12-month forward FFO per share (the sector's 16.5 times plus a 10% premium for stability), which it said implied a 60% premium to 2026 net asset value. Pareto (14 October 2026, Hold, SEK 165) quotes 12.7 times 2027 förvaltningsresultat and 1.08 times net asset value, and Handelsbanken says the multiple has almost halved versus its ten-year average. A target price is where analysts expect the share to be in 12 months.",
+   "rating": "Buy (6 buy, 1 hold, 1 underperform)",
+   "source": "Börskollen",
+   "target": 184.5,
+   "targetToday": 165.6
+  },
+  "crossCheck": {
+   "calc": "136.03 × (1 + 94%) = 264; today 166.50 ÷ 136.03 = 1.22",
+   "name": "NAV check: price compared with the value of the buildings (not in the fair value)",
+   "plain": "Net asset value (NAV) is what the buildings and other assets are worth minus debt, per ordinary share. Sagax reported SEK 136.03 at 30 June 2026. At the last three year-ends the share traded on average 94% above NAV (150%, 81% and 52%), which would give SEK 264. Today it trades only 22% above NAV, and peers trade lower: on 19 Oct 2026 NP3 was 19% above NAV, Catena 27% below and Castellum 26% below (Sedis). The NAV check agrees with our main method that the share is cheap versus its own history, but shows that the old premium is shrinking fast. Our fair value of SEK 219 equals 1.6 times NAV, close to the 60% premium Kepler's December 2025 target implied.",
+   "result": "≈ SEK 264 at its own average premium; 1.22 × NAV today"
+  },
+  "crossChecks": [
+   {
+    "calc": "3.70 ÷ 1.51%",
+    "name": "Check: dividend yield history",
+    "note": "Today's yield is 2.2%, the highest in five years. Sagax pays out about one-third of cash earnings and keeps the rest to buy more buildings.",
+    "plain": "At the 2023–2025 year-ends the dividend yield averaged 1.5%. At that yield, the SEK 3.70 dividend would be worth:",
+    "result": "≈ SEK 245"
+   },
+   {
+    "calc": "14.03 × 12.37",
+    "name": "Check: peers' price ÷ 2027 earnings",
+    "note": "Against peers Sagax is about fairly priced: its multiple has fallen to the sector's level, even though its leases and balance sheet are among the strongest. This check is close to today's price and to analysts' targets, unlike the history-based checks.",
+    "plain": "On 3 Sep 2026 Affärsvärlden (on its own earnings basis, before maintenance spending) put NP3 at 15.2 times 2027 earnings, Catena at 12.9 and SLP at 14.0; the average is 14.0. Sagax was at 13.7 on the same basis, with 2027E SEK 12.37. At the peer average Sagax would be worth:",
+    "result": "≈ SEK 174"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-21",
+  "dateLabel": "Wednesday 21 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 219,
+  "history": {
+   "caption": "From Sagax's interim report Q2 2026 (five-year table, as reported) and annual report 2025; cash flow and acquisitions from stockanalysis.com (cash-flow statement). Cash earnings = profit from property management (förvaltningsresultat) per Class A/B share after dilution, after the fixed dividend to D shares. Forward multiple = year-end B-share price ÷ the NEXT year's actual figure; for 2025 we use Pareto's 2026 forecast (0% growth = SEK 12.38). Latest: price 20 Oct 2026, NAV 30 Jun 2026, cash earnings for the 12 months to June 2026 (12.38 − 6.01 + 5.89), forward on 2027E SEK 12.75 (Pareto: +3%). Interest paid is not disclosed in the sources we read, so it is not shown.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "Cash earnings (förvaltningsresultat) per share, SEK",
+     "note": "Growth slowed from 21% in 2022 to 4% in 2025; H1 2026 −2% (SEK 5.89 vs 6.01)",
+     "values": [
+      "7.99",
+      "9.70",
+      "11.16",
+      "11.95",
+      "12.38",
+      "12.26"
+     ]
+    },
+    {
+     "label": "Share price at year-end (B share), SEK",
+     "values": [
+      "305.00",
+      "236.50",
+      "277.40",
+      "226.20",
+      "197.60",
+      "166.50"
+     ]
+    },
+    {
+     "label": "Price ÷ cash earnings, trailing",
+     "values": [
+      "38.2",
+      "24.4",
+      "24.9",
+      "18.9",
+      "16.0",
+      "13.6"
+     ]
+    },
+    {
+     "label": "Price ÷ cash earnings, forward (next year)",
+     "note": "This is the multiple we use. Average 2023–25: 19.1. 2021 left out (near-zero interest rates). Latest: on 2027E SEK 12.75",
+     "strong": true,
+     "values": [
+      "31.4",
+      "21.2",
+      "23.2",
+      "18.3",
+      "16.0",
+      "13.1"
+     ]
+    },
+    {
+     "label": "Net asset value (NAV) per share, SEK",
+     "note": "Sagax's own NAV per A/B share (D shares deducted at SEK 35)",
+     "values": [
+      "97.92",
+      "106.61",
+      "110.90",
+      "125.23",
+      "130.32",
+      "136.03 (Jun)"
+     ]
+    },
+    {
+     "label": "Premium (+) to NAV",
+     "note": "Average 2023–25: +94%. Falling every year since 2023",
+     "values": [
+      "+212%",
+      "+122%",
+      "+150%",
+      "+81%",
+      "+52%",
+      "+22%"
+     ]
+    },
+    {
+     "label": "Dividend per share, SEK (for the year)",
+     "values": [
+      "2.15",
+      "2.70",
+      "3.10",
+      "3.50",
+      "3.70",
+      "3.70"
+     ]
+    },
+    {
+     "label": "Dividend yield at year-end",
+     "note": "Average 2023–25: 1.5%",
+     "values": [
+      "0.7%",
+      "1.1%",
+      "1.1%",
+      "1.5%",
+      "1.9%",
+      "2.2%"
+     ]
+    },
+    {
+     "label": "Property value, SEK m",
+     "values": [
+      "46,067",
+      "52,682",
+      "57,061",
+      "65,874",
+      "68,283",
+      "72,558 (Jun)"
+     ]
+    },
+    {
+     "label": "Loan-to-value (debt ÷ assets)",
+     "values": [
+      "42%",
+      "45%",
+      "41%",
+      "42%",
+      "44%",
+      "44% (Jun)"
+     ]
+    },
+    {
+     "label": "Interest coverage (times)",
+     "note": "Policy: above 3.0",
+     "values": [
+      "6.5",
+      "7.1",
+      "5.7",
+      "5.0",
+      "4.6",
+      "4.2 (H1)"
+     ]
+    },
+    {
+     "label": "Net debt ÷ EBITDA (times)",
+     "note": "Policy: not above 8",
+     "values": [
+      "5.8",
+      "7.1",
+      "5.2",
+      "5.4",
+      "5.8",
+      "6.1 (Jun)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities, SEK m",
+     "note": "IFRS cash-flow statement, after interest and tax paid. Latest: 12 months to June 2026",
+     "values": [
+      "2,379",
+      "3,227",
+      "3,565",
+      "3,351",
+      "3,617",
+      "3,729"
+     ]
+    },
+    {
+     "label": "Cash paid for property acquisitions, SEK m",
+     "values": [
+      "5,498",
+      "3,975",
+      "6,250",
+      "6,033",
+      "5,758",
+      "6,161"
+     ]
+    },
+    {
+     "label": "Return on equity",
+     "note": "Target from 2026: at least 12% a year",
+     "values": [
+      "36.6%",
+      "8.4%",
+      "0.0%",
+      "13.5%",
+      "9.6%",
+      "12.2% (H1, annualised)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close 20 Oct 2026 (+2.15%); 52-week range SEK 143.70–226.80",
+    "value": "SEK 166.50"
+   },
+   {
+    "label": "2027 cash earnings per share",
+    "note": "Derived from Pareto (14 Oct 2026): 0% in 2026 and +3% in 2027 on SEK 12.38. Matches Pareto's 12.7 times 2027",
+    "value": "SEK 12.75"
+   },
+   {
+    "label": "Normal forward multiple",
+    "note": "Average of year-ends 2023 (23.2), 2024 (18.3) and 2025 (16.0)",
+    "value": "19.1"
+   },
+   {
+    "label": "Forward multiple today",
+    "note": "166.50 ÷ 12.75",
+    "value": "13.1"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.19% Swedish 10-year bond (20 Oct 2026) + beta 1.5 × 5.5%",
+    "value": "11.4%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 1.45 (stockanalysis.com)",
+    "value": "1.5"
+   },
+   {
+    "label": "Net asset value per share",
+    "note": "30 Jun 2026; Q3 report due 22 Oct 2026",
+    "value": "SEK 136.03"
+   },
+   {
+    "label": "Premium to NAV today",
+    "note": "166.50 ÷ 136.03 − 1",
+    "value": "+22%"
+   },
+   {
+    "label": "Shares",
+    "note": "A+B shares outstanding 30 Jun 2026 (excl. 2.0m own shares); plus 156.3m D shares",
+    "value": "338.4 million"
+   },
+   {
+    "label": "Dividend",
+    "note": "Yield 2.2% at today's price",
+    "value": "SEK 3.70 a year"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: price ÷ next year's cash earnings (P/förvaltningsresultat), how Swedish brokers value Sagax, with a net asset value (NAV) check",
+   "why": "Today's calendar listed NAV, the usual method for Swedish property companies. But Sagax has always traded far above its NAV (150% above at end-2023), so brokers value it mainly on its cash earnings: förvaltningsresultat is the rent profit after costs and interest, before property value changes and tax. Kepler Cheuvreux uses 18 times forward FFO per share and Pareto quotes 12.7 times 2027 förvaltningsresultat. We follow the brokers and use NAV as the main check.",
+   "whyNot": "Ordinary profit (P/E) jumps with property revaluations (profit per share was SEK 30.04 in 2021 and SEK −0.82 in 2023), so it is not used. NAV is shown as a check because the premium Sagax trades at swings a lot (from 212% in 2021 to 20% today), so it says more about investor mood than about value. A DCF would mostly repeat the property valuation, which is itself a cash-flow model of each building, so dividend yield and peer multiples are used as the other checks."
+  },
+  "price": 166.5,
+  "priceDate": "close 20 Oct 2026",
+  "rangeHigh": 231,
+  "rangeLow": 208,
+  "reasoning": [
+   "Sagax has one of the best records among Swedish property companies: cash earnings per share rose from SEK 7.99 in 2021 to 12.38 in 2025, and the 15% growth goal was met in 10 of 12 years. But growth has stopped (−2% in H1 2026) as debt costs rise, and investors now pay only 13.1 times 2027 earnings, down from 23 times at end-2023.",
+   "At the 19.1 times average of the last three year-ends on Pareto-based 2027 earnings of SEK 12.75, the share is worth about SEK 244 in a year, or SEK 219 today. The dividend-yield check (SEK 245) and NAV check (SEK 264) also say the share is cheap versus its own history; the peer check (SEK 174) says it is only fairly priced against similar companies.",
+   "Analysts' average target is worth about SEK 166 today, the same as the price, because it implies 14.5 times, close to today's multiple. The 32% gap to our value is entirely the multiple, not the forecast: we checked the inputs (per-share basis, share class, forecast year) and they match.",
+   "Fair value SEK 219 (range 208–231). At SEK 166.50 the share looks undervalued, about 32% below our value, but only if investors are again willing to pay the multiple of recent years."
+  ],
+  "risks": [
+   "Forecast risk: if 2027 cash earnings are 10% lower than SEK 12.75 (for example if refinancing costs rise faster), the fair value falls to about SEK 197.",
+   "Multiple risk: at the 14.5 times implied by analysts' average target the value would be about SEK 166 today; at today's 13.1 times it would be about SEK 149. Each 1 point of multiple moves the value by about SEK 11. The multiple has fallen five years in a row, so this is the biggest risk to our value.",
+   "Interest rates: bonds of just over SEK 15 billion must be refinanced in 2027–2029 at higher rates, which Affärsvärlden estimates will cost a few hundred million SEK a year (about 5% of cash earnings). The average fixed-rate period is only 2.5 years.",
+   "Upside and events: the Q3 report comes on 22 October 2026 (SB1 Markets expected a strong quarter), acquisitions picked up this summer (about SEK 4 billion announced since July, incl. SEK 2.0bn in France), and the CEO and main owner bought shares for about SEK 210 million. Pareto flags France, rent negotiations and associated companies as risks."
+  ],
+  "sector": "Real estate (warehouses and light industrial)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different forward multiples of cash earnings (rows) and for 2027 cash earnings coming in higher or lower than SEK 12.75 (columns). Base case: 19.1 × SEK 12.75, discounted at 11.4%.",
+   "colLabel": "2027 cash earnings vs SEK 12.75",
+   "cols": [
+    "−10%",
+    "−5%",
+    "SEK 12.75",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward price ÷ cash earnings",
+   "rows": [
+    "21.1",
+    "20.1",
+    "19.1",
+    "18.1",
+    "17.1"
+   ],
+   "values": [
+    [
+     218,
+     230,
+     242,
+     254,
+     266
+    ],
+    [
+     207,
+     219,
+     231,
+     242,
+     254
+    ],
+    [
+     197,
+     208,
+     219,
+     230,
+     241
+    ],
+    [
+     187,
+     197,
+     208,
+     218,
+     228
+    ],
+    [
+     177,
+     186,
+     196,
+     206,
+     216
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Sagax interim report January–June 2026 (PDF)",
+    "url": "https://storage.mfn.se/9e84efa5-f12d-4d0f-86b8-c3d5de154ea1/interim-report-q2-2026.pdf"
+   },
+   {
+    "title": "Sagax interim report January–June 2026 summary (finanznachrichten.de)",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-07/69011081-sagax-ab-interim-report-january-june-2026-399.htm"
+   },
+   {
+    "title": "Sagax annual report 2025 (financialfilings.com)",
+    "url": "https://financialfilings.com/filings/sagax/annual-report/2026/34643930/"
+   },
+   {
+    "title": "Sagax adjusts financial targets (16 Apr 2026)",
+    "url": "https://www.sagax.se/sv/press/sagax-justerar-finansiella-mal-2443498"
+   },
+   {
+    "title": "Sagax press releases and report calendar (MFN)",
+    "url": "https://mfn.se/all/a/sagax"
+   },
+   {
+    "title": "Sagax cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SAGA.A/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Sagax B quote and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/SAGA.B/"
+   },
+   {
+    "title": "Sagax B price, close 20 Oct 2026 (Swedbank Aktiellt)",
+    "url": "https://www.swedbank-aktiellt.se/om/sagax"
+   },
+   {
+    "title": "Sagax B quote (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/SAGAX-30049621/positions/"
+   },
+   {
+    "title": "Sagax price targets (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/sagax/riktkurs"
+   },
+   {
+    "title": "Pareto sees weak earnings growth at Sagax, cuts target to SEK 165 (Börsvärlden, 14 Oct 2026)",
+    "url": "https://borsvarlden.com/finwire/FWM00F551D"
+   },
+   {
+    "title": "Pareto on Sagax (Placera, 14 Oct 2026)",
+    "url": "https://www.placera.se/telegram/sagax-pareto-ser-svag-resultattillvaxt-i-sagax-trots-hog-forvarvstakt-sanker-riktkurs-20261014"
+   },
+   {
+    "title": "Kepler upgrades Sagax to buy: 18× forward FFO (Börsvärlden, Dec 2025)",
+    "url": "https://borsvarlden.com/artiklar/kepler-hojer-sagax-till-kop-och-sanker-riktkursen"
+   },
+   {
+    "title": "SEB upgrades Sagax to buy, target SEK 180 (Placera)",
+    "url": "https://www.placera.se/telegram/sankningar-i-fastighetssektorn--men-sagax-och-np3-kopstamplas"
+   },
+   {
+    "title": "Nordea reiterates buy on Sagax, target SEK 200 (Placera, 2 Jul 2026)",
+    "url": "https://www.placera.se/telegram/sagax-nordea-upprepar-kop-i-sagax--sanker-riktkurs-till-200-kronor-20260702"
+   },
+   {
+    "title": "Handelsbanken and Danske Bank buy ratings on Sagax (Aktiespararna, 24 Aug 2026)",
+    "url": "https://www.aktiespararna.se/nyheter/dubbla-koprad-for-fastighetsbolaget"
+   },
+   {
+    "title": "Sagax: rates slow the growth machine, peer multiples (Placera/Affärsvärlden, 3 Sep 2026)",
+    "url": "https://www.placera.se/analys/sagax-rantan-bromsar-tillvaxtmaskinen-2026-09-03"
+   },
+   {
+    "title": "Premiums and discounts to NAV, 19 Oct 2026 (Sedis)",
+    "url": "https://app.sedis.se/Premiums"
+   },
+   {
+    "title": "Sweden 10-year government bond yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "Sagax consensus (Investing.com)",
+    "url": "https://uk.investing.com/equities/sagax-ab-consensus-estimates"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "12.38 × 1.03",
+    "formula": "2027 cash earnings = 12.38 × 1.00 × 1.03",
+    "plain": "Cash earnings (förvaltningsresultat) is the rent profit after running costs and interest, before property value changes and tax, per ordinary share after the fixed D-share dividend. It was SEK 12.38 in 2025. Pareto expects 0% growth in 2026 and 3% in 2027.",
+    "result": "SEK 12.75 a share",
+    "title": "What will Sagax earn next year?"
+   },
+   {
+    "calc": "(23.2 + 18.3 + 16.0) ÷ 3",
+    "formula": "Normal forward multiple = average of the last three year-ends",
+    "plain": "The forward multiple is the share price divided by the coming year's cash earnings. At the end of 2023, 2024 and 2025 it was 23.2, 18.3 and 16.0. The average is 19.1. We skip 2021, when interest rates were near zero and the multiple was 31. Note that it has fallen every year.",
+    "result": "19.1",
+    "title": "What do investors normally pay for next year's profit?"
+   },
+   {
+    "calc": "19.15 × 12.75",
+    "formula": "Price in 12 months = 19.1 × SEK 12.75",
+    "plain": "Multiply next year's expected cash earnings by the normal multiple. This is how an analyst's 12-month price target is built.",
+    "result": "SEK 244",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "244.2 ÷ 1.1144",
+    "formula": "Fair value = price in 12 months ÷ (1 + 11.4%)",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 3.19% Swedish bond yield + 1.5 × 5.5% = 11.4% a year. (Like analysts' targets, this leaves out the SEK 3.70 dividend.)",
+    "result": "SEK 219",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "219.1 ÷ 166.50 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 32% above today's price. Today investors pay only 13.1 times 2027 cash earnings, the lowest in the table. Our value assumes the multiple returns to its recent average; if the low multiple is the new normal, the share is roughly fairly priced.",
+    "result": "+32%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "Swedish brokers value Sagax mainly by the price compared with next year's cash profit from renting out buildings (förvaltningsresultat), so that is our main method, with net asset value as a check. Pareto's forecasts point to about SEK 12.75 a share for 2027; at the 19.1 times investors paid on average at the last three year-ends, the share would be worth about SEK 244 in a year, or SEK 219 today. That is well above today's SEK 166.50, but it assumes the multiple, which has fallen every year since 2021, recovers to its recent average.",
+  "targets": {
+   "items": [
+    "New targets (April 2026) for 2026–2030: cash earnings per A/B share should grow 5–10% a year, and return on equity should be at least 12% a year.",
+    "Old targets (from 2013): cash earnings per share growth of at least 15% a year was met in 10 of 12 years, about 15% a year over the last five years, but only 4% in 2025. Return on equity averaged 14% versus a 15% target.",
+    "2026: Sagax raised its forecast for cash earnings to SEK 4,600 million (from 4,500) in July. H1 2026 per share was 2% lower than a year earlier (SEK 5.89 vs 6.01), so the second half must be clearly better.",
+    "Financial policy is comfortably met: loan-to-value 44% (limit 50%), interest coverage 4.2 times (minimum 3.0), net debt ÷ EBITDA 6.1 (maximum 8)."
+   ],
+   "title": "Does Sagax have a growth goal we can use?",
+   "verdict": "Sagax used to beat its growth target almost every year, but higher interest rates have stopped growth per share and the company cut its target to 5–10%. Brokers expect less: Pareto 0% for 2026, 3% for 2027 and 1% for 2028; Nordea 2–3% a year; Handelsbanken is more positive (+10% in 2027). We use Pareto's figures (2027E SEK 12.75), which are below the new target, so the forecast is cautious. A free consensus forecast is not published."
+  },
+  "ticker": "SAGA B",
+  "verdict": "Looks undervalued",
+  "whatTheyDo": "Sagax owns about 1,065 properties with 5.5 million square metres, mostly warehouses and light-industrial buildings, in Sweden, Finland, France and other European countries. Tenants usually sign long leases linked to inflation and pay most running costs themselves ('triple net'), so the rent income is very stable."
+ },
  {
   "company": "Prologis",
   "consensus": {
