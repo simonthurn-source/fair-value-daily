@@ -271,6 +271,10 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
 .stk.on h2{color:var(--pos)} .stk.off h2{color:var(--cyan)}
 .stk.on .stk-list li{border-left:3px solid var(--pos)} .stk.off .stk-list li{border-left:3px solid var(--cyan)}
 @media (max-width:900px){.regions{grid-template-columns:1fr}}
+.ern{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
+.ern-c{border:1px solid var(--edge);border-radius:12px;padding:14px;background:rgba(11,13,14,.45);display:flex;flex-direction:column;gap:10px;min-width:0}
+.ern-c p{margin:0;font-size:14px;color:#cfcbc2}
+.ern-n{margin:0;padding-left:18px;font-size:14px;color:#cfcbc2;display:flex;flex-direction:column;gap:4px}
 @media (max-width:560px){
   .wcard{grid-template-columns:1fr;gap:6px}
   .ifs{grid-template-columns:1fr}
@@ -301,24 +305,24 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
 [
  {
   "date": "2026-10-21",
-  "dateLabel": "Week of 19 October 2026 · updated Wednesday 21 October",
+  "dateLabel": "Week of 19 October 2026 · updated Wednesday 21 October, evening",
   "mood": "Risk-off, easing",
   "headline": "Hot inflation sent investors out of AI stocks. This week they are slowly coming back.",
-  "summary": "Last week US inflation came in higher than expected, mainly because petrol prices jumped during the conflict with Iran. That made another interest-rate hike from the Federal Reserve more likely, pushed bond yields above 5% and hit expensive growth and AI shares hardest. The mood has calmed a little this week, but oil above $105 and the Fed meeting on 28 October keep investors careful.",
+  "summary": "Last week US inflation came in higher than expected, mainly because petrol prices jumped during the conflict with Iran. That made another interest-rate hike from the Federal Reserve more likely, pushed bond yields above 5% and hit expensive growth and AI shares hardest. The mood has calmed a little this week, but oil above $105 and the Fed meeting on 28 October keep investors careful. On Wednesday AI and chip shares led a rebound (Nasdaq +1.1%), and in the evening Meta and Tesla opened the big-tech report season.",
   "snapshot": [
    {
     "label": "S&P 500",
-    "value": "7,712.57",
-    "change": "+0.3%",
+    "value": "7,757.17",
+    "change": "+0.6%",
     "dir": "up",
-    "note": "close 20 Oct · −1.1% on CPI day"
+    "note": "close 21 Oct · −1.1% on CPI day"
    },
    {
     "label": "Nasdaq Composite",
-    "value": "26,424.82",
-    "change": "−0.0%",
-    "dir": "flat",
-    "note": "close 20 Oct · −4.5% in the week to 16 Oct"
+    "value": "26,702.86",
+    "change": "+1.1%",
+    "dir": "up",
+    "note": "close 21 Oct · chipmakers led"
    },
    {
     "label": "Russell 2000 (small caps)",
@@ -329,17 +333,17 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
    },
    {
     "label": "US 10-year yield",
-    "value": "5.19%",
-    "change": "touched 5.33%",
-    "dir": "down",
-    "note": "close 16 Oct · 5.28% on CPI day"
+    "value": "5.15%",
+    "change": "+0.03 pts",
+    "dir": "up",
+    "note": "21 Oct · 5.28% on CPI day"
    },
    {
     "label": "Brent oil",
-    "value": "≈ $109",
-    "change": "near $112 intraday",
-    "dir": "flat",
-    "note": "20 Oct"
+    "value": "> $110",
+    "change": "Saudi oil field attacked",
+    "dir": "up",
+    "note": "21 Oct"
    },
    {
     "label": "Odds of an October Fed hike",
@@ -514,6 +518,10 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
    {
     "term": "DAX and OMXS30",
     "plain": "The main stock indexes of Germany (40 largest companies in Frankfurt) and Sweden (30 most traded shares in Stockholm)."
+   },
+   {
+    "term": "Beat / miss",
+    "plain": "A company \"beats\" when its results are better than what analysts expected on average (the consensus), and \"misses\" when they are worse. The share often moves more on the outlook (guidance) than on the quarter itself."
    }
   ],
   "sources": [
@@ -580,6 +588,22 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
    {
     "title": "Riksbank: press conference on the November decision, 4 Nov 2026",
     "url": "https://www.riksbank.se/sv/press-och-publicerat/kalender/kalender-2026/2026-11-042"
+   },
+   {
+    "title": "Stock market today, 21 Oct 2026: closes, Netflix, AT&T, Meta and Tesla after hours (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
+   },
+   {
+    "title": "Meta Q3 2026: revenue up 26% to $64.6B, guidance and capex (StockTitan, company release)",
+    "url": "https://www.stocktitan.net/news/META/meta-reports-third-quarter-2026-13ysmyjaxliq.html"
+   },
+   {
+    "title": "Meta posts Q3 double beat vs estimates (Benzinga)",
+    "url": "https://www.benzinga.com/markets/earnings/26/10/62511966/meta-posts-q3-double-beat-were-seeing-velocity-across-the-board"
+   },
+   {
+    "title": "Tesla Q3 2026 financial results: margins rebound, profit still falls (Electrek)",
+    "url": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
    }
   ],
   "connect": {
@@ -597,10 +621,10 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
     "code": "US",
     "name": "United States",
     "index": "S&P 500",
-    "value": "7,712.57",
-    "change": "+0.3%",
+    "value": "7,757.17",
+    "change": "+0.6%",
     "dir": "up",
-    "note": "close 20 Oct",
+    "note": "close 21 Oct",
     "role": "Leads the world",
     "data": "CPI 3.7% (expected 3.6%) · 10-year yield 5.19% · Fed decides 28 Oct",
     "plain": "Everything on this page starts here. Hot US inflation raised the odds of another Fed hike, and that pushed up borrowing costs for the whole world.",
@@ -683,6 +707,76 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
      }
     ]
    }
+  },
+  "earnings": {
+   "zone": "Company reports",
+   "title": "Big tech reports: is the AI spending paying off?",
+   "sub": "Q3 reports from 21 October. Results are compared with what analysts expected (consensus).",
+   "plain": "After the inflation shock, the big question for US stocks is whether the huge sums tech companies spend on AI are starting to pay off. If they are, investors can accept high valuations even with bond yields above 5%. Meta and Tesla were the first of the giants to answer; more giants follow in the coming weeks, including Apple on 2 November.",
+   "items": [
+    {
+     "name": "Meta Platforms",
+     "ticker": "META",
+     "when": "after the close 21 Oct",
+     "verdict": "Clear beat",
+     "reaction": "≈ +3% to +6%",
+     "dir": "up",
+     "reactionNote": "after-hours trading",
+     "numbers": [
+      "Revenue $64.6bn, +26% (expected $63.4bn)",
+      "Adjusted earnings per share $7.40 (expected $5.74); reported $3.83 after a $9.9bn legal charge",
+      "Price per ad +14%, number of ads shown +10%",
+      "Q4 revenue guidance $73–76bn (expected ≈ $73.7bn)",
+      "2026 investment (capex) $135–145bn, lower end raised from $130bn"
+     ],
+     "why": "Ads are getting more expensive because AI makes them work better. That is the clearest sign so far that AI spending is earning money, which is why the share rose even though Meta will spend more."
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "when": "after the close 21 Oct",
+     "verdict": "Mixed",
+     "reaction": "≈ +0.5% to +2%",
+     "dir": "flat",
+     "reactionNote": "after hours, after +3.4% in the day on SpaceX merger talk",
+     "numbers": [
+      "Revenue $28.05bn, flat on last year (in line)",
+      "Adjusted earnings per share $0.48 (expected $0.45), down 4% on last year",
+      "Operating profit $718m, −56%; car margin (excl. credits) up to 18.1% from 15.4%",
+      "Free cash flow $1.53bn (last year $3.99bn); capex $4.73bn, more than doubled",
+      "Energy storage 13.7 GWh (expected ≈ 15.9 GWh)"
+     ],
+     "why": "Car margins improved, but profit fell as spending on AI, robots (Optimus) and the Cybercab jumped. Tesla's share price depends more on the robotaxi story and the SpaceX merger talk than on one quarter's profit, so it barely moved."
+    },
+    {
+     "name": "Netflix",
+     "ticker": "NFLX",
+     "when": "before the open 21 Oct",
+     "verdict": "Weak outlook",
+     "reaction": "≈ −4%",
+     "dir": "down",
+     "reactionNote": "21 Oct",
+     "numbers": [
+      "Q4 revenue forecast below expectations",
+      "2026 advertising revenue guidance cut"
+     ],
+     "why": "When growth guidance is cut for an expensive share, the price usually falls even if the quarter itself was fine."
+    },
+    {
+     "name": "AT&T",
+     "ticker": "T",
+     "when": "21 Oct",
+     "verdict": "Slight miss",
+     "reaction": "≈ −6%",
+     "dir": "down",
+     "reactionNote": "21 Oct",
+     "numbers": [
+      "379,000 new phone contract customers (expected ≈ 387,000)"
+     ],
+     "why": "Investors worry that SpaceX's Starlink Mobile plans will take customers from the phone companies."
+    }
+   ],
+   "takeaway": "So far the reports support the AI trade: Meta shows AI can lift profits, and chip and AI shares led Wednesday's rise. That usually helps European tech and chip shares (for example Infineon and SAP) the next morning. But costs keep rising, and with the 10-year yield at 5.15% investors punish any company whose growth outlook disappoints, as Netflix showed. Next up: more big-tech reports and the Fed on 28 October."
   }
  }
 ]
@@ -16940,6 +17034,25 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
       z1.append(g);
     }
     box.append(z1);
+
+    var er=d.earnings;
+    if(er&&arr(er.items).length){
+      var z5=zone(er.zone||'Company reports');
+      var ep=panel(er.title||'What the big reports said',er.sub||null);
+      if(er.plain)ep.append(el('p',null,er.plain));
+      var eg=el('div','ern');
+      er.items.forEach(function(x){
+        var c=el('article','ern-c');
+        var h=el('div','stk-h');h.append(el('b',null,x.name||''),el('span','tk',[x.ticker,x.when].filter(Boolean).join(' · ')));c.append(h);
+        var q=el('div','reg-q');q.append(el('span','k',x.verdict||'Result'));if(x.reaction)q.append(el('span','chg '+(x.dir||'flat'),x.reaction));if(x.reactionNote)q.append(el('span','s',x.reactionNote));c.append(q);
+        if(arr(x.numbers).length){var ul=el('ul','ern-n');x.numbers.forEach(function(n){ul.append(el('li',null,n));});c.append(ul);}
+        if(x.why)c.append(el('p',null,x.why));
+        eg.append(c);
+      });
+      ep.append(eg);
+      if(er.takeaway){var ei=el('div','inset');ei.append(el('h3',null,'What it means for the market'),el('p',null,er.takeaway));ep.append(ei);}
+      z5.append(ep);box.append(z5);
+    }
 
     if(arr(d.regions).length){
       var z3=zone('US, Germany and Sweden');
