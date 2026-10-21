@@ -16840,7 +16840,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
       det.append(el('h3',null,(inf.company||'')+(inf.ticker?' ('+inf.ticker+')':'')));
       var mt=el('p','meta');mt.textContent=[inf.market,inf.sector,(pk2&&pk2.method&&pk2.method.name)||sc2.method].filter(Boolean).join(' · ');det.append(mt);
       if(pk2){det.append(el('p',null,pk2.summary||''));var b=el('button','cal-open','Read the full analysis →');b.type='button';b.addEventListener('click',function(){showPick(ds2);});det.append(b);}
-      else{if(sc2.teaser)det.append(el('p',null,sc2.teaser));det.append(el('p','cap','The full analysis, fair value and analyst comparison appear on the morning of this day. The plan can change if big news breaks.'));}
+      else{if(sc2.teaser)det.append(el('p',null,sc2.teaser));if(sc2.reportDate){var rd=new Date(sc2.reportDate+'T12:00:00');det.append(el('p','cap','Next report: '+rd.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'})+(sc2.reportDateStatus==='estimated'?' (expected date)':'')+'. The analysis comes a few days before it.'));}det.append(el('p','cap','The full analysis, fair value and analyst comparison appear on the morning of this day. The plan can change if big news breaks.'));}
     }else{det.append(el('p','cap','Pick a green day to read that analysis, or an outlined day to see which stock is coming. A new analysis is published every morning.'));}
     box.append(det);
   }
