@@ -207,6 +207,17 @@ button.cal-cell:hover{border-color:var(--cyan)}
 @media (prefers-reduced-motion:no-preference){.dash,.hero{animation:rise .4s ease-out both}}
 @keyframes rise{from{transform:translateY(6px)}to{transform:none}}
 
+/* Report scenarios */
+.rpt{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.rpt-c{border:1px solid var(--edge);border-radius:12px;padding:12px 14px;background:rgba(11,13,14,.45);display:flex;flex-direction:column;gap:4px;min-width:0}
+.rpt-c b{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.rpt-c.pos{border-color:rgba(57,255,136,.35)} .rpt-c.pos b{color:var(--pos)}
+.rpt-c.neg{border-color:rgba(255,79,109,.4)} .rpt-c.neg b{color:var(--neg)}
+.rpt-c .v{font-family:var(--mono);font-weight:600;font-size:22px;font-variant-numeric:tabular-nums}
+.rpt-c p{margin:0;font-size:14px;color:#cfcbc2}
+.rpt-c .s{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.rpt-h{margin:16px 0 6px}
+
 /* Tabs and Markets view */
 .tabs{display:flex;gap:4px;padding:3px;border:1px solid var(--edge);border-radius:10px;background:var(--glass)}
 .tab{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;padding:7px 12px;border-radius:7px;color:var(--muted)}
@@ -1514,7 +1525,6 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
    "Fair value SEK 172 (range 160–183). At SEK 166.50 the share looks roughly fairly priced. It becomes clearly cheap only if growth returns towards Sagax's 5–10% target, which would justify a higher multiple again."
   ],
   "risks": [
-   "Report on 22 October: if it is strong and analysts raise 2027 cash earnings by about 5%, the value rises to about SEK 180 (SEK 192 if growth looks like returning and the multiple goes to 16x). If it is weak and they cut by about 5%, it falls to about SEK 163 (SEK 152 at peers' 14x). SB1 Markets expected a strong quarter.",
    "Forecast risk: if 2027 cash earnings are 10% lower than SEK 12.75 (for example if refinancing costs rise faster), the fair value falls to about SEK 154.",
    "Multiple risk: at the 14.5 times implied by analysts' average target the value would be about SEK 166 today; at today's 13.1 times about SEK 150. Upside: if growth returns to the 5–10% target and investors pay the old 19.1 times again, the value would be about SEK 219. Each 1 point of multiple moves the value by about SEK 11.",
    "Interest rates: bonds of just over SEK 15 billion must be refinanced in 2027–2029 at higher rates, which Affärsvärlden estimates will cost a few hundred million SEK a year (about 5% of cash earnings). The average fixed-rate period is only 2.5 years.",
@@ -1711,7 +1721,48 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   },
   "ticker": "SAGA B",
   "verdict": "Roughly fairly priced",
-  "whatTheyDo": "Sagax owns about 1,065 properties with 5.5 million square metres, mostly warehouses and light-industrial buildings, in Sweden, Finland, France and other European countries. Tenants usually sign long leases linked to inflation and pay most running costs themselves ('triple net'), so the rent income is very stable."
+  "whatTheyDo": "Sagax owns about 1,065 properties with 5.5 million square metres, mostly warehouses and light-industrial buildings, in Sweden, Finland, France and other European countries. Tenants usually sign long leases linked to inflation and pay most running costs themselves ('triple net'), so the rent income is very stable.",
+  "report": {
+   "date": "Q3 report · Thursday 22 October 2026",
+   "dateIso": "2026-10-22",
+   "title": "How the Q3 report could change our fair value",
+   "plain": "Our fair value = multiple × 2027 cash earnings ÷ 1.114 (one year of 11.4% required return). So the report can change it in two ways: through analysts' forecast for 2027, and through the multiple, if the report changes how fast Sagax looks likely to grow. A big share price move on the day is not the same as a change in value.",
+   "scenarios": [
+    {
+     "tone": "pos",
+     "label": "Strong report",
+     "value": "SEK 180–192",
+     "what": "Cash earnings per share grow again (the first half was −2%), the SEK 4,600 million full-year forecast is kept or raised, and interest costs level out. If analysts lift 2027 by about 5%, the value is SEK 180 at 15 times. If growth also looks like heading back towards 5% a year, 16 times is fair: SEK 192.",
+     "calc": "15 × 13.39 ÷ 1.114 = 180 · 16 × 13.39 ÷ 1.114 = 192"
+    },
+    {
+     "tone": "flat",
+     "label": "As expected",
+     "value": "SEK 172",
+     "what": "Results roughly in line with forecasts. The 2027 forecast and the 15 times multiple stay, so our value does not change.",
+     "calc": "15 × 12.75 ÷ 1.114 = 172"
+    },
+    {
+     "tone": "neg",
+     "label": "Weak report",
+     "value": "SEK 152–163",
+     "what": "Cash earnings fall again, refinancing gets more expensive or the full-year forecast is cut. If analysts lower 2027 by about 5%, the value is SEK 163 at 15 times. If zero growth then looks lasting, peers' 14 times fits better: SEK 152.",
+     "calc": "15 × 12.11 ÷ 1.114 = 163 · 14 × 12.11 ÷ 1.114 = 152"
+    }
+   ],
+   "extra": [
+    {
+     "title": "What if the property values (NAV) change?",
+     "plain": "Not directly: our fair value is built on cash earnings, so NAV is not in the formula. But it matters in two indirect ways. Property values usually fall because buyers demand higher returns (yields), and higher yields also make investors pay a lower multiple for earnings. And our SEK 172 is 1.26 times today's NAV of SEK 136. If NAV fell 5% to about SEK 129, it would be 1.33 times NAV: a bigger premium for a company that is hardly growing, which would push us towards 14 times (SEK 160 even with an unchanged forecast). If NAV rises, the premium shrinks and 15–16 times becomes easier to defend."
+    }
+   ],
+   "watch": [
+    "Cash earnings (förvaltningsresultat) per share in Q3 compared with the same quarter of 2025. The first half of 2026 was 2% lower.",
+    "Whether the full-year forecast of SEK 4,600 million is kept, raised or cut.",
+    "Interest costs, the average interest rate and plans for refinancing bonds.",
+    "Changes in property values and NAV per share (SEK 136.03 at 30 June)."
+   ]
+  }
  },
  {
   "company": "Prologis",
@@ -16682,6 +16733,23 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
       z2.append(s5);
     }
     app.append(z2);
+
+    // Upcoming report
+    var rp=p.report;
+    if(rp&&(rp.plain||arr(rp.scenarios).length)){
+      var past=rp.dateIso&&rp.dateIso<new Date().toISOString().slice(0,10);
+      var z5=zone(past?'Report scenarios (written before the report)':'Report coming up');
+      var s9=panel(rp.title||'How the next report could change our fair value',rp.date||null);
+      if(rp.plain)s9.append(el('p',null,rp.plain));
+      if(arr(rp.scenarios).length){
+        var sc=el('div','rpt');
+        rp.scenarios.forEach(function(x){var c=el('div','rpt-c '+(x.tone||'flat'));c.append(el('b',null,x.label||''));if(x.value)c.append(el('span','v',x.value));if(x.what)c.append(el('p',null,x.what));if(x.calc)c.append(el('span','s',x.calc));sc.append(c);});
+        s9.append(sc);
+      }
+      arr(rp.extra).forEach(function(x){var i9=el('div','inset');i9.append(el('h3',null,x.title||''),el('p',null,x.plain||''));s9.append(i9);});
+      if(arr(rp.watch).length){s9.append(el('h3','rpt-h','What to look for in the report'));var ul9=el('ul','list');rp.watch.forEach(function(x){ul9.append(el('li',null,x));});s9.append(ul9);}
+      z5.append(s9);app.append(z5);
+    }
 
     // Reasoning and risks
     if(arr(p.reasoning).length||arr(p.risks).length){
