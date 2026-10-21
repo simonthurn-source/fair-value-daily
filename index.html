@@ -206,6 +206,50 @@ button.cal-cell:hover{border-color:var(--cyan)}
 }
 @media (prefers-reduced-motion:no-preference){.dash,.hero{animation:rise .4s ease-out both}}
 @keyframes rise{from{transform:translateY(6px)}to{transform:none}}
+
+/* Tabs and Markets view */
+.tabs{display:flex;gap:4px;padding:3px;border:1px solid var(--edge);border-radius:10px;background:var(--glass)}
+.tab{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;padding:7px 12px;border-radius:7px;color:var(--muted)}
+.tab:hover{color:var(--ink)}
+.tab[aria-current="page"]{background:rgba(236,232,223,.1);color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge-2)}
+.mkt-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.mkt-pick{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.mkt-pick select{font:inherit;color:var(--ink);background:var(--bg-2);border:1px solid var(--edge-2);border-radius:8px;height:36px;padding:0 8px}
+.mkt-lede{margin:0;max-width:72ch;font-size:17px;color:#d9d5cc}
+.chg{font-family:var(--mono);font-size:13px;font-weight:600}
+.chg.up{color:var(--pos)} .chg.down{color:var(--neg)} .chg.flat{color:var(--warn)}
+.chain{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:stretch;gap:8px}
+.chain li{display:flex;align-items:center;gap:8px;min-width:0}
+.chain li:not(:last-child)::after{content:"→";font-family:var(--mono);color:var(--faint);font-size:16px}
+.chain .node{background:rgba(11,13,14,.55);border:1px solid var(--edge);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.35;max-width:220px}
+.chain .node b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:2px}
+.chain li:first-child .node{border-color:var(--warn)}
+.chain li:last-child .node{border-color:var(--neg)}
+.drv-data{font-family:var(--mono);font-size:13px;color:var(--cyan);margin:0}
+.watch{display:flex;flex-direction:column;gap:12px}
+.wcard{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding:16px 18px;border-radius:12px;border:1px solid var(--edge);background:rgba(11,13,14,.45)}
+.wdate{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--warn)}
+.wbody{display:flex;flex-direction:column;gap:8px;min-width:0}
+.wbody h3{margin:0;font-size:16px;font-weight:600}
+.wbody p{margin:0;font-size:15px;color:#cfcbc2}
+.ifs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.if{border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45;border:1px solid}
+.if b{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.if.hot{border-color:rgba(255,79,109,.45);background:rgba(255,79,109,.07)} .if.hot b{color:var(--neg)}
+.if.cool{border-color:rgba(57,255,136,.4);background:rgba(57,255,136,.06)} .if.cool b{color:var(--pos)}
+dl.terms{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+dl.terms div{background:rgba(11,13,14,.5);border:1px solid var(--edge);border-radius:12px;padding:14px 16px}
+dl.terms dt{font-weight:600;font-size:14px;margin-bottom:4px}
+dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
+@media (max-width:560px){
+  .wcard{grid-template-columns:1fr;gap:6px}
+  .ifs{grid-template-columns:1fr}
+  .chain{flex-direction:column}
+  .chain li{width:100%}
+  .chain li:not(:last-child)::after{content:"↓"}
+  .chain li{flex-direction:column;align-items:flex-start}
+  .chain .node{max-width:none;width:100%}
+}
 </style>
 <style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -213,15 +257,209 @@ button.cal-cell:hover{border-color:var(--cyan)}
 <div class="wrap">
   <header class="top">
     <div class="brand"><span class="dot" aria-hidden="true"></span>Fair Value Daily <span class="tag">one stock a day</span></div>
-    <span class="hdr-r"><span>by Simon Thurn</span><a class="toCal" href="#calendar">All analyses ↓</a></span>
+    <span class="hdr-r"><nav class="tabs" aria-label="Sections"><a class="tab" href="#" aria-current="page">Stock of the day</a><a class="tab" href="#markets">Markets</a></nav><span>by Simon Thurn</span><a class="toCal" href="#calendar">All analyses ↓</a></span>
   </header>
   <main id="app" class="app">
     <div class="empty"><h1>Loading…</h1><p>One stock a day, with its fair value worked out step by step.</p></div>
   </main>
   <div id="calwrap"></div>
+  <section id="market" class="app" aria-label="Markets" hidden></section>
   <p class="disclaimer">Personal project by Simon Thurn, BSc International Economics student at Jönköping International Business School. Each analysis is researched and built with the help of AI (Claude). This is an educational worked example, not investment advice. Fair values depend on the assumptions shown, so you can judge them yourself. Prices are delayed and figures come from the sources listed; check them before acting.</p>
 </div>
 
+<script type="application/json" id="fvd-macro">
+[
+ {
+  "date": "2026-10-21",
+  "dateLabel": "Wednesday 21 October 2026",
+  "mood": "Risk-off, easing",
+  "headline": "Hot inflation sent investors out of AI stocks. This week they are slowly coming back.",
+  "summary": "Last week US inflation came in higher than expected, mainly because petrol prices jumped during the conflict with Iran. That made another interest-rate hike from the Federal Reserve more likely, pushed bond yields above 5% and hit expensive growth and AI shares hardest. The mood has calmed a little this week, but oil above $105 and the Fed meeting on 28 October keep investors careful.",
+  "snapshot": [
+   {
+    "label": "S&P 500",
+    "value": "7,712.57",
+    "change": "+0.3%",
+    "dir": "up",
+    "note": "close 20 Oct · −1.1% on CPI day"
+   },
+   {
+    "label": "Nasdaq Composite",
+    "value": "26,424.82",
+    "change": "−0.0%",
+    "dir": "flat",
+    "note": "close 20 Oct · −4.5% in the week to 16 Oct"
+   },
+   {
+    "label": "Russell 2000 (small caps)",
+    "value": "2,773.42",
+    "change": "+1.7%",
+    "dir": "up",
+    "note": "close 20 Oct"
+   },
+   {
+    "label": "US 10-year yield",
+    "value": "5.19%",
+    "change": "touched 5.33%",
+    "dir": "down",
+    "note": "close 16 Oct · 5.28% on CPI day"
+   },
+   {
+    "label": "Brent oil",
+    "value": "≈ $109",
+    "change": "near $112 intraday",
+    "dir": "flat",
+    "note": "20 Oct"
+   },
+   {
+    "label": "Odds of an October Fed hike",
+    "value": "≈ 35–37%",
+    "change": "from ≈ 22%",
+    "dir": "up",
+    "note": "CME FedWatch, after CPI"
+   }
+  ],
+  "chain": {
+   "title": "How one inflation number moved AI stocks",
+   "sub": "14 October 2026: the September CPI report",
+   "steps": [
+    "Inflation came in hot: 3.7% vs 3.6% expected",
+    "The Fed looks more likely to raise rates again",
+    "Bond yields rise (10-year up to 5.28%)",
+    "Future profits are worth less in today's money",
+    "Expensive growth and AI stocks fall most (tech −3.0%)",
+    "Money moves to safer sectors (health care +2.4%, staples +2.2%)"
+   ],
+   "plain": "This is what “risk-off” means: when investors get nervous, they sell the shares whose value depends most on profits far in the future and buy steady companies whose profits come now. AI and chip companies are valued on profits many years away, so a higher interest rate hurts them the most. Small companies were also hit (Russell 2000 −1.9%), because they borrow more and pay more when rates rise."
+  },
+  "drivers": [
+   {
+    "title": "1. Inflation surprised on the upside",
+    "data": "September CPI: 3.7% a year (expected 3.6%, August 3.4%). Core: 2.6% (expected 2.5%). Prices rose 0.6% in one month.",
+    "plain": "CPI measures how much a basket of everyday goods costs compared with a year ago. Petrol rose 9.1% in a month to a record average of $4.33 a gallon, and caused over half of the increase. Core inflation, which leaves out food and energy, also beat forecasts because of rents, airfares and used cars. That matters more, because the Fed sees it as the underlying trend.",
+    "effect": "On 14 October the S&P 500 fell 1.1% and the Nasdaq 1.9%. The VIX “fear index” jumped 10%. The dollar rose to its strongest level since April 2025."
+   },
+   {
+    "title": "2. The Fed may raise rates again",
+    "data": "Odds of a rate hike on 28 Oct rose from about 22% to 35–37% (briefly 49%). The Fed's own minutes said another hike “would likely be appropriate by year end”.",
+    "plain": "The Federal Reserve fights inflation by raising its interest rate. When inflation comes in hot, traders bet on more hikes. Higher rates make borrowing more expensive for companies and households, and make safe bonds more attractive compared with shares.",
+    "effect": "The 10-year Treasury yield rose to 5.28% on the day and touched 5.33% during the week, near its highest in many years. Mortgage rates rose to 7.56%."
+   },
+   {
+    "title": "3. Oil and the conflict with Iran",
+    "data": "Brent crude tested $110 last week and nearly reached $112 on 20 October before falling below $109.",
+    "plain": "Attacks on ships in the Strait of Hormuz, the route for much of the world's oil, have pushed oil up. Expensive oil raises petrol and transport costs, which feeds straight into the next inflation numbers. So oil and interest rates are linked right now.",
+    "effect": "Energy shares rose while most other sectors fell. When oil eased on 20 October, the broader market recovered its early losses."
+   },
+   {
+    "title": "4. Worries about debt-funded AI spending",
+    "data": "Nasdaq −4.5% in the week to 16 Oct; the chip index fell eight days in a row; CoreWeave −12% on 16 Oct.",
+    "plain": "Many AI data centres are built with borrowed money. When interest rates rise, that debt gets more expensive, and investors start asking whether the spending will pay off. That is why AI shares kept falling on 16 October even though bond yields had eased a little.",
+    "effect": "This week investors are waiting for big tech earnings (Meta and Tesla report on 21 October) to see whether AI spending is turning into revenue."
+   }
+  ],
+  "watch": [
+   {
+    "date": "21–22 Oct",
+    "event": "Big tech earnings: Meta, Tesla, IBM, Texas Instruments, Lam Research",
+    "why": "Not a macro number, but it decides whether the AI selloff continues. Investors want to see AI spending turning into revenue and cash, not just more spending.",
+    "hot": "Strong revenue and confident guidance would likely pull money back into AI and chip shares.",
+    "cool": "Higher spending plans without more revenue would add to the debt worries and could extend the selloff."
+   },
+   {
+    "date": "28 Oct",
+    "event": "Federal Reserve rate decision (19:00 Swedish time)",
+    "expected": "about a 1-in-3 chance of a rate hike (CME FedWatch after the CPI report)",
+    "why": "The most important event of the month. Watch both the decision and what the Fed chair says about December.",
+    "hot": "A hike, or clear signals of more hikes, would likely push yields up again and hit growth, AI and small-cap shares.",
+    "cool": "No hike and calm words about inflation would probably lift growth shares and lower bond yields."
+   },
+   {
+    "date": "29 Oct",
+    "event": "US GDP for Q3 (first estimate) and PCE inflation for September",
+    "why": "GDP shows how fast the economy is growing. PCE is the inflation measure the Fed itself targets, so after the hot CPI it can confirm or calm the worry.",
+    "hot": "High PCE inflation would back up the CPI scare and make a December hike more likely: bad for growth shares.",
+    "cool": "Lower PCE would suggest the CPI jump was mostly petrol and could ease rate fears."
+   },
+   {
+    "date": "6 Nov",
+    "event": "US jobs report for October",
+    "why": "A strong job market lets the Fed keep rates high; a weak one makes cuts more likely. Watch wage growth too, since rising wages can keep inflation up.",
+    "hot": "Many new jobs and fast wage growth: rates stay high for longer.",
+    "cool": "Few new jobs: lower rate expectations, good for bonds and growth shares, but a sign the economy is slowing."
+   },
+   {
+    "date": "10 Nov",
+    "event": "US CPI inflation for October",
+    "why": "The next test of whether September was a one-off from petrol prices. Keep an eye on oil until then: it feeds directly into this number.",
+    "hot": "Another upside surprise would likely repeat last week's pattern: higher yields, AI and growth shares down, safe sectors up.",
+    "cool": "A lower number would be the clearest sign that the rate scare is over."
+   }
+  ],
+  "takeaway": "Right now the market reacts to anything that changes the path of interest rates. Hot inflation means higher rates for longer, and that hurts the shares whose value lies furthest in the future, such as AI, tech and small companies. Oil prices are the link between the conflict with Iran and the next inflation number.",
+  "terms": [
+   {
+    "term": "Came in hot / cool",
+    "plain": "A number that is higher (hot) or lower (cool) than economists expected. Markets move on the surprise, not on the number itself."
+   },
+   {
+    "term": "Risk-off / risk-on",
+    "plain": "Risk-off: investors sell risky assets like growth shares and buy safer ones like bonds, health care and staples. Risk-on is the opposite."
+   },
+   {
+    "term": "CPI",
+    "plain": "Consumer Price Index: how much a basket of everyday goods costs compared with a year ago. The most watched measure of inflation."
+   },
+   {
+    "term": "Core inflation",
+    "plain": "Inflation without food and energy, whose prices jump around. It shows the underlying trend the Fed cares about."
+   },
+   {
+    "term": "Bond yield",
+    "plain": "The interest you get for lending money to the US government. When it rises, safe bonds compete better with shares, and future profits are worth less today."
+   },
+   {
+    "term": "The Fed",
+    "plain": "The Federal Reserve, the US central bank. It raises its interest rate to cool inflation and cuts it to support the economy."
+   },
+   {
+    "term": "PCE",
+    "plain": "Personal Consumption Expenditures price index: the inflation measure the Fed officially targets."
+   }
+  ],
+  "sources": [
+   {
+    "title": "CPI: prices rose 3.7% in September (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/economy/live/cpi-prices-rose-37-in-september-042819608.html"
+   },
+   {
+    "title": "September's CPI came in hotter than expected; stocks fell (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/economy/policy/articles/septembers-cpi-came-hotter-expected-200333169.html"
+   },
+   {
+    "title": "Stock market today, 14 Oct 2026: Russell 2000 and Nasdaq fall 2% on hot inflation (TheStreet)",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
+   },
+   {
+    "title": "Nasdaq falls 4.5% as AI debt fears and hot CPI hit tech (Vantage Markets)",
+    "url": "https://vantagemarkets.com/market-analysis/why-nasdaq-fell-ai-debt-hot-cpi-nas100-analysis-october-19-2026"
+   },
+   {
+    "title": "How major US stock indexes fared, 20 Oct 2026 (Yahoo Finance / AP)",
+    "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-202506799.html"
+   },
+   {
+    "title": "BEA release schedule (GDP and PCE on 29 Oct)",
+    "url": "https://www.bea.gov/news/schedule"
+   },
+   {
+    "title": "2026 US economic calendar: FOMC, jobs and CPI dates (fedratecalc.com)",
+    "url": "https://fedratecalc.com/us-economic-calendar/"
+   }
+  ]
+ }
+]
+</script>
 <script type="application/json" id="fvd-schedule">
 [
  {
@@ -16300,6 +16538,119 @@ button.cal-cell:hover{border-color:var(--cyan)}
     var latest=picks[0].date.split('-');view=new Date(+latest[0],+latest[1]-1,1);
     shown=chosen=picks[0].date;render(picks[0]);renderCal();
   })();
+})();
+</script>
+<script>
+(function(){
+  var box=document.getElementById('market'),app=document.getElementById('app'),cal=document.getElementById('calwrap');
+  if(!box)return;
+  function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=String(text);return e;}
+  function arr(x){return Array.isArray(x)?x:[];}
+  function safeUrl(u){return(typeof u==='string'&&/^https?:\/\//i.test(u))?u:null;}
+  function panel(title,sub){var s=el('section','panel glass');s.append(el('h2',null,title));if(sub)s.append(el('p','sub',sub));return s;}
+  function zone(label){var z=el('div','zone');var h=el('div','zone-h');h.append(el('span','label',label));z.append(h);return z;}
+  var days=[];
+  try{days=JSON.parse(document.getElementById('fvd-macro').textContent)||[];}catch(e){days=[];}
+  days=days.filter(function(d){return d&&d.date;}).sort(function(a,b){return a.date<b.date?1:-1;});
+  var MOOD={'risk-on':'var(--pos)','risk-off':'var(--neg)'};
+
+  function render(d){
+    box.replaceChildren();
+    if(!d){var e=el('div','empty');e.append(el('h1',null,'Market notes are on their way'),el('p',null,'A short explanation of what moved the market is added every weekday morning.'));box.append(e);return;}
+    var top=el('div','mkt-top');
+    var hero=el('div','hero');
+    hero.append(el('div','label','Markets · '+(d.dateLabel||d.date)));
+    hero.append(el('h1',null,d.headline||'What moved the market'));
+    top.append(hero);
+    if(days.length>1){
+      var pk=el('label','mkt-pick');pk.append(document.createTextNode('Earlier notes'));
+      var sel=el('select');days.forEach(function(x){var o=el('option',null,x.dateLabel||x.date);o.value=x.date;if(x.date===d.date)o.selected=true;sel.append(o);});
+      sel.addEventListener('change',function(){render(days.filter(function(x){return x.date===sel.value;})[0]);});
+      pk.append(sel);top.append(pk);
+    }
+    box.append(top);
+
+    var dash=el('section','dash glass');dash.setAttribute('aria-label','Market snapshot');
+    if(d.mood){var mc=MOOD[String(d.mood).toLowerCase()]||'var(--warn)';var pill=el('span','pill',d.mood);pill.style.color=mc;dash.append(pill);}
+    if(d.summary)dash.append(el('p','mkt-lede',d.summary));
+    if(arr(d.snapshot).length){
+      var tiles=el('div','tiles');
+      d.snapshot.forEach(function(s){
+        var t=el('div','tile');t.append(el('span','k',s.label||''));
+        var v=el('span','v',s.value||'');t.append(v);
+        if(s.change)t.append(el('span','chg '+(s.dir||'flat'),s.change));
+        if(s.note)t.append(el('span','s',s.note));
+        tiles.append(t);
+      });
+      dash.append(tiles);
+    }
+    box.append(dash);
+
+    var z1=zone('Why the market moved');
+    if(d.chain&&arr(d.chain.steps).length){
+      var cp=panel(d.chain.title||'The chain reaction',d.chain.sub||null);
+      var ol=el('ol','chain');
+      d.chain.steps.forEach(function(s,i){var li=el('li');var n=el('div','node');n.append(el('b',null,'Step '+(i+1)),document.createTextNode(s));li.append(n);ol.append(li);});
+      cp.append(ol);
+      if(d.chain.plain)cp.append(el('p',null,d.chain.plain));
+      z1.append(cp);
+    }
+    if(arr(d.drivers).length){
+      var g=el('div','duo');
+      d.drivers.forEach(function(x){
+        var p=el('article','prose glass');p.append(el('h2',null,x.title||''));
+        if(x.data)p.append(el('p','drv-data',x.data));
+        if(x.plain)p.append(el('p',null,x.plain));
+        if(x.effect){var i=el('div','inset');i.append(el('h3',null,'What it did to stocks'),el('p',null,x.effect));p.append(i);}
+        g.append(p);
+      });
+      z1.append(g);
+    }
+    box.append(z1);
+
+    if(arr(d.watch).length){
+      var z2=zone('What to watch next');
+      var wp=panel('The next macro numbers',d.watchNote||'Each card says what the market expects and how stocks would likely react if the number comes in above (“hot”) or below (“cool”) that.');
+      var w=el('div','watch');
+      d.watch.forEach(function(x){
+        var c=el('div','wcard');c.append(el('div','wdate',x.date||''));
+        var b=el('div','wbody');b.append(el('h3',null,x.event||''));
+        if(x.expected)b.append(el('p','drv-data','Expected: '+x.expected));
+        if(x.why)b.append(el('p',null,x.why));
+        if(x.hot||x.cool){var ifs=el('div','ifs');
+          if(x.hot){var h=el('div','if hot');h.append(el('b',null,'If it comes in hot'),document.createTextNode(x.hot));ifs.append(h);}
+          if(x.cool){var k=el('div','if cool');k.append(el('b',null,'If it comes in cool'),document.createTextNode(x.cool));ifs.append(k);}
+          b.append(ifs);}
+        c.append(b);w.append(c);
+      });
+      wp.append(w);
+      if(d.takeaway){var t2=el('div','inset');t2.append(el('h3',null,'The one thing to remember'),el('p',null,d.takeaway));wp.append(t2);}
+      z2.append(wp);box.append(z2);
+    }
+
+    if(arr(d.terms).length){
+      var tp=panel('Words used on this page');
+      var dl=el('dl','terms');
+      d.terms.forEach(function(x){var dv=el('div');dv.append(el('dt',null,x.term||''),el('dd',null,x.plain||''));dl.append(dv);});
+      tp.append(dl);box.append(tp);
+    }
+    if(arr(d.sources).length){
+      var sp=panel('Sources');var ul=el('ul','list sources');
+      d.sources.forEach(function(x){var li=el('li');var u=safeUrl(x.url);if(u){var a=el('a',null,x.title||u);a.href=u;a.target='_blank';a.rel='noopener';li.append(a);}else{li.textContent=x.title||'';}ul.append(li);});
+      sp.append(ul);box.append(sp);
+    }
+  }
+
+  var tabs=document.querySelectorAll('.tab');
+  function route(){
+    var mk=location.hash==='#markets';
+    box.hidden=!mk;app.hidden=mk;cal.hidden=mk;
+    tabs.forEach(function(t){if((t.getAttribute('href')==='#markets')===mk)t.setAttribute('aria-current','page');else t.removeAttribute('aria-current');});
+    if(mk&&!box.childNodes.length)render(days[0]);
+    if(mk)try{window.scrollTo(0,0);}catch(e){}
+  }
+  window.addEventListener('hashchange',route);
+  route();
 })();
 </script>
 <script data-goatcounter="https://simonthurn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
