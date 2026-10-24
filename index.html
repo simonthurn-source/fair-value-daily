@@ -1075,9 +1075,9 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "company": "Mercedes-Benz Group",
   "date": "2026-10-24",
   "market": "Germany",
-  "method": "Forward EV/EBIT on the industrial business (cars and vans), with P/E as a check",
+  "method": "Forward P/E on next year's earnings (EV/EBIT as a check)",
   "reportDate": "2026-10-28",
-  "reportDateStatus": "estimated",
+  "reportDateStatus": "confirmed",
   "sector": "Cars (automaker)",
   "teaser": "Mercedes earns much less on each car than it did a few years ago: what is the carmaker worth if those lower margins are the new normal?",
   "ticker": "MBG"
@@ -1367,11 +1367,636 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Agricultural and construction machinery (cyclical)",
   "teaser": "Farm-machinery demand rises and falls with crop prices: what is the maker of John Deere tractors worth on a normal year's profit?",
   "ticker": "DE"
+ },
+ {
+  "company": "Analog Devices",
+  "date": "2026-11-20",
+  "market": "United States",
+  "method": "Forward P/E",
+  "reportDate": "2026-11-24",
+  "reportDateStatus": "confirmed",
+  "sector": "Semiconductors (analog and mixed-signal chips)",
+  "teaser": "Analog Devices just reported a record quarter: how much should investors pay for chip profits that rise and fall with the industrial and car cycles?",
+  "ticker": "ADI"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Mercedes-Benz Group",
+  "consensus": {
+   "analysts": 21,
+   "asOf": "23 Oct 2026",
+   "explain": "The average target of EUR 53.20 is a price in 12 months; discounted one year at 7.7% it is worth about EUR 49.4 today. Our EUR 50 is 1% above that, so we agree with the average analyst. On the same 2027 EPS forecast the target implies about 8.1 times, almost exactly our 8.2 times. The spread between analysts (EUR 36 to 74) is mostly about whether the cost cuts can restore margins while China keeps shrinking.",
+   "high": 73.8,
+   "low": 36,
+   "method": "The published summaries of recent broker notes do not state the exact multiple, but every recent target change was driven by lower profit forecasts: UBS (Patrick Hummel, 8 Oct) cut its earnings-per-share estimates and its target from EUR 50 to 45, Jefferies (Philippe Houchois, 11 Oct) from 52 to 46, RBC (Tom Narayan, 13 Oct) from 54 to 44 because of China, and Deutsche Bank from 73 to 70. Press coverage compares Mercedes with BMW and Volkswagen on P/E. On the EUR 6.57 2027 EPS consensus these targets equal about 6.7 times (RBC) to 10.7 times (Deutsche Bank). A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Buy on average (7 strong buy, 4 buy, 8 hold, 1 sell, 1 strong sell)",
+   "source": "stockanalysis.com",
+   "target": 53.2,
+   "targetToday": 49.4
+  },
+  "crossCheck": {
+   "calc": "FCF 2027 = 0.55 × 7,988 − 385 = 4,008; 2028 = 0.55 × 8,782 − 385 = 4,445; then +5%, +4%, +3% … 2%; (PV 80,672 + 30,434) ÷ 919.6 = 121",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "We use Mercedes' 'free cash flow of the industrial business' (cars and vans: IFRS operating cash flow minus investments, after tax), not the group's operating cash flow, which mixes in the finance arm's debt-funded loans. It was 55% of adjusted EBIT on average in 2021–2025 (39% to 67%). On the 2027 and 2028 EBIT forecasts (EUR 7,988m and 8,782m) that is EUR 4.4bn and 4.8bn; we subtract EUR 0.4bn a year of after-tax interest earned on the cash, because we add the cash separately. Growth is then 5%, 4% and 3%, fading to 2% by year 10. The car business has no net debt, so the discount rate is the 7.7% cost of equity. Operations are worth about EUR 80.7bn, plus EUR 30.4bn net cash: about EUR 121 a share. Today's EUR 40.74 needs a discount rate of about 63% (or 14% if the cash were ignored completely). Put differently, the price only makes sense if free cash flow shrinks by about half every year. So the cash flows strongly support the multiple, but only if Mercedes can keep generating EUR 4–5bn a year, which the market clearly doubts.",
+   "result": "≈ EUR 121 at 7.7%; today's price needs ≈ 63%"
+  },
+  "crossChecks": [
+   {
+    "calc": "(2.77 × 7,988 + 30,434) ÷ 919.6 ÷ 1.0774",
+    "name": "Check: forward EV/EBIT on its own history",
+    "note": "Today EV is only about EUR 7.0bn, 0.9 times 2027 EBIT, far below the 2.4–3.5 of recent year-ends. This check is a little higher than our main value mainly because the large net cash is added in full.",
+    "plain": "EV here is market value minus net industrial liquidity, compared with group adjusted EBIT (the finance arm's debt is treated as part of its business). At end-2023/24/25 Mercedes traded at 2.4, 2.4 and 3.5 times the next year's EBIT (average 2.77). On 2027 EBIT of EUR 7,988m plus EUR 30,434m net cash, ÷ 919.6m shares, that gives EUR 57.2 in a year, or:",
+    "result": "≈ EUR 53.1"
+   },
+   {
+    "calc": "4.9 × 6.57 ÷ 1.0774",
+    "name": "Check: at peers' multiple",
+    "note": "Mercedes already trades above both (6.2 times) with lower expected growth (+20%), so peers do not support a higher multiple. Volkswagen's very low multiple pulls the average down; at BMW's 6.6 times alone the value would be about EUR 40.5.",
+    "plain": "On stockanalysis.com (prices 23 Oct 2026 ÷ 2027 adjusted EPS consensus), BMW trades at 6.6 times (expected 2027 EPS growth +29%) and Volkswagen preference shares at 3.1 times (+22%); average 4.9. At the peer average on Mercedes' EUR 6.57:",
+    "result": "≈ EUR 29.9"
+   }
+  ],
+  "currency": "EUR",
+  "date": "2026-10-24",
+  "dateLabel": "Saturday 24 October 2026",
+  "exchange": "Xetra (Frankfurt)",
+  "fairValue": 50,
+  "history": {
+   "caption": "EUR million unless stated. From Mercedes-Benz annual results releases (2022, 2023, 2025), the Q4 2025 fact sheet and the Q2 2026 interim report; cash flows from stockanalysis.com; year-end prices, share counts and market values from MarketScreener. 2021 is 'continuing operations' (without Daimler Truck, spun off in December 2021). EPS excl. one-offs = reported EPS + adjustments to EBIT × (1 − 30% assumed tax) ÷ shares (our calculation; mainly restructuring and legal costs, EUR 2.4bn in 2025). EV = market value − net industrial liquidity (the car and van business's cash minus its debt). Forward = year-end value ÷ the NEXT year's result; for 2025 we use the 2026 consensus (EPS EUR 5.46, stockanalysis.com; adjusted EBIT EUR 7,208m, Visible Alpha via Dow Jones). Last column: latest (price 23 Oct 2026, cash 30 Jun 2026) or as marked.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest / 2027E"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "2026E: MarketScreener/stockanalysis consensus (−2%)",
+     "values": [
+      "133,893",
+      "150,017",
+      "153,218",
+      "145,594",
+      "132,214",
+      "129,233 (2026E)"
+     ]
+    },
+    {
+     "label": "Cars adjusted return on sales",
+     "note": "Operating profit per EUR 100 of car sales. 2026 guidance 3–5%; Q3 2026 consensus 2.6%; medium-term goal 8–10%",
+     "values": [
+      "13.1%",
+      "14.6%",
+      "12.6%",
+      "8.1%",
+      "5.0%",
+      "4.0% (H1 2026)"
+     ]
+    },
+    {
+     "label": "Adjusted EBIT (operating profit, group)",
+     "note": "2027E: EUR 7,988m (MarketScreener consensus EBIT, +18% on its 2026E of 6,782m)",
+     "values": [
+      "17,158",
+      "20,655",
+      "20,004",
+      "13,713",
+      "8,235",
+      "7,208 (2026E)"
+     ]
+    },
+    {
+     "label": "EPS, reported, EUR",
+     "values": [
+      "10.00",
+      "13.55",
+      "13.46",
+      "10.19",
+      "5.34",
+      "2.63 (H1 2026)"
+     ]
+    },
+    {
+     "label": "EPS excl. one-offs, EUR (our calculation)",
+     "note": "2026E EUR 5.46, 2027E EUR 6.57 (stockanalysis.com adjusted consensus, 18 analysts)",
+     "values": [
+      "10.74",
+      "13.68",
+      "13.69",
+      "10.27",
+      "7.10",
+      "6.57 (2027E)"
+     ]
+    },
+    {
+     "label": "Share price at year-end, EUR",
+     "values": [
+      "67.59",
+      "61.40",
+      "62.55",
+      "53.80",
+      "60.07",
+      "40.74"
+     ]
+    },
+    {
+     "label": "Net industrial liquidity, EUR bn",
+     "note": "Net cash of the car and van business. Shares outstanding fell from 1,070m to 920m through buybacks",
+     "values": [
+      "21.0",
+      "26.6",
+      "31.7",
+      "31.4",
+      "32.2",
+      "30.4 (Jun)"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing, excl. one-offs)",
+     "values": [
+      "6.3",
+      "4.5",
+      "4.6",
+      "5.2",
+      "8.5",
+      "7.5 (on 2026E)"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ next year's EPS excl. one-offs. Average 2023–25: 8.2, the multiple we use (see step 2)",
+     "strong": true,
+     "values": [
+      "4.9",
+      "4.5",
+      "6.1",
+      "7.6",
+      "11.0",
+      "6.2 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Growth in EPS (excl. one-offs) the following year",
+     "note": "What investors got for each year-end multiple. 2028E from MarketScreener (EUR 6.37 → 7.26)",
+     "strong": true,
+     "values": [
+      "+27%",
+      "+0%",
+      "−25%",
+      "−31%",
+      "−23% (2026E)",
+      "+20% (2027E), +14% (2028E)"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end (EV = market value − net industrial liquidity)",
+     "note": "Check only: very low because the net cash is almost as large as the market value",
+     "values": [
+      "2.5",
+      "2.0",
+      "2.4",
+      "2.4",
+      "3.5",
+      "0.9 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities (group, IFRS)",
+     "note": "Includes the finance arm, whose loans and leases are funded with debt, so we do not use it for the cash check",
+     "values": [
+      "24,549",
+      "16,894",
+      "14,470",
+      "17,735",
+      "18,006",
+      "6,216 (H1 2026)"
+     ]
+    },
+    {
+     "label": "Interest paid (group)",
+     "note": "Mostly the finance arm's funding cost. The car and van business received net interest of EUR 629m (2024) and 550m (2025)",
+     "values": [
+      "367",
+      "486",
+      "3,068",
+      "3,902",
+      "4,003",
+      ""
+     ]
+    },
+    {
+     "label": "Capital spending (property, plant and equipment)",
+     "note": "Plus capitalised development costs (EUR 3.6bn in 2025)",
+     "values": [
+      "4,579",
+      "3,481",
+      "3,745",
+      "4,039",
+      "5,482",
+      ""
+     ]
+    },
+    {
+     "label": "= Free cash flow of the industrial business (reported)",
+     "note": "Mercedes' IFRS-based measure for the car and van business: operating cash flow minus investments, after tax and interest. 2026 guidance: slightly below 2025; consensus EUR 4,255m",
+     "strong": true,
+     "values": [
+      "7,880",
+      "8,128",
+      "11,316",
+      "9,152",
+      "5,414",
+      "2,959 (H1 2026)"
+     ]
+    },
+    {
+     "label": "Free cash flow, adjusted for one-offs",
+     "values": [
+      "10,125",
+      "9,294",
+      "n/a",
+      "9,421",
+      "5,856",
+      "4,116 (H1 2026)"
+     ]
+    },
+    {
+     "label": "Cash conversion (industrial free cash flow ÷ adjusted EBIT)",
+     "values": [
+      "46%",
+      "39%",
+      "57%",
+      "67%",
+      "66%",
+      "55% (average)"
+     ]
+    },
+    {
+     "label": "Lease payments / cash paid for acquisitions",
+     "note": "Not found separately; acquisitions have been small",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      ""
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Xetra close 23 Oct 2026 (stockanalysis.com). Market value EUR 37.5bn",
+    "value": "EUR 40.74"
+   },
+   {
+    "label": "2027 EPS forecast (excl. one-offs)",
+    "note": "stockanalysis.com adjusted consensus; MarketScreener: EUR 6.37. 2026E: EUR 5.46",
+    "value": "EUR 6.57"
+   },
+   {
+    "label": "Forward multiple",
+    "note": "Average forward P/E at end-2023/24/25 (6.1, 7.6, 11.0). Not adjusted: expected growth is higher than what followed those year-ends, but we do not pay more (see step 2)",
+    "value": "8.2 × earnings"
+   },
+   {
+    "label": "Shares",
+    "note": "After buybacks (stockanalysis.com, MarketScreener)",
+    "value": "919.6 million"
+   },
+   {
+    "label": "Net industrial liquidity",
+    "note": "30 Jun 2026 (Q2 report); EUR 32.2bn at end-2025",
+    "value": "EUR 30.4bn"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.34% German 10-year Bund yield (23 Oct 2026) + beta 0.8 × 5.5%",
+    "value": "7.7%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.75 (stockanalysis.com)",
+    "value": "0.8"
+   },
+   {
+    "label": "P/E today",
+    "note": "40.74 ÷ 6.57; 7.5 on 2026E",
+    "value": "6.2 on 2027E"
+   }
+  ],
+  "market": "Germany",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how the market compares German carmakers)",
+   "why": "P/E is the share price divided by earnings per share (EPS), the profit for each share. For carmakers it is the measure investors and the press use most: a report on RBC's target cut (ad-hoc-news, October 2026) set Mercedes' P/E of 7.9 against BMW's 5.5 and Volkswagen's 6.6, and broker target cuts this autumn came straight from lower EPS forecasts (UBS cut its EPS estimates before cutting its target). We take the P/E Mercedes has traded at on the next year's earnings, check it against the expected growth, apply it to the 2027 forecast, and bring the 12-month price back to today.",
+   "whyNot": "Our plan said EV/EBIT on the car business, but it does not work well for Mercedes today. Enterprise value (EV) is the market value of the shares plus debt, minus cash. Mercedes holds EUR 30.4bn of net cash in its car and van business, almost as much as its whole EUR 37.5bn market value, so the market values the entire operating business (cars, vans and the finance arm) at only about EUR 7bn, under one year's operating profit. A multiple near 1 swings wildly with small changes in cash, so we use it only as a check. The cash-flow model (DCF) is also only a check, because it depends on how long Mercedes can keep free cash flow at EUR 4–5bn a year. We do not use a 'mid-cycle' profit because part of the fall (China, Chinese competition) looks structural, not just cyclical."
+  },
+  "price": 40.74,
+  "priceDate": "close 23 Oct 2026",
+  "rangeHigh": 56.1,
+  "rangeLow": 43.9,
+  "reasoning": [
+   "Mercedes' record is poor lately: EPS excluding one-offs fell from EUR 13.69 (2023) to 7.10 (2025), the Cars margin from 14.6% (2022) to 5.0%, and the 2024 margin guidance was missed. Cash generation has held up better: industrial free cash flow was still EUR 5.4bn in 2025, and the car business holds EUR 30.4bn of net cash.",
+   "Analysts expect EPS to rebound about 20% in 2027 and 14% in 2028, mainly from cost cuts. That is better than the falls that followed recent year-ends, but forecasts keep being cut and peers with more growth trade lower, so we keep Mercedes' own 8.2 times average rather than paying more.",
+   "That gives EUR 53.9 in a year, or EUR 50 today. The EV/EBIT check gives EUR 53.1 and the cash-flow check far more (EUR 121), while peers' lower multiples give EUR 29.9; analysts' average target is worth EUR 49.4 today, almost the same as ours.",
+   "Fair value EUR 50 (range 43.9–56.1). At EUR 40.74 the share is 19% below our value: it looks undervalued, provided the 2027 profit recovery arrives; the market is pricing it as if it will not."
+  ],
+  "report": {
+   "date": "Q3 report · Wednesday 28 October 2026",
+   "dateIso": "2026-10-28",
+   "extra": [
+    {
+     "plain": "In our P/E formula net cash works indirectly: it earns interest (EUR 550m in 2025) and pays for buybacks, both of which lift EPS. In the EV/EBIT check it counts directly: each EUR 1bn more or less net industrial liquidity changes that value by about EUR 1.0 a share (1,000 ÷ 919.6 ÷ 1.0774). Net industrial liquidity fell from EUR 32.2bn to 30.4bn in H1 2026 after the dividend and buybacks; the expected Q3 free cash flow of only EUR 0.56bn would add little, while buybacks continue. The finance arm (Financial Services) earned an adjusted EUR 905m in H1 2026, up 57%, and its guidance was raised to a 12–14% return on equity; extra provisions for UK car-finance commissions (EUR 422m in 2025) would hit EPS directly.",
+     "title": "What if net cash or the finance arm changes?"
+    }
+   ],
+   "plain": "Our fair value = multiple × 2027 EPS ÷ 1.077. So the report can change it in two ways: through analysts' forecast for 2027 earnings, and through the multiple, if the report changes how fast Mercedes looks likely to grow. A big share-price move on the day is not the same as a change in value.",
+   "scenarios": [
+    {
+     "calc": "8.2 × 6.90 ÷ 1.0774 = 52.5 · 9.2 × 6.90 ÷ 1.0774 = 58.9",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "EUR 52.5–58.9",
+     "what": "Adjusted EBIT clearly above the EUR 1,575m consensus (Q3 2025: 2,099m), a Cars margin well above the expected 2.6% (Q3 2025: 4.8%), the 3–5% Cars guidance confirmed and industrial free cash flow above the EUR 557m expected. Two separate effects: (1) analysts raise their 2027 EPS forecast by about 5%, from EUR 6.57 to 6.90, which gives EUR 52.5 at the unchanged 8.2 times; (2) if cost savings show that EPS can keep growing 15–20% a year beyond 2027 (analysts now expect +20% in 2027 and +14% in 2028), the multiple can move up 1 point to 9.2 times: EUR 58.9."
+    },
+    {
+     "calc": "8.2 × 6.57 ÷ 1.0774 = 50.0",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "EUR 50.0",
+     "what": "Revenue around EUR 30.9bn, adjusted EBIT around EUR 1.58bn and EPS around EUR 1.27 (Visible Alpha consensus via Dow Jones), Cars margin near 2.6% and the full-year guidance kept. The 2027 forecast and the 8.2 times multiple stay, so our value does not change."
+    },
+    {
+     "calc": "8.2 × 6.24 ÷ 1.0774 = 47.5 · 7.2 × 6.24 ÷ 1.0774 = 41.7",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "EUR 41.7–47.5",
+     "what": "Cars margin below 2.6%, the Cars guidance cut to 2–4% as UBS fears, more restructuring provisions (Jefferies does not rule them out) and China sales still falling. Two separate effects: (1) analysts cut their 2027 EPS forecast by about 5%, from EUR 6.57 to 6.24, which gives EUR 47.5 at 8.2 times; (2) if the recovery then looks delayed, with growth well below the 20% now expected for 2027, the multiple drops 1 point to 7.2 times (close to end-2024's 7.6): EUR 41.7, about today's price."
+    }
+   ],
+   "title": "How the Q3 report could change our fair value",
+   "watch": [
+    "Cars adjusted return on sales: Q3 2025 was 4.8% (adjusted EBIT EUR 1,139m); consensus for Q3 2026 is about 2.6% (EUR 583m). Q2 2026 was 4.0%.",
+    "Group adjusted EBIT: Q3 2025 EUR 2,099m; consensus EUR 1,575m (−25%). Reported EBIT is expected to double (EUR 1,531m vs 750m) because Q3 2025 had large one-off costs.",
+    "Guidance: whether the Cars margin range of 3–5% for 2026 is kept or cut (UBS: possibly to 2–4%), and any first comments on 2027.",
+    "Industrial free cash flow: Q3 2025 EUR 1,367m; consensus EUR 557m. Vans margin: Q3 2025 10.2%, consensus 9.1%.",
+    "China: car sales there fell 31% to 86,800 in Q3 2026; watch pricing and any extra restructuring costs in China."
+   ]
+  },
+  "risks": [
+   "Forecast risk: if 2027 EPS comes in 10% lower than EUR 6.57 (for example if China keeps falling or price competition eats the cost savings), the fair value falls to about EUR 45.0, still above today's price. Brokers such as UBS and Jefferies cut their forecasts again this month, so a bigger miss is possible.",
+   "Multiple risk: at the 8.1 times implied by analysts' average target the value is about EUR 49.4; at today's 6.2 times it is about EUR 37.8, slightly below the price. If investors went back to the 11.0 times of end-2025, about EUR 67.1. Each 1 point of multiple moves the value by about EUR 6.1.",
+   "China and competition: car sales in China fell 19% in 2025 (to 552,000) and 31% in Q3 2026; Bernstein, UBS and Deutsche Bank all name Chinese carmakers as the main pressure. US tariffs cost about 1.1 points of Cars margin in 2025 (5.0% vs 6.1% without tariffs).",
+   "Upside: cash and new models. The EUR 30.4bn net cash is about EUR 33 a share, and buybacks (EUR 1.8bn in H1 2026) keep reducing the share count. The new electric CLA and GLC are sold out in Europe for 2026, and if the Cars margin reached the low end of the 8–10% goal, EPS could be well above the 2027 forecast."
+  ],
+  "sector": "Cars (automaker)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in EUR per share for different forward P/E multiples (rows) and for 2027 EPS coming in higher or lower than forecast (columns). Base case: 8.2 × EUR 6.57, discounted at 7.7%.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "EUR 6.57",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "10.2",
+    "9.2",
+    "8.2",
+    "7.2",
+    "6.2"
+   ],
+   "values": [
+    [
+     56,
+     59.1,
+     62.2,
+     65.3,
+     68.4
+    ],
+    [
+     50.5,
+     53.3,
+     56.1,
+     58.9,
+     61.7
+    ],
+    [
+     45,
+     47.5,
+     50,
+     52.5,
+     55
+    ],
+    [
+     39.5,
+     41.7,
+     43.9,
+     46.1,
+     48.3
+    ],
+    [
+     34,
+     35.9,
+     37.8,
+     39.7,
+     41.6
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Mercedes-Benz Group interim report Q2 2026 (PDF)",
+    "url": "https://group.mercedes-benz.com/documents/investors/reports/interim-reports/q2/mercedes-benz-interim-report-q2-2026.pdf"
+   },
+   {
+    "title": "Mercedes-Benz fact sheet Q4/FY 2025 (PDF)",
+    "url": "https://group.mercedes-benz.com/dokumente/investoren/berichte/geschaeftsberichte/mercedes-benz/mercedes-benz-factsheet-q4-2025.pdf"
+   },
+   {
+    "title": "Mercedes-Benz annual results 2025 presentation (PDF)",
+    "url": "https://group.mercedes-benz.com/dokumente/investoren/praesentationen/mercedes-benz-ir-capitalmarketpresentation-fy-2025.pdf"
+   },
+   {
+    "title": "Mercedes-Benz 2025 results and medium-term targets (Business Wire, 11 Feb 2026)",
+    "url": "https://www.businesswire.com/news/home/20260211258317/en/Mercedes-Benz-Group-AG-Solid-Cash-Generation-and-Shareholder-Returns-in-2025-as-Product-Launch-Campaign-Gains-Traction"
+   },
+   {
+    "title": "Mercedes-Benz Group 2023 results (Automotive World)",
+    "url": "https://www.automotiveworld.com/news-releases/mercedes-benz-group-2023-results-cash-generation-at-work"
+   },
+   {
+    "title": "Mercedes-Benz full-year results 2022 (Business Wire)",
+    "url": "https://www.businesswire.com/news/home/20230216005838/en/Mercedes-Benz-Delivers-Strong-Full-Year-Results-In-2022"
+   },
+   {
+    "title": "Q2 2026 results vs consensus (Investing.com, 28 Jul 2026)",
+    "url": "https://www.investing.com/news/earnings/mercedesbenz-lowers-fy-cars-sales-outlook-as-china-demand-falters-4815463"
+   },
+   {
+    "title": "Publication dates of 2026 quarterly reports (EQS, 14 Jan 2026)",
+    "url": "https://www.eqs-news.com/news/financial-reports/mercedes-benz-group-ag-preliminary-announcement-of-the-publication-of-quarterly-reports-and-quarterly-interim-statements/94d2aded-4455-4ef9-93b4-059d9fe720a9"
+   },
+   {
+    "title": "Mercedes-Benz investor relations (Q3 results on 28 October 2026)",
+    "url": "https://group.mercedes-benz.com/investors/"
+   },
+   {
+    "title": "Q3 2026 and full-year consensus, UBS view on guidance (Dow Jones via MarketScreener, 23 Oct 2026)",
+    "url": "https://de.marketscreener.com/boerse-nachrichten/ausblick-mercedes-benz-mit-der-naechsten-gewinnwarnung-ce785cdfdb8cf02d"
+   },
+   {
+    "title": "Margin target cut? EV sales and consensus (Börse Express, 24 Oct 2026)",
+    "url": "https://www.boerse-express.com/news/articles/mercedes-benz-aktie-margenziel-kappung-955854"
+   },
+   {
+    "title": "Mercedes-Benz financial forecasts 2026–2028 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/MERCEDES-BENZ-GROUP-AG-436541/finances/"
+   },
+   {
+    "title": "Mercedes-Benz valuation history: year-end prices, shares, market value (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/MERCEDES-BENZ-GROUP-AG-436541/valuation/"
+   },
+   {
+    "title": "Mercedes-Benz analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/MBG/forecast/"
+   },
+   {
+    "title": "Mercedes-Benz statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/MBG/statistics/"
+   },
+   {
+    "title": "Mercedes-Benz price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/MBG/history/"
+   },
+   {
+    "title": "Mercedes-Benz cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/MBG/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Mercedes-Benz ratios and market value (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/MBG/financials/ratios/"
+   },
+   {
+    "title": "Analyst price targets (finanzen.net)",
+    "url": "https://www.finanzen.net/kursziele/mercedes-benz"
+   },
+   {
+    "title": "RBC cuts target to EUR 44; P/E vs BMW and VW (ad-hoc-news, 16 Oct 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/mercedes-aktie-rbc-senkt-ziel-fuer-die-mercedes-aktie-von-54-00-auf-44-00-euro/70342127"
+   },
+   {
+    "title": "Jefferies cuts target to EUR 46 (finanznachrichten/dpa-AFX, 12 Oct 2026)",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69812716-jefferies-stuft-mercedes-benz-group-auf-buy-322.htm"
+   },
+   {
+    "title": "UBS cuts target to EUR 45 and EPS estimates (finanzen.ch, 9 Oct 2026)",
+    "url": "https://www.finanzen.ch/analyse/mercedes-benz-group-ex-daimler-neutral-1110100"
+   },
+   {
+    "title": "HSBC, UBS and Exane cut targets (goldesel, 9 Oct 2026)",
+    "url": "https://goldesel.de/aktien/news/mercedes-benz-aktie-ubs-und-exane-senken-kursziele-werkstreit-belastet"
+   },
+   {
+    "title": "Analysts cut targets before the Q3 report; China sales −31% (Börse Express, 13 Oct 2026)",
+    "url": "https://www.boerse-express.com/news/articles/mercedes-benz-aktie-analysten-senken-kursziele-vor-quartalsbericht-952806"
+   },
+   {
+    "title": "Deutsche Bank cuts target to EUR 70 (ad-hoc-news, 5 Oct 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-bank-cuts-target-for-mercedes-benz-stock-to-eur-70-00/70231485"
+   },
+   {
+    "title": "Bernstein: EUR 56 target, Chinese competition (ad-hoc-news, 25 Sep 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/mercedes-benz-stock-gets-a-eur-56-target-from-bernstein/70183698"
+   },
+   {
+    "title": "Is cheap valuation enough? Citi and Jefferies on cost cuts (Investing.com, 9 Oct 2026)",
+    "url": "https://www.investing.com/news/stock-market-news/mercedesbenz-investment-outlook-is-cheap-valuation-enough-to-buy-the-stock-93CH-4941084"
+   },
+   {
+    "title": "Germany 10-year Bund yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/germany/government-bond-yield"
+   },
+   {
+    "title": "BMW statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/BMW/statistics/"
+   },
+   {
+    "title": "BMW forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/BMW/forecast/"
+   },
+   {
+    "title": "Volkswagen statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/VOW3/statistics/"
+   },
+   {
+    "title": "Volkswagen forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/VOW3/forecast/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "stockanalysis.com consensus for 2027 (18 analysts)",
+    "formula": "2027 EPS = analyst consensus (excl. one-offs)",
+    "plain": "Earnings per share (EPS) is the yearly profit for each share. Excluding one-off costs, Mercedes earned EUR 13.69 a share in 2023 but only EUR 7.10 in 2025, as car margins fell from 12.6% to 5.0% (lower sales in China, price pressure, US tariffs). Analysts expect EUR 5.46 in 2026 and EUR 6.57 in 2027 (+20%), as cost cuts and new models such as the electric CLA and GLC start to pay off.",
+    "result": "EUR 6.57",
+    "title": "What will Mercedes-Benz earn next year?"
+   },
+   {
+    "calc": "(6.09 + 7.58 + 11.00) ÷ 3 = 8.22",
+    "formula": "Normal multiple = average forward P/E at end-2023, 2024 and 2025",
+    "plain": "At the last three year-ends Mercedes traded at 6.1, 7.6 and 11.0 times the next year's earnings (average 8.2). What followed was a fall in EPS each time: −25%, −31% and about −23% (2026E). The multiples rose because profits fell faster than the share price. Now analysts expect EPS to grow about 20% in 2027 and 14% in 2028 (stockanalysis.com and MarketScreener consensus), with revenue up only 2–3% a year, so the growth must come from cost savings (Jefferies says 80% of the fixed-cost target is done; Citi points to about EUR 4bn of cost cuts). That is clearly better than the falls after the reference years, which would allow a higher multiple, but we do not raise it: the rebound starts from a low base, brokers (UBS, Jefferies, RBC) have just cut their forecasts, and peers with similar or higher expected growth trade lower (BMW 6.6 times 2027 EPS with +29% growth, Volkswagen 3.1 times with +22%). So we keep the 8.2 average. We leave out 2021–2022 (near-zero interest rates, and 2021 includes the Daimler Truck spin-off).",
+    "result": "8.2 × earnings",
+    "title": "What should investors pay for next year's profit, given the growth?"
+   },
+   {
+    "calc": "8.2 × 6.57",
+    "formula": "multiple × 2027 EPS",
+    "plain": "Multiply next year's earnings per share by the multiple investors normally pay.",
+    "result": "EUR 53.9",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "53.87 ÷ 1.0774",
+    "formula": "Fair value = price in 12 months ÷ (1 + 7.7%)",
+    "plain": "Shareholders want a return for waiting a year: 3.34% German bond yield + 0.8 × 5.5% = 7.7%. (Like analysts' targets, this leaves out the dividend, EUR 3.50 last year.)",
+    "result": "EUR 50",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "50.0 ÷ 40.74 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 23% above today's price, more than the 10% band, so Mercedes looks undervalued on this method. Today investors pay only 6.2 times 2027 earnings, below the 7.6 and 11.0 of the last two year-ends and about the same as end-2023's 6.1. The share has fallen 32% since the end of 2025 (EUR 60.07 to 40.74), more than the 2026 EPS forecast (−23%): the market doubts that the 2027 recovery will happen.",
+    "result": "+23%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Mercedes-Benz the way the market and most analysts compare carmakers: the price-to-earnings ratio (P/E) on next year's profit. Profit per share fell in 2024 and 2025 and is expected to fall again in 2026, but analysts expect it to recover about 20% in 2027 and 14% in 2028, mainly through cost cuts. We keep Mercedes' own average of 8.2 times next year's earnings; on 2027 earnings of EUR 6.57 a share that gives about EUR 53.9 in a year, or EUR 50 today, 23% above today's EUR 40.74.",
+  "targets": {
+   "items": [
+    "Medium-term goal: an adjusted return on sales of 8–10% in Cars (5.0% in 2025), helped by 10% lower fixed costs from 2024 to 2027, 10% lower production cost per car from 2027, and more than 40 new models by 2027. Mercedes also aims for about 2 million car sales (1.8 million in 2025).",
+    "2026 guidance: Cars margin 3–5% (H1: 4.0%), Vans 8–10%, group revenue slightly below 2025, group EBIT 'significantly above' 2025 (which included EUR 2.4bn of one-off costs) and industrial free cash flow slightly below 2025. UBS thinks the Cars range could be cut by 1 point to 2–4% on 28 October.",
+    "Track record: in 2023 the Cars margin of 12.6% was inside the 12–14% guidance, but in 2024 it reached only 8.1% against initial guidance of 10–12%, and in 2025 it was 5.0%, inside a 4–6% range that was already far lower."
+   ],
+   "title": "Does Mercedes-Benz have a growth goal we can use?",
+   "verdict": "We cannot use the 8–10% margin goal directly: it has no date, and margins have fallen for three years. Analysts expect EPS to rise about 20% in 2027 (EUR 5.46 to 6.57) and 14% in 2028, mostly from cost savings and new models rather than more sales (revenue is expected to grow only about 2–3% a year). We use the analysts' 2027 figure, but treat it as uncertain: it has been cut repeatedly this autumn."
+  },
+  "ticker": "MBG",
+  "verdict": "Looks undervalued",
+  "whatTheyDo": "Mercedes-Benz builds premium cars (from the CLA to the S-Class, G-Class, AMG and Maybach) and vans, and lends and leases them to customers through its own bank, Mercedes-Benz Financial Services. It sold 1.8 million cars and 359,000 vans in 2025, with revenue of EUR 132 billion."
+ },
  {
   "company": "Alfa Laval",
   "consensus": {
