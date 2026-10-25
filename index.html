@@ -1378,11 +1378,651 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Semiconductors (analog and mixed-signal chips)",
   "teaser": "Analog Devices just reported a record quarter: how much should investors pay for chip profits that rise and fall with the industrial and car cycles?",
   "ticker": "ADI"
+ },
+ {
+  "company": "Dell Technologies",
+  "date": "2026-11-21",
+  "market": "United States",
+  "method": "Forward P/E",
+  "reportDate": "2026-11-24",
+  "reportDateStatus": "estimated",
+  "sector": "Computer hardware (PCs and AI servers)",
+  "teaser": "Dell sells PCs and the servers behind AI data centres: what is a fair price for earnings that swing with tech spending?",
+  "ticker": "DELL"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Waste Management",
+  "consensus": {
+   "analysts": 28,
+   "asOf": "23 Oct 2026",
+   "explain": "The average target of $253.52 is a price in 12 months; discounted one year at 7.2% it is worth about $236.5 today, 5% above our $225. On the same 2027 EBITDA forecast the target implies about 14.2 times, versus our 13.6 and today's 13.5. So the gap comes from the multiple, not the forecast: many targets were set in July, before the October cuts, and some brokers (like Bernstein) expect WM to earn a slightly higher multiple as its new plants and Stericycle savings show up.",
+   "high": 277,
+   "low": 220,
+   "method": "Analysts mostly put a multiple on WM's EBITDA for the next twelve months. Bernstein (5 Jan 2026, target $260) said WM trades at about 13.5 times EV/next-twelve-months EBITDA and could re-rate to 14.5 times if the Stericycle integration and its gas and recycling plants deliver; Oppenheimer (Dec 2025, $263) said WM's relative valuation was near five-year lows. In October several brokers cut targets before the Q3 report (JPMorgan $270 → $235 on weak volumes and cost inflation, Morgan Stanley $230 → $220, BMO $240 → $232). A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Buy (16 strong buy, 3 buy, 9 hold, 0 sell)",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 253.52,
+   "targetToday": 236.5
+  },
+  "crossCheck": {
+   "calc": "WACC = (95,685 × 7.2% + 22,799 × 3.07%) ÷ 118,484 = 6.4%; solve DCF(r) = 239.38",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "Free cash flow to the company = operating cash flow + interest paid × (1 − 22.4% tax) − capital spending (operating lease costs are already in operating cash flow; finance-lease repayments are small and not shown separately). It was only 37–47% of EBITDA in 2022–2025, because of $0.6–1.0bn a year of extra spending on gas and recycling plants; WM's 2026 guidance implies about 54%. We use 52% of EBITDA and also subtract $250m a year for small acquisitions (WM's 2021–25 average without Stericycle). EBITDA grows 6.9%, 5.8% and 5.5% in the first three years (consensus and slightly below WM's targets), 5% and 4.5% in years 4–5, then fades to 2.25% by year 10. Discount rate (WACC): 7.2% cost of equity and 3.1% after-tax cost of debt (4.0% interest: $927m paid in 2025 on about $23.4bn of average debt, less 22.4% tax), at market-value weights of $95.7bn shares and $22.8bn net debt: 6.4%. That gives about $246 a share. Today's $239.38 needs a discount rate of about 6.5%. So the cash supports the multiple: the price is close to what the cash flows are worth, provided the free cash flow really jumps now that the plant spending is ending.",
+   "result": "≈ $246 at 6.4%; today's price needs ≈ 6.5%"
+  },
+  "crossChecks": [
+   {
+    "calc": "26.2 × 9.09 ÷ 1.072",
+    "name": "Check: forward P/E on its own history",
+    "note": "Today the P/E on 2027 is 26.3, the same as the average. EPS is expected to grow faster than EBITDA in 2027 (+12% vs +7%) because WM buys back shares and its plant spending (and so depreciation growth) slows.",
+    "plain": "At the 2023–25 year-ends WM traded at 24.8, 26.9 and 27.0 times the next year's adjusted earnings per share (average 26.2). On 2027 EPS of $9.09 that gives $238 in a year, or:",
+    "result": "≈ $222"
+   },
+   {
+    "calc": "(17.31 × 7,770 − 22,800) ÷ 399.7",
+    "name": "Check: at peers' multiple",
+    "note": "WM has traded below its peers for years: Bernstein calls it the cheapest stock in its waste coverage, partly because of worries about Stericycle, a lower-margin business (adjusted margin 19% vs 38.6% in collection and disposal). Its expected 2027 EPS growth (+12%) is similar to Republic's (+11%) and Waste Connections' (+10%), so the discount could narrow if Stericycle improves, but we do not assume it. Without small, fast-growing Casella the peer average is 17.0 (≈ $272).",
+    "plain": "On stockanalysis.com (trailing EV/EBITDA, data 22–23 Oct 2026), Republic Services trades at 16.4, Waste Connections at 17.5 and Casella at 18.0; average 17.3. WM is at 15.2 on the same basis. At the peer average, on WM's $7,770m trailing EBITDA minus $22,800m net debt:",
+    "result": "≈ $280"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-25",
+  "dateLabel": "Sunday 25 October 2026",
+  "exchange": "NYSE",
+  "fairValue": 225,
+  "history": {
+   "caption": "USD million unless stated. From WM's full-year earnings releases (2022, 2023, 2025 releases include the year before), stockanalysis.com (cash flow, interest paid, market value, shares) and MarketScreener (year-end prices 2023–25 and 2026–27 forecasts). Adjusted operating EBITDA = operating profit before depreciation, amortisation and one-offs, as WM reports it. From 2026 WM moved landfill 'accretion' costs (about $36m a quarter) out of EBITDA, so 2026 figures are about $145m a year higher than the old basis. Year-end price 2021–22 = market value ÷ shares. Net debt = WM's reported debt (which includes finance leases but not operating leases) minus cash. Forward = year-end EV ÷ the NEXT year's adjusted EBITDA; for 2025 we use the 2026 consensus ($8,206m). Last column: latest (price 23 Oct 2026, net debt 30 Jun 2026, 12 months to June) or the forecast marked.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest / 2027E"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "Stericycle (now WM Healthcare Solutions) bought in Nov 2024 for about $7.5bn",
+     "values": [
+      "17,931",
+      "19,698",
+      "20,426",
+      "22,063",
+      "25,204",
+      "27,856 (2027E)"
+     ]
+    },
+    {
+     "label": "Adjusted operating EBITDA",
+     "values": [
+      "5,032",
+      "5,512",
+      "5,899",
+      "6,563",
+      "7,582",
+      "8,772 (2027E)"
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA margin",
+     "note": "2026 guidance: 31.0–31.2% (new basis)",
+     "values": [
+      "28.1%",
+      "28.0%",
+      "28.9%",
+      "29.7%",
+      "30.1%",
+      "30.4% (H1 2026)"
+     ]
+    },
+    {
+     "label": "EPS, adjusted (excl. one-offs), $",
+     "values": [
+      "4.84",
+      "5.59",
+      "6.19",
+      "7.23",
+      "7.50",
+      "9.09 (2027E)"
+     ]
+    },
+    {
+     "label": "Share price at year-end, $",
+     "values": [
+      "167.8",
+      "157.9",
+      "179.10",
+      "201.79",
+      "219.71",
+      "239.38"
+     ]
+    },
+    {
+     "label": "Shares outstanding, million",
+     "values": [
+      "416.1",
+      "407.9",
+      "401.5",
+      "401.5",
+      "402.9",
+      "399.7"
+     ]
+    },
+    {
+     "label": "Net debt (excl. operating leases)",
+     "note": "Rose with the Stericycle purchase in 2024",
+     "values": [
+      "13,287",
+      "14,633",
+      "15,771",
+      "23,486",
+      "22,706",
+      "22,799 (Jun)"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing, adjusted EPS)",
+     "values": [
+      "34.7",
+      "28.2",
+      "28.9",
+      "27.9",
+      "29.3",
+      "30.9 (12 months to June)"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ next year's adjusted EPS (2025: ÷ 2026E $8.14). Average 2023–25: 26.2",
+     "values": [
+      "30.0",
+      "25.5",
+      "24.8",
+      "26.9",
+      "27.0",
+      "26.3 (on 2027E)"
+     ]
+    },
+    {
+     "label": "EV/EBITDA at year-end (trailing)",
+     "note": "2024 is inflated: the Stericycle debt is in EV but only two months of its profit are in EBITDA",
+     "values": [
+      "16.5",
+      "14.3",
+      "14.9",
+      "15.9",
+      "14.7",
+      "15.2 (12 months to June, stockanalysis)"
+     ]
+    },
+    {
+     "label": "Forward EV/EBITDA at year-end",
+     "note": "The multiple analysts use. Average 2023–25: 13.6, the multiple we use (see step 2)",
+     "strong": true,
+     "values": [
+      "15.1",
+      "13.4",
+      "13.4",
+      "13.8",
+      "13.6",
+      "13.5 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Growth in adjusted EBITDA the following year",
+     "note": "What investors got for each year-end multiple. 2024 includes two months and 2025 a full year of Stericycle (bought with debt that was already in the year-end EV). 2026: +8.2% as reported, about +6% on a like-for-like basis",
+     "strong": true,
+     "values": [
+      "+9.5%",
+      "+7.0%",
+      "+11.3%",
+      "+15.5%",
+      "+6% (2026E)",
+      "+7% (2027E), +6% (2028E)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities",
+     "note": "US GAAP line, after tax and after interest paid; operating lease costs are already deducted here",
+     "values": [
+      "4,338",
+      "4,536",
+      "4,719",
+      "5,390",
+      "6,043",
+      "6,517 (12 months to June)"
+     ]
+    },
+    {
+     "label": "+ Interest paid × (1 − 22.4% tax)",
+     "note": "Cash interest paid: 387, 348, 447, 530, 927",
+     "values": [
+      "300",
+      "270",
+      "347",
+      "411",
+      "719",
+      ""
+     ]
+    },
+    {
+     "label": "− Capital spending",
+     "note": "Includes 'sustainability growth' spending on gas and recycling plants: 239, 561, 764, 950, 633 (about 250 in 2026)",
+     "values": [
+      "1,904",
+      "2,587",
+      "2,895",
+      "3,231",
+      "3,227",
+      "2,944 (12 months to June)"
+     ]
+    },
+    {
+     "label": "= Free cash flow to the company",
+     "note": "Finance-lease repayments are not shown separately (small); they are left out",
+     "strong": true,
+     "values": [
+      "2,734",
+      "2,219",
+      "2,171",
+      "2,570",
+      "3,535",
+      "4,412 (2026 guidance)"
+     ]
+    },
+    {
+     "label": "Cash conversion (free cash flow ÷ adjusted EBITDA)",
+     "values": [
+      "54%",
+      "40%",
+      "37%",
+      "39%",
+      "47%",
+      "54% (2026 guidance)"
+     ]
+    },
+    {
+     "label": "Cash paid for acquisitions",
+     "values": [
+      "75",
+      "377",
+      "170",
+      "7,488",
+      "395",
+      "85 (H1 2026)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close 23 Oct 2026 (stockanalysis.com). Up 15% since 5 Oct ($206.66), including +4.2% on 22 Oct when rival Waste Connections beat forecasts. Market value $95.7bn",
+    "value": "$239.38"
+   },
+   {
+    "label": "2027 adjusted operating EBITDA forecast",
+    "note": "MarketScreener consensus (2026E: $8,206m, in line with WM's guidance)",
+    "value": "$8,772m"
+   },
+   {
+    "label": "Forward multiple",
+    "note": "Average at end-2023/24/25 (13.4, 13.8, 13.6). Not adjusted: expected growth (6–7%) is similar to what came after those year-ends on a like-for-like basis",
+    "value": "13.6 × EBITDA"
+   },
+   {
+    "label": "Net debt",
+    "note": "30 Jun 2026: debt $23,356m (incl. finance leases) − cash $557m. Operating leases left out, as US EBITDA is already after their cost",
+    "value": "$22,799m"
+   },
+   {
+    "label": "Shares",
+    "note": "stockanalysis.com, latest filing (WM bought back $1.0bn of shares in H1 2026)",
+    "value": "399.7 million"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.00% US 10-year Treasury (23 Oct 2026, Trading Economics) + beta 0.4 × 5.5%",
+    "value": "7.2%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.43 (stockanalysis.com): WM's share moves much less than the market",
+    "value": "0.4"
+   },
+   {
+    "label": "EV/EBITDA today",
+    "note": "(95,685 + 22,799) ÷ 8,772; 14.4 on 2026E",
+    "value": "13.5 on 2027E"
+   },
+   {
+    "label": "EPS forecasts",
+    "note": "stockanalysis.com consensus, adjusted; P/E on 2027: 26.3",
+    "value": "$8.14 (2026) / $9.09 (2027)"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward EV/EBITDA on next year's operating profit before depreciation (how analysts value waste companies)",
+   "why": "EV (enterprise value) is the value of all shares plus net debt. EBITDA is operating profit before depreciation and amortisation, so before the large yearly charges for trucks and for filling up landfills. Waste companies own very long-lived assets and carry a lot of debt (WM borrowed about $7.5bn to buy Stericycle), so comparing the whole company with its EBITDA puts years with different debt levels on the same footing. Analysts quote WM this way: Bernstein uses EV/next-twelve-months EBITDA (13.5 times, with 14.5 times as its upside case). We take the forward EV/EBITDA WM has traded at, check it against expected growth, apply it to 2027 forecast EBITDA, subtract net debt, and bring the 12-month price back to today.",
+   "whyNot": "The P/E (price ÷ earnings per share) is only a check, because WM's profit after interest is hit by the higher interest bill since the Stericycle deal and by large one-off costs (in Q3 2025, a $252m difference between reported and adjusted EBITDA). The cash-flow model (DCF) is only a check too: free cash flow was held down in 2022–2025 by a temporary $0.6–1.0bn a year of extra spending on gas and recycling plants, which is now ending. We use the last three year-ends (2023–2025) and leave out 2021, when interest rates were near zero."
+  },
+  "price": 239.38,
+  "priceDate": "close 23 Oct 2026",
+  "rangeHigh": 246,
+  "rangeLow": 205,
+  "reasoning": [
+   "WM has a steady record: adjusted EBITDA grew every year, from $5.0bn (2021) to $7.6bn (2025), the margin rose from 28.1% to 30.1%, and it met its guidance in 2023 and 2024. Cash flow was held back by heavy spending on gas and recycling plants, but that spending is now ending, and WM expects free cash flow to rise about 29% in 2026.",
+   "Analysts expect EBITDA to grow about 7% in 2027 and 6% in 2028: price rises of 5–6% a year, minus slightly falling volumes, plus Stericycle savings. That is about the underlying growth investors got after the last three year-ends, so we keep WM's own average of 13.6 times forward EV/EBITDA.",
+   "That gives $241 in a year, or $225 today. The P/E check gives $222 and the cash-flow check $246; analysts' average target is worth $236.5 today, as many brokers pay about 14 times. Peers trade at higher multiples, which is a possible upside if Stericycle improves.",
+   "Fair value $225 (range $205–246). At $239.38 the share is 6% above our value: roughly fairly priced, with the market already paying WM's usual multiple for next year's profit."
+  ],
+  "report": {
+   "date": "Q3 report · Tuesday 27 October 2026",
+   "dateIso": "2026-10-27",
+   "extra": [
+    {
+     "plain": "Net debt is subtracted directly in our formula: each $1bn less net debt adds about $2.3 a share (1,000 ÷ 399.7 ÷ 1.072). Net debt stayed about flat ($22.7bn at the end of 2025, $22.8bn in June) because WM spent $1.8bn on dividends and buybacks in H1; if strong Q3 free cash flow (last year $821m) cut it by about $0.5bn, our value would rise by about $1. Free cash flow does not enter our formula directly, but it is the main thing behind the cash-flow check ($246): if WM confirms about $3.8bn for 2026 (up from $2.9bn in 2025), the cash supports today's price; a cut would weaken that support.",
+     "title": "What if net debt or free cash flow changes?"
+    }
+   ],
+   "plain": "Our fair value = (multiple × 2027 EBITDA − net debt) ÷ shares ÷ 1.072. So the report can change it in two ways: through analysts' forecast for 2027 EBITDA, and through the multiple, if the report changes how fast WM looks likely to grow. WM reports after the US market closes on 27 October; a big share-price move the next day is not the same as a change in value.",
+   "scenarios": [
+    {
+     "calc": "(13.6 × 9,211 − 22,799) ÷ 399.7 ÷ 1.072 = 239 · (14.6 × 9,211 − 22,799) ÷ 399.7 ÷ 1.072 = 261",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "$239–261",
+     "what": "Adjusted EBITDA clearly above the $2,162m consensus (Q3 2025: $1,970m, about $2,006m on the new basis), collection volumes back near zero (Q2: −1.8%), core price still near 6%, Healthcare Solutions margin rising above 19%, and WM confirming it can reach its 2027 targets. Two separate effects: (1) analysts raise their 2027 EBITDA forecast by about 5%, from $8,772m to $9,211m (close to WM's own target range), which gives $239 at the unchanged 13.6 times; (2) if volumes recover so that growth looks like 8–10% a year (analysts now expect about 6–7%), the multiple can move up 1 point to 14.6 times: $261."
+    },
+    {
+     "calc": "(13.6 × 8,772 − 22,799) ÷ 399.7 ÷ 1.072 = 225",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "$225",
+     "what": "Revenue around $6.8bn (MarketScreener consensus $6,815m vs $6,443m last year), adjusted EBITDA around $2.16bn, adjusted EPS around $2.18 (Q3 2025: $1.98), and the 2026 guidance of $8.15–8.25bn EBITDA and $3.75–3.85bn free cash flow confirmed. The 2027 forecast and the 13.6 times multiple stay, so our value does not change."
+    },
+    {
+     "calc": "(13.6 × 8,333 − 22,799) ÷ 399.7 ÷ 1.072 = 211 · (12.6 × 8,333 − 22,799) ÷ 399.7 ÷ 1.072 = 192",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "$192–211",
+     "what": "Adjusted EBITDA below about $2.1bn, volumes falling faster (worse than Q2's −1.8%), and the 2026 EBITDA guidance cut toward or below $8.15bn. Two separate effects: (1) analysts cut their 2027 EBITDA forecast by about 5%, from $8,772m to $8,333m, which gives $211 at 13.6 times; (2) if growth then looks stuck at about 4% a year (price rises eaten by lost volume, like a slowdown case), the multiple drops 1 point to 12.6 times: $192."
+    }
+   ],
+   "title": "How the Q3 report could change our fair value",
+   "watch": [
+    "Adjusted operating EBITDA: Q3 2025 $1,970m (30.6% margin; about $2,006m on the 2026 basis without accretion). Consensus Q3 2026 about $2,162m on revenue of $6,815m (MarketScreener).",
+    "Collection and disposal price and volume: Q3 2025 core price +6.0%, volume +0.2%. In Q2 2026 core price was +5.7% and volume −1.8%.",
+    "Adjusted EPS: $1.98 in Q3 2025; analysts expect about $2.18 (Simply Wall St/Yahoo Finance).",
+    "Healthcare Solutions (Stericycle): Q3 2025 revenue $628m and adjusted EBITDA $110m (17.5% margin); Q2 2026 margin 19.0%.",
+    "Cash flow and guidance: Q3 2025 operating cash flow $1,592m and free cash flow $821m; 2026 guidance $3.75–3.85bn free cash flow and $8.15–8.25bn EBITDA, and any early comments on 2027."
+   ]
+  },
+  "risks": [
+   "Forecast risk: if 2027 EBITDA comes in 10% lower than $8,772m (for example if volumes keep falling, recycled-material or gas prices drop, or Stericycle savings come late), the fair value falls to about $197.",
+   "Multiple risk: at the 14.2 times implied by analysts' average target the value is about $236.5; at today's 13.5 times about $223; at Bernstein's 14.5 times upside case about $244. If the multiple fell to 12.6 times, about $205. Each 1 point of multiple moves the value by about $20.",
+   "Debt and interest rates: WM's net debt is $22.8bn, about 2.8 times 2026 EBITDA. Each $1bn less net debt adds about $2.3 a share; higher long-term rates (the 10-year Treasury is at 5.0%) raise the required return and tend to push the multiple of steady 'bond-like' shares down.",
+   "Upside: if WM's gas plants, recycling and Stericycle savings deliver its own 2027 target ($9.0bn EBITDA at the midpoint, 2.6% above consensus), the value would be about $232 at 13.6 times, and about $253 if the multiple moved to 14.6 times."
+  ],
+  "sector": "Waste collection & recycling",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in USD per share for different forward EV/EBITDA multiples (rows) and for 2027 EBITDA coming in higher or lower than forecast (columns). Base case: 13.6 × $8,772m, minus $22,799m net debt, ÷ 399.7m shares, discounted at 7.2%.",
+   "colLabel": "2027 EBITDA vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "$8,772m",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBITDA",
+   "rows": [
+    "15.6",
+    "14.6",
+    "13.6",
+    "12.6",
+    "11.6"
+   ],
+   "values": [
+    [
+     234,
+     250,
+     266,
+     282,
+     298
+    ],
+    [
+     216,
+     231,
+     246,
+     261,
+     276
+    ],
+    [
+     197,
+     211,
+     225,
+     239,
+     253
+    ],
+    [
+     179,
+     192,
+     205,
+     218,
+     231
+    ],
+    [
+     161,
+     172,
+     184,
+     196,
+     208
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "WM Q2 2026 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000823768/000110465926087575/tm2621414d1_ex99-1.htm"
+   },
+   {
+    "title": "WM Q1 2026 earnings release (Business Wire)",
+    "url": "https://www.businesswire.com/news/home/20260427802393/en/WM-Announces-First-Quarter-2026-Earnings"
+   },
+   {
+    "title": "WM Q4 and full-year 2025 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/823768/000110465926007476/tm264211d1_ex99-1.htm"
+   },
+   {
+    "title": "WM Q3 2025 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/823768/000110465925102615/tm2529298d1_ex99-1.htm"
+   },
+   {
+    "title": "WM Q4 and full-year 2023 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/823768/000110465924015422/tm245359d1_ex99-1.htm"
+   },
+   {
+    "title": "WM Q4 and full-year 2022 earnings release (SEC 8-K)",
+    "url": "https://www.sec.gov/Archives/edgar/data/823768/000110465923008880/tm234918d1_ex99-1.htm"
+   },
+   {
+    "title": "WM sets date for Q3 2026 earnings conference call (Business Wire, 24 Sep 2026)",
+    "url": "https://secure.businesswire.com/news/home/20260924859097/en/WM-Sets-Date-for-Third-Quarter-2026-Earnings-Conference-Call"
+   },
+   {
+    "title": "WM 2027 targets from investor day (TipRanks/The Fly)",
+    "url": "https://www.tipranks.com/news/the-fly/wm-sees-fy27-revenue-28-5b-29-25b-8-85b-9-15b-in-adjusted-operating-ebitda-thefly"
+   },
+   {
+    "title": "WM investor day: 2027 projections, Stericycle and RNG (Waste Dive)",
+    "url": "https://www.wastedive.com/news/wm-investor-day-29b-earnings-projections-2027-healthcare-waste-stericycle/751586/"
+   },
+   {
+    "title": "WM cash-flow statement and interest paid (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/financials/cash-flow-statement/"
+   },
+   {
+    "title": "WM balance sheet and shares (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/financials/balance-sheet/"
+   },
+   {
+    "title": "WM market value at year-ends (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/financials/ratios/"
+   },
+   {
+    "title": "WM income statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/financials/"
+   },
+   {
+    "title": "WM statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/statistics/"
+   },
+   {
+    "title": "WM price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/history/"
+   },
+   {
+    "title": "WM analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wm/forecast/"
+   },
+   {
+    "title": "WM financial forecasts 2026–2028 and Q3 estimates (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/WASTE-MANAGEMENT-INC-14885/finances/"
+   },
+   {
+    "title": "WM valuation and year-end reference prices (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/WASTE-MANAGEMENT-INC-14885/valuation/"
+   },
+   {
+    "title": "WM consensus and target changes (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/WASTE-MANAGEMENT-INC-14885/consensus/"
+   },
+   {
+    "title": "WM analyst actions (MarketBeat)",
+    "url": "https://www.marketbeat.com/stocks/NYSE/WM/forecast/"
+   },
+   {
+    "title": "Bernstein raises WM target to $260, EV/NTM EBITDA 13.5× to 14.5× (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/waste-management-stock-price-target-raised-to-260-by-bernstein-93CH-4430040"
+   },
+   {
+    "title": "Oppenheimer raises WM target to $263 (Investing.com)",
+    "url": "https://www.investing.com/news/analyst-ratings/waste-management-stock-price-target-raised-to-263-at-oppenheimer-93CH-4410266"
+   },
+   {
+    "title": "JPMorgan cuts WM target to $235 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/jpmorgan-cuts-waste-management-target-to-usd-235-for-waste-management-stock/70313170"
+   },
+   {
+    "title": "Morgan Stanley cuts WM target to $220 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/morgan-stanley-cut-target-to-usd-220-for-waste-management-stock/70328095"
+   },
+   {
+    "title": "BMO cuts WM target to $232 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/waste-management-stock-bmo-cuts-target-for-waste-management-stock-to-usd-232/70375131"
+   },
+   {
+    "title": "Q3 2026 earnings preview (Simply Wall St / Yahoo Finance, 23 Oct 2026)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-preview-might-change-case-191323720.html"
+   },
+   {
+    "title": "Waste Connections Q3 2026 beat; WM up 4.15% (MarketScreener/Dow Jones, 22 Oct 2026)",
+    "url": "https://www.marketscreener.com/news/waste-connections-shares-up-following-3q-earnings-beat-rosier-2026-guidance-ce785cdedc89f52d"
+   },
+   {
+    "title": "Q2 2026 waste sector earnings (Catalyst Strategic Advisors)",
+    "url": "https://catalystsa.com/q2-2026-public-waste-sector-earnings-pricing-margin-expansion-and-ma-drive-another-strong-quarter/"
+   },
+   {
+    "title": "WM effective tax rate (GuruFocus)",
+    "url": "https://www.gurufocus.com/term/tax-rate/WM"
+   },
+   {
+    "title": "US 10-year Treasury yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+   },
+   {
+    "title": "Republic Services statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/rsg/statistics/"
+   },
+   {
+    "title": "Republic Services forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/rsg/forecast/"
+   },
+   {
+    "title": "Waste Connections statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wcn/statistics/"
+   },
+   {
+    "title": "Waste Connections forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/wcn/forecast/"
+   },
+   {
+    "title": "Casella Waste Systems statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/cwst/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus for 2027",
+    "formula": "2027 EBITDA = analyst consensus",
+    "plain": "Adjusted operating EBITDA is profit before interest, tax, depreciation and amortisation, and before one-offs. Analysts expect $8,206m in 2026 (the middle of WM's $8.15–8.25bn guidance) and $8,772m in 2027 (+6.9%), helped by price rises of about 5–6% a year, Stericycle cost savings and the new gas and recycling plants. This is a little below WM's own 2027 target of $8.85–9.15bn, because collection volumes are falling slightly.",
+    "result": "$8,772m",
+    "title": "What will Waste Management earn next year?"
+   },
+   {
+    "calc": "(13.36 + 13.78 + 13.56) ÷ 3 = 13.57",
+    "formula": "Normal multiple = average forward EV/EBITDA at end-2023, 2024 and 2025",
+    "plain": "At the last three year-ends WM traded at 13.4, 13.8 and 13.6 times the next year's EBITDA (average 13.6). The growth that followed was +11.3% (2024), +15.5% (2025) and about +6% like-for-like (2026E). But most of the 2025 jump was the Stericycle purchase, paid for with debt that was already counted in the year-end EV, so investors were not paying extra for it; underlying growth has been about 6–8% a year (end-2022: 13.4 times for +7%; end-2025: 13.6 times for about +6%). Now analysts expect +6.9% in 2027 and +5.8% in 2028 (MarketScreener), and WM's own 2027 targets ($8.85–9.15bn) imply +8–12% in 2027. Peers are expected to grow EPS by about 10–11% in 2027 (Republic Services +11%, Waste Connections +10%; WM +12%). Expected growth is about the same as the growth behind the reference multiples, so we keep the 13.6 average. That is close to Bernstein's 13.5 times and below its 14.5 upside case. We leave out 2021 (near-zero interest rates, 15.1 times).",
+    "result": "13.6 × EBITDA",
+    "title": "What should investors pay for next year's profit, given the growth?"
+   },
+   {
+    "calc": "(13.6 × 8,772 − 22,799) ÷ 399.7",
+    "formula": "(multiple × 2027 EBITDA − net debt) ÷ shares",
+    "plain": "Value the whole company at 13.6 times 2027 EBITDA, subtract what is owed to lenders (net debt), and divide by the number of shares.",
+    "result": "$241",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "241.42 ÷ 1.072",
+    "formula": "Fair value = price in 12 months ÷ (1 + 7.2%)",
+    "plain": "Shareholders want a return for waiting a year: 5.00% US Treasury yield + 0.4 × 5.5% = 7.2%. A low beta means a low required return, because WM's business barely moves with the economy. (Like analysts' targets, this leaves out the dividend, $3.30 a share in 2025.)",
+    "result": "$225",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "225.2 ÷ 239.38 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 6% below today's price: inside the ±10% band, so WM looks roughly fairly priced. Today investors pay 13.5 times 2027 EBITDA, the same as its usual 13.4–13.8 at recent year-ends; our value is lower only because we wait a year at 7.2%. The share rose about 15% in October, so much of the expected growth for the next year is already in the price.",
+    "result": "−6%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value WM the way analysts value waste and other steady, asset-heavy companies: EV/EBITDA, the value of the whole company compared with next year's cash operating profit. Analysts expect that profit (adjusted operating EBITDA) to grow about 6% in 2026, 7% in 2027 and 6% in 2028, about the same growth that came with WM's 13.4–13.6 times multiple at recent year-ends, so we keep its own average of 13.6 times. On $8,772m of 2027 EBITDA that gives about $241 in a year, or $225 today, 6% below today's $239.38.",
+  "targets": {
+   "items": [
+    "At its June 2025 investor day WM set 2027 targets: revenue of $28.5–29.25bn, adjusted operating EBITDA of $8.85–9.15bn and free cash flow of $4.025–4.175bn. It expects its new gas and recycling plants to add $760–800m of yearly EBITDA by 2027 and Stericycle cost savings of $250m a year by 2027.",
+    "Past guidance was met: for 2023 WM guided $5.825–5.975bn EBITDA and delivered $5,899m; for 2024 it guided $6.275–6.425bn and delivered $6,563m (helped by two months of Stericycle).",
+    "2026 so far: in July WM trimmed its revenue outlook by about 0.6% (to $26.275–26.475bn) because collection volumes are weaker (−1.8% in Q2), but kept EBITDA at $8.15–8.25bn and free cash flow at $3.75–3.85bn. H1 2026 adjusted EBITDA was $3,920m, up 6% on last year's restated $3,709m."
+   ],
+   "title": "Does Waste Management have a growth goal we can use?",
+   "verdict": "We use the analysts' 2027 EBITDA of $8,772m, not the company target: consensus is already about 1% below the bottom of WM's $8.85–9.15bn range, because volumes are weak. Reaching the 2026 guidance midpoint needs H2 EBITDA of about $4.28bn, roughly 7% above last year's H2 on a like-for-like basis: demanding but a bit above H1 (+6%) plus the falling costs of Stericycle."
+  },
+  "ticker": "WM",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "WM (Waste Management) is the biggest rubbish collector in North America: its trucks pick up household and business waste, which goes to its own landfills, transfer stations and recycling plants. It also turns landfill gas into renewable natural gas and, since buying Stericycle in November 2024, collects medical waste and shreds confidential documents; sales were $25.2 billion in 2025."
+ },
  {
   "company": "Mercedes-Benz Group",
   "consensus": {
