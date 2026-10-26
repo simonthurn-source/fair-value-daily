@@ -1933,11 +1933,674 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Computer hardware (PCs and AI servers)",
   "teaser": "Dell sells PCs and the servers behind AI data centres: what is a fair price for earnings that swing with tech spending?",
   "ticker": "DELL"
+ },
+ {
+  "company": "Agilent Technologies",
+  "date": "2026-11-22",
+  "market": "United States",
+  "method": "Forward P/E",
+  "reportDate": "2026-11-23",
+  "reportDateStatus": "estimated",
+  "sector": "Life-science tools (lab instruments and diagnostics)",
+  "teaser": "What is a fair price for the maker of the instruments that drug and food labs rely on, when lab spending is only slowly recovering?",
+  "ticker": "A"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Boliden",
+  "consensus": {
+   "analysts": 15,
+   "asOf": "23 Oct 2026",
+   "explain": "The average target of SEK 565.80 is a price in 12 months; discounted one year at 9.2% it is worth about SEK 518 today, 4.5% below our SEK 542. On the same 2027 EBITDA forecast the target implies about 5.5 times, versus our 5.7 and today's 4.8. So the small gap comes from the multiple, not the forecast: several older targets (UBS SEK 500, Morgan Stanley SEK 544) are more cautious about how long today's metal prices last, while the October raises (Barclays SEK 720) are closer to Barclays' own 6 times.",
+   "high": 720,
+   "low": 480,
+   "method": "Analysts mostly value Boliden with EV/EBITDA, checked against the value of its mines (NPV or NAV). Barclays (May 2026) set its target as a blend of 6 times 12-month forward EV/EBITDA and 1.25 times the net present value of its mines; Berenberg (Sep 2026) raised its target to SEK 560 because the Nexa deal lifts its NAV by 8%, and notes Boliden trades at about 6–7 times EV/EBITDA versus about 3 times for Nexa. In October most brokers raised targets on higher metal prices (Barclays SEK 720, Nordea new at SEK 650, Handelsbanken SEK 629, DNB Carnegie SEK 580). A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Hold (2 strong buy, 1 buy, 11 hold, 1 sell)",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 565.8,
+   "targetToday": 518.3
+  },
+  "crossCheck": {
+   "calc": "WACC = (137,209 × 9.16% + 19,100 × 3.02%) ÷ 156,309 = 8.4%; solve DCF(r) = 483.20",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "Free cash flow to the company = operating cash flow + interest × (1 − 20.6% tax) − investments. It was only 23% of EBITDA on average in 2021–2025, because Boliden spent SEK 15–16bn a year on big projects in 2023–2026. Analysts' free-cash-flow forecasts imply about 30% in 2027 and 37% in 2028 as spending falls, so we use 33% of EBITDA. EBITDA follows the consensus in 2027 (SEK 32,817m) and 2028 (SEK 34,811m, +6%), then grows 3% a year to year 5 and fades to 2.25% by year 10. Discount rate (WACC): 9.2% cost of equity and 3.0% after-tax cost of debt (3.8% average loan rate in 2025, less 20.6% tax), at market-value weights of SEK 137.2bn shares and SEK 19.1bn net debt: 8.4%. That gives about SEK 593 a share. Today's SEK 483.20 needs a discount rate of about 9.6%. So the cash supports the multiple, but only if today's metal prices hold: at the 2021–25 average cash conversion of 23% the value would be about SEK 399, and with 10% lower EBITDA throughout about SEK 527.",
+   "result": "≈ SEK 593 at 8.4%; today's price needs ≈ 9.6%"
+  },
+  "crossChecks": [
+   {
+    "calc": "9.88 × 55.13 ÷ 1.0916",
+    "name": "Check: forward P/E on its own history",
+    "note": "Today the P/E on 2027 is 8.8, below that average. The P/E check is lower than the EV/EBITDA value mainly because depreciation is rising fast (SEK 6.8bn in 2024, 8.8bn in 2025) as new mines and plants start up, which cuts earnings more than EBITDA.",
+    "plain": "At the 2023–25 year-ends Boliden traded at 8.6, 9.3 and 11.7 times the next year's earnings per share (average 9.9). On 2027 EPS of SEK 55.13 that gives SEK 544 in a year, or:",
+    "result": "≈ SEK 499"
+   },
+   {
+    "calc": "(5.7 × 30,113 − 19,100) ÷ 283.96 ÷ 1.0916",
+    "name": "Check: a mid-cycle year instead of 2027",
+    "note": "About 9% below the main value. And the sales figure itself assumes metal prices near today's records: copper is about 45% above its Q3 2025 average (USD 9,797).",
+    "plain": "If 2027 earns only the 2021–25 average EBITDA margin (21.7%) on the forecast sales of SEK 139,028m, EBITDA would be about SEK 30,113m instead of SEK 32,817m. At 5.7 times that is worth today:",
+    "result": "≈ SEK 492"
+   },
+   {
+    "calc": "483.20 ÷ 521.6",
+    "name": "Check: value of the mines (NAV)",
+    "note": "Barclays also said Boliden's share price implied a long-term copper price of only about USD 7,980 a tonne, about 40% below the spot price then, and called it the cheapest of its global base-metal peers (Oct 2026). This NAV is from May, at Barclays' own metal prices.",
+    "plain": "Barclays (May 2026) put the net present value of Boliden's mines and smelters at about SEK 522 a share (its SEK 652 NPV-based value ÷ 1.25), and applies 1.25 times it, as it does for its base-metal peers. Today's price is:",
+    "result": "≈ 0.93 × NAV"
+   },
+   {
+    "calc": "(8.82 × 26,699 − 18,520) ÷ 283.96",
+    "name": "Check: at peers' multiple",
+    "note": "Boliden has long traded below these copper-heavy peers: it is more exposed to zinc and to smelting, which investors usually value lower, and Berenberg quotes zinc miner Nexa at only 3 times. Boliden's expected earnings growth (EPS +33% in 2026 and +26% in 2027, stockanalysis.com) is as fast as peers', so the discount could narrow, but we do not assume it.",
+    "plain": "On stockanalysis.com (trailing EV/EBITDA, data 9–23 Oct 2026), Lundin Mining trades at 9.6, Antofagasta at 9.0 and Glencore at 7.9; average 8.8. Boliden is at 5.8 on the same basis at today's price. At the peer average, on Boliden's SEK 26,699m trailing EBITDA minus SEK 18,520m net debt:",
+    "result": "≈ SEK 764"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-26",
+  "dateLabel": "Monday 26 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 542,
+  "history": {
+   "caption": "SEK million unless stated. From Boliden's year-end and interim reports (Q4 2021, Q4 2023, Q4 2024, Q4 2025) and stockanalysis.com (market value at year-ends, cash flow). EBITDA = operating profit before depreciation, excluding the revaluation of process inventory (PIR). Year-end price = year-end market value ÷ shares. Net debt as Boliden reports it (it includes pension provisions; IFRS 16 leases are in debt and EBITDA is before lease costs). Forward = year-end EV ÷ the NEXT year's EBITDA; for 2025 we use the 2026 consensus (SEK 27,465m) minus H1 2026's PIR gain of SEK 1,137m. Last column: latest (price 23 Oct 2026, net debt 30 Jun 2026, 12 months to June) or the forecast marked.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest / 2027E"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "Somincor (Portugal) and Zinkgruvan (Sweden) mines bought in April 2025 for SEK 14.4bn",
+     "values": [
+      "68,636",
+      "86,437",
+      "78,554",
+      "89,207",
+      "93,509",
+      "139,028 (2027E)"
+     ]
+    },
+    {
+     "label": "EBITDA excl. process-inventory revaluation",
+     "note": "2024 includes SEK 3,067m of one-off items, mainly insurance money after the 2021 Rönnskär fire",
+     "values": [
+      "15,938",
+      "21,834",
+      "14,055",
+      "18,808",
+      "19,473",
+      "32,817 (2027E)"
+     ]
+    },
+    {
+     "label": "EBITDA margin",
+     "note": "Average 2021–25: 21.7%",
+     "values": [
+      "23.2%",
+      "25.3%",
+      "17.9%",
+      "21.1%",
+      "20.8%",
+      "23.6% (2027E)"
+     ]
+    },
+    {
+     "label": "Operating profit (EBIT) excl. process-inventory revaluation",
+     "values": [
+      "10,318",
+      "15,672",
+      "7,810",
+      "12,025",
+      "10,693",
+      "7,304 (H1 2026)"
+     ]
+    },
+    {
+     "label": "EPS (as reported), SEK",
+     "note": "Boliden does not publish an EPS excluding one-offs; reported EPS includes PIR and one-off items",
+     "values": [
+      "31.81",
+      "45.37",
+      "22.21",
+      "36.65",
+      "33.39",
+      "55.13 (2027E)"
+     ]
+    },
+    {
+     "label": "Share price at year-end, SEK",
+     "values": [
+      "350.0",
+      "391.2",
+      "314.5",
+      "310.5",
+      "515.2",
+      "483.20"
+     ]
+    },
+    {
+     "label": "Shares outstanding, million",
+     "note": "10.5 million new shares issued in 2025 for the mine purchase; about 21.4 million more planned for Nexa",
+     "values": [
+      "273.5",
+      "273.5",
+      "273.5",
+      "273.5",
+      "284.0",
+      "284.0"
+     ]
+    },
+    {
+     "label": "Net debt",
+     "values": [
+      "−918",
+      "−15",
+      "10,728",
+      "10,662",
+      "15,205",
+      "19,100 (Jun)"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing)",
+     "values": [
+      "11.0",
+      "8.6",
+      "14.2",
+      "8.5",
+      "15.4",
+      "10.8 (12 months to June)"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ next year's EPS (2025: ÷ 2026E SEK 43.86). Average 2023–25: 9.9",
+     "values": [
+      "7.7",
+      "17.6",
+      "8.6",
+      "9.3",
+      "11.7",
+      "8.8 (on 2027E)"
+     ]
+    },
+    {
+     "label": "EV/EBITDA at year-end (trailing)",
+     "values": [
+      "5.9",
+      "4.9",
+      "6.9",
+      "5.1",
+      "8.3",
+      "5.8 (12 months to June, stockanalysis)"
+     ]
+    },
+    {
+     "label": "Forward EV/EBITDA at year-end",
+     "note": "The multiple analysts use. End-2024 pro forma adds the SEK 14.4bn cash and SEK 3.7bn of new shares paid for the April 2025 mine purchase, because 2025 EBITDA already includes those mines. Average 2023–25 (5.1, 5.8, 6.1): 5.7, the multiple we use",
+     "strong": true,
+     "values": [
+      "4.3",
+      "7.6",
+      "5.1",
+      "4.9 (5.8 pro forma)",
+      "6.1",
+      "4.8 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Growth in EBITDA the following year",
+     "note": "What investors got for each year-end multiple. Note the miner's pattern: the highest multiple (7.6 at end-2022) came just before profit fell, the lowest ones before big jumps. 2025's +4% includes 8.5 months of the bought mines",
+     "strong": true,
+     "values": [
+      "+37%",
+      "−36%",
+      "+34%",
+      "+4%",
+      "+35% (2026E)",
+      "+20–25% (2027E), +6% (2028E)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities",
+     "note": "IFRS line, after tax and after interest paid",
+     "values": [
+      "13,144",
+      "16,398",
+      "12,183",
+      "17,659",
+      "20,686",
+      "20,827 (12 months to June)"
+     ]
+    },
+    {
+     "label": "+ Net interest × (1 − 20.6% tax)",
+     "note": "Boliden does not show interest paid separately; we use net financial items (2022: financial expenses) of 243, 344, 687, 1,137, 1,291",
+     "values": [
+      "193",
+      "273",
+      "545",
+      "903",
+      "1,025",
+      ""
+     ]
+    },
+    {
+     "label": "− Investments (capital spending)",
+     "note": "Big projects: Odda zinc expansion, Rönnskär tankhouse, Kevitsa and Aitik expansions. 2026 guidance about SEK 15.5bn",
+     "values": [
+      "5,989",
+      "10,022",
+      "15,515",
+      "14,973",
+      "15,496",
+      "16,056 (12 months to June)"
+     ]
+    },
+    {
+     "label": "= Free cash flow to the company",
+     "note": "Lease repayments are not shown separately (small) and are left out",
+     "strong": true,
+     "values": [
+      "7,348",
+      "6,649",
+      "−2,787",
+      "3,589",
+      "6,215",
+      ""
+     ]
+    },
+    {
+     "label": "Cash conversion (free cash flow ÷ EBITDA)",
+     "values": [
+      "46%",
+      "30%",
+      "−20%",
+      "19%",
+      "32%",
+      "33% (our normal level)"
+     ]
+    },
+    {
+     "label": "Cash paid for acquisitions",
+     "values": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "14,391",
+      "50 (12 months to June)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq Stockholm close 23 Oct 2026 (stockanalysis.com). Down from SEK 548.40 on 12 Oct, including −6.0% on 22 Oct when copper fell to a five-week low in a global sell-off. Market value SEK 137.2bn",
+    "value": "SEK 483.20"
+   },
+   {
+    "label": "2027 EBITDA forecast",
+    "note": "MarketScreener consensus (2026E: 27,465; 2028E: 34,811). 2027 sales SEK 139,028m",
+    "value": "SEK 32,817m"
+   },
+   {
+    "label": "Forward multiple",
+    "note": "Average at end-2023/24/25 (5.1, 5.8 pro forma, 6.1). Not adjusted: expected growth (+20–25% in 2027) is in the range that came after those year-ends",
+    "value": "5.7 × EBITDA"
+   },
+   {
+    "label": "Net debt",
+    "note": "30 Jun 2026, as Boliden reports it (gearing 24%). Analysts expect it to fall to about SEK 15.2bn by end-2026",
+    "value": "SEK 19,100m"
+   },
+   {
+    "label": "Shares",
+    "note": "Excludes about 21.4 million new shares for Nexa (not yet issued)",
+    "value": "283.96 million"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.11% Swedish 10-year government bond (23 Oct 2026, Trading Economics) + beta 1.1 × 5.5%",
+    "value": "9.2%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 1.14 (stockanalysis.com): the share moves a bit more than the market",
+    "value": "1.1"
+   },
+   {
+    "label": "EV/EBITDA today",
+    "note": "(137,209 + 19,100) ÷ 32,817; 5.7 on 2026E",
+    "value": "4.8 on 2027E"
+   },
+   {
+    "label": "Metal prices today",
+    "note": "Trading Economics, 26 Oct 2026; copper +25% and zinc +23% in a year. Averages: copper USD 8,478 (2023), 9,147 (2024) and 9,797 (Q3 2025); zinc USD 2,647, 2,779 and 2,825",
+    "value": "Copper ≈ USD 14,200/t, zinc ≈ USD 3,750/t"
+   },
+   {
+    "label": "EPS forecasts",
+    "note": "MarketScreener consensus; P/E on 2027: 8.8",
+    "value": "SEK 43.86 (2026) / 55.13 (2027)"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: forward EV/EBITDA on next year's operating profit before depreciation, with a mine-value (NAV) check (how analysts value miners)",
+   "why": "EV (enterprise value) is the value of all shares plus net debt. EBITDA is operating profit before depreciation, so before the large yearly charge for wearing out mines and smelters. Miners differ a lot in debt, mine age and depreciation rules, so analysts compare them on EV/EBITDA; Barclays, for example, values Boliden at 6 times its EBITDA for the next 12 months, alongside the value of its mines. We take the forward EV/EBITDA Boliden has traded at, check it against expected growth, apply it to 2027 forecast EBITDA, subtract net debt, divide by the number of shares and bring the 12-month price back to today. Metal prices drive the forecast: copper is about USD 14,200 a tonne today (Q3 2025 average USD 9,797) and zinc about USD 3,750 (Q3 2025: USD 2,825).",
+   "whyNot": "Mining profit swings with metal prices, so a P/E (price ÷ earnings per share) is only a check: it ignores debt and is pushed around by 'process inventory revaluation' (a paper gain or loss when metal in the smelters is valued at new prices). A cash-flow model (DCF) is only a check because Boliden is in a heavy building phase (SEK 15–16bn a year of investment in 2023–2026), so past free cash flow says little about the future. A mine-value (NAV) check is shown, using Barclays' published figure. We use the last three year-ends (2023–2025) and leave out 2021, when interest rates were near zero. We use EBITDA without the process-inventory revaluation, because forecasts do not include it."
+  },
+  "price": 483.2,
+  "priceDate": "close 23 Oct 2026",
+  "rangeHigh": 648,
+  "rangeLow": 436,
+  "reasoning": [
+   "Boliden's record is a miner's record: EBITDA (excluding inventory revaluation) swung from SEK 21.8bn in 2022 to 14.1bn in 2023 and back to 19.5bn in 2025, following copper and zinc prices. It met its return and debt targets, but cash flow was thin because it spent SEK 15–16bn a year on new capacity.",
+   "Analysts now expect EBITDA of SEK 27.5bn in 2026 and SEK 32.8bn in 2027, driven by record metal prices and new capacity coming on stream. That growth is in the range that came with Boliden's own 5.1–6.1 times at recent year-ends, so we use the 5.7 average, close to Barclays' 6 times.",
+   "That gives SEK 591 in a year, or SEK 542 today. The checks are lower or similar: P/E SEK 499, a mid-cycle margin SEK 492, the cash-flow model SEK 593 if prices hold; analysts' average target is worth SEK 518 today.",
+   "Fair value SEK 542 (range SEK 436–648). At SEK 483.20 the share is 12% below our value: it looks undervalued on its usual multiple, but the result rests on metal prices staying near today's highs."
+  ],
+  "report": {
+   "date": "Q3 report · Thursday 29 October 2026",
+   "dateIso": "2026-10-29",
+   "extra": [
+    {
+     "plain": "Net debt is subtracted directly: each SEK 1bn less net debt adds about SEK 3.2 a share (1,000 ÷ 283.96 ÷ 1.0916). Net debt was SEK 19.1bn in June (gearing 24%, above the 20% target) after the dividend and an inventory build; analysts expect about SEK 15.2bn by year-end, which would add about SEK 12 to our value if Q3 cash flow starts that move (Q3 2025 free cash flow: SEK 2,284m). Metal prices act through the forecast: each 5% change in 2027 EBITDA moves our value by about SEK 30. Note that Q3 profit will also include a process-inventory revaluation gain or loss from the metal price moves; we ignore it, because it is a paper effect.",
+     "title": "What if net debt or metal prices change?"
+    }
+   ],
+   "plain": "Our fair value = (multiple × 2027 EBITDA − net debt) ÷ shares ÷ 1.0916. So the report can change it in two ways: through analysts' forecast for 2027 EBITDA, and through the multiple, if the report changes how fast and how safely Boliden looks likely to grow. Metal prices move the forecast every day as well; a big share-price move on 29 October is not the same as a change in value.",
+   "scenarios": [
+    {
+     "calc": "(5.7 × 34,458 − 19,100) ÷ 283.96 ÷ 1.0916 = 572 · (6.7 × 34,458 − 19,100) ÷ 283.96 ÷ 1.0916 = 683",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "SEK 572–683",
+     "what": "Operating profit excl. PIR clearly above Handelsbanken's SEK 4,589m (Q3 2025: SEK 2,752m), Odda at full production, Garpenberg ramping up faster than the 1.5 Mt guidance, and the Rönnskär tankhouse on time. Two separate effects: (1) analysts raise their 2027 EBITDA forecast by about 5%, from SEK 32,817m to SEK 34,458m, which gives SEK 572 at the unchanged 5.7 times; (2) if Garpenberg's return to 3.7 Mt and the new capacity make growth look like +25% or more in 2027 with less risk (analysts now expect +20–25%, then +6%), the multiple can move up 1 point to 6.7 times: SEK 683."
+    },
+    {
+     "calc": "(5.7 × 32,817 − 19,100) ÷ 283.96 ÷ 1.0916 = 542",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "SEK 542",
+     "what": "Revenue around SEK 30–31.5bn (Q3 2025: 21,971m), EBITDA around SEK 6.9bn (5,611m), operating profit around SEK 4.3–4.6bn and EPS around SEK 11.3 (8.07). The 2027 forecast and the 5.7 times multiple stay, so our value does not change."
+    },
+    {
+     "calc": "(5.7 × 31,176 − 19,100) ÷ 283.96 ÷ 1.0916 = 512 · (4.7 × 31,176 − 19,100) ÷ 283.96 ÷ 1.0916 = 411",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "SEK 411–512",
+     "what": "Operating profit below about SEK 4.0bn because of new Garpenberg or Odda problems, cost inflation (energy, oil) or lower treatment charges, and a weaker volume outlook for 2027. Two separate effects: (1) analysts cut their 2027 EBITDA forecast by about 5%, from SEK 32,817m to SEK 31,176m, which gives SEK 512 at 5.7 times; (2) if growth then looks stuck near +10% with more project risk, the multiple drops 1 point to 4.7 times, close to today's 4.8: SEK 411."
+    }
+   ],
+   "title": "How the Q3 report could change our fair value",
+   "watch": [
+    "Operating profit excl. process-inventory revaluation: Q3 2025 SEK 2,752m; Handelsbanken expects SEK 4,589m (+67%); MarketScreener consensus EBIT about SEK 4,317m and EBITDA SEK 6,941m (Q3 2025: 5,611m).",
+    "Garpenberg: milled 956 kt in Q3 2025 (a record) but only 113 kt in Q2 2026 after the seismic event; guidance 1.5 Mt for 2026 and 2.3 Mt for 2027.",
+    "Odda and Rönnskär: Odda was expected at full production in Q3 2026; the Rönnskär tankhouse ramp-up is planned for Q4 2026.",
+    "Metal prices and currency: Q3 2025 averages were copper USD 9,797/t, zinc USD 2,825/t, gold USD 3,454/oz and USD/SEK 9.52; copper is now about USD 14,200/t and zinc USD 3,750/t.",
+    "Cash and debt: Q3 2025 free cash flow SEK 2,284m and net debt SEK 18,130m; June 2026 net debt SEK 19.1bn; plus any update on the Nexa deal before the 23 November shareholder vote."
+   ]
+  },
+  "risks": [
+   "Forecast risk: if 2027 EBITDA comes in 10% lower than SEK 32,817m (for example if copper falls back from about USD 14,200 a tonne toward the USD 9,797 it averaged in Q3 2025, or the US dollar weakens), the fair value falls to about SEK 482, roughly today's price.",
+   "Multiple risk: at the 5.5 times implied by analysts' average target the value is about SEK 519; at today's 4.8 times about SEK 443; at Barclays' 6 times about SEK 574. Each 1 point of multiple moves the value by about SEK 106.",
+   "Operations and projects: Garpenberg (normally one of the most profitable zinc-silver mines) is running at less than half its planned volume after the seismic event in March, and Odda's start-up has been slower than planned. Each SEK 1bn of EBITDA lost in 2027 cuts our value by about SEK 18.",
+   "Nexa deal: about 21.4 million new shares (7% more) for 64.68% of Nexa, which brings its own debt (enterprise value about USD 3.7bn for 100%) and minority shareholders. Boliden expects more than 8% higher EPS; if the deal is completed at the price agreed, our per-share value should change little, but integration in Brazil and Peru adds risk. It is not in our numbers."
+  ],
+  "sector": "Metals & mining",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different forward EV/EBITDA multiples (rows) and for 2027 EBITDA coming in higher or lower than forecast (columns). Base case: 5.7 × SEK 32,817m, minus SEK 19,100m net debt, ÷ 283.96m shares, discounted at 9.16%.",
+   "colLabel": "2027 EBITDA vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "SEK 32,817m",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBITDA",
+   "rows": [
+    "7.7",
+    "6.7",
+    "5.7",
+    "4.7",
+    "3.7"
+   ],
+   "values": [
+    [
+     672,
+     713,
+     754,
+     794,
+     835
+    ],
+    [
+     577,
+     612,
+     648,
+     683,
+     719
+    ],
+    [
+     482,
+     512,
+     542,
+     572,
+     602
+    ],
+    [
+     386,
+     411,
+     436,
+     461,
+     486
+    ],
+    [
+     291,
+     311,
+     330,
+     350,
+     369
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Boliden Q2 2026 interim report",
+    "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/202607210513-2.pdf"
+   },
+   {
+    "title": "Boliden Q2 2026 slides summary (Investing.com)",
+    "url": "https://www.investing.com/news/company-news/boliden-q2-2026-slides-metal-prices-lift-profit-despite-mine-disruption-93CH-4802200"
+   },
+   {
+    "title": "Boliden Q1 2026 report summary (MarketScreener)",
+    "url": "https://www.marketscreener.com/news/boliden-s-q1-2026-solid-performance-despite-abnormal-seismic-activity-in-garpenberg-report-ce7f59dddf8df025"
+   },
+   {
+    "title": "Boliden Q4 2025 and year-end report",
+    "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/202602025006-1.pdf"
+   },
+   {
+    "title": "Boliden Q3 2025 interim report",
+    "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/202510217058-1.pdf"
+   },
+   {
+    "title": "Boliden Q4 2024 and year-end report",
+    "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/202502052475-1.pdf"
+   },
+   {
+    "title": "Boliden Q4 2023 presentation",
+    "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/boliden_q4_2023_presentation_0.pdf"
+   },
+   {
+    "title": "Boliden Q4 2021 and year-end report",
+    "url": "https://investors.boliden.com/sites/boliden-ir/files/pr/202202119912-1.pdf"
+   },
+   {
+    "title": "Boliden Annual and Sustainability Report 2025",
+    "url": "https://minedocs.com/31/Boliden-AR-2025.pdf"
+   },
+   {
+    "title": "Boliden Annual and Sustainability Report 2022",
+    "url": "https://mb.cision.com/Main/997/3729403/1897917.pdf"
+   },
+   {
+    "title": "Boliden forecasts 2026–2028 and Q3 estimates (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/BOLIDEN-AB-58808448/finances/"
+   },
+   {
+    "title": "Boliden consensus and target changes (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/BOLIDEN-AB-58808448/consensus/"
+   },
+   {
+    "title": "Boliden quote, news and calendar (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/BOLIDEN-AB-58808448/"
+   },
+   {
+    "title": "Boliden analyst forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/BOL/forecast/"
+   },
+   {
+    "title": "Boliden statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/BOL/statistics/"
+   },
+   {
+    "title": "Boliden market value at year-ends (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/BOL/financials/ratios/"
+   },
+   {
+    "title": "Boliden cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/BOL/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Boliden income statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/BOL/financials/"
+   },
+   {
+    "title": "Boliden price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/BOL/history/"
+   },
+   {
+    "title": "Boliden target prices (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/boliden/riktkurs"
+   },
+   {
+    "title": "Handelsbanken upgrades Boliden, Q3 estimate (Placera/Finwire, 20 Oct 2026)",
+    "url": "https://www.placera.se/nyheter/handelsbanken-hojer-boliden-till-kop-ser-kraftig-vinsttillvaxt-2026-10-20"
+   },
+   {
+    "title": "Nordea initiates Boliden at SEK 650 (Placera/Finwire)",
+    "url": "https://www.placera.se/telegram/boliden-nordea-inleder-bevakning-pa-boliden-med-kop-och-riktkurs-650-kronor-20261012"
+   },
+   {
+    "title": "DNB Carnegie raises Boliden target to SEK 580 (MarketScreener)",
+    "url": "https://www.marketscreener.com/news/dnb-carnegie-raises-target-price-for-boliden-to-sek580-560-reiterates-buy-ce785ddcd88cf421"
+   },
+   {
+    "title": "Barclays upgrades Boliden: 6× forward EV/EBITDA and 1.25× NPV (Investing.com, May 2026)",
+    "url": "https://uk.investing.com/news/stock-market-news/barclays-upgrades-swedens-boliden-to-overweight-on-copper-growth-path-4702093"
+   },
+   {
+    "title": "Berenberg on Boliden and Nexa, NAV +8% (Webull/MT Newswires)",
+    "url": "https://www.webull.com/news/15553433524416512"
+   },
+   {
+    "title": "Boliden calls 23 November EGM; Q3 estimates (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/boliden-calls-november-23-egm-as-barclays-lifts-boliden-stock-target/70323948"
+   },
+   {
+    "title": "Boliden to acquire 64.68% of Nexa Resources (Investing.com)",
+    "url": "https://www.investing.com/news/company-news/boliden-to-acquire-6468-stake-in-nexa-resources-for-131bn-93CH-4878333"
+   },
+   {
+    "title": "Copper price (Trading Economics)",
+    "url": "https://tradingeconomics.com/commodity/copper"
+   },
+   {
+    "title": "Zinc price (Trading Economics)",
+    "url": "https://tradingeconomics.com/commodity/zinc"
+   },
+   {
+    "title": "Sweden 10-year government bond yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/sweden/government-bond-yield"
+   },
+   {
+    "title": "Lundin Mining statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/tsx/LUN/statistics/"
+   },
+   {
+    "title": "Antofagasta statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/lon/ANTO/statistics/"
+   },
+   {
+    "title": "Glencore statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/lon/GLEN/statistics/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus for 2027",
+    "formula": "2027 EBITDA = analyst consensus",
+    "plain": "EBITDA is operating profit before interest, tax and depreciation. Analysts expect SEK 27,465m in 2026 and SEK 32,817m in 2027 (MarketScreener). The jump comes mainly from metal prices (in Q2 2026 copper was 40% and zinc 31% higher than a year earlier), plus a full year of the new Portuguese and Swedish mines, Garpenberg coming back, the bigger Odda smelter and the new Rönnskär tankhouse. The 2027 margin (23.6%) is a little above Boliden's 2021–25 average of 21.7%.",
+    "result": "SEK 32,817m",
+    "title": "What will Boliden earn next year?"
+   },
+   {
+    "calc": "(5.14 + 5.84 + 6.13) ÷ 3 = 5.70",
+    "formula": "Normal multiple = average forward EV/EBITDA at end-2023, 2024 (pro forma) and 2025",
+    "plain": "At the last three year-ends Boliden traded at 5.1, 5.8 (pro forma for the 2025 mine purchase) and 6.1 times the next year's EBITDA, average 5.7. The growth that followed was +34% (2024), +4% (2025) and about +35% (2026E). Now analysts expect +20–25% in 2027 and +6% in 2028 (MarketScreener); Handelsbanken expects 'strong profit growth' from metal prices, currency and better ore grades, and Barclays expected about +25% in 2027 and +15% in 2028. Peers' earnings are also expected to grow fast: about 14% (Lundin Mining), 23% (Antofagasta) and 48% (Glencore) a year over three years (stockanalysis.com). For miners the multiple tends to be lowest when profit is at its best (investors expect metal prices to fall back), so the multiple is not a simple 'price for growth'. Expected growth sits inside the range behind the reference multiples, so we keep 5.7. It is close to Barclays' 6 times and inside the 6–7 times Berenberg quotes for Boliden. We leave out 2021 (near-zero interest rates, 4.3 times).",
+    "result": "5.7 × EBITDA",
+    "title": "What should investors pay for next year's profit, given the growth?"
+   },
+   {
+    "calc": "(5.7 × 32,817 − 19,100) ÷ 283.96",
+    "formula": "(multiple × 2027 EBITDA − net debt) ÷ shares",
+    "plain": "Value the whole company at 5.7 times 2027 EBITDA, subtract what is owed to lenders (net debt), and divide by the number of shares.",
+    "result": "SEK 591",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "591.48 ÷ 1.0916",
+    "formula": "Fair value = price in 12 months ÷ (1 + 9.16%)",
+    "plain": "Shareholders want a return for waiting a year: 3.11% Swedish government bond yield + 1.1 × 5.5% = 9.2%. (Like analysts' targets, this leaves out the dividend, SEK 11 a share for 2025.)",
+    "result": "SEK 542",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "541.8 ÷ 483.20 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 12% above today's price, just over the 10% line, so Boliden looks undervalued on its own usual multiple. Today investors pay only 4.8 times 2027 EBITDA, well below the 5.1–6.1 of recent year-ends: the market doubts that today's record copper and zinc prices will last, and the share fell 12% in the last two weeks as copper slipped. If 2027 EBITDA ends up about 10% lower than forecast, our value falls to about today's price.",
+    "result": "+12%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Boliden the way analysts value miners: EV/EBITDA, the value of the whole company compared with next year's operating profit before depreciation. Analysts expect that profit to jump about 25% in 2026 and another 20–25% in 2027 (helped by record copper and zinc prices and mines returning to full speed), similar to the swings that came with Boliden's own 5.1–6.1 times at recent year-ends, so we use its average of 5.7 times. On SEK 32,817m of 2027 EBITDA that gives about SEK 591 in a year, or SEK 542 today, 12% above today's SEK 483.20, but only if today's high metal prices roughly hold.",
+  "targets": {
+   "items": [
+    "Boliden's financial targets are not growth targets: a return on capital employed of at least 10% (2025: 14%, five-year average 18%, met), net debt of about 20% of equity in good times (2025: 20%, met; June 2026: 24%, a little above) and a dividend of one third of net profit (2025: SEK 11.00, 33%).",
+    "Its growth comes from projects instead: the Odda zinc smelter expansion (full production expected in Q3 2026), the new Rönnskär copper tankhouse (ramp-up in Q4 2026), getting Garpenberg back after abnormal seismic activity stopped it in March 2026 (1.5 Mt milled in 2026, 2.3 Mt guided for 2027, versus 3.7 Mt planned), and an expansion of Garpenberg to 4.5 Mt a year around 2032.",
+    "Nexa: Boliden plans to buy 64.68% of Nexa Resources for about 21.4 million new shares (about 7%), with closing expected in Q1 2027 and a shareholder vote on 23 November 2026. Boliden says the deal adds more than 8% to earnings per share."
+   ],
+   "title": "Does Boliden have a growth goal we can use?",
+   "verdict": "We use the analysts' 2027 EBITDA of SEK 32,817m (MarketScreener). It is close to Barclays' May forecast of SEK 32,030m, made before the Nexa deal, and the consensus share count does not include the new Nexa shares, so we treat it as Boliden without Nexa. H1 2026 already shows the trend: operating profit excl. PIR was SEK 7,304m, up 88% on H1 2025 (SEK 3,880m), despite Garpenberg standing still for weeks."
+  },
+  "ticker": "BOL",
+  "verdict": "Looks undervalued",
+  "whatTheyDo": "Boliden is a Swedish mining and smelting company: it digs copper, zinc, lead, nickel, gold and silver out of its own mines in Sweden, Finland, Ireland and Portugal, and turns ore and bought-in concentrate into pure metal at five smelters. Sales were SEK 93.5 billion in 2025, and it has agreed to buy control of the Brazilian–Peruvian zinc miner Nexa Resources, paid in new Boliden shares."
+ },
  {
   "company": "Waste Management",
   "consensus": {
