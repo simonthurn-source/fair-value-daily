@@ -1955,11 +1955,607 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Design and engineering software (AutoCAD, Revit)",
   "teaser": "Architects and engineers pay Autodesk every year for their design tools: how much is that steady subscription profit worth if growth slows?",
   "ticker": "ADSK"
+ },
+ {
+  "company": "CrowdStrike",
+  "date": "2026-11-24",
+  "market": "United States",
+  "method": "Forward P/E",
+  "reportDate": "2026-12-01",
+  "reportDateStatus": "estimated",
+  "sector": "Cybersecurity software",
+  "teaser": "One of the most richly valued software companies: how many years of 20%-plus growth does today's price already assume?",
+  "ticker": "CRWD"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Eli Lilly",
+  "consensus": {
+   "analysts": 31,
+   "asOf": "26 Oct 2026",
+   "explain": "The average target of USD 1,334 is a price in 12 months; discounted one year at 7.75% it is worth about USD 1,238 today. Our USD 1,008 is 19% below that. On the same 2027 EPS forecast of USD 47.22 the target implies about 28.3 times, against our 23 times; the forecast is the same, so the whole gap is the multiple. Analysts pay more because they look further ahead (Goldman values 2028 earnings) and expect Lilly to keep growing fast after 2027; we lower the multiple because consensus growth drops to about 12% in 2028.",
+   "high": 1600,
+   "low": 930,
+   "method": "Goldman Sachs, which raised its target from USD 1,371 to 1,413 on 23 October, values Lilly at 28 times forward earnings, using the earnings expected in quarters five to eight from now (roughly late 2027 to late 2028, about USD 50.5 a share); on 2027 EPS that is about 30.7 times. Bernstein (Courtney Breen) raised its target from USD 1,385 to 1,450 on 26 October, Bank of America to USD 1,397 and Morgan Stanley to USD 1,430, while HSBC (USD 940, 'Reduce') is the main sceptic. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Buy on average (20 strong buy, 6 buy, 3 hold, 1 sell, 1 strong sell)",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 1334,
+   "targetToday": 1238.1
+  },
+  "crossCheck": {
+   "calc": "FCF 2027 = 0.45 × 50,810 = 22,864; 2028 = 0.52 × 57,871 = 30,093; … 2036 = 63,479; (PV 315,966 + terminal 613,530 − 45,162) ÷ 891.36 = 992",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "Free cash flow to the firm is operating cash flow plus interest paid after 19% tax, minus capital spending. In 2021–2025 Lilly turned only 42% of its EBIT into such cash (75% in 2021–22, before the factory build-out). We start at 45% of 2027 EBIT (USD 50.8bn) and let it rise to 73% by 2031 as the building slows. EBIT grows 14% in 2028 (consensus), then 10%, 8% and 6%, fading to 2.5% by year 10. The discount rate (WACC) is 7.6%: 95% equity at 7.75% and 5% debt at 4.5% after tax (5.5% before tax, the 10-year Treasury plus a small spread for an A-rated borrower). Operations are worth about USD 930bn; minus USD 45.2bn net debt that is about USD 992 a share. Today's USD 1,279.14 would need a discount rate of about 6.6%. So the cash does not support today's 27 times; it supports a value close to our 23 times, unless growth stays high for longer.",
+   "result": "≈ USD 992 at 7.6%; today's price needs ≈ 6.6%"
+  },
+  "crossChecks": [
+   {
+    "calc": "(18.0 × 50,810 − 45,162) ÷ 891.36 ÷ 1.0775",
+    "name": "Check: forward EV/EBIT on its own history",
+    "note": "Today EV is about USD 1,185bn, 23.3 times 2027 EBIT, close to end-2025's 24.3 although growth has slowed. At the unadjusted 24.3 times this check would give about USD 1,238.",
+    "plain": "EV (enterprise value) = market value + net debt excl. leases. At end-2023/24/25 Lilly traded at 38.2, 26.5 and 24.3 times the next year's EBIT, when EBIT growth of +103%, +91% and +50% (2026E) lay ahead. Now EBIT is expected to grow 24% in 2027 and 14% in 2028. Cutting end-2025's 24.3 times by the same proportion as our P/E (23 ÷ 31.1) gives 18.0 times. On 2027 EBIT of USD 50,810m minus USD 45,162m net debt, ÷ 891.4m shares, that gives USD 974 in a year, or:",
+    "result": "≈ USD 904"
+   },
+   {
+    "calc": "15.4 × 47.22 ÷ 1.0775",
+    "name": "Check: at peers' multiple",
+    "note": "Lilly trades at 27.1 times, far above these peers, but it also grows much faster: EPS +37% expected in 2027, against about +1% for Novo Nordisk and +16% for AbbVie. The peer check is a floor if Lilly's growth fell to big-pharma levels, not a fair value.",
+    "plain": "On stockanalysis.com (forward P/E, prices 26 Oct 2026), Novo Nordisk, Lilly's main obesity rival, trades at 11.7 times and AbbVie at 19.0 times; average 15.4. At the peer average on Lilly's USD 47.22:",
+    "result": "≈ USD 674"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-28",
+  "dateLabel": "Wednesday 28 October 2026",
+  "exchange": "New York Stock Exchange",
+  "fairValue": 1008,
+  "history": {
+   "caption": "USD million unless stated. Revenue, non-GAAP EPS and guidance from Lilly's results releases (8-K / investor.lilly.com; 2021 EPS as recast by Lilly to include acquired R&D); EBIT consensus and history from MarketScreener; cash flows, debt, cash and share counts from stockanalysis.com (10-K data); year-end prices from digrin (unadjusted). Net debt = total debt − lease liabilities − cash and short-term investments. Forward = year-end value ÷ the NEXT year's result; for 2025 we use today's 2026 consensus (stockanalysis.com EPS 34.59, MarketScreener EBIT 41,048). Last column: latest (price 26 Oct 2026, net debt 30 Jun 2026) or as marked.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest / 2027E"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "2026E 88,680 (+36%), 2027E +15%, 2028E 113,629 (+12%, MarketScreener)",
+     "values": [
+      "28,318",
+      "28,541",
+      "34,124",
+      "45,043",
+      "65,179",
+      "102,110 (2027E)"
+     ]
+    },
+    {
+     "label": "Operating profit (EBIT, MarketScreener basis)",
+     "note": "2026E 41,048; 2028E 57,871 (+14%)",
+     "values": [
+      "8,457",
+      "7,950",
+      "7,057",
+      "14,313",
+      "27,274",
+      "50,810 (2027E)"
+     ]
+    },
+    {
+     "label": "Non-GAAP EPS, USD",
+     "note": "Includes acquired R&D charges. 2026E 34.59 (stockanalysis.com consensus); company guidance 35.50–36.50 before Q3 deal charges",
+     "values": [
+      "7.39",
+      "7.94",
+      "6.32",
+      "12.99",
+      "24.21",
+      "47.22 (2027E)"
+     ]
+    },
+    {
+     "label": "Share price at year-end, USD",
+     "values": [
+      "276.22",
+      "365.84",
+      "582.92",
+      "772.00",
+      "1,074.68",
+      "1,279.14"
+     ]
+    },
+    {
+     "label": "Shares at year-end, million",
+     "values": [
+      "903.7",
+      "900.2",
+      "899.4",
+      "897.5",
+      "894.8",
+      "891.4"
+     ]
+    },
+    {
+     "label": "Net debt excl. leases and pensions",
+     "note": "Rose with factory spending, buybacks and acquisitions",
+     "values": [
+      "13,018",
+      "14,161",
+      "22,432",
+      "30,376",
+      "35,235",
+      "45,162 (Jun)"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing)",
+     "values": [
+      "37.4",
+      "46.1",
+      "92.2",
+      "59.4",
+      "44.4",
+      "37.0 (on 2026E)"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ next year's EPS. Average 2023–25: 35.9, but those multiples paid for growth of 43–106% the next year; we use 23 (see step 2)",
+     "strong": true,
+     "values": [
+      "34.8",
+      "57.9",
+      "44.9",
+      "31.9",
+      "31.1",
+      "27.1 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Growth in EPS the following year",
+     "note": "What investors got for each year-end multiple. 2028E from Goldman Sachs (51.68 vs 46.08)",
+     "strong": true,
+     "values": [
+      "+7%",
+      "−20%",
+      "+106%",
+      "+86%",
+      "+43% (2026E)",
+      "+37% (2027E), +12% (2028E)"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "EV = year-end market value + net debt excl. leases. Check only",
+     "values": [
+      "33.0",
+      "48.7",
+      "38.2",
+      "26.5",
+      "24.3",
+      "23.3 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities (US GAAP, after interest and tax)",
+     "values": [
+      "7,366",
+      "7,586",
+      "4,240",
+      "8,818",
+      "16,813",
+      "28,083 (12 m to Jun 2026)"
+     ]
+    },
+    {
+     "label": "Interest paid",
+     "values": [
+      "338",
+      "324",
+      "404",
+      "578",
+      "633",
+      "633 (latest annual)"
+     ]
+    },
+    {
+     "label": "Capital spending",
+     "note": "New factories for Mounjaro, Zepbound and Foundayo",
+     "values": [
+      "1,310",
+      "1,854",
+      "3,448",
+      "5,058",
+      "7,841",
+      "9,893"
+     ]
+    },
+    {
+     "label": "Lease payments (principal)",
+     "note": "Lilly's leases are small operating leases (about USD 1.4bn) whose payments are already inside operating cash flow under US accounting",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      ""
+     ]
+    },
+    {
+     "label": "Cash paid for acquisitions",
+     "note": "Large deals in 2026; shown separately, not deducted below",
+     "values": [
+      "747",
+      "327",
+      "1,044",
+      "948",
+      "661",
+      "10,466"
+     ]
+    },
+    {
+     "label": "= Free cash flow to the firm (our calculation)",
+     "note": "Operating cash flow + interest paid × (1 − 19% tax) − capital spending",
+     "strong": true,
+     "values": [
+      "6,330",
+      "5,994",
+      "1,119",
+      "4,228",
+      "9,485",
+      "18,703"
+     ]
+    },
+    {
+     "label": "Cash conversion (free cash flow ÷ EBIT)",
+     "values": [
+      "75%",
+      "75%",
+      "16%",
+      "30%",
+      "35%",
+      "42% (2021–25 total)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "NYSE close 26 Oct 2026 (stockanalysis.com, Google Finance); the 27 Oct close was not yet available in our sources. Market value about USD 1,140bn",
+    "value": "USD 1,279.14"
+   },
+   {
+    "label": "2027 EPS forecast",
+    "note": "stockanalysis.com consensus (non-GAAP); Goldman Sachs 46.08, Erste Group 47.77",
+    "value": "USD 47.22"
+   },
+   {
+    "label": "Growth-adjusted forward multiple",
+    "note": "Between AbbVie (19.0 times, EPS +16% expected) and Lilly's own end-2025 31.1 times (+40% a year expected then), in line with today's expected +24% a year for 2027–28. Not the 35.9 average of 2023–25 (see step 2)",
+    "value": "23 × earnings"
+   },
+   {
+    "label": "Shares",
+    "note": "stockanalysis.com; 894.8m at end-2025",
+    "value": "891.4 million"
+   },
+   {
+    "label": "Net debt excl. leases",
+    "note": "30 Jun 2026 (debt 54.9bn − cash and investments 9.7bn); used only in the checks",
+    "value": "USD 45.2bn"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.00% US 10-year Treasury yield (close 27 Oct 2026, Trading Economics) + beta 0.5 × 5.5%",
+    "value": "7.75%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.45 (stockanalysis.com), rounded to 0.5",
+    "value": "0.5"
+   },
+   {
+    "label": "P/E today",
+    "note": "1,279.14 ÷ 47.22; 37.0 on 2026E",
+    "value": "27.1 on 2027E"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large pharmaceutical companies with approved products)",
+   "why": "P/E is the share price divided by earnings per share (EPS), the profit for each share. For drug makers with big approved medicines, profit is high and steady enough to compare companies on what investors pay for next year's earnings, and analysts set their targets that way: Goldman Sachs uses 28 times forward earnings for Lilly. We use Lilly's own 'non-GAAP' EPS (profit excluding items such as amortisation and one-off charges), which analysts also use. Since 2022 Lilly's non-GAAP EPS includes the cost of buying research projects ('acquired in-process R&D'), so big deals still lower it.",
+   "whyNot": "An enterprise-value multiple (EV/EBIT) would also work, because Lilly's debt is small next to its market value; we use it as a check. The cash-flow model (DCF) is only a check because Lilly's cash flow is still held down by a huge factory build-out (capital spending rose from USD 1.3bn in 2021 to 9.9bn in the last 12 months), and its result depends heavily on how long growth lasts. A book-value method does not fit a company whose value is in patents and brands."
+  },
+  "price": 1279.14,
+  "priceDate": "close 26 Oct 2026",
+  "rangeHigh": 1051.8,
+  "rangeLow": 964.1,
+  "reasoning": [
+   "Lilly's record is exceptional: non-GAAP EPS rose from USD 6.32 in 2023 to USD 24.21 in 2025, and it beat the top of its own guidance in 2024 and 2025 and raised 2026 guidance twice.",
+   "Analysts expect EPS to grow another 37% in 2027 but only about 12% in 2028, as obesity-drug prices fall and the market forecasts for 2030 have been cut. That is much less than the 40–100% growth that justified 31–45 times at recent year-ends, so we use 23 times, between AbbVie (19 times, 16% growth) and Lilly's end-2025 level.",
+   "That gives USD 1,086 in a year, or USD 1,008 today. The cash-flow check gives USD 992 and the EV/EBIT check USD 904; analysts' average target is worth USD 1,238 today because they use about 28 times.",
+   "Fair value USD 1,008 (range 964.1–1,051.8). At USD 1,279.14 the share is 21% above our value: it looks overvalued, unless growth stays strong well beyond 2027; the price already assumes about 27 times next year's earnings."
+  ],
+  "report": {
+   "date": "Q3 report · Thursday 29 October 2026",
+   "dateIso": "2026-10-29",
+   "extra": [
+    {
+     "plain": "Lilly counts the cost of buying research projects in its non-GAAP EPS. The roughly USD 4.2bn charge expected in Q3 lowers 2026 EPS by about USD 4.6 but does not change the 2027 forecast, so it hardly moves our value. New deals booked in 2027 would: each USD 1bn lowers 2027 EPS by about USD 1.12 and our value by about USD 24. In our P/E formula net debt works only indirectly, but in the EV/EBIT check each USD 10bn more or less net debt changes the value by about USD 10.4 a share (10,000 ÷ 891.36 ÷ 1.0775). Net debt rose from USD 35.2bn to 45.2bn in the first half of 2026 (acquisitions of USD 10.5bn).",
+     "title": "What if acquired R&D charges or net debt change?"
+    }
+   ],
+   "plain": "Our fair value = multiple × 2027 EPS ÷ 1.0775. The report can change it in two ways: through analysts' forecast for 2027 earnings, and through the multiple, if the growth outlook for 2027–2028 changes. A big share-price move on the day is not the same as a change in value. Q3 EPS itself will be distorted by a deal charge of about USD 4.2bn (Goldman Sachs: about USD 4.57 a share), which lowers 2026 but not 2027.",
+   "scenarios": [
+    {
+     "calc": "23 × 49.58 ÷ 1.0775 = 1,058.3 · 24 × 49.58 ÷ 1.0775 = 1,104.4",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "USD 1,058–1,104",
+     "what": "Revenue clearly above the roughly USD 22.5bn consensus (Goldman Sachs expects USD 23.1bn; Q3 2025: USD 17.60bn), Mounjaro and Zepbound well above Q3 2025's USD 6.52bn and 3.59bn, a strong start for Foundayo, and 2026 revenue guidance raised above USD 87bn. Two separate effects: (1) analysts raise their 2027 EPS forecast by about 5%, from USD 47.22 to 49.58, which gives USD 1,058 at the unchanged 23 times; (2) if Lilly signals that growth can stay near 20% or more in 2028 (analysts now expect about 12%), the multiple can move up 1 point to 24 times: USD 1,104."
+    },
+    {
+     "calc": "23 × 47.22 ÷ 1.0775 = 1,007.9",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "USD 1,008",
+     "what": "Revenue near USD 22.5bn (+28%), the 2026 guidance (revenue USD 85–87bn) confirmed or nudged up, EPS lowered only by the known deal charge. The 2027 forecast (USD 47.22) and the 23 times multiple stay, so our value does not change."
+    },
+    {
+     "calc": "23 × 44.86 ÷ 1.0775 = 957.5 · 22 × 44.86 ÷ 1.0775 = 915.9",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "USD 916–958",
+     "what": "Revenue below Q2 2026's USD 22.97bn because of lower prices (Medicare GLP-1 programme, China, generic semaglutide abroad), weak Foundayo uptake, or guidance only kept. Two separate effects: (1) analysts cut their 2027 EPS forecast by about 5%, from USD 47.22 to 44.86, which gives USD 958 at 23 times; (2) if 2027–28 growth then looks closer to 15% a year than the 24% now expected, the multiple drops 1 point to 22 times: USD 916."
+    }
+   ],
+   "title": "How the Q3 report could change our fair value",
+   "watch": [
+    "Revenue: consensus about USD 22.5bn (Bernstein 22.62bn, Goldman 23.1bn) vs USD 17.60bn in Q3 2025 and USD 22.97bn in Q2 2026.",
+    "Mounjaro and Zepbound: Q3 2025 USD 6.52bn and 3.59bn; Q2 2026 USD 9.94bn and 4.93bn. Goldman expects both above consensus.",
+    "Foundayo (the obesity pill): USD 98m in Q2; consensus about USD 246m for Q3.",
+    "Prices: Q2 US prices −3% (about −9% without one-offs), outside the US −36%; watch the first full quarter of the Medicare GLP-1 programme.",
+    "Guidance: 2026 revenue USD 85–87bn and non-GAAP EPS USD 35.50–36.50 (before the Q3 deal charge); Q3 2025 non-GAAP EPS was USD 7.02."
+   ]
+  },
+  "risks": [
+   "Forecast risk: if 2027 EPS comes in 10% lower than USD 47.22 (for example from faster US price cuts, more generic semaglutide abroad or more acquired R&D charges), the fair value falls to about USD 907. Each USD 1bn of acquired R&D charges in 2027 lowers EPS by about USD 1.12 and our value by about USD 24.",
+   "Multiple risk, upside: at the 28.3 times implied by analysts' average target the value is about USD 1,238; at today's 27.1 times it is about USD 1,187. Each 1 point of multiple moves the value by about USD 44. If investors paid the unadjusted 2023–25 average of 35.9 times again, the value would be about USD 1,575, which would need growth like 2024–2026 to return.",
+   "Pipeline and launch upside: the new obesity pill Foundayo (USD 98m in Q2, its first quarter), the next-generation drug retatrutide and the new cancer medicines could keep growth above 20% after 2027. If analysts came to expect that, a multiple of 27 times would be easier to justify: about USD 1,183.",
+   "Price and competition risk: Lilly's US prices fell about 3% in Q2 2026 (about 9% without one-off adjustments) and prices outside the US fell 36%. If lower prices cut 2027 revenue by 5% (about USD 5bn) with costs unchanged, profit would fall roughly 10%, the same as the forecast-risk case (about USD 907)."
+  ],
+  "sector": "Pharmaceuticals (obesity and diabetes drugs)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in USD per share for different forward P/E multiples (rows) and for 2027 EPS coming in higher or lower than forecast (columns). Base case: 23 × USD 47.22, discounted at 7.75%.",
+   "colLabel": "2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "USD 47.22",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "25.0",
+    "24.0",
+    "23.0",
+    "22.0",
+    "21.0"
+   ],
+   "values": [
+    [
+     986,
+     1040.8,
+     1095.6,
+     1150.4,
+     1205.2
+    ],
+    [
+     946.6,
+     999.2,
+     1051.8,
+     1104.4,
+     1156.9
+    ],
+    [
+     907.1,
+     957.5,
+     1007.9,
+     1058.3,
+     1108.7
+    ],
+    [
+     867.7,
+     915.9,
+     964.1,
+     1012.3,
+     1060.5
+    ],
+    [
+     828.3,
+     874.3,
+     920.3,
+     966.3,
+     1012.3
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Lilly Q2 2026 results and raised guidance (8-K, SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000077/q226lillysalesandearningsp.htm"
+   },
+   {
+    "title": "Lilly Q4 2025 results and 2026 guidance (investor.lilly.com)",
+    "url": "https://investor.lilly.com/node/53786/pdf"
+   },
+   {
+    "title": "Lilly Q3 2025 results (8-K, SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+   },
+   {
+    "title": "Lilly Q4 2023 results and 2024 guidance (BioSpace)",
+    "url": "https://www.biospace.com/lilly-reports-strong-fourth-quarter-2023-financial-results-and-provides-2024-guidance"
+   },
+   {
+    "title": "Lilly Q4 2022 results, 2021 recast non-GAAP EPS (investor.lilly.com)",
+    "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2022-financial-results-core"
+   },
+   {
+    "title": "Lilly 2025 guidance (American Pharmaceutical Review)",
+    "url": "https://www.americanpharmaceuticalreview.com/1315-News/617604-Lilly-Reports-45-Increase-in-Q4-2024-Financial-Results-Provides-2025-Guidance/"
+   },
+   {
+    "title": "Eli Lilly forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/lly/forecast/"
+   },
+   {
+    "title": "Eli Lilly statistics, beta and next earnings date (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/lly/statistics/"
+   },
+   {
+    "title": "Eli Lilly price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/lly/history/"
+   },
+   {
+    "title": "Eli Lilly income statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/lly/financials/"
+   },
+   {
+    "title": "Eli Lilly balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/lly/financials/balance-sheet/"
+   },
+   {
+    "title": "Eli Lilly cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/lly/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Eli Lilly financial forecasts 2026–2028 (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/ELI-LILLY-AND-COMPANY-13401/finances/"
+   },
+   {
+    "title": "Eli Lilly year-end share prices (digrin)",
+    "url": "https://www.digrin.com/stocks/detail/LLY/price"
+   },
+   {
+    "title": "Eli Lilly quote (Google Finance)",
+    "url": "https://www.google.com/finance/quote/LLY:NYSE"
+   },
+   {
+    "title": "Goldman Sachs raises Lilly target to USD 1,413, 28x forward earnings (TheStreet via Yahoo Finance, 23 Oct 2026)",
+    "url": "https://au.finance.yahoo.com/news/goldman-sachs-resets-eli-lilly-193700366.html"
+   },
+   {
+    "title": "Bernstein lifts target to USD 1,450 (ad-hoc-news, 26 Oct 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/eli-lilly-and-co-stock-bernstein-lifts-usd-1-450-target-slightly-higher-pre-market/70417835"
+   },
+   {
+    "title": "Wall Street expectations before Q3 (TipRanks, 26 Oct 2026)",
+    "url": "https://www.tipranks.com/news/wall-street-has-high-expectations-for-eli-lilly-stock-lly-heading-into-earnings"
+   },
+   {
+    "title": "Analysts' EPS estimates and targets (MarketBeat, 23 Oct 2026)",
+    "url": "https://www.marketbeat.com/instant-alerts/estimates-equities-analysts-offer-predictions-for-lly-fy2027-earnings-2026-10-23/"
+   },
+   {
+    "title": "Eli Lilly earnings preview, report date 29 Oct (Barchart via Yahoo Finance, 14 Oct 2026)",
+    "url": "https://finance.yahoo.com/healthcare/articles/eli-lilly-company-earnings-preview-115833516.html"
+   },
+   {
+    "title": "Lilly ahead of Q3: prices, volumes and consensus (TIKR via Yahoo Finance, 25 Oct 2026)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/eli-lilly-stock-fell-2-001525924.html"
+   },
+   {
+    "title": "Obesity market sales potential tightens (Reuters via Tiger Brokers, 2 Feb 2026)",
+    "url": "https://www.itiger.com/news/2608086823"
+   },
+   {
+    "title": "US 10-year Treasury yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+   },
+   {
+    "title": "Federal Reserve H.15 selected interest rates",
+    "url": "https://www.federalreserve.gov/releases/h15/"
+   },
+   {
+    "title": "Novo Nordisk statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nvo/statistics/"
+   },
+   {
+    "title": "Novo Nordisk forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/nvo/forecast/"
+   },
+   {
+    "title": "AbbVie statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/abbv/statistics/"
+   },
+   {
+    "title": "AbbVie forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/abbv/forecast/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "stockanalysis.com consensus for 2027",
+    "formula": "2027 EPS = analyst consensus",
+    "plain": "Earnings per share (EPS) is the yearly profit for each share. Lilly's non-GAAP EPS was USD 7.39 in 2021 and fell to USD 6.32 in 2023 (big research purchases), then jumped to USD 12.99 in 2024 and USD 24.21 in 2025 as Mounjaro and Zepbound took off. Analysts expect USD 34.59 in 2026 and USD 47.22 in 2027 (+37%), on revenue of about USD 102bn. The first half of 2026 supports this: revenue +51% to USD 42.8bn and non-GAAP EPS USD 16.94 against USD 9.65, despite USD 3.4bn of acquired R&D charges.",
+    "result": "USD 47.22",
+    "title": "What will Eli Lilly earn next year?"
+   },
+   {
+    "calc": "19.03 + 0.32 × 12.04 = 22.9 → 23",
+    "formula": "Growth-adjusted multiple = 19.03 + (23.7% − 16.1%) ÷ (39.7% − 16.1%) × (31.07 − 19.03)",
+    "plain": "At the last three year-ends Lilly traded at 44.9, 31.9 and 31.1 times the next year's earnings (average 35.9). Investors then got EPS growth of +106% (2024), +86% (2025) and +43% (2026E) the following year. Now analysts expect +37% in 2027 but only about +12% in 2028 (Goldman Sachs: USD 46.08 → 51.68; MarketScreener's reported-EPS consensus +14%), and 2028 revenue growth of about 12%. The obesity market is still growing, but brokers have cut their 2030 forecasts as prices fall (Goldman Sachs USD 105bn instead of 130bn; Jefferies USD 80bn peak). So expected growth over the next two years averages about 23.7% a year (1.37 × 1.12), against about 39.7% a year at end-2025 (+43% and +37%). Growth is clearly lower, so we do not use the average. Peers show what slower growth earns: AbbVie trades at 19.0 times with EPS growth of about 16% expected for 2027, and Novo Nordisk at 11.7 times with almost no growth. Placing Lilly's 23.7% between AbbVie (16.1%, 19.0 times) and Lilly's own end-2025 level (39.7%, 31.1 times) gives 22.9, so we use 23 times. We leave out 2020–2021 (near-zero interest rates).",
+    "result": "23 × earnings",
+    "title": "What should investors pay for next year's profit, given the growth?"
+   },
+   {
+    "calc": "23 × 47.22",
+    "formula": "multiple × 2027 EPS",
+    "plain": "Multiply next year's earnings per share by the multiple investors pay for that growth.",
+    "result": "USD 1,086",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "1,086.06 ÷ 1.0775",
+    "formula": "Fair value = price in 12 months ÷ (1 + 7.75%)",
+    "plain": "Shareholders want a return for waiting a year: 5.00% US bond yield + 0.5 × 5.5% = 7.75%. Lilly's share has moved less than the market (beta 0.45), so the required return is low. (Like analysts' targets, this leaves out the dividend, USD 6.92 a share a year now.)",
+    "result": "USD 1,008",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "1,007.9 ÷ 1,279.14 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 21% below today's price, more than the 10% band, so Lilly looks overvalued on this method. Today investors pay 27.1 times 2027 earnings; that is fair only if fast growth continues well beyond 2027 rather than slowing to about 12% in 2028, as the current consensus has it. The share is up 19% since end-2025 (USD 1,074.68 to 1,279.14).",
+    "result": "−21%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Eli Lilly the way analysts usually value large drug makers with approved products: the price-to-earnings ratio (P/E) on next year's profit. Analysts expect earnings per share to grow about 37% in 2027 but only about 12% in 2028, much less than the 40–100% growth investors paid for at recent year-ends, so we use 23 times instead of the 31–36 times of 2023–2025. On 2027 earnings of USD 47.22 a share that gives about USD 1,086 in a year, or USD 1,008 today, 21% below the USD 1,279.14 share price.",
+  "targets": {
+   "items": [
+    "Lilly does not publish multi-year financial targets; it gives yearly guidance. 2026 guidance (raised twice): revenue USD 80–83bn in February, 82–85bn after Q1 and 85–87bn after Q2; non-GAAP EPS USD 33.50–35.00 at first, 35.50–37.00 after Q1 and 35.50–36.50 after Q2 (narrowed because of acquired R&D charges). Tax rate 18–19%.",
+    "Track record: for 2025 Lilly first guided to revenue of USD 58–61bn and EPS of USD 22.50–24.00; it delivered USD 65.2bn and USD 24.21, above the top of both ranges. For 2024 it first guided to EPS of USD 12.20–12.70 and delivered USD 12.99.",
+    "Market outlook: brokers have cut their 2030 obesity-drug market forecasts as prices fall (Goldman Sachs to about USD 105bn from 130bn, Jefferies to an USD 80bn peak), while HSBC still sees more than USD 120bn by 2030 (Reuters, February 2026). Lilly's own prices fell about 3% in the US and 36% outside the US in Q2 2026, while volumes rose 60%."
+   ],
+   "title": "Does Eli Lilly have a growth goal we can use?",
+   "verdict": "Partly. There is no long-term goal, but yearly guidance has been beaten for two years running, and the 2026 guidance (EPS +47–51% before Q3 deal charges) is above the 2026 consensus of USD 34.59. We use the analysts' 2027 EPS of USD 47.22 (+37%); for 2028 analysts expect only about +12%, which is why we use a lower multiple."
+  },
+  "ticker": "LLY",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Eli Lilly is a US drug maker whose biggest products are Mounjaro (for type 2 diabetes) and Zepbound (for weight loss), both based on the active ingredient tirzepatide, plus a new obesity pill (Foundayo), cancer, immunology and Alzheimer's medicines. Revenue was USD 65.2 billion in 2025, up 45%, and Lilly is the world's most valuable drug company."
+ },
  {
   "company": "adidas",
   "consensus": {
