@@ -1966,11 +1966,632 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Cybersecurity software",
   "teaser": "One of the most richly valued software companies: how many years of 20%-plus growth does today's price already assume?",
   "ticker": "CRWD"
+ },
+ {
+  "company": "Salesforce",
+  "date": "2026-11-25",
+  "market": "United States",
+  "method": "Forward P/E",
+  "reportDate": "2026-12-01",
+  "reportDateStatus": "estimated",
+  "sector": "Business software (customer-relationship management)",
+  "teaser": "Salesforce's profits keep growing while its sales growth has slowed: what multiple does a maturing software leader deserve?",
+  "ticker": "CRM"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Apple",
+  "consensus": {
+   "analysts": 44,
+   "asOf": "27 Oct 2026",
+   "explain": "The average target of USD 330.02 is a price in 12 months; discounted one year at 11.06% it is worth about USD 297 today. Our USD 245 is 17% below that. On the same fiscal-2027 EPS of USD 9.56 the target implies about 34.5 times, against our 28.5 times; the forecast is the same, so the whole gap is the multiple. Analysts pay more because they look past fiscal 2027 to new products and AI features and to a long iPhone cycle (Morgan Stanley sees a possible four straight years of iPhone unit growth); we stay with what Apple itself traded at when growth was similar.",
+   "high": 405,
+   "low": 240,
+   "method": "Analysts value Apple with a P/E on its next fiscal year's earnings. In April 2026 Morgan Stanley (Erik Woodring) set its target at 32 times its fiscal-2027 EPS forecast (USD 298 = 32 × 9.30); in October it cut the target from USD 360 to 355 and its fiscal-2027 EPS to USD 9.90, which works out at about 36 times. Other recent targets: Evercore ISI USD 380, Bank of America and Bernstein USD 370, HSBC USD 366, JPMorgan USD 360, while UBS (USD 296), KeyBanc (USD 250) and Barclays (USD 245) are sceptical. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Buy on average (18 strong buy, 6 buy, 14 hold, 3 sell, 3 strong sell)",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 330.02,
+   "targetToday": 297.2
+  },
+  "crossCheck": {
+   "calc": "FCF FY2027 = 0.854 × 166,619 = 142,293; FY2028 = 159,140; … FY2036 = 233,576; (PV 1,109,602 + terminal 1,002,326 + 62,173) ÷ 14,594 = 149",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "Free cash flow to the firm is operating cash flow minus capital spending (cash interest paid is no longer reported and is small). In fiscal 2021–2025 Apple turned 85.4% of its EBIT into such cash, after tax. We use 85.4% of EBIT each year. EBIT is USD 166.6bn in fiscal 2027 and grows 11.8% in 2028 (consensus), then 9%, 7.5%, 6%, 5%, 4%, 3% and 2.5%, and 2.5% after that. The discount rate (WACC) is 10.95%: 98.4% equity at 11.06% and 1.6% debt at 4.35% after tax (5.51% before tax: the 10-year Treasury plus 0.5 point, taxed at the 21% US rate). Operations are worth about USD 2,112bn; plus USD 62.2bn net cash that is about USD 149 a share. Today's USD 347.10 would need a discount rate of about 6.2%. So the cash does not support today's 36 times, and not even our 28.5 times at an 11% required return; the multiple only holds if investors accept a much lower return or growth stays high for far longer.",
+   "result": "≈ USD 149 at 10.95%; today's price needs ≈ 6.2%"
+  },
+  "crossChecks": [
+   {
+    "calc": "(23.7 × 166,619 + 62,173) ÷ 14,594 ÷ 1.1106",
+    "name": "Check: forward EV/EBIT on its own history",
+    "note": "Today EV is about USD 5,003bn, 30.0 times fiscal-2027 EBIT, far above the 18.8–26.1 range of the last five year-ends. This check lands within 1% of our P/E value.",
+    "plain": "EV (enterprise value) = market value + net debt; Apple has net cash, so EV is a little below its market value. At the 2023/24/25 fiscal year-ends Apple traded at 21.2, 26.1 and 23.8 times the next year's EBIT (average 23.7). On fiscal-2027 EBIT of USD 166,619m, plus USD 62,173m net cash, ÷ 14,594m shares, that gives USD 274.84 in a year, or:",
+    "result": "≈ USD 247"
+   },
+   {
+    "calc": "23.8 × 9.563 ÷ 1.1106",
+    "name": "Check: at peers' multiple",
+    "note": "Apple trades at 36.3 times, well above both, although its expected EPS growth (+8% in fiscal 2027) is lower than Microsoft's (+14%) and Alphabet's (+29%). Investors pay extra for Apple's steady services income and huge buybacks, so the peer check is a floor, not a fair value.",
+    "plain": "Prices from stockanalysis.com (27 Oct close for Microsoft, 26 Oct for Alphabet) divided by consensus EPS for their next fiscal year: Microsoft 26.9 times (531.33 ÷ 19.76, year to June 2027) and Alphabet 20.6 times (316.80 ÷ 15.36, calendar 2027); average 23.8. At the peer average on Apple's USD 9.56:",
+    "result": "≈ USD 205"
+   }
+  ],
+  "currency": "USD",
+  "date": "2026-10-29",
+  "dateLabel": "Thursday 29 October 2026",
+  "exchange": "Nasdaq",
+  "fairValue": 245,
+  "history": {
+   "caption": "USD million unless stated. Fiscal years end in late September. Revenue, EBIT, net debt and forecasts from MarketScreener; EPS, cash flows, debt, cash and share counts from stockanalysis.com (10-K data); fiscal-2024 EPS excludes the one-time USD 10.2bn EU tax charge (USD 0.67 a share, MacRumors on Apple's Q4 FY24 release); share prices are end-of-September closes (Yahoo Finance, not adjusted for dividends). Net debt = commercial paper + term debt − cash and marketable securities (negative = net cash); leases excluded. Forward = year-end value ÷ the NEXT fiscal year's result; for 2025 we use today's fiscal-2026 consensus (EPS 8.82, EBIT 156,398), because fiscal 2026 ends on 26 September 2026 but is reported only on 2 November. Last column: latest (price 27 Oct 2026, net debt 27 Jun 2026) or as marked.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest / FY2027E"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "FY2026E 477,621 (+15%), FY2027E +10%, FY2028E 572,157 (+9%)",
+     "values": [
+      "365,817",
+      "394,328",
+      "383,285",
+      "391,035",
+      "416,161",
+      "527,258 (FY27E)"
+     ]
+    },
+    {
+     "label": "Operating profit (EBIT)",
+     "note": "FY2026E 156,398; FY2028E 186,347 (+12%)",
+     "values": [
+      "108,949",
+      "119,437",
+      "114,301",
+      "123,216",
+      "133,050",
+      "166,619 (FY27E)"
+     ]
+    },
+    {
+     "label": "EPS excl. one-offs, USD",
+     "note": "FY2026E 8.82 (+18%), FY2028E 10.81 (+13%), MarketScreener consensus. FY2024 excludes the EU tax charge (reported 6.08)",
+     "values": [
+      "5.61",
+      "6.11",
+      "6.13",
+      "6.75",
+      "7.46",
+      "9.56 (FY27E)"
+     ]
+    },
+    {
+     "label": "Share price at fiscal year-end (end of September), USD",
+     "values": [
+      "141.50",
+      "138.20",
+      "171.21",
+      "233.00",
+      "254.63",
+      "347.10"
+     ]
+    },
+    {
+     "label": "Shares at year-end, million",
+     "values": [
+      "16,427",
+      "15,943",
+      "15,550",
+      "15,117",
+      "14,773",
+      "14,594"
+     ]
+    },
+    {
+     "label": "Net debt excl. leases (negative = net cash)",
+     "note": "Net cash rose again in 2026 as cash flow jumped",
+     "values": [
+      "−65,797",
+      "−49,040",
+      "−51,011",
+      "−50,021",
+      "−33,763",
+      "−62,173 (Jun)"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing)",
+     "values": [
+      "25.2",
+      "22.6",
+      "27.9",
+      "34.5",
+      "34.1",
+      "39.4 (on FY26E)"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Year-end price ÷ next year's EPS. Average 2023–25: 28.5 (we use this, see step 2)",
+     "strong": true,
+     "values": [
+      "23.2",
+      "22.5",
+      "25.4",
+      "31.2",
+      "28.9",
+      "36.3 (on FY27E)"
+     ]
+    },
+    {
+     "label": "Growth in EPS the following year",
+     "note": "What investors got for each year-end multiple. FY2026's +18% was helped by a strong iPhone 17 cycle and tariff refunds",
+     "strong": true,
+     "values": [
+      "+9%",
+      "+0%",
+      "+10%",
+      "+11%",
+      "+18% (FY26E)",
+      "+8% (FY27E), +13% (FY28E)"
+     ]
+    },
+    {
+     "label": "Forward EV/EBIT at year-end",
+     "note": "EV = year-end market value + net debt (minus net cash). Check only",
+     "values": [
+      "18.9",
+      "18.8",
+      "21.2",
+      "26.1",
+      "23.8",
+      "30.0 (on FY27E)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities (US GAAP, after interest and tax)",
+     "note": "FY2025 held down by about USD 17bn more cash tax (EU tax payment): 43,369 vs 26,102",
+     "values": [
+      "104,038",
+      "122,151",
+      "110,543",
+      "118,254",
+      "111,482",
+      "146,724 (12 m to Jun 2026)"
+     ]
+    },
+    {
+     "label": "Interest paid",
+     "note": "Apple no longer reports cash interest paid; it is small (USD 2.7bn in 2021) next to operating cash flow, so we leave it out",
+     "values": [
+      "2,687",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      ""
+     ]
+    },
+    {
+     "label": "Capital spending",
+     "values": [
+      "11,085",
+      "10,708",
+      "10,959",
+      "9,447",
+      "12,715",
+      "10,041"
+     ]
+    },
+    {
+     "label": "Lease payments (principal)",
+     "note": "Apple's leases are operating leases whose payments are already inside operating cash flow under US accounting",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      ""
+     ]
+    },
+    {
+     "label": "Cash paid for acquisitions",
+     "note": "Not reported separately; Apple's acquisitions are small",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      "n/a",
+      ""
+     ]
+    },
+    {
+     "label": "= Free cash flow to the firm (our calculation)",
+     "note": "Operating cash flow − capital spending",
+     "strong": true,
+     "values": [
+      "92,953",
+      "111,443",
+      "99,584",
+      "108,807",
+      "98,767",
+      "136,683"
+     ]
+    },
+    {
+     "label": "Cash conversion (free cash flow ÷ EBIT)",
+     "values": [
+      "85%",
+      "93%",
+      "87%",
+      "88%",
+      "74%",
+      "85% (2021–25 total)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Nasdaq close 27 Oct 2026 (Gotrade); the 28 Oct close was not yet confirmed in our sources. Market value about USD 5,066bn",
+    "value": "USD 347.10"
+   },
+   {
+    "label": "Fiscal-2027 EPS forecast",
+    "note": "MarketScreener consensus (9.563); Yahoo Finance/Barchart 9.58, Erste Group 9.58, Morgan Stanley 9.90",
+    "value": "USD 9.56"
+   },
+   {
+    "label": "Forward multiple",
+    "note": "Apple's own average at the fiscal 2023, 2024 and 2025 year-ends. Not adjusted: expected growth (about 11% a year for fiscal 2027–28) is close to the 10–11% that came after the 2023 and 2024 year-ends",
+    "value": "28.5 × earnings"
+   },
+   {
+    "label": "Shares",
+    "note": "MarketScreener / stockanalysis.com (14.59bn)",
+    "value": "14,594 million"
+   },
+   {
+    "label": "Net cash excl. leases",
+    "note": "27 Jun 2026: cash 39.5bn + marketable securities 107.0bn − commercial paper 2.0bn − term debt 82.3bn; used only in the checks",
+    "value": "USD 62.2bn"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "5.01% US 10-year Treasury yield (29 Oct 2026, Trading Economics) + beta 1.1 × 5.5%",
+    "value": "11.06%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured beta 1.07 (stockanalysis.com, MarketBeat), rounded to 1.1",
+    "value": "1.1"
+   },
+   {
+    "label": "P/E today",
+    "note": "347.10 ÷ 9.563; 39.4 on FY2026E",
+    "value": "36.3 on FY2027E"
+   }
+  ],
+  "market": "United States",
+  "method": {
+   "name": "Sector method: forward P/E on next year's earnings (how analysts value large US technology and consumer-brand companies)",
+   "why": "P/E is the share price divided by earnings per share (EPS), the profit for each share. Apple's profit is large, steady and mostly paid out through buybacks and dividends, so analysts compare it on what investors pay for next year's earnings: Morgan Stanley stated in April 2026 that its target was 32 times fiscal-2027 EPS. Apple's fiscal year ends in late September, so 'next year' is fiscal 2027 (October 2026 to September 2027), the year analysts quote. Apple reports only standard (GAAP) EPS; we remove one large one-off, a USD 10.2bn EU tax charge in fiscal 2024.",
+   "whyNot": "An enterprise-value multiple (EV/EBIT) gives almost the same answer because Apple has net cash rather than debt; we use it as a check. The cash-flow model (DCF) is only a check because, at today's high required return (11%), almost all of Apple's value sits in the distant future and the result swings strongly with the discount rate. A book-value method does not fit: Apple has bought back so many shares that its book equity is tiny compared with its value."
+  },
+  "price": 347.1,
+  "priceDate": "close 27 Oct 2026",
+  "rangeHigh": 254,
+  "rangeLow": 236.8,
+  "reasoning": [
+   "Apple is a steady, slow-growth giant: EPS excluding one-offs rose from USD 5.61 in fiscal 2021 to USD 7.46 in fiscal 2025, about 7% a year, and fiscal 2026 is expected to jump 18% on a strong iPhone cycle.",
+   "Analysts expect about 8% growth in fiscal 2027 and 13% in fiscal 2028, close to what Apple delivered after its 2023 and 2024 year-ends, so we use its own 2023–2025 average multiple of 28.5 times without a growth adjustment.",
+   "That gives USD 273 in a year, or USD 245 today. The EV/EBIT check gives USD 247, the peer check USD 205 and the cash-flow check only USD 149; analysts' average target is worth USD 297 today because it implies about 34.5 times.",
+   "Fair value USD 245 (range 236.8–254.0). At USD 347.10 the share is 29% above our value: it looks overvalued; the price already assumes 36 times next year's earnings, a level Apple has not traded at at any of its last five year-ends."
+  ],
+  "report": {
+   "date": "Q4 report · Monday 2 November 2026",
+   "dateIso": "2026-11-02",
+   "extra": [
+    {
+     "plain": "For Apple the key measure behind the forecast is the gross margin, now squeezed by memory-chip prices. Each 1 point of gross margin on fiscal-2027 revenue of about USD 527bn is about USD 5.3bn of profit before tax, roughly USD 0.29 of EPS after 21% tax, and about USD 7 a share of our fair value (28.5 × 0.29 ÷ 1.1106). Net cash works only indirectly in our P/E formula (through buybacks and interest income), but in the EV/EBIT check each USD 10bn more or less net cash changes the value by about USD 0.62 a share. Net cash rose from USD 33.8bn at end-September 2025 to USD 62.2bn in June 2026.",
+     "title": "What if the gross margin or net cash changes?"
+    }
+   ],
+   "plain": "Our fair value = 28.5 × fiscal-2027 EPS ÷ 1.1106. The report can change it in two ways: through analysts' forecast for fiscal-2027 earnings (mainly via Apple's guidance for the December quarter and its comments on memory costs), and through the multiple, if the growth outlook for fiscal 2027–2028 changes. A big share-price move on the day is not the same as a change in value; Apple's share has fallen on average 1.5% on report days despite beating estimates eight times in a row.",
+   "scenarios": [
+    {
+     "calc": "28.5 × 10.04 ÷ 1.1106 = 257.7 · 29.5 × 10.04 ÷ 1.1106 = 266.7",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "USD 258–267",
+     "what": "Revenue clearly above the roughly USD 113.3bn consensus (Q4 fiscal 2025: USD 102.47bn), iPhone up more than the guided mid-teens from USD 49.03bn, gross margin at the top of 47–48%, and a December-quarter outlook above the USD 2.91 EPS consensus. Two separate effects: (1) analysts raise their fiscal-2027 EPS forecast by about 5%, from USD 9.56 to 10.04, which gives USD 258 at the unchanged 28.5 times; (2) if Apple signals that growth can stay near 15% a year in fiscal 2027–28 (analysts now expect about 11%), the multiple can move up 1 point to 29.5 times: USD 267."
+    },
+    {
+     "calc": "28.5 × 9.563 ÷ 1.1106 = 245.4",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "USD 245",
+     "what": "Revenue near USD 113.3bn (+10.6%), EPS near USD 1.99 (Q4 fiscal 2025: USD 1.85), gross margin of 47–48% and a December-quarter outlook in line with consensus. The fiscal-2027 forecast (USD 9.56) and the 28.5 times multiple stay, so our value does not change."
+    },
+    {
+     "calc": "28.5 × 9.08 ÷ 1.1106 = 233.1 · 27.5 × 9.08 ÷ 1.1106 = 225.0",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "USD 225–233",
+     "what": "Revenue at the low end of the 9–11% guidance, gross margin below 47% because memory costs rise faster than expected, or a cautious December-quarter outlook (iPhone 18 supply limits, weaker US and Japan demand). Two separate effects: (1) analysts cut their fiscal-2027 EPS forecast by about 5%, from USD 9.56 to 9.08, which gives USD 233 at 28.5 times; (2) if fiscal 2027–28 growth then looks closer to 6% a year than the 11% now expected, the multiple drops 1 point to 27.5 times: USD 225."
+    }
+   ],
+   "title": "How the Q4 report could change our fair value",
+   "watch": [
+    "Revenue: consensus about USD 113.3bn (guidance +9–11%) vs USD 102.47bn in Q4 fiscal 2025; EPS consensus USD 1.99 vs USD 1.85.",
+    "iPhone: guided up in the mid-teens vs USD 49.03bn a year ago. Counterpoint says iPhone 18 Pro unit sales rose 3.1% in their first three weeks (China +29%, US −4%, Japan −27%).",
+    "Gross margin: guided 47–48% including about 1 point of tariff refunds, vs 47.2% a year ago and 50.1% in the June quarter; watch what Apple says about memory costs after September.",
+    "Services: USD 28.75bn a year ago (+15%); growth slowed to 12% in the June quarter (USD 30.74bn).",
+    "December-quarter outlook: consensus EPS about USD 2.91; a year ago Apple guided revenue growth of 10–12% for that quarter."
+   ]
+  },
+  "risks": [
+   "Forecast risk: if fiscal-2027 EPS comes in 10% lower than USD 9.56 (for example because memory-chip costs squeeze the margin or iPhone 18 demand fades), the fair value falls to about USD 221.",
+   "Multiple risk, upside: at the 34.5 times implied by analysts' average target the value is about USD 297; at today's 36.3 times it is about USD 313. Each 1 point of multiple moves the value by about USD 8.6. Even at the highest year-end multiple of the last five years (31.2 times in 2024) the value would be about USD 269.",
+   "AI and new-product upside: if Apple's AI features and new devices lift growth well above the 8–13% now expected for fiscal 2027–28, a multiple near 2024's 31 times would be easier to justify, and analysts like Rothschild Redburn (USD 400) see fiscal 2026–2030 earnings 3–14% above consensus. At 31.2 times and EPS 10% above forecast the value would be about USD 296.",
+   "Rate risk: our discount rate is high because the 10-year Treasury yields 5.01%. If it fell by 1 point to about 4%, the cost of equity would drop to about 10.06% and the fair value would rise to about USD 248; the multiple, not the discount rate, explains most of the gap to the share price."
+  ],
+  "sector": "Consumer technology (iPhone, Mac, services)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in USD per share for different forward P/E multiples (rows) and for fiscal-2027 EPS coming in higher or lower than forecast (columns). Base case: 28.5 × USD 9.56, discounted at 11.06%.",
+   "colLabel": "Fiscal-2027 EPS vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "USD 9.56",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward P/E",
+   "rows": [
+    "30.5",
+    "29.5",
+    "28.5",
+    "27.5",
+    "26.5"
+   ],
+   "values": [
+    [
+     236.4,
+     249.5,
+     262.6,
+     275.8,
+     288.9
+    ],
+    [
+     228.6,
+     241.3,
+     254,
+     266.7,
+     279.4
+    ],
+    [
+     220.9,
+     233.1,
+     245.4,
+     257.7,
+     269.9
+    ],
+    [
+     213.1,
+     225,
+     236.8,
+     248.6,
+     260.5
+    ],
+    [
+     205.4,
+     216.8,
+     228.2,
+     239.6,
+     251
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Apple Q3 fiscal 2026 results (8-K exhibit 99.1, SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000018/a8-kex991q3202606272026.htm"
+   },
+   {
+    "title": "Apple Q3 fiscal 2026 results and September-quarter guidance (MacRumors, 30 Jul 2026)",
+    "url": "https://macrumors.com/2026/07/30/apple-3q-2026-earnings"
+   },
+   {
+    "title": "Apple Q4 fiscal 2025 results (Nasdaq press release)",
+    "url": "https://www.nasdaq.com/press-release/apple-reports-fourth-quarter-results-2025-10-30"
+   },
+   {
+    "title": "Apple Q4 fiscal 2025 results and December-quarter guidance (MacRumors)",
+    "url": "https://www.macrumors.com/2025/10/30/apple-4q-2025-earnings/"
+   },
+   {
+    "title": "Apple Q4 fiscal 2024 results and EU tax charge (MacRumors)",
+    "url": "https://www.macrumors.com/2024/10/31/apple-4q-2024-earnings/"
+   },
+   {
+    "title": "Apple to announce fiscal Q4 2026 earnings on 2 November (MacTrast)",
+    "url": "https://www.mactrast.com/2026/10/apple-to-announce-fiscal-q4-2026-earnings-on-november-2/"
+   },
+   {
+    "title": "Apple financial forecasts 2026–2028 (MarketScreener)",
+    "url": "https://uk.marketscreener.com/quote/stock/APPLE-INC-4849/finances/"
+   },
+   {
+    "title": "Apple forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/aapl/forecast/"
+   },
+   {
+    "title": "Apple quote, beta and earnings date (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/aapl/"
+   },
+   {
+    "title": "Apple income statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/aapl/financials/"
+   },
+   {
+    "title": "Apple balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/aapl/financials/balance-sheet/"
+   },
+   {
+    "title": "Apple cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/aapl/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Apple price history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/aapl/history/"
+   },
+   {
+    "title": "Apple monthly price history (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/quote/AAPL/history/?frequency=1mo&period1=1630000000&period2=1793000000"
+   },
+   {
+    "title": "Apple close 27 Oct 2026 (Gotrade)",
+    "url": "https://www.heygotrade.com/en/us-stock/aapl/"
+   },
+   {
+    "title": "Apple quote (Google Finance)",
+    "url": "https://www.google.com/finance/quote/AAPL:NASDAQ"
+   },
+   {
+    "title": "Morgan Stanley raises target to USD 298, 32x fiscal-2027 EPS (FMP)",
+    "url": "https://site.financialmodelingprep.com/market-news/apple-price-target-raised-at-morgan-stanley-on-strong-iphone--demand"
+   },
+   {
+    "title": "Morgan Stanley raises target to USD 330, keeps 32x (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-raises-apple-aapl-224003171.html"
+   },
+   {
+    "title": "Morgan Stanley cuts target to USD 355, FY27/FY28 EPS 9.90/10.70 (GuruFocus via TradingView)",
+    "url": "https://www.tradingview.com/news/gurufocus:af2bec3c2094b:0-morgan-stanley-has-strong-verdict-for-apple-stock-investors/"
+   },
+   {
+    "title": "Morgan Stanley is bullish on Apple, but with a catch (MarketBeat, 7 Oct 2026)",
+    "url": "https://www.marketbeat.com/articles/morgan-stanley-is-bullish-on-applebut-with-a-catch/"
+   },
+   {
+    "title": "Wall Street analysts split on Apple's upside (Beinsure)",
+    "url": "https://beinsure.com/news/apple-stock-forecast-wall-street-analysts-split-on-aapls-upside/"
+   },
+   {
+    "title": "Analyst targets cluster around USD 355–370 (Blockchain.News, 28 Oct 2026)",
+    "url": "https://blockchain.news/news/20261028-price-prediction-aapl-macd-flatlines-at-346-as-analysts"
+   },
+   {
+    "title": "HSBC upgrades Apple to Buy, FY27 EPS 10.26 (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/top-analyst-resets-apple-stock-223300903.html"
+   },
+   {
+    "title": "Rothschild Redburn upgrade to USD 400 (AOL)",
+    "url": "https://www.aol.com/articles/apple-stock-target-jumps-260-095900000.html"
+   },
+   {
+    "title": "Erste Group raises Apple FY2027 EPS forecast (MarketBeat, 23 Oct 2026)",
+    "url": "https://www.marketbeat.com/instant-alerts/estimates-apple-fy2027-earnings-forecast-increased-by-erste-group-bank-2026-10-23/"
+   },
+   {
+    "title": "Apple analyst ratings and targets (MarketBeat)",
+    "url": "https://www.marketbeat.com/instant-alerts/morgan-stanley-forecasts-strong-price-appreciation-for-apple-nasdaqaapl-stock-2026-06-09/"
+   },
+   {
+    "title": "Monness raises target to USD 355 ahead of Q4 (Pluang)",
+    "url": "https://pluang.com/en/news-feed/analis-wall-street-perbarui-target-saham-apple-jelang-laporan-keuangan"
+   },
+   {
+    "title": "What Wall Street expects from Apple's Q4 (MoneyCheck, 28 Oct 2026)",
+    "url": "https://moneycheck.com/apple-aapl-stock-what-wall-street-expects-from-earnings-monday"
+   },
+   {
+    "title": "How sustainable is Apple's USD 340 price? FY27 and December-quarter consensus (Barchart via Yahoo Finance)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/just-sustainable-apple-340-price-111556960.html"
+   },
+   {
+    "title": "1 reason Apple could outperform in 2027 (Motley Fool, 26 Oct 2026)",
+    "url": "https://www.fool.com/investing/2026/10/26/1-reason-apple-could-outperform-in-2027/"
+   },
+   {
+    "title": "Apple ends net cash neutral policy (Shacknews, 30 Apr 2026)",
+    "url": "https://www.shacknews.com/article/148949/apple-aapl-ends-net-cash-neutral-capital-allocation-policy"
+   },
+   {
+    "title": "US 10-year Treasury yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+   },
+   {
+    "title": "Microsoft forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/msft/forecast/"
+   },
+   {
+    "title": "Alphabet forecasts (stockanalysis.com)",
+    "url": "https://stockanalysis.com/stocks/googl/forecast/"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus for the year to September 2027",
+    "formula": "Fiscal-2027 EPS = analyst consensus",
+    "plain": "Earnings per share (EPS) is the yearly profit for each share. Apple's EPS (excluding the 2024 EU tax charge) grew slowly from USD 5.61 in fiscal 2021 to 6.75 in 2024, then to 7.46 in 2025. Analysts expect USD 8.82 for fiscal 2026, which ended in September (+18%), and USD 9.56 for fiscal 2027 (+8%), on revenue of about USD 527bn (+10%). The first nine months of fiscal 2026 support the 2026 figure: revenue +16% to USD 364.4bn and EPS USD 6.88 against USD 5.62.",
+    "result": "USD 9.56",
+    "title": "What will Apple earn next year?"
+   },
+   {
+    "calc": "(25.4 + 31.2 + 28.9) ÷ 3",
+    "formula": "Normal forward P/E = average of the fiscal 2023–2025 year-ends",
+    "plain": "At the last three fiscal year-ends (September 2023, 2024 and 2025) Apple traded at 25.4, 31.2 and 28.9 times the next year's earnings (average 28.5). Investors then got EPS growth of +10% (fiscal 2024), +11% (2025) and about +18% (2026E) the following year. Now analysts expect +8% in fiscal 2027 and +13% in fiscal 2028 (MarketScreener consensus), about 11% a year, with revenue growing 10% and 9%. Morgan Stanley expects a possible four years of iPhone unit growth, HSBC sees iPhone sales up about 12% in 2027, while Apple warns that memory-chip costs keep rising. That 11% a year is a little below the 13% average of the reference years, but almost the same as the 10–11% after 2023 and 2024, and those two year-ends averaged 28.3 times. So growth is not clearly lower and we keep 28.5 times without adjustment. We leave out 2020–2021 (near-zero interest rates).",
+    "result": "28.5 × earnings",
+    "title": "What should investors pay for next year's profit, given the growth?"
+   },
+   {
+    "calc": "28.5 × 9.563",
+    "formula": "multiple × fiscal-2027 EPS",
+    "plain": "Multiply next year's earnings per share by the multiple investors normally pay for that growth.",
+    "result": "USD 272.55",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "272.55 ÷ 1.1106",
+    "formula": "Fair value = price in 12 months ÷ (1 + 11.06%)",
+    "plain": "Shareholders want a return for waiting a year: 5.01% US bond yield + 1.1 × 5.5% = 11.06%. Apple's share moves about as much as the market (beta 1.07). (Like analysts' targets, this leaves out the dividend, about USD 1.07 a share a year.)",
+    "result": "USD 245",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "245.4 ÷ 347.10 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 29% below today's price, more than the 10% band, so Apple looks overvalued on this method. Today investors pay 36.3 times fiscal-2027 earnings, well above any of Apple's last five year-ends (22.5–31.2). The share is up 36% since September 2025 (USD 254.63 to 347.10) while the fiscal-2027 forecast is only 8% above fiscal 2026.",
+    "result": "−29%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Apple the way analysts usually value large US technology and consumer-brand companies: the price-to-earnings ratio (P/E) on next year's profit. Analysts expect earnings per share to grow about 8% in fiscal 2027 and 13% in fiscal 2028, close to the 10% growth investors got after the 2023 and 2024 year-ends, so we keep Apple's own 2023–2025 average of 28.5 times. On fiscal-2027 earnings of USD 9.56 a share that gives about USD 273 in a year, or USD 245 today, 29% below the USD 347.10 share price.",
+  "targets": {
+   "items": [
+    "Apple publishes no multi-year financial targets. It gives guidance for one quarter at a time: for the September 2026 quarter, revenue growth of 9–11%, iPhone growth in the mid-teens and a gross margin of 47–48% (including about 1 point from tariff refunds).",
+    "Track record: Apple has beaten analysts' EPS estimates in each of its last eight reports (Yahoo Finance/Barchart). In the June 2026 quarter revenue rose 16% to USD 109.4bn and EPS was USD 2.02 against a USD 1.89 consensus, but about USD 0.11 of that came from tariff refunds.",
+    "Capital return: on 30 April 2026 CFO Kevan Parekh signalled the end of Apple's long-standing 'net cash neutral' policy, saying Apple may spend more on R&D and infrastructure while staying committed to returning excess cash. Net cash has since risen to USD 62bn."
+   ],
+   "title": "Does Apple have a growth goal we can use?",
+   "verdict": "No. Without a long-term goal we use analysts' fiscal-2027 EPS of USD 9.56 (+8%) and their fiscal-2028 EPS of USD 10.81 (+13%) as the growth outlook. Apple usually lands at or slightly above its own guidance, so these forecasts look realistic, but rising memory-chip costs are a known headwind for margins."
+  },
+  "ticker": "AAPL",
+  "verdict": "Looks overvalued",
+  "whatTheyDo": "Apple designs the iPhone, Mac, iPad, Apple Watch and AirPods and sells services such as the App Store, iCloud, Apple Music and AppleCare to about 2.5 billion active devices. Revenue was USD 416 billion in fiscal 2025 (year to September), of which about half came from the iPhone and a quarter from services."
+ },
  {
   "company": "Eli Lilly",
   "consensus": {
