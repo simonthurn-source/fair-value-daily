@@ -1687,7 +1687,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "market": "Germany",
   "method": "Forward EV/EBITDA (mid-cycle check for a cyclical)",
   "reportDate": "2026-11-04",
-  "reportDateStatus": "estimated",
+  "reportDateStatus": "confirmed",
   "sector": "Building materials (cement and aggregates)",
   "teaser": "Cement is a cyclical business: what is Heidelberg Materials worth on a normal year's profit rather than a record one?",
   "ticker": "HEI"
@@ -1977,11 +1977,736 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Business software (customer-relationship management)",
   "teaser": "Salesforce's profits keep growing while its sales growth has slowed: what multiple does a maturing software leader deserve?",
   "ticker": "CRM"
+ },
+ {
+  "company": "Clas Ohlson",
+  "date": "2026-11-26",
+  "market": "Sweden",
+  "method": "Forward P/E",
+  "reportDate": "2026-12-03",
+  "reportDateStatus": "confirmed",
+  "sector": "Retail (hardware, home and electronics)",
+  "teaser": "How much should investors pay for next year's profit at Clas Ohlson, the Nordic hardware and home retailer, and does its growth justify it?",
+  "ticker": "CLAS B"
  }
 ]
 </script>
 <script type="application/json" id="fvd-data">
 [
+ {
+  "company": "Heidelberg Materials",
+  "consensus": {
+   "analysts": 18,
+   "asOf": "Oct 2026",
+   "explain": "The average target of EUR 205.50 is a price in 12 months; discounted one year at 8.3% it is worth about EUR 189.7 today. Our EUR 148 is 22% below that. On the same 2027 EBITDA and net debt, the target implies about 8.0 times EBITDA (and 14.3 times 2027 earnings), against our 6.5 times. So the gap is about the multiple, not the forecast: analysts pay roughly what Holcim and CRH trade at (8.4–8.5 times), while we use Heidelberg's own average of the last three year-ends.",
+   "high": 286,
+   "low": 140,
+   "method": "The public summaries of this autumn's broker notes give targets but not the exact multiple. Deutsche Bank (Jon Bell) cut its target from EUR 210 to 206 on 20 October, RBC (Anthony Codling) upgraded to Outperform on 9 October but cut its target from 217 to 211, citing the cheaper relative valuation after the share fall, UBS (Julian Radlinger) cut from 260 to 230 on weaker US cement demand and mentions a 2027 P/E below 10, while Goodbody upgraded from Sell to Hold at EUR 140. A price target is where an analyst expects the share to be in 12 months.",
+   "rating": "Buy on average (10 strong buy, 4 buy, 1 hold, 0 sell, 3 strong sell)",
+   "source": "stockanalysis.com (S&P Global data)",
+   "target": 205.5,
+   "targetToday": 189.7
+  },
+  "crossCheck": {
+   "calc": "FCFF 2027 = 0.431 × 5,171 = 2,229; then +6.9%, +7%, +5.5%, +4%, +2.5% …; PV 18,680 + terminal 32,154 = 50,833; (50,833 − 5,513) ÷ 175.4 = 258",
+   "name": "Cash-flow check (10-year DCF), not in the fair value",
+   "plain": "Free cash flow to the firm = IFRS operating cash flow + interest paid × (1 − 25% tax) − net capital spending − lease principal. It was EUR 2.06–2.09bn in 2023–2025, on average 43% of EBITDA in 2022–2025 (33% to 49%; the company aims for about 50%). On 2027 EBITDA that is about EUR 2.23bn. We let it grow 6.9% in 2028 and 7% in 2029 (consensus and company goal), then 5.5% and 4%, and 2.5% a year in years 6–10 and after. The discount rate is the weighted cost of capital: 8.3% for shares (EUR 26.5bn) and 4.2% before tax (interest paid ÷ debt) for net debt (EUR 5.5bn), 7.4% in total. Acquisitions (EUR 0.8–1.0bn a year recently) are left out, assuming they earn their cost. The operations are worth about EUR 50.8bn; minus EUR 5.5bn of net debt that is about EUR 258 a share. Today's price needs a discount rate of about 10.3% to come out at EUR 151. So the cash flows easily support the 6.5 multiple, if cash conversion stays in the 40s and energy and CO2 costs do not eat the growth.",
+   "result": "≈ EUR 258 at 7.4%; today's price needs ≈ 10.3%"
+  },
+  "crossChecks": [
+   {
+    "calc": "11.34 × 14.34 ÷ 1.0831",
+    "name": "Check: forward P/E on its own history",
+    "note": "Almost the same as our main value. Today's P/E is 10.5 on 2027 earnings; UBS also describes the 2027 P/E as below 10.",
+    "plain": "At end-2023/24/25 Heidelberg traded at 6.8, 9.6 and 17.6 times the next year's adjusted earnings per share (average 11.3). On 2027 EPS of EUR 14.34 (MarketScreener) that gives EUR 162.7 in a year, or:",
+    "result": "≈ EUR 150"
+   },
+   {
+    "calc": "(7.07 × 5,171 − 5,513) ÷ 175.4 ÷ 1.0831",
+    "name": "Check: at peers' multiple",
+    "note": "Heidelberg trades at 6.2 times (5.8 at MarketScreener's 21 Oct price) with +8% expected growth: cheaper than Holcim and CRH, which grow faster and have more US exposure, but well above Buzzi, which grows slower. The peer average is pulled up by the two large US-oriented companies.",
+    "plain": "On MarketScreener (prices mid/late October 2026), forward EV/EBITDA on 2027 forecasts: Holcim 8.4 times (expected 2027 EBITDA growth +12%), CRH 8.5 times (+10%), Buzzi 4.4 times (+5%); average 7.1. At 7.1 times Heidelberg's EUR 5,171m, minus net debt, ÷ shares: EUR 177 in a year, or:",
+    "result": "≈ EUR 163"
+   },
+   {
+    "calc": "(6.5 × 4,816 − 5,513) ÷ 175.4 ÷ 1.0831",
+    "name": "Check: mid-cycle profit",
+    "note": "Margins have risen partly for lasting reasons (cost savings, price discipline), so a fully average margin is a cautious case, not our base.",
+    "plain": "Cement is cyclical, so we also ask what Heidelberg is worth on a normal year rather than on the forecast. The average EBITDA margin in 2021–2025 was 20.3%; on 2027 revenue of EUR 23,703m that is EUR 4,816m of EBITDA, 7% below the forecast (which assumes a 21.8% margin, the same as the 2025 record). At 6.5 times:",
+    "result": "≈ EUR 136"
+   }
+  ],
+  "currency": "EUR",
+  "date": "2026-10-30",
+  "dateLabel": "Friday 30 October 2026",
+  "exchange": "Xetra (Frankfurt)",
+  "fairValue": 148,
+  "history": {
+   "caption": "EUR million unless stated. From Heidelberg Materials' Business Figures 2025 five-year table, the annual reports 2021, 2023 and 2025, the results releases 2021–2025 and the 2022/2023 business figures (cash flows). EV = year-end price × shares outstanding + reported net debt (which includes lease debt, matching EBITDA after IFRS 16; pensions and minority stakes are left out on both sides, so all multiples are on one basis). Forward = year-end value ÷ the NEXT year's result; for 2025 we use the 2026 consensus (EBITDA EUR 4,793m, EPS EUR 12.64, MarketScreener, Oct 2026). Last column: latest (price 29 Oct 2026) or as marked.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest / 2027E"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "note": "2026E 22,383 (+4%), 2027E +6% (MarketScreener consensus)",
+     "values": [
+      "18,720",
+      "21,095",
+      "21,178",
+      "21,156",
+      "21,460",
+      "23,703 (2027E)"
+     ]
+    },
+    {
+     "label": "EBITDA (RCOBD, result from current operations before depreciation)",
+     "note": "2026E 4,793; 2027E 5,171; 2028E 5,528 (MarketScreener). Company-compiled consensus (19 analysts, July): 4,841 and 5,246",
+     "values": [
+      "3,875",
+      "3,739",
+      "4,258",
+      "4,499",
+      "4,679",
+      "5,171 (2027E)"
+     ]
+    },
+    {
+     "label": "EBITDA margin",
+     "note": "Five-year average 20.3%; H1 2026 18.0% (H1 2025 18.6%)",
+     "values": [
+      "20.7%",
+      "17.7%",
+      "20.1%",
+      "21.3%",
+      "21.8%",
+      "21.8% (2027E)"
+     ]
+    },
+    {
+     "label": "RCO (operating profit, EBIT)",
+     "note": "2026 guidance EUR 3.40–3.65bn",
+     "values": [
+      "2,614",
+      "2,476",
+      "3,022",
+      "3,204",
+      "3,381",
+      "3,813 (2027E)"
+     ]
+    },
+    {
+     "label": "EPS excl. one-offs (adjusted), EUR",
+     "note": "2026E 12.64 (MarketScreener); stockanalysis.com: 13.03 and 14.39",
+     "values": [
+      "7.91",
+      "9.47",
+      "10.42",
+      "11.94",
+      "12.41",
+      "14.34 (2027E)"
+     ]
+    },
+    {
+     "label": "Share price at year-end, EUR",
+     "values": [
+      "59.52",
+      "53.28",
+      "80.94",
+      "119.30",
+      "223.00",
+      "151.20"
+     ]
+    },
+    {
+     "label": "Shares outstanding, million",
+     "note": "Fallen through buybacks (EUR 1.2bn programme 2024–2026)",
+     "values": [
+      "193.1",
+      "186.2",
+      "182.1",
+      "178.4",
+      "176.4",
+      "175.4"
+     ]
+    },
+    {
+     "label": "Net debt incl. leases",
+     "note": "7,726 at 30 Jun 2026 (seasonal peak: most cash comes in the second half). Lease debt about 1,190 in 2025",
+     "values": [
+      "4,999",
+      "5,532",
+      "5,294",
+      "5,293",
+      "5,715",
+      "5,513 (end-2026E)"
+     ]
+    },
+    {
+     "label": "EV/EBITDA at year-end (trailing)",
+     "values": [
+      "4.3",
+      "4.1",
+      "4.7",
+      "5.9",
+      "9.6",
+      "6.7 (on 2026E)"
+     ]
+    },
+    {
+     "label": "Forward EV/EBITDA at year-end",
+     "note": "Year-end EV ÷ next year's EBITDA. Average 2023–25: 6.5, the multiple we use (see step 2)",
+     "strong": true,
+     "values": [
+      "4.4",
+      "3.6",
+      "4.5",
+      "5.7",
+      "9.4",
+      "6.2 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Growth in EBITDA the following year",
+     "note": "The growth investors got for each year-end multiple",
+     "strong": true,
+     "values": [
+      "−3.5%",
+      "+13.9%",
+      "+5.7%",
+      "+4.0%",
+      "+2.4% (2026E)",
+      "+7.9% (2027E), +6.9% (2028E)"
+     ]
+    },
+    {
+     "label": "P/E at year-end (trailing, adjusted EPS)",
+     "values": [
+      "7.5",
+      "5.6",
+      "7.8",
+      "10.0",
+      "18.0",
+      "12.0 (on 2026E)"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Check only",
+     "values": [
+      "6.3",
+      "5.1",
+      "6.8",
+      "9.6",
+      "17.6",
+      "10.5 (on 2027E)"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities (IFRS, after interest and tax)",
+     "values": [
+      "2,396",
+      "2,420",
+      "3,205",
+      "3,232",
+      "3,255",
+      "36 (H1 2026)"
+     ]
+    },
+    {
+     "label": "Interest paid",
+     "values": [
+      "288",
+      "212",
+      "322",
+      "355",
+      "356",
+      "203 (H1 2026)"
+     ]
+    },
+    {
+     "label": "Net capital spending (PP&E and intangibles, after grants and asset sales)",
+     "note": "2026 guidance EUR 1.2–1.3bn",
+     "values": [
+      "1,235",
+      "1,115",
+      "1,100",
+      "1,150",
+      "1,195",
+      ""
+     ]
+    },
+    {
+     "label": "Lease principal paid",
+     "note": "stockanalysis.com; the company reports it together with loan repayments",
+     "values": [
+      "n/a",
+      "237",
+      "255",
+      "255",
+      "271",
+      "136 (H1 2026)"
+     ]
+    },
+    {
+     "label": "Cash paid for acquisitions (subsidiaries)",
+     "values": [
+      "145",
+      "64",
+      "414",
+      "774",
+      "965",
+      "439 (H1 2026)"
+     ]
+    },
+    {
+     "label": "= Free cash flow to the firm (our calculation, before acquisitions)",
+     "note": "Operating cash flow + interest × (1 − 25% tax) − net capex − lease principal. The company's own 'free cash flow' (no lease deduction) was 1,187 / 1,341 / 2,163 / 2,169 / 2,109",
+     "strong": true,
+     "values": [
+      "n/a",
+      "1,227",
+      "2,092",
+      "2,093",
+      "2,056",
+      ""
+     ]
+    },
+    {
+     "label": "Cash conversion (free cash flow to the firm ÷ EBITDA)",
+     "values": [
+      "n/a",
+      "33%",
+      "49%",
+      "47%",
+      "44%",
+      "43% (average 2022–25)"
+     ]
+    },
+    {
+     "label": "ROIC (return on invested capital, reported)",
+     "values": [
+      "9.3%",
+      "9.1%",
+      "10.3%",
+      "9.9%",
+      "10.4%",
+      "~12% (2030 goal)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "Xetra close 29 Oct 2026 (+2.8% on the day; finanznachrichten.de/onvista). Market value about EUR 26.5bn",
+    "value": "EUR 151.20"
+   },
+   {
+    "label": "2027 EBITDA forecast",
+    "note": "MarketScreener consensus (+7.9% on 2026E 4,793m). Company-compiled consensus in July: 5,246m",
+    "value": "EUR 5,171m"
+   },
+   {
+    "label": "Forward multiple",
+    "note": "Average forward EV/EBITDA at end-2023/24/25 (4.5, 5.7, 9.4). Not adjusted: expected growth is a bit higher than what followed those year-ends, but it has not yet shown up (see step 2)",
+    "value": "6.5 × EBITDA"
+   },
+   {
+    "label": "Net debt incl. leases",
+    "note": "Consensus for end-2026 (MarketScreener); 5,715m at end-2025, 7,726m at 30 Jun 2026 (seasonal peak)",
+    "value": "EUR 5,513m"
+   },
+   {
+    "label": "Shares",
+    "note": "After the buyback (stockanalysis.com, 26 Oct 2026)",
+    "value": "175.4 million"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.36% German 10-year Bund yield (29 Oct 2026) + beta 0.9 × 5.5%",
+    "value": "8.3%"
+   },
+   {
+    "label": "Beta",
+    "note": "Measured 5-year beta 0.91 (stockanalysis.com)",
+    "value": "0.9"
+   },
+   {
+    "label": "EV/EBITDA today",
+    "note": "(26,520 + 5,513) ÷ 5,171; 6.7 on 2026E; P/E 10.5 on 2027E EPS",
+    "value": "6.2 on 2027E"
+   }
+  ],
+  "market": "Germany",
+  "method": {
+   "name": "Sector method: forward EV/EBITDA on next year's EBITDA (how analysts value cement and building-materials companies)",
+   "why": "EBITDA is operating profit before depreciation, interest and tax; Heidelberg calls it RCOBD. Enterprise value (EV) is the market value of the shares plus net debt. Cement plants are very expensive to build and are financed partly with debt, so analysts compare companies on the whole business (EV) rather than on the shares alone, and on EBITDA, which is not distorted by different depreciation or debt levels. The market data providers that analysts use (MarketScreener) compare Heidelberg with Holcim, CRH and Buzzi on EV/EBITDA. We take the multiple Heidelberg has traded at on the next year's EBITDA, check it against the expected growth, apply it to the 2027 forecast, subtract the net debt and bring the 12-month price back to today. Because Heidelberg's EBITDA is counted after leases (IFRS 16), we use net debt including lease debt (about EUR 1.2bn).",
+   "whyNot": "P/E (price ÷ earnings per share) is used as a check: UBS mentions it, but it is affected by debt and by the large minority shareholdings in some subsidiaries. The cash-flow model (DCF) is only a check because it depends on long-term assumptions about growth, energy and CO2 costs. Because cement is cyclical, we also check the value on a 'mid-cycle' profit (the average margin of the last five years); 2027 does not look like a peak year, as volumes in Europe and US cement are still weak, so we do not use it as the main value."
+  },
+  "price": 151.2,
+  "priceDate": "close 29 Oct 2026",
+  "rangeHigh": 175.1,
+  "rangeLow": 120.7,
+  "reasoning": [
+   "Heidelberg's record is solid: EBITDA grew from EUR 3,739m (2022) to 4,679m (2025), the margin rose to 21.8%, ROIC to 10.4%, and the 2025 guidance was met, even though volumes were weak. Cash generation is steady at about EUR 2.1bn a year after leases.",
+   "Analysts expect EBITDA growth to pick up to about 8% in 2027 and 7% in 2028, a little faster than the 2–6% that followed recent year-ends. Because that recovery has not shown up yet (H1 operating profit −2.6%, 2026 guidance trimmed), we keep Heidelberg's own 6.5 times average instead of paying more.",
+   "That gives EUR 160 in a year, or EUR 148 today. The P/E check gives EUR 150, peers EUR 163, a mid-cycle margin EUR 136, and the cash-flow check far more (EUR 258); analysts' average target is worth EUR 190 today, because they pay about 8 times, closer to Holcim and CRH.",
+   "Fair value EUR 148 (range 120.7–175.1). At EUR 151.20 the share is 2% above our value: it looks roughly fairly priced, after falling from EUR 223 at the end of 2025."
+  ],
+  "report": {
+   "date": "Q3 trading update · Wednesday 4 November 2026",
+   "dateIso": "2026-11-04",
+   "extra": [
+    {
+     "plain": "In an EV method net debt counts directly: each EUR 1bn more or less net debt changes our value by about EUR 5.3 a share (1,000 ÷ 175.4 ÷ 1.0831). Net debt was EUR 7,726m at 30 June 2026 (a seasonal peak) and analysts expect it to fall to about EUR 5.5bn by year-end as summer cash flows come in; a smaller fall would lower our value. Watch whether the Maas deal in Australia (about EUR 1bn) has closed: it adds about EUR 1bn of debt (−EUR 5.3 a share) but also EBITDA; at our 6.5 times it pays for itself only if it brings at least about EUR 150m of EBITDA.",
+     "title": "What if net debt or acquisitions change?"
+    }
+   ],
+   "plain": "Our fair value = (6.5 × 2027 EBITDA − net debt) ÷ shares ÷ 1.083. So the update can change it in two ways: through analysts' forecast for 2027 EBITDA, and through the multiple, if the update changes how fast Heidelberg looks likely to grow. A big share-price move on the day is not the same as a change in value.",
+   "scenarios": [
+    {
+     "calc": "(6.5 × 5,430 − 5,513) ÷ 175.4 ÷ 1.0831 = 156.8 · (7.5 × 5,430 − 5,513) ÷ 175.4 ÷ 1.0831 = 185.3",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "EUR 157–185",
+     "what": "Q3 EBITDA clearly above the EUR 1.58bn UBS expects (Q3 2025: 1.50bn), revenue above 6.3bn (Q3 2025: 5.81bn), prices covering the higher energy costs, and the 2026 RCO guidance confirmed in the upper half of EUR 3.40–3.65bn with signs of better volumes (the CEO spoke on 23 October of 'cautious signs of recovery'). Two separate effects: (1) analysts raise their 2027 EBITDA forecast by about 5%, from EUR 5,171m to 5,430m, which gives EUR 156.8 at the unchanged 6.5 times; (2) if volumes start to recover so that growth of 8–10% a year looks safe beyond 2027 (now +7.9% for 2027, +6.9% for 2028), the multiple can move up 1 point to 7.5 times: EUR 185.3."
+    },
+    {
+     "calc": "(6.5 × 5,171 − 5,513) ÷ 175.4 ÷ 1.0831 = 147.9",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "EUR 148",
+     "what": "Revenue around EUR 6.2–6.3bn (Investing.com consensus 6.18bn, UBS 6.30bn), EBITDA around 1.58bn (+5%), organic growth of about 4–5% (Jefferies 4.6%; Deutsche Bank: Europe +2%, North America +5%) and the guidance kept. The 2027 forecast and the 6.5 times multiple stay, so our value does not change."
+    },
+    {
+     "calc": "(6.5 × 4,912 − 5,513) ÷ 175.4 ÷ 1.0831 = 139.1 · (5.5 × 4,912 − 5,513) ÷ 175.4 ÷ 1.0831 = 113.2",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "EUR 113–139",
+     "what": "Q3 EBITDA below last year's EUR 1.50bn, prices falling behind energy costs again (RBC's worry), weaker US cement volumes (UBS) and the 2026 guidance cut toward or below EUR 3.40bn. Two separate effects: (1) analysts cut their 2027 EBITDA forecast by about 5%, from EUR 5,171m to 4,912m, which gives EUR 139.1 at 6.5 times; (2) if the recovery then looks delayed, with growth nearer the 2–4% of 2025–26 than the 8% now expected, the multiple drops 1 point to 5.5 times (close to end-2024's 5.7): EUR 113.2."
+    }
+   ],
+   "title": "How the Q3 trading update could change our fair value",
+   "watch": [
+    "Revenue: Q3 2025 EUR 5.81bn; UBS expects 6.30bn (+9%), Investing.com consensus 6.18bn.",
+    "EBITDA (RCOBD) and margin: Q3 2025 EUR 1.50bn (21.8% margin) and RCO 1.18bn; UBS expects about 1.58bn. In H1 2026 the margin fell from 18.6% to 18.0%.",
+    "Guidance: whether RCO EUR 3.40–3.65bn for 2026 is confirmed (2025: 3.38bn) and any first comments on 2027.",
+    "Prices versus energy costs and volumes: Deutsche Bank expects Europe +2% organic (prices up, volumes slightly down) and North America +5%; JPMorgan expects lower European volumes than in Q2 because of heat-related site closures.",
+    "Deals and debt: progress on the Maas (Australia) and NCC (Sweden/Norway) acquisitions and net debt after the finished EUR 1.2bn buyback."
+   ]
+  },
+  "risks": [
+   "Forecast risk: if 2027 EBITDA comes in 10% lower than EUR 5,171m (for example if building stays weak or energy and CO2 costs rise faster than prices), the fair value falls to about EUR 130. Because net debt does not shrink with profit, the value falls faster than EBITDA.",
+   "Multiple risk: at the 8.0 times implied by analysts' average target the value is about EUR 190; at today's 6.2 times about EUR 140. If investors went back to the 9.4 times of end-2025, about EUR 227. Each 1 point of multiple moves the value by about EUR 27.",
+   "Acquisitions and debt: the pending purchase of Maas Group's building-materials business in Australia (about EUR 1bn) and NCC's Swedish and Norwegian aggregates business (enterprise value about SEK 5.5bn) add debt; each EUR 1bn of net debt not matched by extra EBITDA lowers our value by about EUR 5.3 a share. They also bring EBITDA that is not fully in the forecasts.",
+   "Upside: Germany's EUR 500bn infrastructure package, US data-centre building and a possible separate listing of the North American business (mentioned by Berenberg) could lift both growth and the multiple. The CO2 transition is a two-sided risk: higher CO2 prices raise costs, but Heidelberg is a leader in carbon capture (the German Geseke project was paused on 22 October)."
+  ],
+  "sector": "Building materials (cement and aggregates)",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in EUR per share for different forward EV/EBITDA multiples (rows) and for 2027 EBITDA coming in higher or lower than forecast (columns). Base case: (6.5 × EUR 5,171m − 5,513m net debt) ÷ 175.4m shares, discounted at 8.3%. Because debt stays fixed, a 5% change in EBITDA moves the value by about 6%.",
+   "colLabel": "2027 EBITDA vs forecast",
+   "cols": [
+    "−10%",
+    "−5%",
+    "EUR 5,171m",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Forward EV/EBITDA",
+   "rows": [
+    "8.5",
+    "7.5",
+    "6.5",
+    "5.5",
+    "4.5"
+   ],
+   "values": [
+    [
+     179.2,
+     190.8,
+     202.3,
+     213.9,
+     225.5
+    ],
+    [
+     154.7,
+     164.9,
+     175.1,
+     185.3,
+     195.5
+    ],
+    [
+     130.2,
+     139.1,
+     147.9,
+     156.8,
+     165.6
+    ],
+    [
+     105.7,
+     113.2,
+     120.7,
+     128.2,
+     135.7
+    ],
+    [
+     81.2,
+     87.3,
+     93.5,
+     99.6,
+     105.7
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Heidelberg Materials Business Figures 2025 (five-year table, cash flow, balance sheet) (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-02/HM_Business_Figures_2025.pdf"
+   },
+   {
+    "title": "Heidelberg Materials at a glance 2025 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-03/HM_at_a_glance_2025.pdf"
+   },
+   {
+    "title": "Heidelberg Materials business figures 2023 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/sites/default/files/2024-02/HM_Business_figures_2023.pdf"
+   },
+   {
+    "title": "Heidelberg Materials business figures 2022 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/sites/default/files/2023-02/HM_Business_figures_2022.pdf"
+   },
+   {
+    "title": "FY2025 results presentation (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-02/FY%202025%20Presentation.pdf"
+   },
+   {
+    "title": "FY2025 results press release, 25 Feb 2026 (PDF, German)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-02/HM_DE_260225.pdf"
+   },
+   {
+    "title": "FY2023 results press release",
+    "url": "https://www.heidelbergmaterials.com/en/pr-2024-02-22"
+   },
+   {
+    "title": "FY2022 results press release (PDF)",
+    "url": "https://www.heidelbergmaterials.com/sites/default/files/2023-03/HM_EN_230223.pdf"
+   },
+   {
+    "title": "FY2021 results press release (PDF)",
+    "url": "https://www.heidelbergmaterials.com/sites/default/files/2022-02/HC_EN_20220224.pdf"
+   },
+   {
+    "title": "Annual Report 2021 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/sites/default/files/2022-03/annual-report-heidelbergcement-2021_1.pdf"
+   },
+   {
+    "title": "Annual and Sustainability Report 2023 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/sites/default/files/2024-03/HM_ASR_2023.pdf"
+   },
+   {
+    "title": "Annual and Sustainability Report 2025 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-03/HM_ASR25_en.pdf"
+   },
+   {
+    "title": "Half-Year Financial Report 2026 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-07/Heidelberg_Materials_Half-Year%20Financial%20Report_2026.pdf"
+   },
+   {
+    "title": "H1 2026 press release (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-07/HM_EN_260730.pdf"
+   },
+   {
+    "title": "Company-compiled analyst consensus Q2 2026 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2026-07/2026_Q2_Consensus.pdf"
+   },
+   {
+    "title": "Company-compiled analyst consensus Q3 2025 (PDF)",
+    "url": "https://www.heidelbergmaterials.com/system/files/2025-10/2025_Q3_Consensus.pdf"
+   },
+   {
+    "title": "Investor relations FAQ: definitions and 2030 targets",
+    "url": "https://www.heidelbergmaterials.com/en/investor-relations/faq"
+   },
+   {
+    "title": "'Beyond 2020' strategy and 2025 targets (Sep 2020)",
+    "url": "https://www.heidelbergmaterials.com/en/node/26527"
+   },
+   {
+    "title": "Financial calendar: Q3 2026 trading update on 4 November 2026",
+    "url": "https://www.heidelbergmaterials.com/en/investor-relations/financial-calendar"
+   },
+   {
+    "title": "Heidelberg Materials forecasts and valuation (MarketScreener)",
+    "url": "https://de.marketscreener.com/kurs/aktie/HEIDELBERG-MATERIALS-AG-436181/finanzen/"
+   },
+   {
+    "title": "Heidelberg Materials valuation multiples (MarketScreener)",
+    "url": "https://de.marketscreener.com/kurs/aktie/HEIDELBERG-MATERIALS-AG-436181/bewertung/"
+   },
+   {
+    "title": "Heidelberg Materials analyst news (MarketScreener)",
+    "url": "https://de.marketscreener.com/kurs/aktie/HEIDELBERG-MATERIALS-AG-436181/news/"
+   },
+   {
+    "title": "Heidelberg Materials forecasts and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/HEI/forecast/"
+   },
+   {
+    "title": "Heidelberg Materials statistics and beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/HEI/statistics/"
+   },
+   {
+    "title": "Heidelberg Materials cash-flow statement (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/HEI/financials/cash-flow-statement/"
+   },
+   {
+    "title": "Heidelberg Materials balance sheet (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/HEI/financials/balance-sheet/"
+   },
+   {
+    "title": "RBC upgrades to Outperform, target EUR 211; Xetra quote (finanznachrichten.de, Oct 2026)",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69795665-rbc-stuft-heidelberg-materials-auf-outperform-322.htm"
+   },
+   {
+    "title": "Heidelberg Materials share quote (onvista)",
+    "url": "https://www.onvista.de/aktien/DE0006047004"
+   },
+   {
+    "title": "Historical prices (boerse.de)",
+    "url": "https://www.boerse.de/historische-kurse/Heidelberg-Materials-Aktie/DE0006047004"
+   },
+   {
+    "title": "RBC makes the share a top pick despite target cut (Investing.com, Oct 2026)",
+    "url": "https://de.investing.com/news/stock-market-news/heidelberg-materials-rbc-macht-die-aktie-zum-toppick--trotz-zielsenkung-3697572"
+   },
+   {
+    "title": "Deutsche Bank: prices up, volumes down (stock-world.de)",
+    "url": "https://www.stock-world.de/heidelberg-materials-aktie-preise-rauf-mengen-runter/"
+   },
+   {
+    "title": "Deutsche Bank cuts target to EUR 206 (goldesel.de)",
+    "url": "https://goldesel.de/aktien/news/heidelberg-materials-aktie-deutsche-bank-senkt-kursziel-auf-206-euro-bleibt-bei-buy"
+   },
+   {
+    "title": "JPMorgan keeps Overweight (Der Aktionär)",
+    "url": "https://www.deraktionaer.de/nachricht/analyse-flashjpmorganlaesstheidelbergmaterialsaufoverweight-550278.html"
+   },
+   {
+    "title": "Trading update on 4 November; JPMorgan view (boerse-global.de)",
+    "url": "https://www.boerse-global.de/heidelberg-materials-aktie-trading-update-kommt-am-4-november/834417"
+   },
+   {
+    "title": "Jefferies reiterates Buy (trading-treff.de)",
+    "url": "https://trading-treff.de/trading/heidelberg-materials-aktie-jefferies-bekraeftigt-kaufempfehlung"
+   },
+   {
+    "title": "UBS: are expectations low enough? Q3 and 2027 estimates (stock3.com)",
+    "url": "https://stock3.com/news/heidelberg-materials-sind-die-erwartungen-schon-tief-genug-17315084"
+   },
+   {
+    "title": "Berenberg Buy, construction volume outlook (finanzen.at)",
+    "url": "https://www.finanzen.at/analyse/heidelberg-materials-buy-1104527"
+   },
+   {
+    "title": "Analyst price targets (finanzen.at)",
+    "url": "https://www.finanzen.at/kursziele/heidelberg_materials"
+   },
+   {
+    "title": "CEO sees building recovery; target EUR 206 (ad-hoc-news, 23 Oct 2026)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/heidelberg-materials-sieht-bau-erholung-ziel-fuer-heidelberg-materials-aktie-liegt-bei-206-00-euro/70413270"
+   },
+   {
+    "title": "H1 2026 results and narrowed outlook (RTTNews)",
+    "url": "https://www.rttnews.com/3672539/heidelberg-materials-reports-higher-h1-profit-revenue-narrows-fy26-rco-outlook.aspx"
+   },
+   {
+    "title": "Q3 2025 results (CemNet, 6 Nov 2025)",
+    "url": "https://www.cemnet.com/News/story/180230/heidelberg-materials-tightens-fy25-outlook-after-3q-results.html"
+   },
+   {
+    "title": "US cement outlook (American Cement Association via CemNet, Aug 2026)",
+    "url": "https://www.cemnet.com/News/story/181814/aca-revises-us-cement-outlook-upward-despite-delayed-recovery.html"
+   },
+   {
+    "title": "NCC Sweden/Norway acquisition (CemNet)",
+    "url": "https://www.cemnet.com/News/story/182241/heidelberg-materials-to-acquire-ncc-aggregates-and-asphalt-operations-in-sweden-and-norway.html"
+   },
+   {
+    "title": "Holcim valuation (MarketScreener)",
+    "url": "https://de.marketscreener.com/kurs/aktie/HOLCIM-LTD-2956274/bewertung/"
+   },
+   {
+    "title": "CRH valuation (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/CRH-PLC-4000708/valuation/"
+   },
+   {
+    "title": "Buzzi valuation (MarketScreener)",
+    "url": "https://ca.marketscreener.com/quote/stock/BUZZI-SPA-70838/valuation/"
+   },
+   {
+    "title": "Germany 10-year Bund yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/germany/government-bond-yield"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "MarketScreener consensus, October 2026",
+    "formula": "2027 EBITDA = analyst consensus",
+    "plain": "EBITDA (Heidelberg calls it RCOBD) is the profit from running the plants before depreciation, interest and tax. It rose from EUR 3,739m in 2022 to 4,679m in 2025, mostly through higher prices and cost savings, while volumes were flat to weak. Analysts expect EUR 4,793m in 2026 (+2.4%) and EUR 5,171m in 2027 (+7.9%), helped by cost savings, acquisitions (BURNCO in Canada, a larger stake in Akçansa in Turkey) and a hoped-for recovery in building.",
+    "result": "EUR 5,171m",
+    "title": "What will Heidelberg Materials earn next year?"
+   },
+   {
+    "calc": "(4.45 + 5.68 + 9.40) ÷ 3 = 6.51 ≈ 6.5",
+    "formula": "Normal multiple = average forward EV/EBITDA at end-2023, 2024 and 2025",
+    "plain": "At the last three year-ends Heidelberg's enterprise value was 4.5, 5.7 and 9.4 times the next year's EBITDA (average 6.5). The growth that followed was +5.7%, +4.0% and about +2.4% (2026E). The jump to 9.4 at end-2025 was not paid for by faster growth: the share rose 87% in 2025 on hopes for low-carbon cement and the US market, and has since fallen 32%. Now analysts expect EBITDA to grow 7.9% in 2027 and 6.9% in 2028 (MarketScreener consensus); UBS expects 2027 EBIT +10% and the company targets 7–10% a year to 2030. Building demand should improve only slowly: Berenberg sees European construction volumes +1% in 2026 and +2% in 2027, and the American Cement Association expects US cement use to bottom in 2026 and grow modestly in 2027. That is somewhat faster than the 2–6% growth behind the reference multiples, which could justify more, but we do not raise it: H1 2026 operating profit fell 2.6%, the 2026 guidance was trimmed, and brokers have cut targets this autumn. Peers with faster expected growth trade higher (Holcim 8.4 times with +12% 2027 EBITDA growth, CRH 8.5 times with +10%), and Buzzi, with +5%, trades at 4.4 times. Heidelberg's +8% sits between them, which fits our 6.5. We leave out 2021–2022 (near-zero interest rates).",
+    "result": "6.5 × EBITDA",
+    "title": "What should investors pay for next year's profit, given the growth?"
+   },
+   {
+    "calc": "(6.5 × 5,171 − 5,513) ÷ 175.4 = 28,099 ÷ 175.4",
+    "formula": "(multiple × 2027 EBITDA − net debt) ÷ shares",
+    "plain": "Multiply 2027 EBITDA by the multiple to get the value of the whole company, subtract the net debt expected at end-2026 (including lease debt), and divide by the number of shares.",
+    "result": "EUR 160.2",
+    "title": "Price in 12 months (like an analyst's target)"
+   },
+   {
+    "calc": "160.20 ÷ 1.0831",
+    "formula": "Fair value = price in 12 months ÷ (1 + 8.3%)",
+    "plain": "Shareholders want a return for waiting a year: 3.36% German bond yield + 0.9 × 5.5% = 8.3%. (Like analysts' targets, this leaves out the dividend, EUR 3.60 last year.)",
+    "result": "EUR 148",
+    "title": "Bring it back to today"
+   },
+   {
+    "calc": "147.9 ÷ 151.20 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Our value is 2% below today's price, inside the ±10% band, so Heidelberg looks roughly fairly priced on this method. Investors now pay 6.2 times 2027 EBITDA, close to our 6.5 and far below the 9.4 of end-2025. In other words, the share price has already come back to a normal multiple; it is no longer priced for the boom hopes of 2025, but not yet priced as if the recovery will fail.",
+    "result": "−2%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Heidelberg Materials the way analysts usually value cement makers: enterprise value (the whole company, shares plus debt) compared with next year's EBITDA, the profit before interest, tax and depreciation. Analysts expect that profit to grow about 8% in 2027 and 7% in 2028, a little faster than in recent years, but this recovery has not yet shown up in the results, so we keep the company's own average of 6.5 times rather than paying more. On 2027 EBITDA of EUR 5,171m that gives about EUR 160 a share in a year, or EUR 148 today, 2% below today's EUR 151.20.",
+  "targets": {
+   "items": [
+    "2030 targets (Capital Markets Day, May 2025): operating profit (RCO) growth of 7–10% a year, ROIC around 12% (10.4% in 2025), cash conversion around 50%, net capex around EUR 1.3bn a year and debt of about 1.5 times EBITDA. North America should grow RCO 8–10% a year; Europe should add 2.5 points of margin compared with 2024.",
+    "2026 guidance: RCO EUR 3.40–3.65bn (2025: 3.38bn). The top end was cut from 3.75bn in July because energy costs rose. H1 2026 RCO was 2.6% lower than a year earlier (EUR 1,249m vs 1,282m). A cost programme should save at least EUR 500m by end-2026; EUR 440m was reached by mid-2026.",
+    "Track record: the 2025 guidance (RCO 3.25–3.55bn, ROIC about 10%) was met with 3.38bn and 10.4%. Of the 2025 goals set in 2020, ROIC 'clearly above 8%' and the CO2 goal were met, while the EBITDA margin of 21.8% just missed the 22% goal."
+   ],
+   "title": "Does Heidelberg Materials have a growth goal we can use?",
+   "verdict": "The 7–10% RCO growth goal is close to what analysts expect for 2027 (EBIT +9%, EBITDA +8%), so we use the analysts' 2027 EBITDA. But it is a goal for the years to 2030 that includes acquisitions, and 2026 will grow only about 2–4%, so we do not pay extra for it yet."
+  },
+  "ticker": "HEI",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Heidelberg Materials is one of the world's largest makers of cement, sand and gravel (aggregates) and ready-mixed concrete, with about 21 billion euros of revenue in 2025, mostly from Europe and North America. Its products go into houses, offices, roads, bridges and data centres, so its profit rises and falls with the building cycle and with energy and CO2 costs."
+ },
  {
   "company": "Apple",
   "consensus": {
@@ -4160,10 +4885,11 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "report": {
    "date": "Q3 report · Thursday 29 October 2026",
    "dateIso": "2026-10-29",
+   "done": true,
    "extra": [
     {
-     "title": "What the report showed (29 Oct)",
-     "plain": "Our strong scenario, through effect (1) only. Operating profit excl. inventory revaluation was SEK 4,894m, above both the FactSet consensus (about SEK 4,240m) and Handelsbanken's SEK 4,589m, so we raised our 2027 EBITDA estimate by 5% to SEK 34,458m. Effect (2) did not happen: we kept 5.7 times, because Garpenberg's 2027 plan is unchanged at 2.3 Mt, Aitik's copper grade was cut and Odda is still ramping up slowly. Net debt fell to SEK 18.3bn (19.1bn in June), worth about SEK 2.5 a share. Result: fair value SEK 574 (was 542)."
+     "plain": "Our strong scenario, through effect (1) only. Operating profit excl. inventory revaluation was SEK 4,894m, above both the FactSet consensus (about SEK 4,240m) and Handelsbanken's SEK 4,589m, so we raised our 2027 EBITDA estimate by 5% to SEK 34,458m. Effect (2) did not happen: we kept 5.7 times, because Garpenberg's 2027 plan is unchanged at 2.3 Mt, Aitik's copper grade was cut and Odda is still ramping up slowly. Net debt fell to SEK 18.3bn (19.1bn in June), worth about SEK 2.5 a share. Result: fair value SEK 574 (was 542).",
+     "title": "What the report showed (29 Oct)"
     },
     {
      "plain": "Net debt is subtracted directly: each SEK 1bn less net debt adds about SEK 3.2 a share (1,000 ÷ 283.96 ÷ 1.0916). Net debt was SEK 19.1bn in June (gearing 24%, above the 20% target) after the dividend and an inventory build; analysts expect about SEK 15.2bn by year-end, which would add about SEK 12 to our value if Q3 cash flow starts that move (Q3 2025 free cash flow: SEK 2,284m). Metal prices act through the forecast: each 5% change in 2027 EBITDA moves our value by about SEK 30. Note that Q3 profit will also include a process-inventory revaluation gain or loss from the metal price moves; we ignore it, because it is a paper effect.",
@@ -4201,8 +4927,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
     "Odda and Rönnskär: Odda was expected at full production in Q3 2026; the Rönnskär tankhouse ramp-up is planned for Q4 2026.",
     "Metal prices and currency: Q3 2025 averages were copper USD 9,797/t, zinc USD 2,825/t, gold USD 3,454/oz and USD/SEK 9.52; copper is now about USD 14,200/t and zinc USD 3,750/t.",
     "Cash and debt: Q3 2025 free cash flow SEK 2,284m and net debt SEK 18,130m; June 2026 net debt SEK 19.1bn; plus any update on the Nexa deal before the 23 November shareholder vote."
-   ],
-   "done": true
+   ]
   },
   "risks": [
    "Forecast risk: if 2027 EBITDA comes in 10% lower than SEK 34,458m (for example if copper falls back from about USD 14,200 a tonne toward the USD 9,797 it averaged in Q3 2025, or the US dollar weakens), the fair value falls to about SEK 511.",
