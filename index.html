@@ -1330,8 +1330,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
  }
 ]
 </script>
-<script type="application/json" id="fvd-schedule">
-[
+<script type="application/json" id="fvd-schedule">[
  {
   "company": "Beijer Ref",
   "date": "2026-09-23",
@@ -1698,7 +1697,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "market": "Sweden",
   "method": "Net asset value (NAV) × own average discount/premium",
   "reportDate": "2026-11-03",
-  "reportDateStatus": "estimated",
+  "reportDateStatus": "confirmed",
   "sector": "Investment company",
   "teaser": "Latour usually trades above the value of what it owns: is that premium still earned?",
   "ticker": "LATO B"
@@ -1988,11 +1987,604 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "sector": "Retail (hardware, home and electronics)",
   "teaser": "How much should investors pay for next year's profit at Clas Ohlson, the Nordic hardware and home retailer, and does its growth justify it?",
   "ticker": "CLAS B"
+ },
+ {
+  "date": "2026-11-27",
+  "company": "Hormel Foods",
+  "ticker": "HRL",
+  "market": "United States",
+  "sector": "Packaged foods (Spam, Skippy, Jennie-O)",
+  "method": "Forward P/E",
+  "teaser": "What multiple does a slow-and-steady food company like Hormel deserve, and how much growth does it need to earn it?",
+  "reportDate": "2026-12-03",
+  "reportDateStatus": "estimated"
  }
-]
-</script>
-<script type="application/json" id="fvd-data">
-[
+]</script>
+<script type="application/json" id="fvd-data">[
+ {
+  "company": "Investment AB Latour",
+  "consensus": {
+   "analysts": 4,
+   "asOf": "30 Oct 2026 (latest target from each broker, set 30 Apr–20 Aug 2026; our average)",
+   "explain": "The average of the four latest targets, SEK 224.50, is a price in 12 months; discounted one year at 10.3% it is worth about SEK 204 today, 5% below our SEK 214. If NAV grows about 7.9% in a year (our 10.3% required return minus the 2.4% dividend yield), it reaches about SEK 220, so the average target implies a premium of only about 2% to NAV, against our 5%. The gap is about the premium, and it hides a wide spread: ABG's SEK 184 implies a clear discount, DNB Carnegie's SEK 295 a much higher value for the industrial companies.",
+   "high": 295,
+   "low": 184,
+   "method": "Analysts add up the parts: the listed shares at market value, plus a value for the wholly owned industrial companies, minus debt. Handelsbanken (Hold, SEK 210, May 2026) takes NAV and subtracts a 5% investment-company discount; it noted that the industrial companies were then priced at about 20 times EV/EBIT, down from 25–27 times a year earlier. DNB Carnegie (Buy, SEK 295) values the industrial companies at SEK 81 billion, 26% above Latour's own figure, by comparing them with serial acquirers such as Lifco, Addtech and Indutrade, which gives it a NAV of SEK 232. Pareto (Hold, SEK 209) also uses a sum of the parts, and ABG (Sell, SEK 184) sees the share as fully valued. A target price is where analysts expect the share to be in 12 months.",
+   "rating": "Hold (1 buy, 2 hold, 1 sell)",
+   "source": "Börskollen and MarketScreener (Börskollen itself shows an average of SEK 209 with an older ABG target)",
+   "target": 224.5,
+   "targetToday": 203.6
+  },
+  "crossCheck": {
+   "calc": "5.10 ÷ 1.83%",
+   "name": "Dividend check (not in the fair value)",
+   "plain": "At the end of 2023–2025 the share's dividend yield averaged 1.83%. At that yield, the SEK 5.10 dividend would justify about SEK 279. But those yields came with share prices 28–33% above NAV, so this check mostly repeats the old, higher premium. Today's yield of 2.36% is the highest in five years, and Latour has raised the dividend by more than 10% a year over ten years, which supports the share if growth comes back.",
+   "result": "≈ SEK 279"
+  },
+  "crossChecks": [
+   {
+    "calc": "204 + (3,924 × 20 − 67,179) ÷ 639.3",
+    "name": "Check: industrial companies at a higher multiple (sum of the parts)",
+    "note": "DNB Carnegie goes further (SEK 81bn, NAV SEK 232) by comparing with serial acquirers at 19–25 times EBITA. This is why a small premium to Latour's own NAV can be defended: Latour's estimate of its unlisted companies is cautious compared with listed peers.",
+    "plain": "Latour values its industrial companies at about 17.1 times their 12-month operating profit (SEK 67.2bn ÷ SEK 3,924m). Handelsbanken's target implied about 20 times. At 20 times they would be worth about SEK 78.5bn, SEK 11.3bn more, or about SEK 17.7 per share, giving a NAV of about SEK 222 (with no premium):",
+    "result": "≈ SEK 222"
+   },
+   {
+    "calc": "204 × (1 − 1.9%)",
+    "name": "Check: at the peers' discount",
+    "note": "Kinnevik (34% discount) is left out because it mainly owns unlisted growth companies. Latour's 6% premium today is the highest of the group; on 12 Oct 2026 Ibindex put it at a 1% discount, so it moves quickly with the share price.",
+    "plain": "Around 30 Oct 2026 Investor traded at a 3.9% premium, Industrivärden C at 0.4%, Svolder at 0.1% and Lundbergs at a 12.0% discount to their latest NAV (substansrabatt.se). The average is a 1.9% discount. At that level Latour would be worth:",
+    "result": "≈ SEK 200"
+   }
+  ],
+  "currency": "SEK",
+  "date": "2026-10-31",
+  "dateLabel": "Saturday 31 October 2026",
+  "exchange": "Nasdaq Stockholm",
+  "fairValue": 214,
+  "history": {
+   "caption": "From Latour's year-end reports 2021–2025 and the January–June 2026 interim report. NAV = Latour's own net asset value per share (midpoint of the range it gives). Premium = B-share price on the last trading day of the year ÷ NAV per share − 1 (our calculation; Latour does not state it). Industrial operating profit = operating profit (EBIT) of the wholly owned companies; from 2025 Latour reports 'adjusted operating profit' (2024 restated: SEK 3,769m). Latest: NAV 18 Aug 2026, price 30 Oct 2026, other figures for the 12 months to June 2026. Forecasts: Zonebourse/MarketScreener consensus.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "Net asset value (NAV) per share, SEK",
+     "note": "Latour's own range at end-2025: SEK 204–228. 30 Jun 2026: SEK 203 (range 190–215)",
+     "values": [
+      "216",
+      "159",
+      "198",
+      "215",
+      "216",
+      "204 (18 Aug)"
+     ]
+    },
+    {
+     "label": "NAV change incl. dividend",
+     "note": "As stated by Latour. Stock market (SIXRX) in the same years: +39.3%, −22.8%, +19.2%, +8.6%, +12.7%",
+     "values": [
+      "+43.4%",
+      "−25.0%",
+      "+27.5%",
+      "+11.0%",
+      "+2.4%",
+      "−3.7% (H1 2026)"
+     ]
+    },
+    {
+     "label": "B-share price at year-end, SEK",
+     "values": [
+      "369",
+      "197",
+      "263",
+      "276",
+      "225",
+      "216.30"
+     ]
+    },
+    {
+     "label": "Premium (+) to NAV",
+     "note": "This is the 'multiple' for investment companies. Average 2023–25: +21.8%; 2021–25: +32.0%. We use a growth-adjusted +5% (see step 2)",
+     "strong": true,
+     "values": [
+      "+70.8%",
+      "+23.9%",
+      "+32.8%",
+      "+28.4%",
+      "+4.2%",
+      "+6.0%"
+     ]
+    },
+    {
+     "label": "Price ÷ NAV",
+     "values": [
+      "1.71",
+      "1.24",
+      "1.33",
+      "1.28",
+      "1.04",
+      "1.06"
+     ]
+    },
+    {
+     "label": "Industrial operating profit (EBIT), SEK m",
+     "note": "Wholly owned companies only. 2025 and latest: adjusted operating profit",
+     "values": [
+      "2,663",
+      "3,194",
+      "3,807",
+      "3,708",
+      "3,935",
+      "3,924"
+     ]
+    },
+    {
+     "label": "Growth in industrial operating profit the following year",
+     "note": "What investors were paying for at each year-end. 2024→2025 on the adjusted basis (3,935 vs 3,769). 2026E SEK 3,938m and 2027E SEK 4,291m (consensus, Zonebourse); 2028E +5%",
+     "values": [
+      "+20%",
+      "+19%",
+      "−3%",
+      "+4%",
+      "0% (2026E)",
+      "+9% (2027E)"
+     ]
+    },
+    {
+     "label": "Industrial net sales, SEK m",
+     "values": [
+      "18,280",
+      "22,611",
+      "25,550",
+      "25,886",
+      "28,145",
+      "28,126"
+     ]
+    },
+    {
+     "label": "Organic sales growth (comparable units, fixed currency)",
+     "note": "Order intake grew 9% organically in H1 2026 and 13% in Q2",
+     "values": [
+      "+14%",
+      "+9%",
+      "+3%",
+      "−2%",
+      "+4%",
+      "+4% (H1)"
+     ]
+    },
+    {
+     "label": "Industrial operating margin",
+     "note": "Target: at least 15% on average over a business cycle",
+     "values": [
+      "14.6%",
+      "14.1%",
+      "14.9%",
+      "14.3%",
+      "14.0%",
+      "14.0%"
+     ]
+    },
+    {
+     "label": "Dividend per share, SEK (for the year)",
+     "values": [
+      "3.30",
+      "3.70",
+      "4.10",
+      "4.60",
+      "5.10",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Dividend yield at year-end",
+     "note": "Average 2023–25: 1.83%. Latest: 5.10 ÷ 216.30",
+     "values": [
+      "0.89%",
+      "1.88%",
+      "1.56%",
+      "1.67%",
+      "2.27%",
+      "2.36%"
+     ]
+    },
+    {
+     "label": "Cash flow from operating activities (group), SEK m",
+     "note": "IFRS cash-flow statement. 2023 as restated in the 2024 report (first reported 4,731)",
+     "values": [
+      "1,772",
+      "1,583",
+      "4,607",
+      "3,653",
+      "3,745",
+      "n/a"
+     ]
+    },
+    {
+     "label": "Net debt excl. leases, SEK m",
+     "note": "About 10% of the market value of total assets at end-2025",
+     "values": [
+      "8,443",
+      "11,067",
+      "9,983",
+      "12,292",
+      "14,980",
+      "12,281 (Jun)"
+     ]
+    }
+   ]
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "note": "B share, Nasdaq Stockholm close 30 Oct 2026 (Swedbank Aktiellt, Zonebourse). 52-week range SEK 184.55–248.40",
+    "value": "SEK 216.30"
+   },
+   {
+    "label": "NAV per share",
+    "note": "Latour's latest figure, 18 Aug 2026 (stated in the H1 report). 30 Jun: SEK 203 = SEK 129,648m ÷ 639.3m shares. The listed portfolio has risen since (SEK 77bn on 30 Sep vs 74.5bn on 30 Jun, about +SEK 4 per share)",
+    "value": "SEK 204"
+   },
+   {
+    "label": "Growth-adjusted premium to NAV",
+    "note": "Instead of the 2023–25 average of +21.8%: close to Latour's own +4.2% at end-2025 (when 0% growth was expected) and Investor's +3.9% today",
+    "value": "+5%"
+   },
+   {
+    "label": "Premium today",
+    "note": "216.30 ÷ 204 − 1",
+    "value": "+6.0%"
+   },
+   {
+    "label": "Expected growth in industrial operating profit",
+    "note": "Consensus (Zonebourse): SEK 3,936m (2025) → 3,938m (2026E) → 4,291m (2027E) → 4,501m (2028E)",
+    "value": "0% / +9% / +5%"
+   },
+   {
+    "label": "Cost of equity",
+    "note": "3.12% Swedish 10-year bond (30 Oct 2026, Trading Economics) + beta 1.3 × 5.5%. Used to bring analysts' 12-month targets back to today",
+    "value": "10.3%"
+   },
+   {
+    "label": "Beta",
+    "note": "5-year beta 1.26 (stockanalysis.com)",
+    "value": "1.3"
+   },
+   {
+    "label": "Value of the industrial companies in NAV",
+    "note": "Latour's midpoint at 30 Jun 2026 (range SEK 59.1–75.3bn), about 17.1 × the SEK 3,924m 12-month operating profit",
+    "value": "SEK 67.2 billion"
+   },
+   {
+    "label": "Shares",
+    "note": "Excluding 521,750 own B shares",
+    "value": "639.3 million"
+   },
+   {
+    "label": "Dividend",
+    "note": "For 2025, paid May 2026; yield 2.4% at today's price",
+    "value": "SEK 5.10"
+   }
+  ],
+  "market": "Sweden",
+  "method": {
+   "name": "Sector method: net asset value (NAV) × a growth-adjusted premium (how analysts value Swedish investment companies)",
+   "why": "An investment company is a basket of other companies, so analysts start from what the basket is worth: NAV, the market value of the listed shares plus a value for the unlisted companies, minus net debt, per share. Then they judge what premium or discount the share deserves. Handelsbanken, for example, takes Latour's NAV minus a 5% discount. Latour publishes its own NAV each quarter; it values its industrial companies at 12–21 times their operating profit (EV/EBIT), depending on the business. Because a premium is mostly a price for growth, we set it from the growth analysts now expect, not from the years when Latour's industrial profit grew 20% a year.",
+   "whyNot": "P/E does not fit: Latour's profit includes changes in the value of its listed shares, so earnings per share jump around (SEK 9.62 in 2024, 7.67 in 2025). A full cash-flow model (DCF) would mean valuing ten listed companies and seven business areas one by one. So the dividend yield, a sum of the parts at a higher multiple for the industrial companies, and peers' discounts are only checks."
+  },
+  "price": 216.3,
+  "priceDate": "close 30 Oct 2026",
+  "rangeHigh": 224,
+  "rangeLow": 204,
+  "reasoning": [
+   "Latour has a strong long-term record: the industrial companies grew sales from SEK 18.3 billion in 2021 to 28.1 billion in 2025 at a steady 14–15% margin, and the dividend has risen by more than 10% a year for ten years.",
+   "But growth has slowed: industrial profit fell 3% in 2024, rose 4% in 2025 and was down 1% in the first half of 2026, and analysts expect 0% for 2026 and +9% for 2027. NAV fell 3.7% in the first half while the stock market rose 8%, and the premium the share used to carry (24–33% at the end of 2022–2024) has shrunk to about 6%.",
+   "We therefore use a growth-adjusted premium of 5% instead of the 21.8% average of 2023–2025. On the latest NAV of SEK 204 that gives SEK 214. Analysts' average target is worth SEK 204 today; the sum-of-the-parts check (SEK 222) is higher and the peer check (SEK 200) lower.",
+   "Fair value SEK 214 (range 204–224). At SEK 216.30 the share looks roughly fairly priced, 1% above our value."
+  ],
+  "report": {
+   "date": "Q3 report · Tuesday 3 November 2026",
+   "dateIso": "2026-11-03",
+   "extra": [
+    {
+     "plain": "These move our fair value directly, because they are inside NAV. The ten listed holdings are worth about SEK 77 billion, or about SEK 120 per share, so a 10% move in their prices changes NAV by about SEK 12 and our fair value by about SEK 13. For the industrial companies, each 1 point of EV/EBIT multiple that Latour uses (on about SEK 3.9 billion of operating profit) is about SEK 6 per share of NAV and SEK 6.4 of fair value. Higher net debt after acquisitions such as the UK's Bolt and Nut Manufacturing lowers NAV unless the bought companies add the same amount of value.",
+     "title": "What if the listed holdings or the industrial multiples change?"
+    }
+   ],
+   "plain": "Our fair value = NAV per share × 1.05 (a 5% premium). So the report can change it in two ways: through the new NAV (the listed holdings at 30 September and Latour's value for its industrial companies), and through the premium, if the report changes how fast Latour looks likely to grow. A big share-price move on the day is not the same as a change in value.",
+   "scenarios": [
+    {
+     "calc": "214.2 × 1.05 = 225 · 214.2 × 1.10 = 236",
+     "label": "Strong report",
+     "tone": "pos",
+     "value": "SEK 225–236",
+     "what": "The industrial companies turn their strong orders (+13% organic in Q2) into higher sales and profit: sales clearly above SEK 6,750m and operating profit above SEK 936m (both Q3 2025), with the margin back above 13.9%. Two things can then lift the value: (1) NAV rises about 5%, from SEK 204 to about 214 (the listed holdings alone add about SEK 4 a share by 30 September), which gives SEK 225 at our 5% premium; (2) if the report makes growth near Latour's 10% target believable (analysts now expect 0% for 2026 and +9% for 2027), a 10% premium fits better: SEK 236."
+    },
+    {
+     "calc": "208 × 1.05 = 218",
+     "label": "As expected",
+     "tone": "flat",
+     "value": "SEK 218",
+     "what": "Industrial profit roughly flat on last year and NAV up only by the rise in the listed holdings (SEK 77bn on 30 Sep vs 74.5bn on 30 Jun, about +SEK 4 a share), to about SEK 208. The premium stays at 5%."
+    },
+    {
+     "calc": "193.8 × 1.05 = 203 · 193.8 × 1.00 = 194",
+     "label": "Weak report",
+     "tone": "neg",
+     "value": "SEK 194–203",
+     "what": "Orders fail to turn into sales, operating profit falls below SEK 936m, or Latour lowers the multiples it uses for its industrial companies. Two things can then lower the value: (1) NAV falls about 5%, from SEK 204 to about 194, which gives SEK 203 at a 5% premium; (2) if growth then looks stuck near 0%, peers' level of about NAV (0%) fits better: SEK 194."
+    }
+   ],
+   "title": "How the Q3 report could change our fair value",
+   "watch": [
+    "Industrial net sales and organic growth in Q3 versus SEK 6,750m (+2% organic) in Q3 2025.",
+    "Order intake versus SEK 6,708m (+10% organic) a year ago, and the order book (SEK 8.1bn at 30 June).",
+    "Adjusted operating profit and margin versus SEK 936m and 13.9% in Q3 2025.",
+    "NAV per share at 30 September versus SEK 203 at 30 June and SEK 210 at 30 September 2025, and whether the EV/EBIT ranges for the business areas change.",
+    "Net debt (SEK 12.3bn excluding leases at 30 June) after the latest acquisitions, and any comment on the remaining Assa Abloy and Securitas shares."
+   ]
+  },
+  "risks": [
+   "NAV risk: if NAV is 10% lower, for example after a fall in Assa Abloy and Securitas or lower values for the industrial companies, the fair value falls to about SEK 193. Each 10% move in the SEK 77bn listed portfolio moves the fair value by about SEK 13 per share.",
+   "Premium risk: at the premium the analysts' average target implies (about 2% on next year's NAV) the value is about SEK 208 today; at today's 6% premium it is SEK 216 (today's price). Upside: if growth returns towards 10% a year and the premium goes back to the unadjusted 2023–25 average of 21.8%, the value would be about SEK 248. At the 2021–2025 average (32%) it would be about SEK 269.",
+   "Margin risk: the industrial companies earn 14.0%, below the 15% target. Each 1 point of margin on SEK 28 billion of sales is about SEK 280 million of operating profit, worth about SEK 7.5 per share at Latour's own 17 times multiple.",
+   "Holdings and capital: in May 2026 Latour sold Assa Abloy and Securitas shares for SEK 5 billion to build its industrial business, with a 180-day lock-up on the remaining shares. The CEO says this does not mean Latour wants to leave the stock market (Di, 19 Oct 2026). Upside: Fitch affirmed Latour's A rating in September, and net debt is only about 10% of assets."
+  ],
+  "sector": "Investment company",
+  "sensitivity": {
+   "baseCol": 2,
+   "baseRow": 2,
+   "caption": "Fair value today in SEK per share for different premiums to NAV (rows) and for NAV coming in higher or lower than SEK 204 (columns). Base case: SEK 204 × 1.05.",
+   "colLabel": "NAV vs SEK 204",
+   "cols": [
+    "−10%",
+    "−5%",
+    "SEK 204",
+    "+5%",
+    "+10%"
+   ],
+   "rowLabel": "Premium to NAV",
+   "rows": [
+    "+15%",
+    "+10%",
+    "+5%",
+    "0%",
+    "−5% (discount)"
+   ],
+   "values": [
+    [
+     211,
+     223,
+     235,
+     246,
+     258
+    ],
+    [
+     202,
+     213,
+     224,
+     236,
+     247
+    ],
+    [
+     193,
+     203,
+     214,
+     225,
+     236
+    ],
+    [
+     184,
+     194,
+     204,
+     214,
+     224
+    ],
+    [
+     174,
+     184,
+     194,
+     203,
+     213
+    ]
+   ]
+  },
+  "sources": [
+   {
+    "title": "Latour interim report January–June 2026 (PDF, Swedish)",
+    "url": "https://mb.cision.com/Main/487/4384932/4224288.pdf"
+   },
+   {
+    "title": "Latour interim report January–June 2026 (PDF, English)",
+    "url": "https://mb.cision.com/Main/487/4384935/4224289.pdf"
+   },
+   {
+    "title": "Invitation to Latour's Q3 2026 report, 3 Nov 2026 (PDF)",
+    "url": "https://mb.cision.com/Main/487/4415323/4338930.pdf"
+   },
+   {
+    "title": "Latour year-end report 2025 (PDF)",
+    "url": "https://mb.cision.com/Main/487/4305636/3927838.pdf"
+   },
+   {
+    "title": "Latour year-end report 2025 (MFN, incl. financial calendar)",
+    "url": "https://mfn.se/all/a/latour/investment-ab-latour-bokslutskommunike-2025-48c6ef42"
+   },
+   {
+    "title": "Latour year-end report 2024 (PDF)",
+    "url": "https://airtools-latour.prod-mid-euw3.investis.com/sites/airtools-latour/files/pr/202502104967-1.pdf"
+   },
+   {
+    "title": "Latour year-end report 2023 (PDF)",
+    "url": "https://mb.cision.com/Main/487/3926074/2595305.pdf"
+   },
+   {
+    "title": "Latour year-end report 2022 (PDF)",
+    "url": "https://mb.cision.com/Main/487/3712280/1839148.pdf"
+   },
+   {
+    "title": "Latour year-end report 2021 (financialfilings.com)",
+    "url": "https://financialfilings.com/filings/latour/interim-quarterly-report/2022/704193/"
+   },
+   {
+    "title": "Latour interim report January–September 2025 (MFN)",
+    "url": "https://mfn.se/all/a/latour/investment-ab-latour-delarsrapport-januari-september-2025-97a7b7de"
+   },
+   {
+    "title": "Latour net asset value page",
+    "url": "https://www.latour.se/en/investor-relations/the-latour-shares-net-asset-value"
+   },
+   {
+    "title": "Latour revises its financial targets (Feb 2023)",
+    "url": "https://www.inderes.dk/en/releases/investment-ab-latour-latour-revises-its-financial-targets"
+   },
+   {
+    "title": "Latour sells Securitas and Assa Abloy shares for SEK 2.5bn each (MFN, May 2026)",
+    "url": "https://mfn.se/all/a/latour/investment-ab-latour-latour-har-avyttrat-delar-av-sitt-innehav-av-b-aktier-i-securitas-och-assa-abloy-motsvarande-2-5-miljarder-kronor-i-vardera-bolag-for-att-fortsatta-att-bygga-i-den-helagda-industrirorelsen-697d4736"
+   },
+   {
+    "title": "Latour share price and news (Swedbank Aktiellt)",
+    "url": "https://www.swedbank-aktiellt.se/om/latour"
+   },
+   {
+    "title": "Latour consensus forecasts and close (Zonebourse)",
+    "url": "https://www.zonebourse.com/cours/action/INVESTMENT-AB-LATOUR-35868236/finances/"
+   },
+   {
+    "title": "Latour forecast and price targets (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/LATO.B/forecast/"
+   },
+   {
+    "title": "Latour beta (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/sto/LATO.B/statistics/"
+   },
+   {
+    "title": "Latour price targets (Börskollen)",
+    "url": "https://www.borskollen.se/aktie/latour/riktkurs"
+   },
+   {
+    "title": "Latour broker research history (MarketScreener)",
+    "url": "https://in.marketscreener.com/quote/stock/INVESTMENT-AB-LATOUR-35868236/news-broker-research/"
+   },
+   {
+    "title": "Latour quote, ABG target (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/INVESTMENT-AB-LATOUR-35868236/"
+   },
+   {
+    "title": "Handelsbanken no longer sell on Latour (Aktiespararna)",
+    "url": "https://aktiespararna.se/nyheter/banken-inte-langre-saljlage-i-investmentbolaget-latour"
+   },
+   {
+    "title": "Handelsbanken drops sell rating (Dagens PS)",
+    "url": "https://www.dagensps.se/bors-finans/aktier/saljstampeln-ryker-pa-aktie-i-farsk-analys/"
+   },
+   {
+    "title": "DNB Carnegie: hidden discount in Latour (EFN, 7 May 2026)",
+    "url": "https://efn.se/analys-dold-rabatt-koplage-i-klassiska-investmentbolaget"
+   },
+   {
+    "title": "Pareto cautious on Latour (Placera, 5 Nov 2025)",
+    "url": "https://www.placera.se/telegram/latour-pareto-valjer-att-vara-forsiktiga-med-latour-sanker-riktkursen-20251105"
+   },
+   {
+    "title": "Pareto: upside potential, hold Latour (Placera, Aug 2025)",
+    "url": "https://placera.se/nyheter/pareto-potential-pa-uppsidan---behall-latour-2025-08-20"
+   },
+   {
+    "title": "Daily recommendations, Pareto cuts Latour (Placera, 20 Aug 2026)",
+    "url": "https://www.placera.se/telegram/dagens-aktierekommendationer-i-oversikt-20260820"
+   },
+   {
+    "title": "ABG initiates Latour with sell (Börskollen)",
+    "url": "https://www.borskollen.se/nyheter/27/investmentbolaget-pressas-av-saljrad-aktien-faller"
+   },
+   {
+    "title": "Latour CEO plays down the NAV discount (Placera/Di, 19 Oct 2026)",
+    "url": "https://www.placera.se/telegram/latour-latour-vd-n-tonar-ned-substansrabatten-fokuserar-pa-utdelningen-di-20261019"
+   },
+   {
+    "title": "Before the reports: how investment companies are valued (Placera, 12 Oct 2026)",
+    "url": "https://placera.se/nyheter/infor-rapportfloden-sa-varderas-investmentbolagen-2026-10-12"
+   },
+   {
+    "title": "Latour now at a discount (Placera, 13 Mar 2026)",
+    "url": "https://www.placera.se/nyheter/latour-nu-till-rabatt--sa-varderas-investmentbolagen-2026-03-13"
+   },
+   {
+    "title": "Investment company premiums and discounts (substansrabatt.se)",
+    "url": "https://substansrabatt.se/"
+   },
+   {
+    "title": "Latour at 10% premium a buy? (Placera/Affärsvärlden, 17 Oct 2025)",
+    "url": "https://www.placera.se/analys/analys-till-10-premie-ar-latour--en-kopvard-aktie-2025-10-17"
+   },
+   {
+    "title": "Serial acquirers compared (Placera/EFN, 14 Aug 2026)",
+    "url": "https://www.placera.se/telegram/indutrade-efn-addtech-sticker-ut-bland-borsens-serieforvarvare-20260814"
+   },
+   {
+    "title": "Sweden 10-year government bond yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/sweden/government-bond-yield"
+   }
+  ],
+  "steps": [
+   {
+    "calc": "129,648 ÷ 639.3 = 203 (30 Jun); 204 on 18 Aug",
+    "formula": "NAV per share = (listed holdings + industrial companies − net debt) ÷ shares",
+    "plain": "Add the stock-market value of the ten listed holdings (SEK 74.5 billion on 30 June), Latour's own value for its industrial companies (SEK 67.2 billion, the midpoint of its range), subtract net debt and divide by 639.3 million shares. Latour reported SEK 203 per share for 30 June and SEK 204 for 18 August. Unlike Industrivärden, about half of Latour's NAV is an estimate: the industrial companies are valued at 12–21 times their operating profit.",
+    "result": "SEK 204",
+    "title": "What are Latour's holdings worth?"
+   },
+   {
+    "calc": "Unadjusted 2023–25 average: (32.8% + 28.4% + 4.2%) ÷ 3 = 21.8% → adjusted to 5%",
+    "formula": "Growth-adjusted premium ≈ Latour's end-2025 level (+4.2%) and Investor today (+3.9%)",
+    "plain": "A premium is mostly a price for growth. At the end of 2022 and 2023 investors paid 24–33% above NAV, when the next year brought about 20% higher industrial profit (+19% in 2023 after end-2022). Since then growth has slowed: profit fell 3% in 2024, rose 4% in 2025, and analysts now expect 0% for 2026, +9% for 2027 and +5% for 2028 (consensus via Zonebourse), well below Latour's own 10% target. At the end of 2025, when 0% growth was expected, the premium was only 4.2%. Today Investor trades about 4% above NAV, Industrivärden and Svolder about at NAV and Lundbergs 12% below (substansrabatt.se). So we do not use the 2023–25 average of 21.8%; we use 5%, close to end-2025 and to Investor. A bigger premium would need growth back near 10% a year.",
+    "result": "+5%",
+    "title": "What premium should investors pay, given the growth?"
+   },
+   {
+    "calc": "204 × 1.05",
+    "formula": "Fair value = NAV × (1 + premium)",
+    "plain": "NAV already uses today's market prices of the listed holdings, so there is no 12-month price to bring back. We simply apply the premium.",
+    "result": "SEK 214",
+    "title": "Fair value today"
+   },
+   {
+    "calc": "224.50 ÷ 1.1027",
+    "formula": "Target today = target ÷ (1 + 10.3%)",
+    "plain": "Analysts' targets are prices in 12 months. The average of the four latest targets, SEK 224.50, is worth about SEK 204 in today's money when we discount it at the 10.3% return shareholders ask for. Our value is 5% higher.",
+    "result": "SEK 204",
+    "title": "How does that compare with analysts' targets?"
+   },
+   {
+    "calc": "214.2 ÷ 216.30 − 1",
+    "formula": "Gap = fair value ÷ price − 1",
+    "plain": "Today's price is about 1% above our value, well inside the ±10% band we call 'roughly fairly priced'. The share already trades at a 6% premium, close to our 5%. For it to look clearly cheap, either NAV would have to rise (for example through higher prices of Assa Abloy and Securitas) or growth would have to return towards 10% a year, which would justify a bigger premium.",
+    "result": "−1%",
+    "title": "Compare with the market"
+   }
+  ],
+  "summary": "We value Latour the way analysts value Swedish investment companies: what its holdings are worth (net asset value, NAV) times the premium or discount the share deserves. Latour's last reported NAV is SEK 204 per share. The share used to trade 24–33% above NAV when its factories grew profit by about 20% a year; now analysts expect 0% growth in 2026 and about 9% in 2027, so we use a growth-adjusted premium of 5%. That gives SEK 214, about 1% below the SEK 216.30 share price.",
+  "targets": {
+   "items": [
+    "Targets for the wholly owned industrial companies (since February 2023, measured over a business cycle): at least 10% sales growth a year per holding, an operating margin of at least 15% on average, and a return on operating capital of at least 15% per holding.",
+    "Track record: sales of the industrial companies grew from SEK 18.3 billion in 2021 to 28.1 billion in 2025, mostly through acquisitions; organic growth was 14%, 9%, 3%, −2% and 4%. The margin has stayed at 14–15%, just below the 15% target.",
+    "Now: in the first half of 2026 sales rose 1% (4% organic) and adjusted operating profit fell 1% to SEK 1,885 million. Orders were stronger (+9% organic), and the order book was SEK 8.1 billion, which the CEO says gives 'strong fundamentals' for sales growth in coming quarters.",
+    "Latour has raised its dividend by more than 10% a year over ten years (CEO, Di, 19 Oct 2026); the 2025 dividend was SEK 5.10, up from 4.60."
+   ],
+   "title": "Does Latour have a growth goal we can use?",
+   "verdict": "The 10% growth target is not being met right now (4% organic, 0% profit growth expected for 2026). Analysts expect about +9% operating profit in 2027 and +5% in 2028, roughly half the pace of 2022–2023. We do not need a growth target to compute NAV, but this slower growth is why we use a much smaller premium than in the past."
+  },
+  "ticker": "LATO B",
+  "verdict": "Roughly fairly priced",
+  "whatTheyDo": "Latour is a Swedish investment company controlled by the Douglas family. It owns a group of wholly owned industrial companies (Swegon ventilation, Hultafors tools and workwear, Nord-Lock bolts, Caljan, Bemsiq, Innovalift and Latour Industries; about SEK 28 billion of sales a year) plus large stakes in ten listed companies worth about SEK 77 billion, led by Assa Abloy and Securitas."
+ },
  {
   "company": "Heidelberg Materials",
   "consensus": {
@@ -23050,8 +23642,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "verdict": "Looks undervalued",
   "whatTheyDo": "One of the world's largest wholesalers of refrigeration, air-conditioning and heat-pump equipment, selling to installers in Europe, North America and Asia-Pacific. It has grown mainly by buying other distributors: in 2023 alone it spent SEK 8.9 billion on acquisitions, mainly the US distributor Heritage."
  }
-]
-</script>
+]</script>
 <script>
 (function(){
   var app=document.getElementById('app');
