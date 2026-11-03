@@ -2227,7 +2227,7 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "market": "Germany",
   "method": "Forward P/E and justified P/B, 50/50",
   "reportDate": "2026-11-05",
-  "reportDateStatus": "estimated",
+  "reportDateStatus": "confirmed",
   "sector": "Banking",
   "teaser": "How do you value a German bank whose profits depend so much on interest rates?",
   "ticker": "CBK"
@@ -2517,9 +2517,594 @@ dl.terms dd{margin:0;font-size:14px;color:#cfcbc2}
   "teaser": "Marvell designs custom chips for the big cloud companies' AI data centres: how much should investors pay for profits that depend on a few very large customers?",
   "reportDate": "2026-12-01",
   "reportDateStatus": "estimated"
+ },
+ {
+  "date": "2026-11-30",
+  "company": "Brown-Forman",
+  "ticker": "BF.B",
+  "market": "United States",
+  "sector": "Spirits (Jack Daniel's, Woodford Reserve)",
+  "method": "Forward P/E",
+  "teaser": "How much should investors pay for next year's profit at the family-controlled maker of Jack Daniel's, and how much growth does that price need?",
+  "reportDate": "2026-12-03",
+  "reportDateStatus": "estimated"
  }
 ]</script>
 <script type="application/json" id="fvd-data">[
+ {
+  "date": "2026-11-03",
+  "dateLabel": "Tuesday 3 November 2026",
+  "market": "Germany",
+  "company": "Commerzbank",
+  "ticker": "CBK",
+  "exchange": "Xetra (Frankfurt)",
+  "sector": "Banking",
+  "currency": "EUR",
+  "price": 37.78,
+  "priceDate": "close 30 Oct 2026 (Xetra)",
+  "fairValue": 39.8,
+  "rangeLow": 38.1,
+  "rangeHigh": 41.5,
+  "verdict": "Roughly fairly priced",
+  "summary": "We value Commerzbank the way analysts value banks: half on a price-to-earnings multiple (P/E) of next year's expected profit, half on a 'justified' price-to-book, which asks what each euro of the bank's equity is worth given the return it earns on it. Analysts expect earnings per share to grow about 21% in 2027 and 29% in 2028, about as fast as after recent year-ends, so we keep Commerzbank's own average forward P/E of 7.9. The two halves give EUR 26.9 and EUR 52.6; blended, our fair value is about EUR 39.8, about 5% above the EUR 37.78 price.",
+  "whatTheyDo": "Commerzbank is Germany's second-largest listed bank: it lends to and handles payments for a large share of Germany's mid-sized companies (the 'Mittelstand') and serves about 11 million private customers in Germany through Commerzbank and its online bank comdirect. It also owns most of mBank in Poland, and Italy's UniCredit has built up a stake of more than 40% (including derivatives) and wants to take control.",
+  "consensus": {
+   "target": 41.8,
+   "targetToday": 39.0,
+   "analysts": 13,
+   "low": 31.6,
+   "high": 45.0,
+   "rating": "Buy on average (3 strong buy, 2 buy, 7 hold, 1 sell)",
+   "asOf": "19 Oct 2026",
+   "source": "stockanalysis.com (S&P Global data)",
+   "method": "A price target is where an analyst expects the share to be in 12 months. The recent changes we found are driven by earnings forecasts rather than a stated multiple: J.P. Morgan (Kian Abouhossein) raised its target from EUR 38 to EUR 39 (Neutral, 8 September) because it lifted its adjusted earnings-per-share forecasts for 2026 and 2027 on higher euro interest rates; RBC (Anke Reingen) went from EUR 40 to EUR 41 (Sector Perform, 13 October) on higher rate assumptions; Barclays (Paola Sabbione) cut to Equal Weight and EUR 41 (22 October) on valuation, a weaker-than-hoped third-quarter interest income and tougher competition for deposits. None of the articles we read states the multiple or the year used.",
+   "explain": "The average target of EUR 41.80 is a price in 12 months; discounted one year at 7.1% it is worth about EUR 39.0 today, so our EUR 39.8 is about 2% higher, practically the same. The target works out at 11.5 × the 2027 earnings forecast, well above the 7.9 × we use for the P/E half (Commerzbank's own average at the last three year-ends), so on earnings alone analysts are more generous than history. Our total ends up close to theirs because the price-to-book half, with a 12.9% expected return on equity against a 7.1% required return, justifies 1.8 × book while the market pays about 1.3 ×."
+  },
+  "method": {
+   "name": "Sector method: forward P/E and justified price-to-book, 50/50 (how analysts value banks)",
+   "why": "A bank's 'product' is money, so its equity (book value) and the return it earns on that equity (ROE) drive its value, and its profit is what shareholders receive. German and Nordic bank analysts therefore look at both a P/E on next year's earnings and price-to-book: J.P. Morgan's latest target change for Commerzbank, for example, was driven by higher 2026–27 earnings-per-share forecasts, and Commerzbank itself steers by its return on tangible equity (RoTE) target. We give each half the same weight. Justified price-to-book = (ROE − growth) ÷ (cost of equity − growth): a bank that earns more on its equity than shareholders demand deserves to trade above book.",
+   "whyNot": "We do not use a cash-flow model (DCF): for a bank, deposits and loans are its raw material, so 'free cash flow' mostly reflects the balance sheet growing or shrinking and says little about value. Instead we check the result against the cash Commerzbank hands back (it pays out 100% of profit after AT1 coupons as dividends and buybacks), its own price-to-book history, and the forward P/E of other big European banks. We also do not value it on UniCredit's exchange offer: that offer (0.485 UniCredit shares per Commerzbank share) is worth less than the market price, and almost nobody accepted it."
+  },
+  "history": {
+   "caption": "From stockanalysis.com (S&P Global data, IFRS) and Commerzbank's results releases. Earnings per share (EPS) are after coupons on AT1 bonds, as Commerzbank reports them. EPS 'excl. one-offs' is our own estimate for 2025 only: Commerzbank paid out EUR 2.7bn, '100% of the net result before restructuring and after AT1 coupons', against EUR 2,316m of profit to shareholders after the EUR 562m restructuring charge, so we scale EPS by 2,700 ÷ 2,316. Year-end price = year-end market value ÷ shares outstanding (stockanalysis.com), which matches the Xetra close. Banks have no 'net debt' in the normal sense (debt is their raw material), so the table shows book value instead. Latest = last 12 months to June 2026, book value 30 Jun 2026, price 30 Oct 2026; forward multiples use the MarketScreener consensus.",
+   "columns": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Latest"
+   ],
+   "rows": [
+    {
+     "label": "Earnings per share, reported (EUR)",
+     "note": "After AT1 coupons. Net profit to shareholders 2025: EUR 2,625m before AT1 coupons (2024: 2,677m)",
+     "values": [
+      "0.23",
+      "0.99",
+      "1.63",
+      "2.06",
+      "2.06",
+      "2.60"
+     ]
+    },
+    {
+     "label": "Earnings per share, excl. one-offs (EUR)",
+     "note": "2025 excl. the EUR 562m restructuring charge (our estimate). Consensus: 2026 EUR 3.01, 2027 EUR 3.65",
+     "values": [
+      "0.23",
+      "0.99",
+      "1.63",
+      "2.06",
+      "2.40",
+      "2.60"
+     ]
+    },
+    {
+     "label": "Share price at year-end (EUR)",
+     "values": [
+      "6.69",
+      "8.84",
+      "10.76",
+      "15.72",
+      "36.08",
+      "37.78"
+     ]
+    },
+    {
+     "label": "P/E at year-end",
+     "note": "Price ÷ that year's earnings excl. one-offs",
+     "values": [
+      "29.1",
+      "8.9",
+      "6.6",
+      "7.6",
+      "15.0",
+      "14.5"
+     ]
+    },
+    {
+     "label": "Forward P/E at year-end",
+     "note": "Price ÷ the NEXT year's earnings excl. one-offs. 2025 uses the current 2026 consensus (EUR 3.007); latest uses the 2027 consensus EUR 3.647 (MarketScreener). Normal = average 2023–25 = 7.9 (2021 skipped: near-zero interest rates and a very low base year)",
+     "strong": true,
+     "values": [
+      "6.8",
+      "5.4",
+      "5.2",
+      "6.5",
+      "12.0",
+      "10.4"
+     ]
+    },
+    {
+     "label": "Growth in earnings per share the following year",
+     "note": "The growth each year-end multiple paid for. Expected: +21% in 2027 and +29% in 2028 (consensus)",
+     "values": [
+      "+330%",
+      "+65%",
+      "+26%",
+      "+17%",
+      "+25% (2026E)",
+      "+21% (2027E)"
+     ]
+    },
+    {
+     "label": "Book value (equity) per share (EUR)",
+     "note": "Tangible book per share: 22.04, 22.96, 24.67, 27.59, 29.16; June 2026 29.46",
+     "values": [
+      "23.04",
+      "23.99",
+      "25.80",
+      "29.10",
+      "30.85",
+      "31.24"
+     ]
+    },
+    {
+     "label": "Price ÷ book value",
+     "values": [
+      "0.29",
+      "0.37",
+      "0.42",
+      "0.54",
+      "1.17",
+      "1.21"
+     ]
+    },
+    {
+     "label": "Return on equity (ROE)",
+     "note": "stockanalysis.com basis. Commerzbank's own net return on tangible equity (RoTE): 9.2% in 2024, 8.7% in 2025 (10.0% excl. restructuring), 12.6% in H1 2026",
+     "strong": true,
+     "values": [
+      "1.2%",
+      "4.6%",
+      "6.9%",
+      "8.3%",
+      "8.0%",
+      "9.7% (12 months)"
+     ]
+    },
+    {
+     "label": "Dividend per share (EUR), for the year",
+     "note": "Plus buybacks: total payout for 2025 about EUR 2.7bn (dividend about EUR 1.2bn, buybacks about EUR 1.5bn)",
+     "values": [
+      "—",
+      "0.20",
+      "0.35",
+      "0.65",
+      "1.10",
+      "—"
+     ]
+    },
+    {
+     "label": "Core capital ratio (CET1)",
+     "note": "Target 13.5%; MDA threshold (minimum before payouts are restricted) about 10.3–10.4%",
+     "values": [
+      "n/a",
+      "n/a",
+      "n/a",
+      "15.1%",
+      "14.7%",
+      "14.4% (Jun)"
+     ]
+    }
+   ]
+  },
+  "targets": {
+   "title": "Does Commerzbank have a growth goal we can use?",
+   "items": [
+    "Yes. With its first-quarter report on 8 May 2026 Commerzbank set new 'Momentum 2030' targets: a net result of EUR 4.6bn and a net return on tangible equity (RoTE) of about 17% in 2028, and EUR 5.9bn and about 21% in 2030. The cost-income ratio (costs ÷ income) should fall to 48% in 2028 and 43% in 2030.",
+    "For 2026 it guides a net result of at least EUR 3.4bn (raised from 'more than EUR 3.2bn'), net interest income of about EUR 8.6bn, a risk result (loan losses) of about EUR 850m and a RoTE of about 12%. After the first half it had EUR 1,810m (+40%), so it needs about EUR 1,590m in the second half.",
+    "Track record: Commerzbank says it has met or beaten all of its recent growth targets. Its September 2024 plan aimed for a RoTE above 12% and a net result above EUR 3bn only in 2027; analysts now expect both already in 2026. For 2025 it beat its own net result guidance of about EUR 2.5bn after restructuring with EUR 2,625m.",
+    "Commerzbank pays out 100% of its net result after AT1 coupons (excluding one-offs) as dividends and buybacks until its core capital ratio falls to the 13.5% target. A buyback of up to EUR 1.2bn has run since 2 September 2026."
+   ],
+   "verdict": "We use the analysts' 2027 forecast from MarketScreener: EPS of EUR 3.647 and a return on equity of 12.9%. That is 21% above the EUR 3.007 expected for 2026, and the consensus net profit for 2028 (EUR 4,627m) is in line with the company's EUR 4.6bn target, so analysts believe the plan. Because Commerzbank pays out all its profit, it hardly grows its equity per share from retained profit; growth in earnings per share comes from higher returns and fewer shares."
+  },
+  "inputs": [
+   {
+    "label": "Share price",
+    "value": "EUR 37.78",
+    "note": "Xetra close, Friday 30 Oct 2026 (ad-hoc-news). Monday 2 Nov traded around EUR 37.6–37.8 on other venues. Market value about EUR 41bn"
+   },
+   {
+    "label": "2027 EPS forecast",
+    "value": "EUR 3.647",
+    "note": "Consensus, MarketScreener (2026: EUR 3.007; 2028: EUR 4.718). stockanalysis.com shows EUR 3.92 for next year"
+   },
+   {
+    "label": "Normal forward P/E",
+    "value": "7.9",
+    "note": "Average of year-ends 2023 (5.2), 2024 (6.5) and 2025 (12.0). Expected growth (+21% in 2027) is similar to the growth behind those multiples (+17% to +26%), so no growth adjustment"
+   },
+   {
+    "label": "2027 return on equity (ROE)",
+    "value": "12.9%",
+    "note": "Consensus 12.87%, MarketScreener (2028: 15.0%)"
+   },
+   {
+    "label": "Book value per share",
+    "value": "EUR 29.20",
+    "note": "Consensus for the end of 2026 on the same MarketScreener basis as the ROE (the start of 2027)"
+   },
+   {
+    "label": "Payout",
+    "value": "100%",
+    "note": "Company policy: 100% of net result after AT1 coupons as dividends and buybacks. So growth from retained profit g = 12.9% × (1 − 100%) = 0%"
+   },
+   {
+    "label": "Risk-free rate",
+    "value": "3.29%",
+    "note": "German 10-year Bund yield, 2 Nov 2026 (Trading Economics)"
+   },
+   {
+    "label": "Beta",
+    "value": "0.7",
+    "note": "Measured 5-year beta 0.70 (stockanalysis.com)"
+   },
+   {
+    "label": "Cost of equity",
+    "value": "7.1%",
+    "note": "3.29% + 0.7 × 5.5% equity risk premium: the yearly return shareholders demand"
+   },
+   {
+    "label": "Analyst target",
+    "value": "EUR 41.80",
+    "note": "Average of 13 analysts, stockanalysis.com, 19 Oct 2026; range EUR 31.60–45.00. MarketScreener: EUR 41.26"
+   },
+   {
+    "label": "Dividend",
+    "value": "EUR 1.10 for 2025",
+    "note": "2.9% of today's price; consensus EUR 1.61 for 2026 and EUR 1.99 for 2027, plus buybacks"
+   }
+  ],
+  "steps": [
+   {
+    "title": "What will Commerzbank earn next year?",
+    "plain": "Analysts expect earnings of EUR 3.647 a share in 2027, 21% more than the EUR 3.007 they expect for 2026. That looks achievable on recent form: the net result rose 40% in the first half of 2026, and the forecast for 2028 (EUR 4.6bn net profit) matches the company's own target. It relies on higher interest income as euro rates rise, rising fees, lower costs and fewer shares after buybacks.",
+    "formula": "2027 EPS = analyst consensus",
+    "calc": "MarketScreener consensus, October 2026",
+    "result": "EUR 3.647 a share"
+   },
+   {
+    "title": "What should investors pay for next year's profit, given the growth?",
+    "plain": "The forward P/E is the share price divided by the coming year's earnings. At the end of 2023, 2024 and 2025 it was 5.2, 6.5 and 12.0, an average of 7.9 (we skip 2021, when interest rates were near zero). Those multiples came with earnings growth of 26%, 17% and 25% the following year. Now analysts expect +21% in 2027 and +29% in 2028 (MarketScreener), and Simply Wall St's consensus shows about 17% a year: similar growth, so we keep the average and do not adjust it. Today the share trades at 10.4 × 2027 earnings, above that average: the market already pays more than in 2023–24, partly because of the UniCredit bid.",
+    "formula": "Normal forward P/E = average of the last three year-ends (growth-checked)",
+    "calc": "(5.22 + 6.55 + 12.00) ÷ 3",
+    "result": "7.9"
+   },
+   {
+    "title": "Price in 12 months (like an analyst's target)",
+    "plain": "Multiply next year's expected earnings by the normal forward P/E. This is how an analyst's price target is built.",
+    "formula": "Price in 12 months = normal forward P/E × 2027 EPS",
+    "calc": "7.9 × 3.647",
+    "result": "EUR 28.8"
+   },
+   {
+    "title": "Bring it back to today",
+    "plain": "A price in a year is worth less today, because shareholders want a return for waiting: 3.29% bond yield + 0.7 × 5.5% = 7.1% a year. This is the P/E half of our value.",
+    "formula": "P/E value = price in 12 months ÷ (1 + 7.1%)",
+    "calc": "28.81 ÷ 1.0714",
+    "result": "EUR 26.9"
+   },
+   {
+    "title": "Justified price-to-book (the second half)",
+    "plain": "Commerzbank is expected to earn 12.9% on its equity in 2027, while shareholders demand 7.1%. It pays out all of its profit, so equity grows hardly at all from retained profit (g = 0). A bank that earns well above its cost of equity deserves a price above book: here 1.80 × book, applied to the expected book value of EUR 29.20 a share at the end of 2026. This half is sensitive: one point more or less in the required return moves it by roughly EUR 6–9.",
+    "formula": "P/B = (ROE − g) ÷ (cost of equity − g); g = ROE × (1 − payout)",
+    "calc": "(12.87% − 0%) ÷ (7.14% − 0%) = 1.80; 1.80 × 29.20",
+    "result": "EUR 52.6"
+   },
+   {
+    "title": "Blend the two, 50/50",
+    "plain": "Bank analysts use both views, so we weight them equally. The two halves are far apart: Commerzbank's history says the market paid a low P/E for its profits (it earned far less on its equity in 2021–24), while its expected return on equity says it deserves much more.",
+    "formula": "Fair value = ½ × P/E value + ½ × P/B value",
+    "calc": "0.5 × 26.89 + 0.5 × 52.63",
+    "result": "EUR 39.8"
+   },
+   {
+    "title": "Compare with the market",
+    "plain": "Our value is about 5% above today's price, inside the ±10% band we call fair.",
+    "formula": "Gap = fair value ÷ price − 1",
+    "calc": "39.8 ÷ 37.78 − 1",
+    "result": "+5.3%"
+   }
+  ],
+  "crossCheck": {
+   "name": "Cash-return check (dividends plus buybacks), not in the fair value",
+   "plain": "For a bank, the cash that reaches shareholders is dividends and buybacks. Commerzbank pays out 100% of its profit after AT1 coupons, so in 2027 that is about the EUR 3.647 a share analysts expect it to earn. If that payout simply stayed flat forever (no growth at all), the share would be worth about EUR 51 at our 7.1% required return. Today's price needs a required return of about 9.7% instead. So the cash comfortably supports today's price; the risk is that buybacks need regulator approval every time and could slow if UniCredit takes control.",
+   "calc": "3.647 ÷ 7.14% = EUR 51.1; 3.647 ÷ 37.78 = 9.7%",
+   "result": "≈ EUR 51; price needs ≈ 9.7%"
+  },
+  "crossChecks": [
+   {
+    "name": "Check: Commerzbank's own price-to-book history",
+    "plain": "At year-ends 2023–2025 Commerzbank traded at 0.42, 0.54 and 1.17 × book value, an average of 0.71. Applied to June 2026's book value of EUR 31.24:",
+    "calc": "0.709 × 31.24",
+    "result": "≈ EUR 22",
+    "note": "Far below our value. The low multiples of 2023–24 came with returns on equity of only 7–8%; today's 1.2 × book reflects returns now heading for 12–17%. The market has already re-rated the share."
+   },
+   {
+    "name": "Check: other big European banks' forward P/E",
+    "plain": "Deutsche Bank (7.5), UniCredit (9.6), BNP Paribas (7.0) and ING (10.5) trade at an average 8.7 × their next-12-month earnings (stockanalysis.com, prices of 21–23 Oct 2026). Applied to Commerzbank's next-12-month EPS on the same basis (EUR 3.45, from its own 10.6 forward P/E at EUR 36.54):",
+    "calc": "8.67 × 3.454",
+    "result": "≈ EUR 30",
+    "note": "Commerzbank's own forward P/E (10.6 on the same source) is above the peer average. Its expected earnings growth is higher, though: +21% for 2027, against +16% for Deutsche Bank and +14% for UniCredit (stockanalysis.com), and its expected return on equity (12.9% in 2027) is still below UniCredit's (15.8%) and ING's (17.1%)."
+   }
+  ],
+  "sensitivity": {
+   "caption": "Fair value today in EUR per share (50% P/E, 50% justified P/B) for different forward P/Es (rows) and for 2027 earnings coming in higher or lower than forecast (columns; the return on equity moves with earnings). Base case: P/E 7.9 on EPS of EUR 3.647 and ROE 12.9%, cost of equity 7.1%.",
+   "rowLabel": "Forward P/E",
+   "colLabel": "2027 EPS vs forecast",
+   "rows": [
+    "5.9",
+    "6.9",
+    "7.9",
+    "8.9",
+    "9.9"
+   ],
+   "cols": [
+    "−10%",
+    "−5%",
+    "forecast",
+    "+5%",
+    "+10%"
+   ],
+   "values": [
+    [
+     32.7,
+     34.5,
+     36.4,
+     38.2,
+     40.0
+    ],
+    [
+     34.3,
+     36.2,
+     38.1,
+     40.0,
+     41.9
+    ],
+    [
+     35.8,
+     37.8,
+     39.8,
+     41.8,
+     43.7
+    ],
+    [
+     37.3,
+     39.4,
+     41.5,
+     43.5,
+     45.6
+    ],
+    [
+     38.8,
+     41.0,
+     43.2,
+     45.3,
+     47.5
+    ]
+   ],
+   "baseRow": 2,
+   "baseCol": 2
+  },
+  "reasoning": [
+   "Commerzbank's track record has improved sharply: earnings per share rose from EUR 0.23 in 2021 to about EUR 2.40 in 2025 (excl. restructuring), the net result jumped 40% in the first half of 2026, and it has met or beaten its recent targets. It now aims for a 17% return on tangible equity in 2028.",
+   "The price has risen even faster than the profits: the forward P/E went from 5.2 at the end of 2023 to 10.4 today, and price-to-book from 0.42 to 1.2. At its normal 7.9 × 2027 earnings the share is worth only about EUR 26.9 today, but a 12.9% return on equity against a 7.1% required return justifies about EUR 52.6.",
+   "The checks point both ways: Commerzbank's own price-to-book history gives about EUR 22 and peers' P/E about EUR 30, while its 100% payout is worth about EUR 51 at our required return. The answer depends mostly on whether the expected jump in returns happens, and on how much return investors demand from a bank half-owned by a bidder.",
+   "Fair value EUR 39.8 (range EUR 38.1–41.5). At EUR 37.78 the share looks roughly fairly priced; analysts' average target (EUR 39.0 in today's money) is almost the same, but it implies paying 11.5 × 2027 earnings, well above Commerzbank's own recent history."
+  ],
+  "risks": [
+   "Forecast risk: the 2027 forecast assumes 21% earnings growth. If 2027 earnings come in 10% lower (return on equity about 11.6%), the fair value falls to about EUR 35.8.",
+   "Multiple risk: at the analysts' implied 11.5 × earnings our blended value would be about EUR 45.8; at today's 10.4 × it would be about EUR 43.9. We did not lower the multiple for growth, so there is no separate 'unadjusted' case.",
+   "Required-return risk: with a cost of equity one point higher (8.1%) the justified price-to-book falls to 1.58 × book and our fair value to about EUR 36.4; one point lower (6.1%) lifts it to about EUR 44.2. Higher German bond yields would hurt, but higher euro rates also lift Commerzbank's interest income.",
+   "UniCredit: UniCredit holds about 27% directly and more than 40% including derivatives, got ECB approval in October to go above 30%, and an EU competition decision is due by 16 November. Its exchange offer of 0.485 UniCredit shares is worth about EUR 36.5 at UniCredit's EUR 75.21 (21 Oct), below today's price, so it gives no floor. Control by UniCredit could change the payout policy and the strategy; a full takeover could also bring a higher offer."
+  ],
+  "report": {
+   "date": "Q3 report · Thursday 5 November 2026",
+   "dateIso": "2026-11-05",
+   "title": "How the Q3 report could change our fair value",
+   "plain": "Our fair value = ½ × (7.9 × 2027 EPS ÷ 1.071) + ½ × (2027 ROE ÷ 7.14% × book value). So the report can change it in two ways: through analysts' forecast for 2027 earnings (which also moves the expected return on equity), and through the multiple, if the report changes how fast Commerzbank looks likely to grow. A big share-price move on the day is not the same as a change in value.",
+   "scenarios": [
+    {
+     "tone": "pos",
+     "label": "Strong report",
+     "value": "EUR 41.8–43.5",
+     "what": "Q3 net result clearly above the EUR 591m of Q3 2025, net interest income back above EUR 2.1bn (Q2 2026: 2,059m) and the 2026 guidance (net result at least EUR 3.4bn, net interest income about EUR 8.6bn) raised. Two separate effects: (1) analysts raise their 2027 EPS forecast by about 5%, from EUR 3.647 to 3.829, which gives EUR 41.8 at the unchanged 7.9 times; (2) if growth of 25%-plus a year then looks safe (now +21% for 2027 and +29% for 2028), the multiple can move up 1 point to 8.9 times: EUR 43.5.",
+     "calc": "½ × 7.9 × 3.829 ÷ 1.0714 + ½ × 13.51% ÷ 7.14% × 29.20 = 41.8 · ½ × 8.9 × 3.829 ÷ 1.0714 + ½ × 13.51% ÷ 7.14% × 29.20 = 43.5"
+    },
+    {
+     "tone": "flat",
+     "label": "As expected",
+     "value": "EUR 39.8",
+     "what": "A net result of roughly EUR 800–900m (the 2026 guidance needs about EUR 1,590m in the second half, after EUR 1,810m in the first), net interest income around EUR 2.1bn, a risk result of around EUR 250m and the guidance kept. The 2027 forecast and the 7.9 times multiple stay, so our value does not change.",
+     "calc": "½ × 7.9 × 3.647 ÷ 1.0714 + ½ × 12.87% ÷ 7.14% × 29.20 = 39.8"
+    },
+    {
+     "tone": "neg",
+     "label": "Weak report",
+     "value": "EUR 36.2–37.8",
+     "what": "Net interest income flat or down on Q3 2025's EUR 2,044m (Barclays already warned about tougher competition for deposits), loan losses well above Q3 2025's EUR 215m, and the EUR 8.6bn interest income guidance cut. Two separate effects: (1) analysts cut their 2027 EPS forecast by about 5%, from EUR 3.647 to 3.465, which gives EUR 37.8 at 7.9 times; (2) if growth then looks closer to the 17% of 2025 than the 21–29% now expected, the multiple drops 1 point to 6.9 times: EUR 36.2.",
+     "calc": "½ × 7.9 × 3.465 ÷ 1.0714 + ½ × 12.23% ÷ 7.14% × 29.20 = 37.8 · ½ × 6.9 × 3.465 ÷ 1.0714 + ½ × 12.23% ÷ 7.14% × 29.20 = 36.2"
+    }
+   ],
+   "extra": [
+    {
+     "title": "What if loan losses or capital change?",
+     "plain": "For a bank, loan losses (the 'risk result') and capital are the other key measures. Every extra EUR 100m of loan losses a year costs about EUR 70m after tax, about EUR 0.07 of 2027 EPS, and lowers our fair value by about EUR 0.75 (both halves fall together). Capital works the other way: Commerzbank's core capital ratio was 14.4% in June against its 13.5% target, and everything above the target is handed back through buybacks, which lift earnings per share. A ratio well below 14% in the report, for example because of new rules or growth in loans, would slow buybacks; the ECB has just cut Commerzbank's extra capital requirement for 2027 by 0.05 points to 2.10%."
+    }
+   ],
+   "watch": [
+    "Net result: Q3 2025 EUR 591m (after restructuring costs); Q2 2026 EUR 898m. The 2026 guidance of at least EUR 3.4bn needs about EUR 1,590m in the second half.",
+    "Net interest income: Q3 2025 EUR 2,044m, Q2 2026 EUR 2,059m. The 2026 guidance of about EUR 8.6bn needs about EUR 2.25bn a quarter in the second half; Barclays expects a weaker quarter.",
+    "Net commission income: Q3 2025 EUR 985m (+7%); the 2026 guidance is about +7%.",
+    "Risk result (loan losses): Q3 2025 EUR −215m; H1 2026 EUR −344m against about EUR −850m guided for the year. Core capital (CET1): 14.4% at 30 June.",
+    "Any update on UniCredit (EU decision due by 16 November, possible extraordinary shareholder meeting) and on the EUR 1.2bn buyback."
+   ]
+  },
+  "sources": [
+   {
+    "title": "Commerzbank Q3 2025 results press release",
+    "url": "https://www.commerzbank.de/group/newsroom/press-releases/quarterly-figures-q3-2025.html"
+   },
+   {
+    "title": "Commerzbank full-year 2025 results ('Growth target for 2025 exceeded')",
+    "url": "https://www.commerzbank.de/group/newsroom/press-releases/annual-press-conference.html"
+   },
+   {
+    "title": "Commerzbank: 2025 profit target exceeded, buyback of up to EUR 540m, dividend EUR 1.10 (EQS via Börsengefluester)",
+    "url": "https://app.boersengefluester.de/en/newswire/DE000CBK1001/commerzbank-aktiengesellschaft/commerzbank-exceeds-profit-target-and-launches-further-share-buyback-of-up-to-eur540m-dividend-for-2025-to-be-eur110-per-share-2273630"
+   },
+   {
+    "title": "Commerzbank Q1 2026 and Momentum 2030 targets",
+    "url": "https://www.commerzbank.de/group/newsroom/press-releases/commerzbank-reports-strong-first-quarter.html"
+   },
+   {
+    "title": "Commerzbank Q1 2026 release with financial table (EQS via Börsengefluester)",
+    "url": "https://app.boersengefluester.de/en/newswire/DE000CBK1001/commerzbank-aktiengesellschaft/commerzbank-delivers-strong-first-quarter-and-targets-net-rote-of-21-by-2030-2323544"
+   },
+   {
+    "title": "Commerzbank Q2 2026 results press release (PDF)",
+    "url": "https://www.commerzbank.de/group/newsroom/press-releases/2026/20260806-pr-q2-2026.pdf"
+   },
+   {
+    "title": "Commerzbank delivers record result in the first half of 2026",
+    "url": "https://www.commerzbank.de/group/newsroom/press-releases/commerzbank-delivers-record-result.html"
+   },
+   {
+    "title": "Commerzbank 2024 strategy targets (merca2)",
+    "url": "https://www.merca2.es/2024/09/26/commerzbank-rote-unicredit-1923973/"
+   },
+   {
+    "title": "Commerzbank financials, EPS and shares 2021–2025 (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/CBK/financials/"
+   },
+   {
+    "title": "Commerzbank balance sheet, book value per share (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/CBK/financials/balance-sheet/"
+   },
+   {
+    "title": "Commerzbank ratios, year-end market value (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/CBK/financials/ratios/"
+   },
+   {
+    "title": "Commerzbank dividend history (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/CBK/dividend/"
+   },
+   {
+    "title": "Commerzbank statistics, beta and analyst target (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/CBK/statistics/"
+   },
+   {
+    "title": "Commerzbank analyst forecast and rating changes (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/CBK/forecast/"
+   },
+   {
+    "title": "Commerzbank forecasts: EPS, ROE, book value, dividends (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/COMMERZBANK-AG-13057331/finances/"
+   },
+   {
+    "title": "Commerzbank consensus (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/COMMERZBANK-AG-13057331/consensus/"
+   },
+   {
+    "title": "Commerzbank calendar: Q3 results 5 Nov 2026 (MarketScreener)",
+    "url": "https://www.marketscreener.com/quote/stock/COMMERZBANK-AG-13057331/calendar/"
+   },
+   {
+    "title": "Commerzbank future growth (Simply Wall St)",
+    "url": "https://simplywall.st/stocks/de/banks/fra-cbk0/commerzbank-shares/future"
+   },
+   {
+    "title": "Commerzbank Xetra close 30 Oct 2026 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/commerzbank-aktie-vorboerslich-37-74-euro-0-11-prozent-tiefer/70443636"
+   },
+   {
+    "title": "Commerzbank before Q3: mBank, buyback, Barclays, ECB capital requirement (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-aktie-mbank-steigert-gewinn-vor-dem-q3-test/70446262"
+   },
+   {
+    "title": "Commerzbank before Q3 on 5 November: ECB approval for UniCredit (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-aktie-vor-quartalszahlen-am-5-november-im-fokus/70442223"
+   },
+   {
+    "title": "Barclays cuts Commerzbank target to EUR 41 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-aktie-barclays-senkt-ziel-fuer-die-commerzbank-aktie-auf-41-00-euro/70399278"
+   },
+   {
+    "title": "Deutsche Bank Research confirms EUR 42, RBC raises to EUR 41 (ad-hoc-news)",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-aktie-deutsche-bank-research-bestaetigt-42-00-euro-als-ziel-fuer-die-commerzbank-aktie/70362621"
+   },
+   {
+    "title": "JPMorgan raises Commerzbank target to EUR 39 (trading-treff)",
+    "url": "https://trading-treff.de/trading/commerzbank-aktie-jpmorgan-hebt-ziel-auf-39-euro"
+   },
+   {
+    "title": "EU sets 16 November deadline for UniCredit's Commerzbank plan (trading-treff)",
+    "url": "https://trading-treff.de/wirtschaft/commerzbank-aktie-eu-setzt-frist-bis-16-november"
+   },
+   {
+    "title": "Commerzbank Q3 results on 5 November (trading-treff)",
+    "url": "https://trading-treff.de/trading/commerzbank-aktie-q3-zahlen-am-5-november-2"
+   },
+   {
+    "title": "RBC and Citi targets, H1 context (boerse-express)",
+    "url": "https://www.boerse-express.com/news/articles/commerzbank-zinsplus-kommt-spaeter-953068"
+   },
+   {
+    "title": "UniCredit exchange offer for Commerzbank, 16 March 2026 (UniCredit)",
+    "url": "https://www.unicreditgroup.eu/en/press-media/press-releases-price-sensitive/2026/march/press-release.html"
+   },
+   {
+    "title": "UniCredit: 66,724 shares tendered in Commerzbank exchange offer (MarketScreener)",
+    "url": "https://www.marketscreener.com/news/unicredit-66-724-shares-tendered-in-commerzbank-exchange-offer-ce7f5bdede8bf627"
+   },
+   {
+    "title": "UniCredit raises Commerzbank stake above 40% via shares and derivatives (MarketScreener)",
+    "url": "https://www.marketscreener.com/news/unicredit-raises-commerzbank-stake-above-40-via-shares-and-derivatives-ce7f5ad8df8ff220"
+   },
+   {
+    "title": "Germany 10-year Bund yield (Trading Economics)",
+    "url": "https://tradingeconomics.com/germany/government-bond-yield"
+   },
+   {
+    "title": "Deutsche Bank statistics and forecast (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/etr/DBK/statistics/"
+   },
+   {
+    "title": "UniCredit statistics and forecast (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/bit/UCG/statistics/"
+   },
+   {
+    "title": "BNP Paribas statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/epa/BNP/statistics/"
+   },
+   {
+    "title": "ING Groep statistics (stockanalysis.com)",
+    "url": "https://stockanalysis.com/quote/ams/INGA/statistics/"
+   }
+  ]
+ },
  {
   "date": "2026-11-02",
   "dateLabel": "Monday 2 November 2026",
